@@ -1,6 +1,8 @@
 # Infrastructure 
 
-## Cloudways - SFTP
+## Server - Cloudways 
+
+1GB 32 GB Disk 45.76.190.108 Vultr (Singapore)
 
 ### staging.agrea.ph
 
@@ -14,6 +16,8 @@
 - Username: production.agrea.ph
 - Password: [Use SSH key]
 
-## Buddy - Deployment
+## Deployment - Buddy 
 
 URL: https://app.buddy.works/agrea
+
+## CDN - CloudFlare
