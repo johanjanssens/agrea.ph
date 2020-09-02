@@ -33,3 +33,5 @@
 URL: https://app.buddy.works/agrea
 
 ## CDN - CloudFlare
+
+URL: https://www.cloudflare.com
