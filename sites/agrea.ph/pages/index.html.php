@@ -22,7 +22,7 @@ summary: The easy to use page generator for Joomla
   	</div>
 
     <div class="grid md:grid-cols-3 gap-4">
-      <? 
+      <?
           $articles = collection('ext:joomla.model.articles', [
           'published' => 1,
           'category' => ['12','9'], // new sprouts & farm school
@@ -69,7 +69,7 @@ summary: The easy to use page generator for Joomla
       </div>
     </div>
     <div class="grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <? 
+      <?
           $newSprouts = collection('ext:joomla.model.articles', [
           'published' => 1,
           'category' => ['12'], // new sprouts
@@ -105,7 +105,7 @@ summary: The easy to use page generator for Joomla
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
-          <a href="/farm-school"><img alt="content" class="object-cover object-center h-full w-full" src="/joomlatools-pages/images/agrea-farm-school-scholarship-program-50pax.jpg" alt="AGREA Farm School Scholarship Program header"></a>
+          <a href="/farm-school"><img alt="content" class="object-cover object-center h-full w-full" src="images://agrea-farm-school-scholarship-program-50pax.jpg" alt="AGREA Farm School Scholarship Program header"></a>
         </div>
         <h2 class="text-xl font-medium font-title text-gray-900 mt-5">Learn organic farming the AGREA way</h2>
         <p class=" mt-2">AGREA Farm School is <a href="/farm-school/enroll-now-organic-agriculture-production-ncii">now accepting applications</a> for admission in Organic Agriculture Production (OAP NC II). This 232-hour program includes hands-on training on producing organic concoctions, extracts and fertilizers, as well as producing organic vegetables, and raising organic chickens and hogs.</p>
@@ -117,7 +117,7 @@ summary: The easy to use page generator for Joomla
       </div>
       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
-          <a href="/events/leaf"><img class="object-cover object-center h-full w-full" src="/joomlatools-pages/images/leaf-2018-get-your-free-copy-now.jpg" alt="Leaders and Entrepreneurs in Agriculture Forum"></a>
+          <a href="/events/leaf"><img class="object-cover object-center h-full w-full" src="images://leaf-2018-get-your-free-copy-now.jpg" alt="Leaders and Entrepreneurs in Agriculture Forum"></a>
         </div>
         <h2 class="text-xl font-medium font-title text-gray-900 mt-5">Leaders and Entrepreneurs in Agriculture Forum</h2>
         <p class=" mt-2">LEAF is a global community of champions uniting as advocates across different sectors for better agriculture. Through mentorship and inclusive dialogue, delegates help to develop new generations of agricultural practitioners and allies.</p>
@@ -156,7 +156,7 @@ summary: The easy to use page generator for Joomla
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="/joomlatools-pages/images/volunteer_programs.jpg" alt="https://dummyimage.com/1201x501">
+          <img alt="content" class="object-cover object-center h-full w-full" src="images://volunteer_programs.jpg" alt="https://dummyimage.com/1201x501">
         </div>
         <h2 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">Be a #AGREA1000Strong Volunteer</h2>
         <p class="">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
@@ -188,7 +188,7 @@ summary: The easy to use page generator for Joomla
 					<h2 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
 					<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
 				</div>
-        <? 
+        <?
             $freshPicks = collection('ext:joomla.model.articles', [
             'published' => 1,
             'category' => ['15'], // fresh picks
@@ -233,12 +233,12 @@ summary: The easy to use page generator for Joomla
                 autoplay: true,
                 autoplayText: ["",""],
               });
-            }) 
+            })
           </script>
           <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
         </div>
 			</div>
-        
+
 			<div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
 				<div class="flex flex-wrap w-full mb-20">
 					<div class="w-full mb-6 lg:mb-0">
@@ -249,7 +249,7 @@ summary: The easy to use page generator for Joomla
 				<div class="flex flex-wrap m-4">
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -261,7 +261,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18manilabulletin.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18manilabulletin.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -273,7 +273,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/siargao_fishing.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://siargao_fishing.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -285,7 +285,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/social_impact_awards_2018.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://social_impact_awards_2018.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -297,7 +297,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -309,7 +309,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18manilabulletin.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18manilabulletin.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -321,7 +321,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/siargao_fishing.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://siargao_fishing.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -333,7 +333,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/social_impact_awards_2018.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://social_impact_awards_2018.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -345,7 +345,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -357,7 +357,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/SS18manilabulletin.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://SS18manilabulletin.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -369,7 +369,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/siargao_fishing.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://siargao_fishing.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -381,7 +381,7 @@ summary: The easy to use page generator for Joomla
 					</div>
 					<div class="md:w-1/2 p-4">
 						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="/joomlatools-pages/images/social_impact_awards_2018.jpg" alt="content">
+							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://social_impact_awards_2018.jpg" alt="content">
 							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
               <p class="text-xs flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">

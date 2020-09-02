@@ -84,7 +84,7 @@ async function sync() {
   mason.browserSync({
     watch: true,
     server: {
-       baseDir: './joomlatools-pages/theme'
+       baseDir: './sites/agrea.ph/theme'
     },
     files: 'css/*.css',
   });

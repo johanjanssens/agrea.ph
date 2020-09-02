@@ -1,6 +1,6 @@
 <?php
 return array(
-  
+
     // Site
     'site' => [
         'body_class'        => '',
@@ -15,7 +15,7 @@ return array(
 
         'metadata' => [
             'og:site_name'  => 'Joomlatools Pages - the easy to use page generator for Joomla',
-            'og:image'      => '/joomlatools-pages/theme/images/logo/joomlatools.png',
+            'og:image'      => 'theme://images/logo/joomlatools.png',
             'twitter:site'  => '@joomlatools',
             'twitter:card'  => 'summary_large_image',
             //'fb:pages'     => '111111111111111'
@@ -23,6 +23,10 @@ return array(
 
         'visible'   => true,
         'published' => true,
+    ],
+
+    'aliases' => [
+        'images://' => '/sites/agrea.ph/images/',
     ],
 
     // Google Analytics
