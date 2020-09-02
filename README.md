@@ -20,7 +20,7 @@
 
 - Public IP: 45.76.190.108
 - Username: staging.agrea.ph
-- Password: [Use SSH key]
+- Password: [Use SSH key] or 2sXrNRwRdzFr!YNz
 
 ### production.agrea.ph
 
