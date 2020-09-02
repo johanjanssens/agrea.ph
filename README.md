@@ -1,3 +1,8 @@
+# Sites
+
+1. Production: https://www.agrea.ph (linked to master branch)
+2. Staging: https://Agrea123:Agrea123@staging.agrea.ph (linked to staging branch)
+
 # Infrastructure 
 
 ## Server - Cloudways 
