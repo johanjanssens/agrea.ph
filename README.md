@@ -1,7 +1,14 @@
 # Sites
 
-1. Production: https://www.agrea.ph (linked to master branch)
-2. Staging: https://Agrea123:Agrea123@staging.agrea.ph (linked to staging branch)
+### Production
+
+- URL: https://www.agrea.ph 
+- Branch: master (auto deployment on push)
+
+### Staging
+
+- URL: https://Agrea123:Agrea123@staging.agrea.ph 
+- Branch: staging (manual deployment)
 
 # Infrastructure 
 
