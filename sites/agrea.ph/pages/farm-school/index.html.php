@@ -8,7 +8,7 @@ collection:
     state:
         limit: 6
         published: 1
-        category: [9]
+        category: [13]
         sort: date
         order: desc
 process:
@@ -26,8 +26,8 @@ process:
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<div class="farm-school-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/farm-school.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/tesda-scholar.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/farm-school.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/tesda-scholar.jpg"></div>
 				</div>
 				<script>
 					window.addEventListener('load', function(){
@@ -71,13 +71,13 @@ process:
 					<li class="mb-2"><a href="/farm-school/agrea-now-offers-short-term-scholarships-in-organic-farming" target="_blank">Short-term Scholarships</a></li>
 					<li class="mb-2"><a href="/farm-school/take-the-organic-agriculture-ncii-course-at-the-agrea-farm-school" target="_blank">Training for Work Scholarship Program (TWSP)</a></li>
 					<li class="mb-2"><a href="/farm-school/agrea-farm-school-tesda-marinduque-expands-assistance-to-deserving-organic-farming-scholars" target="_blank">Private Education Student Financial Assistance (PESFA)</a></li>
-					<li class="text-base text-gray-600"><a href="t/farm-school/free-farming-education-plus-benefits-await-less-fortunate-youth-through-uaqtea" target="_blank">Universal Access to Quality Tertiary Education Act Scholarship (UAQTEA)</a></li>
+					<li class="text-base text-gray-600"><a href="/farm-school/free-farming-education-plus-benefits-await-less-fortunate-youth-through-uaqtea" target="_blank">Universal Access to Quality Tertiary Education Act Scholarship (UAQTEA)</a></li>
 				</ul>
 			</div>
 			<div class="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 				<h3 class="font-medium font-title text-gray-900 text-lg">Why tesda scholarship?</h3>
 				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-				<p><img src="/images/farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full"></p>
+				<p><img src="images://farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full"></p>
 				<p>In the interest of service and in line with the TESDA Reform and Development Agenda, the AGREA Farm School is registered and certified to provide scholarships to target beneficiaries. For the complete guidelines and list of catered beneficiaries, please click <a href="http://www.tesda.gov.ph/About/TESDA/1277" target="_blank">here</a>.</p>
 				<p><span style="font-size: medium;"><strong class="">Scholarship Benefits</strong></span>
 					<br>TESDA scholars enrolled at the AGREA Farm School are entitled to free training and assessment. Other additional benefits vary depending on the scholarship availed.
@@ -94,22 +94,22 @@ process:
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-certified-organic-agri-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 10, 
+				'id' => 142, 
 				'category' => 'farm-school',
 			]); ?>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 23, 
+				'id' => 129, 
 				'category' => 'farm-school',
 			]); ?>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 22, 
+				'id' => 130, 
 				'category' => 'farm-school',
 			]); ?>
 			<h3 class="font-medium font-title text-gray-900 text-lg">Testimonials</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-			<img class=" mb-4" src="/images/testimonials/bry-monsanto.png">
-			<img class=" mb-4" src="/images/testimonials/donna-naling.png">
-			<img class=" mb-4" src="/images/testimonials/mj-larraquel.png">
+			<img class=" mb-4" src="images://testimonials/bry-monsanto.png">
+			<img class=" mb-4" src="images://testimonials/donna-naling.png">
+			<img class=" mb-4" src="images://testimonials/mj-larraquel.png">
 		</div>
 	</div>
 </div>

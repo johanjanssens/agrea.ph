@@ -13,7 +13,7 @@ slug: yseali-generationgr3en
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="/images/events/grow.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow.jpg">
 			</div>
 		</div>
 		<p><span class="font-bold ">YSEALI GenerationGR3EN Workshop</span> is a 4-day eco-entrepreneurship workshop held in Brunei Darussalam with a focus on eco-tourism. The workshop was held last 25-28 February 2017.</p>
@@ -47,25 +47,17 @@ slug: yseali-generationgr3en
 
 		<p><iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1908462842732747%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe></p>
 
-		<p><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="/images/events/grow-sidebar-3.jpg" /></p>
+		<p><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/grow-sidebar-3.jpg" /></p>
 	</article>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-t">
-				<a class="block" href="/events/leaf">Leaders &amp; Entrepreneurs in Agriculture Forum</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/events/yseali-generationgr3en">YSEALI GenerationGR3EN</a>
-			</li>
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-b">
-				<a class="block" href="/events/yseali-grow">YSEALI Grow</a>
-			</li>
-		</ul>
-		<p><img class="rounded" src="/images/events/generationgr3en-sidebar-1.jpg" /></p>
+		
+		<?= import('/partials/navigation/submenu');?>
+		
+		<p><img class="rounded" src="images://events/generationgr3en-sidebar-1.jpg" /></p>
 
 		<p>YSEALI GenerationGR3EN brought together 50 delegates (aged 20-35) from all ten YSEALI member countries: Brunei Darussalam, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore, Thailand, and Vietnam.</p>
 
-		<p><img class="rounded" src="/images/events/generationgr3en-sidebar-2.jpg" /></p>
+		<p><img class="rounded" src="images://events/generationgr3en-sidebar-2.jpg" /></p>
 
 		<p>GenerationGR3EN aimed to develop a generation of “eco-entrepreneurs” with the knowledge and skills to launch environmentally-friendly green businesses.</p>
 
@@ -95,7 +87,7 @@ slug: yseali-generationgr3en
 		<h4 class="text-base text-gray-900 font-medium font-title my-4">Moving Forward</h4>
 		<p>The GenerationGR3EN Workshop has finally come to a close, but the challenge to create sustainable green businesses in the ASEAN Region has just begun. We hope that GenerationGR3EN has given our delegates the resources they need to make their green ideas a reality.</p>
 
-		<p><img class="rounded" src="/images/events/generationgr3en-sidebar-3.jpg" /></p>
+		<p><img class="rounded" src="images://events/generationgr3en-sidebar-3.jpg" /></p>
 
 		<h4 class="text-base text-gray-900 font-medium font-title my-4">Related Links:</h4>
 

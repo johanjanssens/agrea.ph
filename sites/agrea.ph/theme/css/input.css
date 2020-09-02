@@ -27,7 +27,12 @@
   --link-colour:var(--agrea-green);
 }
 
-main {
+/* Submenu border override */
+ul[x-data] > li:first-child[class$="children"] {
+  border-top:0!important;
+}
+
+body > main {
   /* make sure to cover the screen */
   min-height: 100vh;
 
@@ -37,19 +42,19 @@ main {
   /* put on top */
   position: relative;
   z-index: 10;
+
+  /* compensate for the sticky header */
+  margin-top: 72px;
 }
 
-footer {
+body > footer {
   /* place on the bottom */
   position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-body > footer {
-  background: url(../images/footer-bg.svg) 0 calc(100% - (5rem - 3px)) no-repeat;
-  background-size: 33vw;
+  background: url(../images/rice-farmer.svg) 0 calc(100% - 2vh) no-repeat;
+  background-size: 100vw;
 }
 
 section[class*="bg-"]:not(.bg-white) {
@@ -115,11 +120,6 @@ li:focus-within a {
   outline: none;
 }
 
-header + div.w-full,
-header + section {
-  margin-top: 72px;
-}
-
 /* pagination */
 .k-pagination__pages li {
   display: inline-block;
@@ -152,6 +152,7 @@ p > a:not([class]) {
 article > img:not([class]) {
   border-radius: var(--rounded-border-radius);
 }
+
 /* Slider*/
 .tns-outer {
   border-radius: var(--rounded-border-radius);

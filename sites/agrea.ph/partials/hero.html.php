@@ -3,7 +3,7 @@
     <? 
     $articles = collection('ext:joomla.model.articles', [
       'published' => 1,
-      'category' => '12', // news
+      'category' => '11', // news
       'sort' => 'date',
       'order' => 'desc',
       'limit' => 1,

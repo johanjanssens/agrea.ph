@@ -14,9 +14,9 @@ return array(
     'page' => [
 
         'metadata' => [
-            'og:site_name'  => 'Joomlatools Pages - the easy to use page generator for Joomla',
-            'og:image'      => 'theme://images/logo/joomlatools.png',
-            'twitter:site'  => '@joomlatools',
+            'og:site_name'  => 'Agrea - Ecology of Dignity',
+            'og:image'      => 'theme://images/logo/website-logo.jpg',
+            'twitter:site'  => '@AgreaPHL',
             'twitter:card'  => 'summary_large_image',
             //'fb:pages'     => '111111111111111'
         ],
@@ -26,7 +26,7 @@ return array(
     ],
 
     'aliases' => [
-        'images://' => '/sites/agrea.ph/images/',
+        'images://' => '/images/agrea.ph/pages/',
     ],
 
     // Google Analytics

@@ -16,27 +16,19 @@ slug: yseali-grow
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="/images/events/grow.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow.jpg">
 			</div>
 		</div>
-		<?= article(149)->excerpt ?>
-		<?= article(149)->text ?>
+		<?= article(3)->excerpt ?>
+		<?= article(3)->text ?>
 	</div>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-t">
-				<a class="block" href="/events/leaf">Leaders &amp; Entrepreneurs in Agriculture Forum</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/events/yseali-generationgr3en">YSEALI GenerationGR3EN</a>
-			</li>
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-b">
-				<a class="block" href="/events/yseali-grow">YSEALI Grow</a>
-			</li>
-		</ul>
+		
+		<?= import('/partials/navigation/submenu');?>
+		
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded" src="/images/events/grow-sidebar-1.jpg" /></p>
+		<p><img class="rounded" src="images://events/grow-sidebar-1.jpg" /></p>
 
 		<p>YSEALI Grow gathered 30 youth leaders 6 USG alumni mentors from Lanao del Sur, North Cotabato, and Bukidnon.</p>
 
@@ -53,7 +45,7 @@ slug: yseali-grow
 
 		<p>The workshop facilitates dream building and taking action sessions for the participants and assisted by carefully-selected USG alumni.</p>
 
-		<p><img class="rounded" src="/images/events/grow-sidebar-2.jpg" /></p>
+		<p><img class="rounded" src="images://events/grow-sidebar-2.jpg" /></p>
 
 		<p>YSEALI Grow sessions cover these components:</p>
 
@@ -74,7 +66,7 @@ slug: yseali-grow
 			</li>
 		</ol>
 
-		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="/images/events/grow-sidebar-3.jpg" /></p>
+		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/grow-sidebar-3.jpg" /></p>
 	</div>
 </article>
 

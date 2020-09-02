@@ -14,7 +14,7 @@ slug: consultancy
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="/images/consultancy/consultancy-1.jpg">
+				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" />
 			</div>
 		</div>
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Your Guide to Agricultural Abundance</h3>
@@ -28,7 +28,7 @@ slug: consultancy
 			<li>Sustainability Services</li>
 		</ul>
 
-		<p><img alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="/images/consultancy/our-services.jpg" /></p>
+		<p><img alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
 
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Capacity-building &amp; sustainable agriculture training for farmers</h3>
 
@@ -49,7 +49,7 @@ slug: consultancy
 		</ul>
 
 		<div class="my-8">
-			<a href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>"><img alt="<?= article(43)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(43)->image->url ?>"></a>
+			<a href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>"><img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>"></a>
 			<div class="mb-8">
 				<h3 class="text-base text-gray-900 font-medium font-title my-4"><a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
@@ -73,13 +73,13 @@ slug: consultancy
 			<div class="grid md:grid-cols-2 gap-8 mb-8">
 				<div class="bg-gray-100 p-6 rounded-lg">
 					<?= import('/partials/articles/image-title-excerpt',[
-						'id' => 107, 
+						'id' => 45, 
 						'category' => 'news',
 					]); ?>
 				</div>
 				<div class="bg-gray-100 p-6 rounded-lg">
 					<?= import('/partials/articles/image-title-excerpt',[
-						'id' => 88,
+						'id' => 64,
 						'category' => 'news',
 					]); ?>
 				</div>
@@ -87,7 +87,7 @@ slug: consultancy
 			<div class="mb-8">
 				<h3 class="text-base text-gray-900 font-medium font-title my-4">Farm Tourism Development</h3>
 				<p>Do you own an unproductive or barren land? Are you looking to develop a farm or to beautify an existing area? Consult our experts with over 20 years of experience in land development, sustainable landscaping, construction, project budgeting, feasibility studies and business plan development.</p>
-				<img class="rounded w-full" src="/images/consultancy/model-farm.jpg" />
+				<img class="rounded w-full" src="images://consultancy/model-farm.jpg" />
 				<h3 class="text-base text-gray-900 font-medium font-title my-4">Sustainability Services</h3>
 				<p>Are you looking to build systems for renewable energy and waste? AGREA can help you reach sustainable solutions for your next project?</p>
 				<ul>
@@ -98,7 +98,7 @@ slug: consultancy
 					<li>Sustainable luxury travels</li>
 				</ul>
 				<div class="my-4">
-					<a href="<?= route(page('news/article'), ['slug' => article(101)->slug]) ?>"><img alt="<?= article(101)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(101)->image->url ?>"></a>
+					<a href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>"><img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>"></a>
 				</div>
 			</div>
 
@@ -155,7 +155,7 @@ slug: consultancy
 			<h2 class="title">Frequency Asked Questions</h2>
 
 			<p><strong>Do you have established pricing for your services?</strong><br />
-			Yes, please send an e-mail to consultancy@agrea.ph with a description of your desired project. &nbsp;You may also call our Metro Manila office at +63 2 240 5210 to schedule an initial online or in-person appointment.</p>
+			Yes, please send an e-mail to consultancy@agrea.ph with a description of your desired project. You may also call our Metro Manila office at +63 2 240 5210 to schedule an initial online or in-person appointment.</p>
 
 			<p><strong>I have a project outside of the Philippines. Can I still consult AGREA for my project?</strong><br />
 			Yes, depending on the project AGREA is able to consult in countries outside of the Philippines. For local expertise we also have an international network of experts that we can connect to your project.</p>
@@ -174,17 +174,17 @@ slug: consultancy
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">AGREA Consultancy</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><img class="rounded w-full" src="/images/consultancy/atilano.jpg" /></p>
+		<p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
 
 		<p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><a href="mailto:consultancy@agrea.ph?subject=AGREA%20Consultancy"><img class="rounded w-full" src="/images/consultancy/email.jpg" /></a></p>
+		<p><a href="mailto:consultancy@agrea.ph?subject=AGREA%20Consultancy"><img class="rounded w-full" src="images://consultancy/email.jpg" /></a></p>
 
-		<p><img class="rounded w-full" src="/images/consultancy/phone.jpg" /></p>
+		<p><img class="rounded w-full" src="images://consultancy/phone.jpg" /></p>
 
-		<p><img class="rounded w-full" src="/images/consultancy/address.jpg" /></p>
+		<p><img class="rounded w-full" src="images://consultancy/address.jpg" /></p>
 	</div>
 </div>

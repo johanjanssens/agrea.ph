@@ -16,7 +16,7 @@ slug: agrea-farm-estate
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="/images/programs/farm-estate/farm-estate-1.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg">
 			</div>
 		</div>
 		<?= article(5)->excerpt ?>
@@ -28,7 +28,7 @@ slug: agrea-farm-estate
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<div class="rounded-lg h-64 overflow-hidden">
-					<a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><img alt="<?= article(38)->title ?>" class="object-cover object-center h-full w-full" src="/images/programs/farm-estate/organic-agriculture-learning-site.jpg"></a>
+					<a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><img alt="<?= article(38)->title ?>" class="object-cover object-center h-full w-full" src="images://programs/farm-estate/organic-agriculture-learning-site.jpg"></a>
 				</div>
 				<h3 class="font-medium text-gray-900 mt-6 mb-3"><a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><?= article(38)->title ?></a></h3>
 				<p class="leading-relaxed text-xs mb3 flex items-center">
@@ -46,23 +46,12 @@ slug: agrea-farm-estate
 		</div>
 	</div>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/agrea-1000-strong">Agrea 1000 Strong</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/agrea-farm-estate">Agrea Farm Estate</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/self-palayance">Self Palayance</a>
-			</li>
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/the-garden-classroom">The Garden Classroom</a>
-			</li>
-		</ul>
+		
+		<?= import('/partials/navigation/submenu');?>
+		
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded" src="/images/programs/farm-estate/backyard-gardening.jpg" /></p>
+		<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg" /></p>
 
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -130,7 +119,7 @@ slug: agrea-farm-estate
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><img class="rounded" src="/images/programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
+		<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
 
 		<p class="text-base text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
 	</div>

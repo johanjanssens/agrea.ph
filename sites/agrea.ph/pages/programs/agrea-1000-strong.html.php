@@ -16,18 +16,18 @@ slug: agrea-1000-strong
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="/images/programs/1000strong/elizabeth-andrew-quote.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg">
 			</div>
 		</div>
 		<?= article(4)->excerpt ?>
 		<div class="thousand-strong-slider mb-8">
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/agriculture.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/collaboration.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/communication.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/entreprenuership.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/environment.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/health-and-nutrition.jpg"></div>
-			<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/tourism.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/agriculture.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/collaboration.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/communication.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/entreprenuership.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/environment.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/health-and-nutrition.jpg"></div>
+			<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/tourism.jpg"></div>
 		</div>
 		<script>
 			window.addEventListener('load', function(){
@@ -44,21 +44,10 @@ slug: agrea-1000-strong
 		<?= article(4)->text ?>
 	</div>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/agrea-1000-strong">Agrea 1000 Strong</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/agrea-farm-estate">Agrea Farm Estate</a>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/self-palayance">Self Palayance</a>
-			</li>
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/programs/the-garden-classroom">The Garden Classroom</a>
-			</li>
-		</ul>
-		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="/images/programs/1000strong/1000strong-5.jpg" />
+		
+		<?= import('/partials/navigation/submenu');?>
+		
+		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/1000strong/1000strong-5.jpg" />
 		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-base text-gray-900 my-4">Fill-out and submit the form below to receive updates and other opportunities available for AGREA 1000 Strong volunteers.</p>
@@ -167,8 +156,8 @@ slug: agrea-1000-strong
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-base text-gray-900 my-4">Click the photo below to see details on how to join.</p>
 		<div class="volunteer-slider mb-8">
-			<a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2061544637443979/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/arborday-1.jpg"></a>
-			<a href="https://www.facebook.com/agreaph/photos/a.1589243744674073.1073741829.1573291842935930/2062142677384175/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/arborday-2.jpg"></a>
+			<a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2061544637443979/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-1.jpg"></a>
+			<a href="https://www.facebook.com/agreaph/photos/a.1589243744674073.1073741829.1573291842935930/2062142677384175/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-2.jpg"></a>
 		</div>
 		<script>
 			window.addEventListener('load', function(){
@@ -186,6 +175,6 @@ slug: agrea-1000-strong
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-base text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>
 		<blockquote class="text-base text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
-		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="/images/programs/1000strong/arborday-3.jpg"></a></p>
+		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
 	</div>
 </article>

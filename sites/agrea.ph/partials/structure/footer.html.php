@@ -1,7 +1,7 @@
 <footer class="text-gray-700 body-font border-gray-300 border-t">
-  <div class="container px-5 py-10 my-24 mx-auto">
+  <div class="container px-5 lg:pt-10 lg:pb-10 md:py-10 lg:my-24 md:my-16 my-8 mx-auto">
     <div class="flex flex-wrap md:text-left text-center order-first">
-      <div class="lg:w-1/4 w-1/2 px-4">
+      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
         <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <ul class="list-none mb-10">
           <li>
@@ -18,7 +18,7 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/4 w-1/2 px-4">
+      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
         <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <ul class="list-none mb-10">
           <li>
@@ -35,7 +35,7 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/4 w-1/2 px-4">
+      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
         <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
         <ul class="list-none mb-10">
           <li>
@@ -52,14 +52,14 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/4 w-1/2 p-4 bg-dark-green-500 text-white rounded">
+      <div class="lg:w-1/4 md:w-1/2 w-full p-4 bg-dark-green-500 text-white rounded">
         <h2 class="font-title font-medium tracking-widest text-sm mb-3">Subscribe to AGREA</h2>
         <?= import('/partials/subscription-form'); ?>
       </div>
     </div>
   </div>
   <div class="bg-gray-800 h-20">
-    <div class="container px-5 py-6 mx-auto flex items-center flex-row">
+    <div class="container mx-auto flex flex-row items-center px-5 pt-6 border-box">
       <a class="hidden md:flex font-title font-medium items-center md:justify-start justify-center text-gray-500">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
           <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38

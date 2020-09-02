@@ -8,7 +8,7 @@ collection:
     state:
         limit: 12
         published: 1
-        category: [10,12,15]
+        category: [8,11,12]
         sort: date
         order: desc
 process:
@@ -26,8 +26,8 @@ process:
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<div class="news-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/farm-school.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/tesda-scholar.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/farm-school.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/tesda-scholar.jpg"></div>
 				</div>
 				<script>
 					window.addEventListener('load', function(){
@@ -65,11 +65,9 @@ process:
 		<?= helper('paginator.pagination') ?>
 	</div>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded">
-				<a class="block" href="/news/archives">Archives</a>
-			</li>
-		</ul>
+		
+		<?= import('/partials/navigation/submenu');?>
+		
 		<div class="flex flex-col justify-start">
 			<h2 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
@@ -77,7 +75,7 @@ process:
 		<? 
             $freshPicks = collection('ext:joomla.model.articles', [
             'published' => 1,
-            'category' => ['15'], // fresh picks
+            'category' => ['12'], // fresh picks
             'sort' => 'date',
             'order' => 'desc',
             'limit' => 6,

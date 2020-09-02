@@ -17,8 +17,8 @@ slug: leaf
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<div class="leaf-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/events/leaf/slider-1.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/events/leaf/slider-2.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/events/leaf/slider-1.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/events/leaf/slider-2.jpg"></div>
 				</div>
 				<script>
 					window.addEventListener('load', function(){
@@ -38,7 +38,7 @@ slug: leaf
 
 		<p><strong>READ: </strong> <a href="https://drive.google.com/file/d/1NDrii6VzmPu-8e5GvHQHOjtpQp6dN7rF/view?usp=sharing"><strong>LEAF 2018 Forum Terminal Report</strong></a></p>
 
-		<p><img class="rounded w-full" src="/images/events/leaf/sdfsf.png" /></p>
+		<p><img class="rounded w-full" src="images://events/leaf/sdfsf.png" /></p>
 
 		<p>Access insights and best practices from the inaugural LEAF Forum: Redefining &amp; Revitalizing Agriculture. This report summarizes the discussions and action plans for agriculture formed by the 500 delegates that attended LEAF. </p>
 
@@ -74,7 +74,7 @@ slug: leaf
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><a href="/events/leaf/leaf-2018-global-advisory-board"><img class="rounded w-full" src="/images/events/leaf/advisory-board.jpg" /></a></p>
+		<p><a href="images://events/leaf/leaf-2018-global-advisory-board"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
 
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Join the LEAF Young Agripreneurs Pitch</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -82,16 +82,16 @@ slug: leaf
 		<p>YOUNG AGRIPRENEURS PITCH IS EXTENDED! Send in your proposal by 11:59PM on or before Sunday, 23 September 2018.<br />
 		Are you a young entrepreneur with an innovative project for agriculture? <a href="http://www.agreaph.com/leaf-registration" target="_blank">Register for LEAF</a> and apply to pitch your idea at the Young Agripreneurs session! Click on the image below for details.</p>
 
-		<p><img class="rounded w-full" src="/images/events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
+		<p><img class="rounded w-full" src="images://events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
 
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div class="core-slider1">
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-1.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-2.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-3.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-4.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-1.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-2.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-3.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-4.jpg"></div>
 		</div>
 		<script>
 			window.addEventListener('load', function(){
@@ -110,10 +110,10 @@ slug: leaf
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div class="core-slider2">
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-5.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-6.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-7.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="/images/events/leaf/core-sessions/core-sessions-8.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-5.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-6.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-7.jpg"></div>
+			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-8.jpg"></div>
 		</div>
 		<script>
 			window.addEventListener('load', function(){
@@ -131,35 +131,13 @@ slug: leaf
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><img class="rounded w-full" src="/images/events/leaf/leaf-2018-programme-full.jpg" /></p>
+		<p><img class="rounded w-full" src="images://events/leaf/leaf-2018-programme-full.jpg" /></p>
 
-		<p><img class="rounded w-full" src="/images/events/leaf/leaf-partners.jpg" /></p>
+		<p><img class="rounded w-full" src="images://events/leaf/leaf-partners.jpg" /></p>
 	</article>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<ul class="border border-gray-300 mb-8 rounded">
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-t">
-				<a class="block" href="/events/leaf">Leaders &amp; Entrepreneurs in Agriculture Forum</a>
-				<ul class="mx-2 mt-2 mb-4">
-					<li class="p-1">
-						<a class="block text-sm" href="/events/leaf/leaf-2018-speakers">LEAF 2018 Speakers</a>
-					</li>
-					<li class="p-1">
-						<a class="block text-sm" href="/events/leaf/leaf-2018-moderators-and-facilitators">LEAF 2018 Moderators and Facilitators</a>
-					</li>
-					<li class="p-1">
-						<a class="block text-sm" href="/events/leaf/leaf-2018-global-advisory-board">LEAF 2018 Global Advisory Board</a>
-					</li>
-					<li class="p-1">
-						<a class="block text-sm" href="/events/leaf/leaflet-local-event-themes">LEAFlet (Local Event Themes)</a>
-					</li>
-				</ul>
-			</li>
-			<li class="p-2 border-b hover:bg-gray-100 transition-colors duration-500 ease-in-out">
-				<a class="block" href="/events/yseali-generationgr3en">YSEALI GenerationGR3EN</a>
-			</li>
-			<li class="p-2 hover:bg-gray-100 transition-colors duration-500 ease-in-out rounded-b">
-				<a class="block" href="/events/yseali-grow">YSEALI Grow</a>
-			</li>
-		</ul>
+		
+		<?= import('/partials/navigation/submenu');?>
+		
 	</div>
 </div>

@@ -8,7 +8,7 @@ collection:
     state:
         limit: 12
         published: 1
-        category: [10]
+        category: [8]
         sort: date
         order: desc
 process:
@@ -26,8 +26,8 @@ process:
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<div class="events-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/farm-school.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="/images/farm-school/slideshow/tesda-scholar.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/farm-school.jpg"></div>
+					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/tesda-scholar.jpg"></div>
 				</div>
 				<script>
 					window.addEventListener('load', function(){
@@ -76,10 +76,10 @@ process:
 		</ul>
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">Partner Events</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949/2390153167916456/?type=3&amp;theater&amp;_rdc=1&amp;_rdr"><img class="rounded w-full" src="/images/events/partner-events/magna-carta-of-rural-women.jpg" alt="Magna Carta of Rural Women: Round Table on Gender Equity &amp; Empowerment" /></a></p>
+		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949/2390153167916456/?type=3&amp;theater&amp;_rdc=1&amp;_rdr"><img class="rounded w-full" src="images://events/partner-events/magna-carta-of-rural-women.jpg" alt="Magna Carta of Rural Women: Round Table on Gender Equity &amp; Empowerment" /></a></p>
 		<p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">Tue, September 17, 2019</p>
 		<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600" href="https://www.facebook.com/agreaph/photos/a.1580538318877949/2390153167916456/?type=3&amp;theater&amp;_rdc=1&amp;_rdr">Magna Carta of Rural Women: Round Table on Gender Equity &amp; Empowerment</a></h2>
-		<p><a href="https://web.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2119894528275656/?type=3&amp;theater"><img class="rounded w-full" src="/images/events/partner-events/balar-flea-market-2018.jpg" alt="Balar Weekend Flea Market" /></a></p>
+		<p><a href="https://web.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2119894528275656/?type=3&amp;theater"><img class="rounded w-full" src="images://events/partner-events/balar-flea-market-2018.jpg" alt="Balar Weekend Flea Market" /></a></p>
 		<p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">Thu, August 9, 2018</p>
 		<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600" href="https://web.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2119894528275656/?type=3&amp;theater">Balar Weekend Flea Market</a></h2>
 	</div>
