@@ -17,3 +17,7 @@
 /plugins
 /templates
 /tmp
+/configuration-pages.php
+/sites/agrea.ph/config.php
+/images
+/sites/agrea.ph/cache
