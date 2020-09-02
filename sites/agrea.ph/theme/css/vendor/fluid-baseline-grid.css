@@ -1,0 +1,325 @@
+/*
+	Fluid Baseline Grid v1.0.0
+	Designed & Built by Josh Hopkins and 40 Horse, http://40horse.com	
+	Licensed under Unlicense, http://unlicense.org/
+	
+	Base stylesheet with CSS normalization, typographic baseline grid and progressive responsiveness
+*/
+/* Custom stuff */
+:root {
+  --agrea-green:#788023;
+  --agrea-dark-green:#3E462E;
+  --agrea-lime:#C9CA48;
+  --agrea-gray:#8E8E8C;
+  --agrea-light-gray:#E3E3E2;
+  --agrea-orange:#C67042;
+  --rounded-border-radius:0.25rem;
+  --link-colour:var(--agrea-green);
+}
+
+
+/* TYPOGRAPHY */
+/* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
+h1:not([class]) {
+    margin: 0;
+    font-size: 3.75em;
+    line-height: 1.2em;
+    margin-bottom: 0.4em;
+}
+/* 60px / 72px */
+h2:not([class]) {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+/* 48px / 48px */
+h3:not([class]) {
+    margin: 0;
+    font-size: 2.25em;
+    line-height: 1.3333333333333333333333333333333em;
+    margin-bottom: 0.6667em;
+}
+/* 36px / 48px */
+h4:not([class]) {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+/* 24px / 24px */
+h5:not([class]) {
+    margin: 0;
+    font-size: 1.3125em;
+    line-height: 1.1428571428571428571428571428571em;
+    margin-bottom: 1.1428571428571428571428571428571em;
+}
+/* 21px / 24px */
+h6:not([class]) {
+    margin: 0;
+    font-size: 1.125em;
+    line-height: 1.3333333333333333333333333333333em;
+    margin-bottom: 1.3333333333333333333333333333333em;
+}
+/* 18px / 24px */
+blockquote:not([class]),
+label:not([class]),
+p:not([class]),
+pre:not([class]),
+td:not([class]),
+th:not([class]),
+ul:not([class]) {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+/* 16px / 24px */
+small:not([class]) {
+    margin: 0;
+    font-size: 0.875em;
+    line-height: 1.7142857142857142857142857142857em;
+    margin-bottom: 1.7142857142857142857142857142857em;
+}
+/* 14px / 24px */
+
+/* CODE */
+pre:not([class]) {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Allow line wrapping of 'pre:not([class])' */
+code:not([class]),
+kbd:not([class]),
+pre:not([class]),
+samp:not([class]) {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace;
+}
+
+/* TABLES */
+table:not([class]) {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.5em;
+}
+th:not([class]) {
+    text-align: left;
+}
+td:not([class]),
+th:not([class]),
+tr:not([class]) {
+    padding-right: 1.5em;
+    border-bottom: 0 solid #333;
+}
+
+/* FORMS */
+form:not([class]) {
+    margin: 0;
+}
+fieldset:not([class]) {
+    border: 0;
+    padding: 0;
+}
+textarea:not([class]) {
+    overflow: auto;
+    vertical-align: top;
+}
+legend:not([class]) {
+    *margin-left: -.75em;
+}
+button:not([class]),
+input:not([class]),
+select:not([class]),
+textarea:not([class]) {
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+/* IE7 and older */
+button:not([class]),
+input:not([class]) {
+    line-height: normal;
+    *overflow: visible;
+}
+button:not([class]),
+input:not([class])[type="button"],
+input:not([class])[type="reset"],
+input:not([class])[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+input:not([class])[type="checkbox"],
+input:not([class])[type="radio"] {
+    box-sizing: border-box;
+}
+input:not([class])[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input:not([class])[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button:not([class])::-moz-focus-inner,
+input:not([class])::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* QUOTES */
+blockquote:not([class]),
+q:not([class]) {
+    quotes: none;
+}
+blockquote:not([class]):after,
+blockquote:not([class]):before,
+q:not([class]):after,
+q:not([class]):before {
+    content: '';
+    content: none;
+}
+blockquote:not([class]),
+cite:not([class]),
+q:not([class]) {
+    font-style: italic;
+}
+blockquote:not([class]) {
+    padding-left: 1.5em;
+    border-left: 3px solid #ccc;
+}
+blockquote:not([class]) > p:not([class]) {
+    padding: 0;
+}
+
+/* LISTS */
+ol:not([class]),
+ul:not([class]) {
+    list-style-position: inside;
+    padding: 0;
+}
+li:not([class]) ol:not([class]),
+li:not([class]) ul:not([class]) {
+    margin: 0 1.5em;
+}
+dl:not([class]) dd:not([class]) {
+    margin-left: 1.5em;
+}
+dt:not([class]) {
+    font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+
+/* HYPERLINKS */
+a:not([class]) {
+    text-decoration: none;
+    color: var(--link-colour);
+}
+a:not([class]):hover {
+    text-decoration: underline;
+}
+a:not([class]):focus {
+    outline: thin dotted;
+}
+a:not([class]):active,
+a:not([class]):hover {
+    outline: none;
+}
+/* Better CSS Outline Suppression */
+
+/* MEDIA */
+figure:not([class]) {
+    margin: 0;
+}
+embed:not([class]),
+img:not([class]),
+object:not([class]),
+video:not([class]) {
+    max-width: 100%;
+    _width: 100%;
+}
+/* Fluid images */
+img:not([class]) {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+/* Improve IE's resizing of images */
+svg:not(:root) {
+    overflow: hidden;
+}
+/* Correct IE9 overflow */
+
+/* ABBREVIATION */
+abbr:not([class])[title],
+dfn:not([class])[title] {
+    border-bottom: 1px dotted #333;
+    cursor: help;
+}
+
+/* MARKED/INSERTED/DELETED AND SELECTED TEXT */
+ins:not([class]),
+mark:not([class]) {
+    text-decoration: none;
+}
+mark:not([class]) {
+    background: #c47529;
+}
+ins:not([class]) {
+    background: #d49855;
+}
+del:not([class]) {
+    text-decoration: line-through;
+}
+*:not([class])::-moz-selection {
+    background: #c47529;
+    color: #fff;
+    text-shadow: none;
+}
+/* selected text */
+*:not([class])::selection {
+    background: #c47529;
+    color: #fff;
+    text-shadow: none;
+}
+/* selected text */
+
+/* OTHERS */
+b:not([class]),
+dt:not([class]),
+strong:not([class]) {
+    font-weight: bold;
+}
+dfn:not([class]) {
+    font-style: italic;
+}
+address:not([class]),
+var:not([class]) {
+    font-style: normal;
+}
+sub:not([class]),
+sup:not([class]) {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+/* Position 'sub' and 'sup' without affecting line-height */
+sup:not([class]) {
+    top: -0.5em;
+}
+/* Move superscripted text up */
+sub:not([class]) {
+    bottom: -0.25em;
+}
+/* Move subscripted text down */
+
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 1400px) {
+    body {
+        font-size: 116.75%;
+    }
+    /* 18.5px / 28px */
+}
