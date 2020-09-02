@@ -30,7 +30,7 @@
 
 ## Deployment - Buddy 
 
-URL: https://app.buddy.works/agrea
+URL: https://app.buddy.works/johanjanssens
 
 ## CDN - CloudFlare
 
