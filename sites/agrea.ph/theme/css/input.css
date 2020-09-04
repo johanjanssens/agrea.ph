@@ -130,7 +130,7 @@ body > footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: url(../images/rice-farmer.svg) 0 calc(100% - 2vh) no-repeat;
+  background: url(../images/background/rice-farmer.svg) 0 calc(100% - 2vh) no-repeat;
   background-size: 100vw;
   z-index:0;
 }
@@ -148,7 +148,7 @@ section[class*="bg-"]:not(.bg-white):after {
   width:100%;
   height:100%;
   z-index:1;
-  background-image: url(../images/hero-bg.svg); /* The image used */
+  background-image: url(../images/background/hero-bg.svg); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
@@ -276,12 +276,12 @@ article > img:not([class]) {
 }
 
 .tns-outer button[data-controls="prev"] {
-  background: url("../images/prev.svg") no-repeat;
+  background: url("../images/slider/prev.svg") no-repeat;
   margin-left: 0.75vw;
 }
 
 .tns-outer button[data-controls="next"] {
-  background: url("../images/next.svg") no-repeat;
+  background: url("../images/slider/next.svg") no-repeat;
   position: absolute;
   right: 0.75vw;
   top: 0;

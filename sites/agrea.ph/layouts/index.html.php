@@ -19,6 +19,7 @@
     <meta name="apple-mobile-web-app-title" content="<?= config()->site->name ?>"/>
     <meta name="application-name" content="<?= config()->site->name ?>"/>
     <meta name="theme-color" content="<?= config()->site->main_color ?>"/>
+    <meta name="msapplication-config" content="theme://images/favicons/browserconfig.xml"/>
     <meta name="msapplication-TileColor" content="<?= config()->site->main_color ?>" />
     <meta name="msapplication-TileImage" content="theme://images/favicons/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="theme://images/favicons/mstile-70x70.png" />

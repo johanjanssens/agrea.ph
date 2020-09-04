@@ -16,7 +16,7 @@ slug: yseali-grow
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg">
 			</div>
 		</div>
 		<?= article(3)->excerpt ?>
@@ -33,7 +33,7 @@ slug: yseali-grow
 		
 		<h3 class="text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded" src="images://events/grow-sidebar-1.jpg" /></p>
+		<p><img class="rounded" src="images://events/grow/grow-sidebar-1.jpg" /></p>
 
 		<p>YSEALI Grow gathered 30 youth leaders 6 USG alumni mentors from Lanao del Sur, North Cotabato, and Bukidnon.</p>
 
@@ -50,7 +50,7 @@ slug: yseali-grow
 
 		<p>The workshop facilitates dream building and taking action sessions for the participants and assisted by carefully-selected USG alumni.</p>
 
-		<p><img class="rounded" src="images://events/grow-sidebar-2.jpg" /></p>
+		<p><img class="rounded" src="images://events/grow/grow-sidebar-2.jpg" /></p>
 
 		<p>YSEALI Grow sessions cover these components:</p>
 
@@ -71,7 +71,7 @@ slug: yseali-grow
 			</li>
 		</ol>
 
-		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/grow-sidebar-3.jpg" /></p>
+		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/grow/grow-sidebar-3.jpg" /></p>
 	</div>
 </article>
 
