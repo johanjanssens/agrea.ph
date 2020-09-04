@@ -258,7 +258,7 @@ summary: The easy to use page generator for Joomla
             </svg> <span><?= $weblink->date ?></span>
           </p>
           <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a href="<?= $weblink->url; ?>"><?= $weblink->title ?></a></h3>
-        <? endforeach ?>
+        <? endforeach; ?>
 				</div>
 			</div>
 		</div>
