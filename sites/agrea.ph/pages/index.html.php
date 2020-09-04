@@ -154,27 +154,21 @@ summary: The easy to use page generator for Joomla
       </div>
     </div>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-      <div class="sm:w-1/2 mb-10 px-4">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
+      <div class="md:w-1/2 mb-10 px-4">
+        <div class="rounded-lg md:mb-16">
+          <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
         </div>
         <h2 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">Be a #AGREA1000Strong Volunteer</h2>
-        <p class="">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
-        <form action="/programs/agrea-1000-strong">
-          <button type="submit" class="flex mx-auto mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</button>
-        </form>
+        <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
+        <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
       </div>
-      <div class="sm:w-1/2 mb-10 px-4">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="https://images.unsplash.com/photo-1513759565286-20e9c5fad06b" alt="ASEAN's Next Generation Leaders">
+      <div class="md:w-1/2 mb-10 px-4">
+        <div class="embed-responsive aspect-ratio-16/9 rounded-lg">
+          <iframe class="rounded-lg" allowfullscreen="" src="https://video.toggle.sg/en/embed/469498" style="width: 640px; height: 360px;" frameborder="0" class="rounded-lg"></iframe>
         </div>
+        <p class="text-grey-400 text-sm items-center">Video courtesy of Asia NewsChannel</p>
         <h2 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h2>
         <p class="">In the Philippines, where farmers toil for meager sums, Cherrie Atilano is an invigorating ray of hope. Spending her childhood among farmers, the harsh reality of their plight led to her life's calling. Today, she's sowing the seeds of change to allow farmers to cultivate dreams of their own.</p>
-        Video courtesy of <a class="text-lime-500 inline-flex items-center mt-3">Asia NewsChannel
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
       </div>
     </div>
   </div>
@@ -246,7 +240,7 @@ summary: The easy to use page generator for Joomla
             <div class="h-1 w-20 bg-green-500 rounded"></div>
           </div>
         </div>
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="grid lg:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
           <div class="bg-gray-100 p-6 rounded-lg">
             <div class="rounded-lg h-64 overflow-hidden">
