@@ -39,10 +39,10 @@ slug: consultancy
 			<li>Financial Literacy Training</li>
 			<li>Leadership &amp; Values Formation Training</li>
 			<li>Technical Training on Sustainable Agriculture:
-			<ul>
-				<li>Integrated farming</li>
-				<li>System of Rice Intensification</li>
-				<li>Organic agriculture production: vegetables; chicken; hog raising; organic fertilizer and concoctions production</li>
+			<ul class="list-star list-outside pt-1 pl-2">
+				<li class="pl-2">Integrated farming</li>
+				<li class="pl-2">System of Rice Intensification</li>
+				<li class="pl-2">Organic agriculture production: vegetables; chicken; hog raising; organic fertilizer and concoctions production</li>
 				</li>
 			</ul>
 			</li>
