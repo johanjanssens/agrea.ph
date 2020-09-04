@@ -17,7 +17,7 @@ slug: consultancy
 				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" />
 			</div>
 		</div>
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Your Guide to Agricultural Abundance</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Your Guide to Agricultural Abundance</h3>
 		<p>AGREA recognizes the crucial need to capacitate the current and future generations of farmers. Safeguarding the well-being of farmers and the knowledge they possess is essential to a prosperous agricultural sector, and to the country’s capacity to feed its people.</p>
 		<p>Through agriculture, farmers can be a starting point for change.</p>
 		<ul>
@@ -30,7 +30,7 @@ slug: consultancy
 
 		<p><img alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Capacity-building &amp; sustainable agriculture training for farmers</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Capacity-building &amp; sustainable agriculture training for farmers</h3>
 
 		<p>Are you looking to build sustainable partnerships with farmers? AGREA’s team of agriculturists, social workers, strategic community organizers, and multi-stakeholders partnerships will help you optimize your agricultural production while equipping your farmer-partners with the right skills to build sustainable livelihoods:</p>
 
@@ -51,7 +51,7 @@ slug: consultancy
 		<div class="my-8">
 			<a href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>"><img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>"></a>
 			<div class="mb-8">
-				<h3 class="text-base text-gray-900 font-medium font-title my-4"><a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
+				<h3 class="text-gray-900 font-medium font-title my-4"><a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
 				<ul>
 					<li>Community Evaluation. Evaluate communities in need and set actionable targets for food security and nutrition.</li>
@@ -85,10 +85,10 @@ slug: consultancy
 				</div>
 			</div>
 			<div class="mb-8">
-				<h3 class="text-base text-gray-900 font-medium font-title my-4">Farm Tourism Development</h3>
+				<h3 class="text-gray-900 font-medium font-title my-4">Farm Tourism Development</h3>
 				<p>Do you own an unproductive or barren land? Are you looking to develop a farm or to beautify an existing area? Consult our experts with over 20 years of experience in land development, sustainable landscaping, construction, project budgeting, feasibility studies and business plan development.</p>
 				<img class="rounded w-full" src="images://consultancy/model-farm.jpg" />
-				<h3 class="text-base text-gray-900 font-medium font-title my-4">Sustainability Services</h3>
+				<h3 class="text-gray-900 font-medium font-title my-4">Sustainability Services</h3>
 				<p>Are you looking to build systems for renewable energy and waste? AGREA can help you reach sustainable solutions for your next project?</p>
 				<ul>
 					<li>Hydropower</li>
@@ -102,7 +102,7 @@ slug: consultancy
 				</div>
 			</div>
 
-			<h3 class="text-base text-gray-900 font-medium font-title my-4">Completed / Ongoing Projects</h3>
+			<h3 class="text-gray-900 font-medium font-title my-4">Completed / Ongoing Projects</h3>
 
 			<p><strong>Farmer Capacity-Building &amp; Sustainable Agriculture Training</strong></p>
 

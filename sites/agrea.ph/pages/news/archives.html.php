@@ -77,7 +77,7 @@ process:
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Subscribe to AGREA</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Subscribe to AGREA</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p>Get the latest news and updates from the AGREA Team.</p>
 		<?= import('/partials/subscription-form'); ?>

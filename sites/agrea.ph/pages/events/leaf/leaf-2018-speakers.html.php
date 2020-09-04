@@ -14,7 +14,7 @@ slug: leaf-2018-speakers
 		<li>Dr. Mina Gabor, ISST</li>
 	</ul>
 </div>
-<h3 class="text-base text-gray-900 font-medium font-title my-4">Agripreneurship</h3>
+<h3 class="text-gray-900 font-medium font-title my-4">Agripreneurship</h3>
 <div>
 	<ul>
 		<li>Steve Benitez, Bo’s Coffee</li>
@@ -36,7 +36,7 @@ slug: leaf-2018-speakers
 		<li>Simon Bakker, Kennemer Foods</li>
 	</ul>
 </div>
-<h3 class="text-base text-gray-900 font-medium font-title my-4">Agritech</h3>
+<h3 class="text-gray-900 font-medium font-title my-4">Agritech</h3>
 <div>
 	<ul>
 		<li>Amor Maclang, GeiserMaclang Marketing Communications, Inc.</li>
@@ -56,7 +56,7 @@ slug: leaf-2018-speakers
 		<li>Johan Boden, TAEL Partners</li>
 	</ul>
 </div>
-<h3 class="text-base text-gray-900 font-medium font-title my-4">Agritourism</h3>
+<h3 class="text-gray-900 font-medium font-title my-4">Agritourism</h3>
 <div>
 	<ul>
 		<li>Gina Lopez, iLOVE Foundation</li>
@@ -68,18 +68,18 @@ slug: leaf-2018-speakers
 		<li><em>Prof. Willy Arcilla, Business Mentors, Inc.</em></li>
 	</ul>
 </div>
-<h3 class="text-base text-gray-900 font-medium font-title my-4">Other speakers</h3>
+<h3 class="text-gray-900 font-medium font-title my-4">Other speakers</h3>
 <div>
 	<ul>
 		<li>Kal Joffres, Tandemic</li>
 		<li>Miguel Lopez, Go Negosyo</li>
 		<li>Chef Jam Melchor, Slow Food Youth Network</li>
 		<li>Kalel Ervin Demetrio</li>
-		<li>James Flanagan, Strategic Commons&nbsp;</li>
+		<li>James Flanagan, Strategic Commons</li>
 		<li>Joshua Gilbert, PriceWaterhouseCoopers Indigenous Consulting</li>
 	</ul>
 </div>
-<h3 class="text-base text-gray-900 font-medium font-title my-4">LEAF 2018 Speakers In Focus</h3>
+<h3 class="text-gray-900 font-medium font-title my-4">LEAF 2018 Speakers In Focus</h3>
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Boden_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/boden.jpg" /></div>

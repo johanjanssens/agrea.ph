@@ -50,21 +50,21 @@ slug: agrea-1000-strong
 		<?= import('/partials/navigation/submenu');?>
 		
 		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/1000strong/1000strong-5.jpg" />
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">Fill-out and submit the form below to receive updates and other opportunities available for AGREA 1000 Strong volunteers.</p>
-		<form class="text-base text-gray-900 mb-8">
+		<p class="text-gray-900 my-4">Fill-out and submit the form below to receive updates and other opportunities available for AGREA 1000 Strong volunteers.</p>
+		<form class="text-gray-900 mb-8">
 			<fieldset class="mb-4">
 				<div class="question">
 					<label class="block">Name<sup>*</sup></label>
 					<div class="grid grid-cols-2">
-						<input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="First Name" type="text" name="first-name">
-						<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="Last Name" type="text" name="last-name">
+						<input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="First Name" type="text" name="first-name">
+						<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Last Name" type="text" name="last-name">
 					</div>
 				</div>
 				<div class="question">
 					<label for="email" class="block">Email Address<sup>*</sup></label>
-					<input class="w-auto sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="Email Address" type="text" name="email">
+					<input class="w-auto sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Email Address" type="text" name="email">
 				</div>
 			</fieldset>
 			<fieldset class="mb-4">
@@ -147,16 +147,16 @@ slug: agrea-1000-strong
 			<fieldset class="">
 				<h4 class="text-sm text-gray-900 font-medium font-title my-4 leading-tight">Describe your volunteering and leadership experience (if any)</h4>
 				<div class="question">
-					<textarea name="experience" rows="5" cols="15" class="sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4"></textarea>
+					<textarea name="experience" rows="5" cols="15" class="sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4"></textarea>
 				</div>
 			</fieldset>
 			<div class="submit">
 				<button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Submit</button>
 			</div>
 		</form>
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">Join AGREA Events as a Volunteer</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Join AGREA Events as a Volunteer</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">Click the photo below to see details on how to join.</p>
+		<p class="text-gray-900 my-4">Click the photo below to see details on how to join.</p>
 		<div class="volunteer-slider mb-8">
 			<a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2061544637443979/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-1.jpg"></a>
 			<a href="https://www.facebook.com/agreaph/photos/a.1589243744674073.1073741829.1573291842935930/2062142677384175/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-2.jpg"></a>
@@ -173,10 +173,10 @@ slug: agrea-1000-strong
 				});
 			}) 
 		</script>
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>
-		<blockquote class="text-base text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
+		<p class="text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>
+		<blockquote class="text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
 		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
 	</div>
 </article>

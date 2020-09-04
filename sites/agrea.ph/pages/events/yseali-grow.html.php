@@ -31,7 +31,7 @@ slug: yseali-grow
 			<?= import('/partials/navigation/submenu');?>
 		</div>
 		
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p><img class="rounded" src="images://events/grow-sidebar-1.jpg" /></p>
 

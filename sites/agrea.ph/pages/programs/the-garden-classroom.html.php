@@ -28,12 +28,12 @@ slug: the-garden-classroom
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">TGC by the Numbers</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">TGC by the Numbers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/garden-classroom/tgc-sidebar.jpg" />
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">Support The Garden Classroom</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Support The Garden Classroom</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">To know more about AGREA's School Garden Program, if you have questions, or you would like to lend a helping hand, send us an email through agreaph@gmail.com or fill-out the form below.</p>
+		<p class="text-gray-900 my-4">To know more about AGREA's School Garden Program, if you have questions, or you would like to lend a helping hand, send us an email through agreaph@gmail.com or fill-out the form below.</p>
 		<?= import('/partials/contact-form'); ?>
 	</div>
 </article>

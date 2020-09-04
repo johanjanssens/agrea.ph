@@ -4,7 +4,7 @@ header:  []
 content: []
 ---
 
-<main class="flex flex-col bg-white shadow-lg">
+<main class="flex flex-col text-base bg-white shadow-lg">
     
     <?= import('/partials/structure/header'); ?>
 

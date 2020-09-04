@@ -71,7 +71,7 @@ process:
 					<li class="mb-2"><a href="/farm-school/agrea-now-offers-short-term-scholarships-in-organic-farming" target="_blank">Short-term Scholarships</a></li>
 					<li class="mb-2"><a href="/farm-school/take-the-organic-agriculture-ncii-course-at-the-agrea-farm-school" target="_blank">Training for Work Scholarship Program (TWSP)</a></li>
 					<li class="mb-2"><a href="/farm-school/agrea-farm-school-tesda-marinduque-expands-assistance-to-deserving-organic-farming-scholars" target="_blank">Private Education Student Financial Assistance (PESFA)</a></li>
-					<li class="text-base text-gray-600"><a href="/farm-school/free-farming-education-plus-benefits-await-less-fortunate-youth-through-uaqtea" target="_blank">Universal Access to Quality Tertiary Education Act Scholarship (UAQTEA)</a></li>
+					<li class="text-gray-600"><a href="/farm-school/free-farming-education-plus-benefits-await-less-fortunate-youth-through-uaqtea" target="_blank">Universal Access to Quality Tertiary Education Act Scholarship (UAQTEA)</a></li>
 				</ul>
 			</div>
 			<div class="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">

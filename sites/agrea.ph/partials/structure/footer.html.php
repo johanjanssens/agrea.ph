@@ -1,4 +1,4 @@
-<footer class="text-gray-700 body-font border-gray-300 border-t">
+<footer class="text-gray-700 text-base body-font border-gray-300 border-t">
   <div class="container px-5 lg:pt-10 lg:pb-10 md:py-10 lg:my-24 md:my-16 my-8 mx-auto">
     <div class="flex flex-wrap md:text-left text-center order-first">
       <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
@@ -52,8 +52,13 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full p-4 bg-dark-green-500 text-white rounded">
-        <h2 class="font-title font-medium tracking-widest text-sm mb-3">Subscribe to AGREA</h2>
+      <div class="lg:w-1/4 md:w-1/2 w-full max-w-xs text-gray-900">
+        <div class="flex content-between">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mx-2">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <h2 class="font-title font-medium tracking-widest text-sm mb-3 text-center">Get the <span class="font-agrea">AGREA</span> newsletter</h2>
+        </div>
         <?= import('/partials/subscription-form'); ?>
       </div>
     </div>
@@ -86,7 +91,7 @@
         </svg>
         <span class="ml-3 text-xl font-agrea"><?= config()->site->name ?></span>
       </a>
-      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?>&nbsp;<?= config()->site->copyright_notice ?> — Built by <a class="inline" href="https://www.joomlatools.com"><img class="inline-block h-4 w-4" src="theme://images/logo/joomlatools.png" alt="Joomlatools logo icon" />Joomlatools</a>
+      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?> — Built by <a class="inline" href="https://www.joomlatools.com"><img class="inline-block h-4 w-4" src="theme://images/logo/joomlatools.png" alt="Joomlatools logo icon" />Joomlatools</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-gray-500">

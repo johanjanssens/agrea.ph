@@ -42,7 +42,7 @@ slug: leaf
 
 		<p>Access insights and best practices from the inaugural LEAF Forum: Redefining &amp; Revitalizing Agriculture. This report summarizes the discussions and action plans for agriculture formed by the 500 delegates that attended LEAF. </p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">2018 Forum: Redefine &amp; Revitalize Agriculture</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">2018 Forum: Redefine &amp; Revitalize Agriculture</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p><strong>DATE: </strong>September 29 &amp; 30, 2018<br />
@@ -61,22 +61,22 @@ slug: leaf
 			<li><strong>Agritourism</strong>, integrating farms into our leisure and lifestyle, bringing us back to a greater understanding of our food sources and connecting us to the producers.</li>
 		</ul>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Speakers</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Speakers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-speakers">here</a> to view LEAF 2018 Speakers.</p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Moderators and Facilitators</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Moderators and Facilitators</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-moderators-and-facilitators">here</a> to view LEAF 2018 Moderators and Facilitators.</p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p><a href="images://events/leaf/leaf-2018-global-advisory-board"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Join the LEAF Young Agripreneurs Pitch</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Join the LEAF Young Agripreneurs Pitch</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p>YOUNG AGRIPRENEURS PITCH IS EXTENDED! Send in your proposal by 11:59PM on or before Sunday, 23 September 2018.<br />
@@ -84,7 +84,7 @@ slug: leaf
 
 		<p><img class="rounded w-full" src="images://events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div class="core-slider1">
@@ -106,7 +106,7 @@ slug: leaf
 			}) 
 		</script>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Agritech core sessions</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Agritech core sessions</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div class="core-slider2">
@@ -128,7 +128,7 @@ slug: leaf
 			}) 
 		</script>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p><img class="rounded w-full" src="images://events/leaf/leaf-2018-programme-full.jpg" /></p>

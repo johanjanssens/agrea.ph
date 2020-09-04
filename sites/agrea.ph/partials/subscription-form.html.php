@@ -1,16 +1,27 @@
-<form class="text-base text-gray-900">
-	<fieldset class="mb-4">
-		<div class="question">
-			<div class="grid md:grid-cols-2">
-				<input class="max-w-full sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="First Name" type="text" name="first-name">
-				<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="Last Name" type="text" name="last-name">
-			</div>
-		</div>
-		<div class="question">
-			<input class="max-w-full w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 text-base py-2 px-4" placeholder="Email Address" type="text" name="email">
-		</div>
-	</fieldset>
-	<div class="submit">
-		<button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Submit</button>
+<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ml-auto mr-auto">
+	<div class="mb-4">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="fullname">
+			Full Name
+		</label>
+		<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fullname" type="text" placeholder="Jane Doe" value="">
+	</div>
+	<div class="mb-6">
+		<label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+			Email Address
+		</label>
+		<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="hello@example.ph" value="">
+	</div>
+	<div class="mb-6">
+		<label class="block text-gray-500 font-bold">
+			<input  class="switch" type="checkbox">
+			<span class="text-sm">
+				Send me your newsletter!
+			</span>
+		</label>
+	</div>
+	<div class="flex items-center justify-between">
+		<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+			Sign Up!
+		</button>
 	</div>
 </form>

@@ -22,7 +22,7 @@ slug: agrea-farm-estate
 		<?= article(5)->excerpt ?>
 		<?= article(5)->text ?>
 		<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-			<h3 class="text-base font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
+			<h3 class="font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
 			<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, call our landline at (042) 332-0025, please call/text mobile +63 917 124-0905, or send an email to <a href="mailto:agreaph@gmail.com?subject=AGREA%20Model%20Farm">agreaph@gmail.com</a>.</p>
 		</div>
 		<div class="flex flex-wrap mt-10">
@@ -51,15 +51,15 @@ slug: agrea-farm-estate
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg" /></p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers Organic Backyard Gardening Skills Training.</p>
+		<p class="text-gray-900 my-4">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers Organic Backyard Gardening Skills Training.</p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Hands-On Organic Farming Training</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Hands-On Organic Farming Training</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<table class="text-sm text-gray-900 my-4 w-full">
@@ -95,34 +95,34 @@ slug: agrea-farm-estate
 			</tbody>
 		</table>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Learn from the experts!</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Learn from the experts!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<h4 class="text-base text-gray-900 font-medium my-4">Cherrie D. Atilano</h4>
+		<h4 class="text-gray-900 font-medium my-4">Cherrie D. Atilano</h4>
 		<p class="text-sm text-gray-900 my-4">AGREA President and Founding Farmer. Graduated Magna Cum Laude with a Bachelor’s Degree in Agriculture, Major in Horticulture Specializing on Tissue Culture from the Visayas State University in Leyte.</p>
 
-		<h4 class="text-base text-gray-900 font-medium my-4">Jonathan C. Quinto</h4>
+		<h4 class="text-gray-900 font-medium my-4">Jonathan C. Quinto</h4>
 		<p class="text-sm text-gray-900 my-4">AGREA Director of Agricultural Abundance. Holds a Bachelor's Degree in Agriculture Sciences from Marinduque State College - School of Agriculture.</p>
 
-		<h4 class="text-base text-gray-900 font-medium my-4">Benjamin Jorge L. Cadag</h4>
+		<h4 class="text-gray-900 font-medium my-4">Benjamin Jorge L. Cadag</h4>
 		<p class="text-sm text-gray-900 my-4">AGREA Associate Director of Agricultural Abundance. Holds a Bachelor of Science Degree in Agriculture Major in Agronomy Specializing in Crop Production and Management at the University of the Philippines - Los Baños.</p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Affordable Tuition Fee!</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Affordable Tuition Fee!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-base text-gray-900 my-4">Pay only P750* per session per person or a one-time payment of P2,700* for all 4-sessions (10% discount).<br />
+		<p class="text-gray-900 my-4">Pay only P750* per session per person or a one-time payment of P2,700* for all 4-sessions (10% discount).<br />
 			<em>*inclusive of healthy lunch and certificate</em>
 		</p>
 
-		<div class="bg-lime-500 text-base text-gray-900 my-4 px-4 py-2 rounded">
+		<div class="bg-lime-500 text-gray-900 my-4 px-4 py-2 rounded">
 			<h3 class="text-lg text-gray-900 font-medium my-4">SPECIAL GROUP OFFER!!</h3>
 			<p>Form a group of at least 15 individuals (maximum of 30), then select 4 specific dates in a month, and we will create a special session just for you!</p>
 		</div>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
+		<h3 class="text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
 
-		<p class="text-base text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
+		<p class="text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
 	</div>
 </article>
