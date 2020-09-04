@@ -1,6 +1,13 @@
-<header class="text-gray-700 body-font" x-data="{ atTop: true }" x-on:scroll.window="atTop =( window.pageYOffset > 10) ? false : true ">
+<header class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white mb-3" 
+     x-data="scrollToReveal()" 
+     x-ref="navbar"
+     x-on:scroll.window="scroll()"
+     x-bind:class="{
+                   'sticky top-0 shadow-lg': sticky,
+                   'relative': !sticky
+                   }">
   <!-- Navbar -->
-  <div class="w-full text-gray-700 bg-white h-22 fixed top-0 animated z-40" x-bind:class='{ "bg-black shadow-lg": !atTop }'>
+  <div class="w-full text-gray-700">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto md:items-center md:justify-between md:flex-row">
       <div class="p-4 flex flex-row items-center justify-between">
         <a class="flex items-center mb-4 md:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/">
@@ -47,3 +54,15 @@
   </div>
   <!-- End Navbar -->
 </header>
+<script type="text/javascript">
+  function scrollToReveal() {
+  return {
+    sticky: false,
+    lastPos: window.scrollY + 0,
+    scroll() {
+      this.sticky = window.scrollY > this.$refs.navbar.offsetHeight && this.lastPos > window.scrollY;
+      this.lastPos = window.scrollY;
+    }
+  }
+}
+</script>

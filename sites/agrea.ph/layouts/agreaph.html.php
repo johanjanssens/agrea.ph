@@ -3,9 +3,7 @@ layout: index
 header:  []
 content: []
 ---
-<?= import('/partials/structure/header'); ?>
-
 <!-- Main content -->
-<div class="w-full">
+<div class="w-full bg-white">
 	<ktml:content>
 </div>
