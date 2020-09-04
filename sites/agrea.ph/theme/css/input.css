@@ -94,6 +94,12 @@ ul:not([class]) {
   padding-top: .25rem;
   padding-left: .5rem;
 }
+
+ul:not([class]):not(li > ul) {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
 li:not([class]) ol:not([class]), 
 li:not([class]) ul:not([class]) {
   margin: 0.5rem 1.5rem 0;
@@ -316,7 +322,7 @@ article > img:not([class]) {
   border: 0;
 }
 
-// tailwindcss-aspect-ratio generates these
+/* tailwindcss-aspect-ratio generates these */
 .aspect-ratio-none {
   padding-bottom: 0;
 }
