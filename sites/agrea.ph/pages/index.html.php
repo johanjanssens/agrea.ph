@@ -247,150 +247,17 @@ summary: The easy to use page generator for Joomla
 					</div>
 				</div>
 				<div class="flex flex-wrap m-4">
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, August 8, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">The water you drink and use – and why you should care more</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18manilabulletin.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sat, August 4, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">PH water situation highlighted at Sustainability Summit 2018</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/siargao_fishing.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sun, February 11, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Work gets underway to ensure food security in Siargao</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/social_impact_awards_2018.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, March 21, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">3 Social Entrepreneurs win at the ASEAN Social Impact Awards</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, August 8, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">The water you drink and use – and why you should care more</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18manilabulletin.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sat, August 4, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">PH water situation highlighted at Sustainability Summit 2018</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/siargao_fishing.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sun, February 11, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Work gets underway to ensure food security in Siargao</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/social_impact_awards_2018.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, March 21, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">3 Social Entrepreneurs win at the ASEAN Social Impact Awards</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Rappler</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, August 8, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">The water you drink and use – and why you should care more</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/SS18manilabulletin.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sat, August 4, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">PH water situation highlighted at Sustainability Summit 2018</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/siargao_fishing.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">Manila Bulletin </h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Sun, February 11, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Work gets underway to ensure food security in Siargao</h2>
-						</div>
-					</div>
-					<div class="md:w-1/2 p-4">
-						<div class="bg-gray-100 p-6 rounded-lg">
-							<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://agrea-in-the-news/social_impact_awards_2018.jpg" alt="content">
-							<h3 class="leading-relaxed text-dark-green-500 text-xs font-medium">National University of Singapore News</h3>
-              <p class="text-xs flex items-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>Wed, March 21, 2018
-              </p>
-							<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">3 Social Entrepreneurs win at the ASEAN Social Impact Awards</h2>
-						</div>
-					</div>
+        <? foreach (data('weblinks') as $weblink) : ?>
+          <div class="rounded-lg h-64 overflow-hidden">
+            <a href="<?= $weblink->url; ?>"><img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>"></a>
+          </div>
+          <p class="leading-relaxed text-xs flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg> <?= $weblink->date ?>
+          </p>
+          <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a href="<?= $weblink->url; ?>"><?= $weblink->title ?></a></h3>
+        <? endforeach ?>
 				</div>
 			</div>
 		</div>
