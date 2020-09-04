@@ -87,25 +87,18 @@ h6:not([class]) {
 }
 
 ul:not([class]) {
-  list-style: none;
-  list-style-type: "☆";
-  list-style-position: outside;
-  margin: 0;
-  padding-top: .25rem;
-  padding-left: .5rem;
+  list-style: "☆" outside;
+  margin-left: 1.05rem;
 }
 
-ul:not([class]):not(li > ul) {
-  margin-bottom: 1rem;
-  margin-top: .5rem;
-}
-
-li:not([class]) ol:not([class]), 
-li:not([class]) ul:not([class]) {
-  margin: 0.5rem 1.5rem 0;
-  padding-left: .5rem;
+li:not([class]) {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+
+li:not([class]) > ol:not([class]), 
+li:not([class]) > ul:not([class]) {
+  padding: 1rem .5rem;
 }
 
 /* Submenu border override */

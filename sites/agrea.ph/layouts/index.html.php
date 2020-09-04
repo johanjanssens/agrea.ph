@@ -17,19 +17,30 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <meta name="apple-mobile-web-app-title" content="<?= config()->site->name ?>"/>
-        
-    <link href="theme://images/logo/favicon.ico" rel="shortcut icon" type="image/ico" />
-    <link href="theme://images/logo/favicon.png" rel="icon" type="image/png" />
-    <link href="theme://images/logo/xtouch-icon.png" rel="apple-touch-icon" />
-    <link href="theme://images/logo/manifest.json" rel="manifest" />
-    <link href="theme://images/logo/safari-pinned-tab.svg" rel="mask-icon" />
-
-    <meta name="msapplication-TileColor" content="<?= config()->site->main_color ?>b"/>
-    <meta name="msapplication-config" content="theme://images/browserconfig.xml"/>
+    <meta name="application-name" content="<?= config()->site->name ?>"/>
     <meta name="theme-color" content="<?= config()->site->main_color ?>"/>
-    <meta name="google-site-verification" content="<?= config()->ga_code ?>" />
-
-    <link href="<?= config()->site->logo ?>" rel="preload" as="image" />
+    <meta name="msapplication-TileColor" content="<?= config()->site->main_color ?>" />
+    <meta name="msapplication-TileImage" content="theme://images/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="theme://images/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="theme://images/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="theme://images/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="theme://images/favicons/mstile-310x310.png" />
+        
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="theme://images/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="theme://images/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="theme://images/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="theme://images/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="theme://images/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="theme://images/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="theme://images/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="theme://images/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
+    
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
     <ktml:script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer="defer" />
@@ -48,7 +59,7 @@
     <? endif; ?>
 </head>
 
-<body class="<?= config()->site->body_class ?>h-full">
+<body class="<?= config()->site->body_class ?>">
 
 <script>function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.documentElement;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg,"js ")}</script>
 

@@ -3,10 +3,9 @@ return array(
 
     // Site
     'site' => [
-        'body_class'        => '',
+        'body_class'        => 'h-full',
         'copyright_notice'  => 'Agrea | All rights reserved',
-        'logo'              => 'theme://images/logo/website-logo.jpg',
-        'main_color'        => '#0089D6',
+        'main_color'        => '#788023',
         'name'              => 'AGREA',
     ],
 
@@ -15,7 +14,10 @@ return array(
 
         'metadata' => [
             'og:site_name'  => 'Agrea - Ecology of Dignity',
-            'og:image'      => 'theme://images/logo/website-logo.jpg',
+            'og:url'        => 'http://agrea.ph.test/',
+            'og:title'      => 'Agrea',
+            'og:description'=> 'AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.',
+            'og:image'      => 'theme://images/favicons/opengraph/open-graph-2400x1200',
             'twitter:site'  => '@AgreaPHL',
             'twitter:card'  => 'summary_large_image',
             //'fb:pages'     => '111111111111111'
