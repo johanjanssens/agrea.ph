@@ -7,14 +7,14 @@
 */
 /* Custom stuff */
 :root {
-  --agrea-green:#788023;
-  --agrea-dark-green:#3E462E;
-  --agrea-lime:#C9CA48;
-  --agrea-gray:#8E8E8C;
-  --agrea-light-gray:#E3E3E2;
-  --agrea-orange:#C67042;
-  --rounded-border-radius:0.25rem;
-  --link-colour:var(--agrea-green);
+    --agrea-green:#788023;
+    --agrea-dark-green:#3E462E;
+    --agrea-lime:#C9CA48;
+    --agrea-gray:#8E8E8C;
+    --agrea-light-gray:#E3E3E2;
+    --agrea-orange:#C67042;
+    --rounded-border-radius:0.25rem;
+    --link-colour:var(--agrea-green);
 }
 
 

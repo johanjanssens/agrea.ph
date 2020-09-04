@@ -17,14 +17,60 @@
 
 /* Custom stuff */
 :root {
-  --agrea-green:#788023;
-  --agrea-dark-green:#3E462E;
-  --agrea-lime:#C9CA48;
-  --agrea-gray:#8E8E8C;
-  --agrea-light-gray:#E3E3E2;
-  --agrea-orange:#C67042;
-  --rounded-border-radius:0.25rem;
-  --link-colour:var(--agrea-green);
+    --agrea-green:#788023;
+    --agrea-dark-green:#3E462E;
+    --agrea-lime:#C9CA48;
+    --agrea-gray:#8E8E8C;
+    --agrea-light-gray:#E3E3E2;
+    --agrea-orange:#C67042;
+    --rounded-border-radius:0.25rem;
+    --link-colour:var(--agrea-green);
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 4rem;
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+}
+
+/* Normalise font sizes for any text element that doesn't have a font size */
+main,
+footer,
+p:not([class]) {
+  font-size: var(--text-base);
+}
+
+h1:not([class]) {
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+}
+
+h2:not([class]) {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+}
+
+h3:not([class]) {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+}
+
+h4:not([class]) {
+  font-size: var(--text-xl);
+}
+
+h5:not([class]) {
+  font-size: var(--text-lg);
+}
+
+h6:not([class]) {
+  font-size: var(--text-base);
 }
 
 /* Submenu border override */
