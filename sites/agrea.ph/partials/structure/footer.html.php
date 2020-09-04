@@ -91,7 +91,7 @@
         </svg>
         <span class="ml-3 text-xl font-agrea"><?= config()->site->name ?></span>
       </a>
-      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?> — Built by <a class="inline" href="https://www.joomlatools.com"><img class="inline-block h-4 w-4" src="theme://images/logo/joomlatools.png" alt="Joomlatools logo icon" />Joomlatools</a>
+      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?> — Built by <a class="inline" href="https://www.joomlatools.com"><img class="inline-block h-4 w-4" src="theme://images/favicons/joomlatools-icon-32x32.png" alt="Joomlatools logo icon" />Joomlatools</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-gray-500">
