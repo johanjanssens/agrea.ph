@@ -1,5 +1,5 @@
 <? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']]) ?>
-<ul class="border border-gray-300 mb-8 rounded">
+<ul class="submenu border border-gray-300 mb-8 rounded">
 	<? foreach ($pages as $page) : ?>
 		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>
@@ -32,10 +32,9 @@
 						</button>
 					</li>
 					<ul 
-					id="nav-list" 
-					class="mb- pb-0" 
+					class="mb- pb-0 bg-lime-100 bg-opacity-25" 
         			x-show.transition="true"
-					:class="{ 'block bg-lime-100' : isOpen , 'hidden' : !isOpen}"
+					:class="{ 'block' : isOpen , 'hidden' : !isOpen}"
 					>
 						<? foreach($child->getChildren() as $sub): ?>
 							<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2 pl-6 pr-4<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">

@@ -28,8 +28,15 @@
 }
 
 /* Submenu border override */
-ul[x-data] > li:first-child[class$="children"] {
+.submenu > li:first-child[class$="children"] {
   border-top:0!important;
+  border-top-right-radius: var(--rounded-border-radius);
+  border-top-left-radius: var(--rounded-border-radius);
+}
+
+.submenu > li:last-child[class$="children"] {
+  border-bottom-right-radius: var(--rounded-border-radius);
+  border-bottom-left-radius: var(--rounded-border-radius);
 }
 
 header.sticky {
