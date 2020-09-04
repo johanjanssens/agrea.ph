@@ -4,7 +4,7 @@
 		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>
 				<? if ($child->getChildren()): ?>
-					<li class="hover:bg-gray-100 items-center transition-colors duration-500 ease-in-out p-2 flex justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
+					<li class="hover:bg-gray-100 items-center transition-colors duration-500 ease-in-out p-2 flex flex-row sm:flex-col sm:items-center lg:flex-row justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
 						<a class="flex-1 focus:outline-none focus:shadow-outline" href="<?= route($child) ?>"><?= $child->name ?></a>
 						<button
 							@click="isOpen = !isOpen"
