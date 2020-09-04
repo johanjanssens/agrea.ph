@@ -26,7 +26,7 @@ return array(
     ],
 
     'aliases' => [
-        'images://' => '/sites/agrea.ph/images/',
+        'images://' => '/images/agrea.ph/pages/',
     ],
 
     // Google Analytics
