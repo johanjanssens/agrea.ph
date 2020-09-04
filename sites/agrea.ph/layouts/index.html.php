@@ -45,6 +45,8 @@
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
     <ktml:script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer="defer" />
+    <ktml:style src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="preload" as="style" />
+    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer="defer" />
     <ktml:script src="media://com_pages/js/prefetcher-v1.0.0.min.js" defer="defer" />
 
     <? if (config()->ga_code): ?>

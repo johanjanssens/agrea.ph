@@ -1,18 +1,14 @@
 ---
 layout: agreaph
 name: Home
-title: Agrea
-summary: The easy to use page generator for Joomla
 ---
-<ktml:style src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="preload" as="style" />
-<ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer="defer" />
 
 <?= import('/partials/hero-alt',[
-      'class' => 'text-gray-700 body-font bg-lime-500',
+      'class' => 'text-gray-700 bg-lime-500',
     ]);
 ?>
 
-<section class="text-gray-700 body-font">
+<section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
       <div class="w-full mb-6 lg:mb-0">
@@ -60,7 +56,7 @@ summary: The easy to use page generator for Joomla
   </div>
 </section>
 
-<section class="text-gray-700 body-font mb-24">
+<section class="text-gray-700 mb-24">
   <div class="container px-5 pt-12 pb-24 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-20">
       <div class="w-full mb-6 lg:mb-0">
@@ -94,7 +90,7 @@ summary: The easy to use page generator for Joomla
   </div>
 </section>
 
-<section class="text-gray-700 body-font">
+<section class="text-gray-700">
   <div class="container px-5 pb-24 mx-auto">
   <div class="flex flex-wrap w-full mb-20">
     <div class="w-full mb-6 lg:mb-0">
@@ -143,7 +139,7 @@ summary: The easy to use page generator for Joomla
   </div>
 </section>
 
-<section class="text-gray-200 body-font bg-dark-green-500">
+<section class="text-gray-200 bg-dark-green-500">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-dark-green-500 rounded overflow-hidden">
@@ -174,7 +170,7 @@ summary: The easy to use page generator for Joomla
   </div>
 </section>
 
-<section class="text-gray-700 body-font">
+<section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="flex flex-col sm:flex-row mt-10">
       <div class="sm:w-1/3 sm:pr-8 sm:py-8">

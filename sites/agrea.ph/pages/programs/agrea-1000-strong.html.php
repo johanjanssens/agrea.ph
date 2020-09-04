@@ -5,8 +5,6 @@ title: Agrea 1000 Strong
 summary: The easy to use page generator for Joomla
 slug: agrea-1000-strong
 ---
-<ktml:style src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="preload" as="style" />
-<ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer="defer" />
 
 <article class="flex flex-col sm:flex-row">
 	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
