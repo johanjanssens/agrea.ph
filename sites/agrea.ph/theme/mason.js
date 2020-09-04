@@ -71,6 +71,9 @@ async function postcss() {
             'title': ['Raleway', 'sans-serif'],
             'agrea': ['typo3', 'serif'],
           },
+          listStyleType: {
+            star: '"☆"',
+          },
         }
       },
       variants: {

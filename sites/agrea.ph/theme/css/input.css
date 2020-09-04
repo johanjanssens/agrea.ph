@@ -6,37 +6,38 @@
 
 /* AGREA Logo font */
 @font-face {
-    font-family: 'typo3';
-    src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
-        url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
-        url('../fonts/Typo3-Medium.ttf.eot'),
-        url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'typo3';
+  src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
+  url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
+  url('../fonts/Typo3-Medium.ttf.eot'),
+  url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Custom stuff */
 :root {
-    --agrea-green:#788023;
-    --agrea-dark-green:#3E462E;
-    --agrea-lime:#C9CA48;
-    --agrea-gray:#8E8E8C;
-    --agrea-light-gray:#E3E3E2;
-    --agrea-orange:#C67042;
-    --rounded-border-radius:0.25rem;
-    --link-colour:var(--agrea-green);
-    --text-xs: 0.75rem;
-    --text-sm: 0.875rem;
-    --text-base: 1rem;
-    --text-lg: 1.125rem;
-    --text-xl: 1.25rem;
-    --text-2xl: 1.5rem;
-    --text-3xl: 1.875rem;
-    --text-4xl: 2.25rem;
-    --text-5xl: 3rem;
-    --text-6xl: 4rem;
-    --leading-tight: 1.25;
-    --leading-normal: 1.5;
+  --agrea-green:#788023;
+  --agrea-dark-green:#3E462E;
+  --agrea-lime:#C9CA48;
+  --agrea-gray:#8E8E8C;
+  --agrea-light-gray:#E3E3E2;
+  --agrea-orange:#C67042;
+  --rounded-border-radius:0.25rem;
+  --link-colour:var(--agrea-green);
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 4rem;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-none: 1;
 }
 
 /* Normalise font sizes for any text element that doesn't have a font size */
@@ -46,14 +47,26 @@ p:not([class]) {
   font-size: var(--text-base);
 }
 
+h1:not([class]),
+h2:not([class]),
+h3:not([class]),
+h4:not([class]),
+h5:not([class]),
+h6:not([class]){
+  text-transform: uppercase;
+  color: rgba(43,43,42,1);
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
 h1:not([class]) {
   font-size: var(--text-4xl);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-none);
 }
 
 h2:not([class]) {
   font-size: var(--text-3xl);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-none);
 }
 
 h3:not([class]) {
@@ -71,6 +84,16 @@ h5:not([class]) {
 
 h6:not([class]) {
   font-size: var(--text-base);
+}
+
+ul:not([class]) {
+  list-style : "☆" outside;
+  padding-left: 1rem;
+}
+li:not([class]) ol:not([class]), 
+li:not([class]) ul:not([class]) {
+  margin: 0.5rem 1.5rem 0;
+  padding-left: 1rem;
 }
 
 /* Submenu border override */
@@ -163,7 +186,7 @@ h3:not([class]),
 h4:not([class]),
 h5:not([class]),
 h6:not([class]) {
-    font-family: Raleway,sans-serif;
+  font-family: Raleway,sans-serif;
 }
 
 li:focus-within a {
@@ -407,7 +430,7 @@ article > img:not([class]) {
     left: 7px;
     top: 4px;
     -webkit-transform: rotate(var(--r, 20deg));
-            transform: rotate(var(--r, 20deg));
+    transform: rotate(var(--r, 20deg));
   }
   input[type='checkbox']:not(.switch):checked {
     --r: 43deg;
@@ -424,7 +447,7 @@ article > img:not([class]) {
     height: 15px;
     background: var(--ab, var(--border));
     -webkit-transform: translateX(var(--x, 0));
-            transform: translateX(var(--x, 0));
+    transform: translateX(var(--x, 0));
   }
   input[type='checkbox'].switch:checked {
     --ab: var(--active-inner);
@@ -444,7 +467,7 @@ article > img:not([class]) {
     background: var(--active-inner);
     opacity: 0;
     -webkit-transform: scale(var(--s, 0.7));
-            transform: scale(var(--s, 0.7));
+    transform: scale(var(--s, 0.7));
   }
   input[type='radio']:checked {
     --s: .5;
