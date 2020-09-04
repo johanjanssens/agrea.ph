@@ -65,7 +65,10 @@ slug: yseali-generationgr3en
 		
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<?= import('/partials/navigation/submenu');?>
+			
+		<div  x-data="{ isOpen: false }">
+			<?= import('/partials/navigation/submenu');?>
+		</div>
 		
 		<p><img class="rounded" src="images://events/generationgr3en-sidebar-1.jpg" /></p>
 

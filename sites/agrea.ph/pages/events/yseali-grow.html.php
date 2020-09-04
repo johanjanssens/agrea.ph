@@ -26,7 +26,10 @@ slug: yseali-grow
 		
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<?= import('/partials/navigation/submenu');?>
+			
+		<div  x-data="{ isOpen: false }">
+			<?= import('/partials/navigation/submenu');?>
+		</div>
 		
 		<h3 class="text-base text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
