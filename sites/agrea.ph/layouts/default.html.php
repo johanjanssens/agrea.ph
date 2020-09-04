@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: structure
 header:  []
 content: []
 ---

@@ -48,7 +48,7 @@
       </div>
       <!-- Navbar Mobile -->
       <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden bg-white pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-        <?= import('/partials/navigation/tailwind',['levels'=>1,]); ?>
+        <?= import('/partials/navigation/mainmenu',['levels'=>1,]); ?>
       </nav>
     </div>
   </div>

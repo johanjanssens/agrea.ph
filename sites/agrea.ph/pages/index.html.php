@@ -194,7 +194,7 @@ summary: The easy to use page generator for Joomla
             'category' => ['12'], // fresh picks
             'sort' => 'date',
             'order' => 'desc',
-            'limit' => 6,
+            'limit' => 2,
         ]); ?>
         <? foreach($freshPicks as $freshPick) :?>
         <div class="flex flex-col justify-start mb-10">
@@ -246,19 +246,19 @@ summary: The easy to use page generator for Joomla
             <div class="h-1 w-20 bg-green-500 rounded"></div>
           </div>
         </div>
-        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
-        <? foreach (data('weblinks') as $weblink) : ?>
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
           <div class="bg-gray-100 p-6 rounded-lg">
             <div class="rounded-lg h-64 overflow-hidden">
               <a href="<?= $weblink->url; ?>"><img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" /></a>
             </div>
-            <p class="leading-relaxed text-dark-orange-500 text-xs font-bold mb-2"><?= $weblink->publication ?></p>
-            <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2 flex items-center">
+            <p class="leading-relaxed text-orange-500 text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
+            <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-4 flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg> <span><?= $weblink->date ?></span>
             </p>
-            <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a href="<?= $weblink->url; ?>"><?= $weblink->title ?></a></h3>
+            <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600" href="<?= $weblink->url; ?>"><?= $weblink->title ?></a></h3>
           </div>
         <? endforeach; ?>
         </div>

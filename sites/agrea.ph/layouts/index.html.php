@@ -52,19 +52,7 @@
 
 <script>function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.documentElement;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg,"js ")}</script>
 
-    <main class="flex flex-col bg-white shadow-lg">
-        
-        <?= import('/partials/structure/header'); ?>
-
-        <ktml:content>
-
-    </main>
-    <!-- Footer content -->
-    <?= import('/partials/structure/footer'); ?>
-
-<? if(debug()): ?>
-   <?= import('/partials/debug/grid.html'); ?>
-<? endif; ?>
+    <ktml:content>
 
 </body>
 </html>

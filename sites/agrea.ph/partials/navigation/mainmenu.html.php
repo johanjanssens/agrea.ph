@@ -1,7 +1,4 @@
-<ul class="list-none px-1 py-2">
-    <? foreach (collection('pages', ['filter' => ['visible' => 'true']]) as $page) : ?>
-        <li class="inline-block px-2 py-1">
-            <a class="inline-block text-white" href="<?= route($page); ?>"><?= $page->name; ?></a>
-        </li>
-    <? endforeach ?>
-</ul>
+<? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']])  ?>
+<? foreach ($pages as $page) :?>
+<a class="px-4 py-2 mt-2 text-base font-semibold bg-transparent rounded dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600<?= strpos(page()->path, $page->path) === 0 ? ' text-white bg-dark-green-500 is-active' : 'dark-mode:text-gray-200' ?>" href="<?= route($page); ?>"><?= $page->name; ?></a>
+<? endforeach ?>
