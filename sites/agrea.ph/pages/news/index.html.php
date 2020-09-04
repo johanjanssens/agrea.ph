@@ -2,7 +2,7 @@
 layout: default
 name: News
 title: New Sprouts
-summary: The easy to use page generator for Joomla
+summary: All the latest news and fresh picks from the AGREA farm
 collection:
     model: ext:joomla.model.articles
     state:

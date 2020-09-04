@@ -2,7 +2,7 @@
 layout: default
 name: Events
 title: Events
-summary: The easy to use page generator for Joomla
+summary: Operating since November 2014, AGREA has already organised and implemented a number of successful major national and international events.
 collection:
     model: ext:joomla.model.articles
     state:

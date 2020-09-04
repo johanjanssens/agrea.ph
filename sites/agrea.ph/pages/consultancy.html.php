@@ -2,7 +2,7 @@
 layout: default
 name: Consultancy
 title: Consultancy
-summary: The easy to use page generator for Joomla
+summary: Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change. 
 slug: consultancy
 ---
 

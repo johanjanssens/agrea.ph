@@ -2,7 +2,7 @@
 layout: default
 name: LEAFlet (Local Event Themes)
 title: LEAFlet (Local Event Themes)
-summary: The easy to use page generator for Joomla
+summary:  LEAF is a growing force of 400+ agri-leaders from 20 countries. AGREA's five Focus Dialogues (called LEAFlets), gather new generations to act on the biggest issues affecting the agricultural landscape. 
 slug: leaflet-local-event-themes
 ---
 

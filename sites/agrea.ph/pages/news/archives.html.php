@@ -2,7 +2,7 @@
 layout: default
 name: Archives
 title: News Archives
-summary: The easy to use page generator for Joomla
+summary: An archive of the news items on the AGREA website
 collection:
     model: ext:joomla.model.articles
     state:

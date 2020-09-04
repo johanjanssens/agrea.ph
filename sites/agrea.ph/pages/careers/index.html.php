@@ -2,7 +2,7 @@
 layout: default
 name: Careers
 title: Career opportunities at AGREA
-summary: The easy to use page generator for Joomla
+summary: AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane. 
 collection:
     model: ext:joomla.model.articles
     state:

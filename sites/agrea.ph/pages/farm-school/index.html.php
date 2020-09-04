@@ -2,7 +2,7 @@
 layout: default
 name: Farm School
 title: AGREA Farm School
-summary: The easy to use page generator for Joomla
+summary: AGREA, the first TESDA-accredited farm school in Marinduque and certified by the Department of Agriculture - Agricultural Training Institute as an Organic Agriculture Learning Site.
 collection:
     model: ext:joomla.model.articles
     state:

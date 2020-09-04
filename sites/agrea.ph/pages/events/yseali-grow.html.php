@@ -2,7 +2,7 @@
 layout: default
 name: YSEALI Grow
 title: YSEALI Grow
-summary: The easy to use page generator for Joomla
+summary: YSEALI GROW is a week-long leadership/agri-preneurship training that has enabled a total of 68 young leaders from Mindanao (18-25 years old) to recognize their potential.
 slug: yseali-grow
 ---
 

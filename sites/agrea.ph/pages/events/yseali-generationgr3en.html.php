@@ -2,7 +2,7 @@
 layout: default
 name: YSEALI GenerationGR3EN
 title: YSEALI GenerationGR3EN
-summary: The easy to use page generator for Joomla
+summary: YSEALI GenerationGR3EN Workshop is a 4-day eco-entrepreneurship workshop held in Brunei Darussalam with a focus on eco-tourism.
 slug: yseali-generationgr3en
 ---
 <div class="flex flex-col sm:flex-row">

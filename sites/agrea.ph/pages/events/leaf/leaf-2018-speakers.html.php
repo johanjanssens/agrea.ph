@@ -2,7 +2,7 @@
 layout: events/leaf
 name: LEAF 2018 Speakers
 title: LEAF 2018 Speakers
-summary: The easy to use page generator for Joomla
+summary: His Excellency David Strachan, New Zealand Ambassador to the Philippines is amongst the many speakers at LEAF events.
 slug: leaf-2018-speakers
 ---
 <div class="flex flex-col">

@@ -2,7 +2,7 @@
 layout: events/leaf
 name: LEAF 2018 Global Advisory Board
 title: LEAF 2018 Global Advisory Board
-summary: The easy to use page generator for Joomla
+summary: The Leaders and Entrepreneurs in Agriculture Forum Global Advisory Board is comprised of experts and professionals from the fields of agriculture, entrepreneurship, agro-social enterprise, non-profit organizations, innovation, and technology-based firms.
 slug: leaf-2018-global-advisory-board
 ---
 <p>The Leaders and Entrepreneurs in Agriculture Forum Global Advisory Board is comprised of experts and professionals from the fields of agriculture, entrepreneurship, agro-social enterprise, non-profit organizations, innovation, and technology-based firms.</p>

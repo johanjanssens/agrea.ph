@@ -2,7 +2,7 @@
 layout: default
 name: Self Palayance
 title: Self Palayance
-summary: The easy to use page generator for Joomla
+summary: Self-Palayance is AGREA’s plan to partner with Marinduque communities to establish complete rice self-sufficiency for the island and as a model for the entire Philippines.
 slug: self-palayance
 ---
 

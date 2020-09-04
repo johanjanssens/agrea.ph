@@ -2,7 +2,7 @@
 layout: default
 name: Leaders & Entrepreneurs in Agriculture Forum
 title: Leaders & Entrepreneurs in Agriculture Forum
-summary: The easy to use page generator for Joomla
+summary: LEAF is a global community of champions uniting as advocates across different sectors for better agriculture. Through mentorship and inclusive dialogue, delegates help to develop new generations of agricultural practitioners and allies.
 slug: leaf
 ---
 

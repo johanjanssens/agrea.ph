@@ -2,7 +2,7 @@
 layout: default
 name: Team
 title: AGREA Team
-summary: The easy to use page generator for Joomla
+summary: AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.
 collection:
     model: ext:joomla.model.articles
     state:

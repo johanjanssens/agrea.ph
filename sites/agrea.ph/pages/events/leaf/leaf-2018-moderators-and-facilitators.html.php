@@ -2,7 +2,7 @@
 layout: default
 name: LEAF 2018 Moderators and Facilitators
 title: LEAF 2018 Moderators and Facilitators
-summary: The easy to use page generator for Joomla
+summary: The Leaders and Entrepreneurs in Agriculture Forum Moderators and Facilitators
 slug: leaf-2018-moderators-and-facilitators
 ---
 <div class="flex flex-col sm:flex-row">

@@ -2,7 +2,7 @@
 layout: default
 name: Programs
 title: Programs
-summary: The easy to use page generator for Joomla
+summary: With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. 
 slug: programs
 ---
 

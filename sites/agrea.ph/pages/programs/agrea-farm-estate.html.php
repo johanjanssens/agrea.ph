@@ -2,7 +2,7 @@
 layout: default
 name: Agrea Farm Estate
 title: Agrea Farm Estate
-summary: The easy to use page generator for Joomla
+summary: Located in Barangay Cawit, Boac, Marinduque and situated between the ocean and the mountains, AGREA’s Model Farm is a 2,500sqm hub of growth and learning.
 slug: agrea-farm-estate
 ---
 
