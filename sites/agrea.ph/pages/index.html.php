@@ -14,12 +14,12 @@ summary: The easy to use page generator for Joomla
 
 <section class="text-gray-700 body-font">
   <div class="container px-5 py-24 mx-auto">
-  	<div class="flex flex-wrap w-full mb-20">
-  		<div class="w-full mb-6 lg:mb-0">
-  			<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Top stories</h1>
-  			<div class="h-1 w-20 bg-green-500 rounded"></div>
-  		</div>
-  	</div>
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Top stories</h1>
+        <div class="h-1 w-20 bg-green-500 rounded"></div>
+      </div>
+    </div>
 
     <div class="grid md:grid-cols-3 gap-4">
       <?
@@ -96,12 +96,12 @@ summary: The easy to use page generator for Joomla
 
 <section class="text-gray-700 body-font">
   <div class="container px-5 pb-24 mx-auto">
-	<div class="flex flex-wrap w-full mb-20">
-		<div class="w-full mb-6 lg:mb-0">
-			<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Classrooms, fora and reports</h1>
-			<div class="h-1 w-20 bg-green-500 rounded"></div>
-		</div>
-	</div>
+  <div class="flex flex-wrap w-full mb-20">
+    <div class="w-full mb-6 lg:mb-0">
+      <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Classrooms, fora and reports</h1>
+      <div class="h-1 w-20 bg-green-500 rounded"></div>
+    </div>
+  </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
@@ -181,13 +181,13 @@ summary: The easy to use page generator for Joomla
 </section>
 
 <section class="text-gray-700 body-font">
-	<div class="container px-5 py-24 mx-auto flex flex-col">
-		<div class="flex flex-col sm:flex-row mt-10">
-			<div class="sm:w-1/3 sm:pr-8 sm:py-8">
-				<div class="flex flex-col justify-center">
-					<h2 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
-					<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
-				</div>
+  <div class="container px-5 py-24 mx-auto flex flex-col">
+    <div class="flex flex-col sm:flex-row mt-10">
+      <div class="sm:w-1/3 sm:pr-8 sm:py-8">
+        <div class="flex flex-col justify-center">
+          <h2 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
+          <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
+        </div>
         <?
             $freshPicks = collection('ext:joomla.model.articles', [
             'published' => 1,
@@ -237,23 +237,23 @@ summary: The easy to use page generator for Joomla
           </script>
           <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
         </div>
-			</div>
+      </div>
 
-			<div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-				<div class="flex flex-wrap w-full mb-20">
-					<div class="w-full mb-6 lg:mb-0">
-						<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Agrea in the news</h1>
-						<div class="h-1 w-20 bg-green-500 rounded"></div>
-					</div>
-				</div>
-				<div class="grid sm:grid-cols-2 gap-2 m-4">
+      <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="w-full mb-6 lg:mb-0">
+            <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Agrea in the news</h1>
+            <div class="h-1 w-20 bg-green-500 rounded"></div>
+          </div>
+        </div>
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks') as $weblink) : ?>
-          <div class="bg-gray-200">
+          <div class="bg-gray-100 p-6 rounded-lg">
             <div class="rounded-lg h-64 overflow-hidden">
               <a href="<?= $weblink->url; ?>"><img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" /></a>
             </div>
-            <p class="leading-relaxed text-dark-green-500 text-xs font-medium"><?= $weblink->publication ?></p>
-            <p class="text-xs flex items-center mb-2">
+            <p class="leading-relaxed text-dark-orange-500 text-xs font-bold mb-2"><?= $weblink->publication ?></p>
+            <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2 flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg> <span><?= $weblink->date ?></span>
@@ -262,7 +262,7 @@ summary: The easy to use page generator for Joomla
           </div>
         <? endforeach; ?>
         </div>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </section>
