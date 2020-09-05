@@ -1,58 +1,7 @@
 <footer class="text-gray-700 text-base border-gray-300 border-t body-font">
   <div class="container px-5 lg:pt-10 lg:pb-10 md:py-10 lg:my-24 md:my-16 my-8 mx-auto">
-    <div class="flex flex-wrap md:text-left text-center order-first">
-      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
-        <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <ul class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </ul>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
-        <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <ul class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </ul>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-1/3 px-4">
-        <h2 class="font-title font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <ul class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </ul>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 sm:m-auto max-w-xs m-auto text-gray-900">
+    <div class="flex md:justify-end justify-around">
+      <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
         <div class="flex content-between">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mx-2">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -91,8 +40,7 @@
         </svg>
         <span class="ml-3 text-xl font-agrea"><?= config()->site->name ?></span>
       </a>
-      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?> — Built by <a class="inline" href="https://www.joomlatools.com"><img class="inline-block h-4 w-4" src="theme://images/favicons/joomlatools-icon-32x32.png" alt="Joomlatools logo icon" />Joomlatools</a>
-      </p>
+      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4"><?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -108,6 +56,48 @@
         <a href="https://www.twitter.com/agreaphl" title="Follow us on twitter" class="ml-3 text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="https://www.joomlatools.com" title="Built by Joomlatools" class="ml-3">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="w-5 h-5">
+            <style type="text/css">
+              .st0{fill:none;}
+              .st1{fill:var(--agrea-green);}
+              .st2{fill:var(--agrea-lime);}
+              .st3{fill:url(#SVGID_1_);}
+              .st4{fill:url(#SVGID_2_);}
+              .st5{fill:url(#SVGID_3_);}
+            </style>
+            <pattern  x="-234" y="-234" width="204.84" height="204.84" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_2" viewBox="0 -204.84 204.84 204.84" style="overflow:visible;">
+              <g>
+                <rect x="0" y="-204.84" class="st0" width="204.84" height="204.84"/>
+                <rect x="0" y="-204.84" class="st1" width="204.84" height="204.84"/>
+              </g>
+            </pattern>
+            <pattern  x="-234" y="-234" width="204.84" height="204.84" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_5" viewBox="0 -204.84 204.84 204.84" style="overflow:visible;">
+              <g>
+                <rect y="-204.84" class="st0" width="204.84" height="204.84"/>
+                <rect y="-204.84" class="st2" width="204.84" height="204.84"/>
+              </g>
+            </pattern>
+            <pattern  id="SVGID_1_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4238 -7041.7847)">
+            </pattern>
+            <path class="st1" d="M32,20.31c0-2.06-0.52-4.15-1.63-6.05C28.75,11.45,26.13,9.44,23,8.6c-3.13-0.84-6.41-0.41-9.22,1.21
+            c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85c1.74-1,3.76-1.27,5.7-0.75c1.94,0.52,3.56,1.76,4.56,3.5
+            c2.07,3.59,0.84,8.2-2.75,10.27c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85C29.82,28.61,32,24.51,32,20.31z"/>
+            <pattern  id="SVGID_2_" xlink:href="#New_Pattern_Swatch_2" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4243 -7041.7847)">
+            </pattern>
+            <path class="st4" d="M24.56,4.55c0-0.79-0.4-1.55-1.13-1.99c-3.78-2.27-8.51-2.31-12.32-0.1C8.3,4.08,6.29,6.7,5.45,9.84
+            c-0.84,3.13-0.41,6.41,1.21,9.22c1.09,1.89,2.67,3.45,4.57,4.52c1.12,0.63,2.53,0.23,3.15-0.89c0.63-1.11,0.23-2.53-0.89-3.15
+            c-1.17-0.66-2.15-1.62-2.82-2.79c-1-1.74-1.27-3.76-0.75-5.7c0.52-1.94,1.76-3.56,3.5-4.56c2.36-1.36,5.29-1.34,7.63,0.06
+            c1.1,0.66,2.52,0.3,3.18-0.8C24.45,5.37,24.56,4.96,24.56,4.55z"/>
+            <pattern  id="SVGID_3_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4238 -7041.7847)">
+            </pattern>
+            <path class="st5" d="M24.3,18.97c0-0.07,0-0.13,0-0.2c-0.02-1.28-1.07-2.3-2.35-2.28c-1.27,0.02-2.28,1.05-2.28,2.31
+            c0,0.01,0,0.02,0,0.04c0.05,2.74-1.4,5.28-3.76,6.64c-1.74,1-3.76,1.27-5.7,0.75c-1.94-0.52-3.56-1.76-4.56-3.5
+            c-0.68-1.17-1.02-2.5-1.01-3.84c0-0.01,0-0.02,0-0.03c0-1.27-1.02-2.3-2.29-2.31C1.07,16.53,0.02,17.55,0,18.83
+            c-0.03,2.18,0.54,4.32,1.63,6.22c1.62,2.81,4.24,4.82,7.38,5.66c3.13,0.84,6.41,0.41,9.22-1.21C21.98,27.32,24.3,23.3,24.3,18.97z"
+            />
           </svg>
         </a>
       </span>
