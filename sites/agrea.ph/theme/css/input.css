@@ -164,7 +164,7 @@ section[class*="bg-"]:not(.bg-white):after {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-section[class*="bg-"]:not(.bg-white) > div {
+section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
   position:relative;
   z-index:2;
 }
@@ -177,12 +177,12 @@ section[class*="bg-"]:not(.bg-white) p {
   text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
 }
 
-.hero-image {
+section.hero-alt .hero-image {
   clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
   transition: 1s;
 }
 
-section[class*="bg-"]:hover .hero-image {
+section.hero-alt:hover .hero-image {
   clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
 }
 
