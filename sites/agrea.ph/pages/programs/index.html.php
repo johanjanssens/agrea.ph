@@ -128,7 +128,7 @@ slug: programs
 		<p>Visit our <a href="/events">Events Page</a>.</p>
 		<h3 class=" text-gray-900 font-medium font-title my-4 leading-tight">AGREA in Action</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<div class="bg-gray-100 p-6 rounded-lg mb-8">
+		<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg mb-8">
 			<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('programs/article'), ['slug' => article(150)->slug]) ?>">
 				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article(150)->image->url ?>" alt="<?= article(150)->title; ?>">
 				<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><?= article(150)->title; ?></h2>
@@ -139,7 +139,7 @@ slug: programs
 				</p>
 			</a>
 		</div>
-		<div class="bg-gray-100 p-6 rounded-lg">
+		<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
 			<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('programs/article'), ['slug' => article(151)->slug]) ?>">
 				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article(151)->image->url ?>" alt="<?= article(151)->title; ?>">
 				<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><?= article(151)->title; ?></h2>

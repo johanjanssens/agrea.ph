@@ -74,7 +74,7 @@ name: Home
           'limit' => 8,
       ]); ?>
       <? foreach($newSprouts as $newSprout) :?>
-      <div class="bg-gray-100 p-6 rounded-lg">
+      <div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
         <a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
           <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
           <p class="text-xs text-gray-600 flex items-center mb-2">
@@ -238,17 +238,19 @@ name: Home
         </div>
         <div class="grid lg:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
-          <div class="bg-gray-100 p-6 rounded-lg">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <a href="<?= $weblink->url; ?>"><img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" /></a>
-            </div>
-            <p class="leading-relaxed text-orange-500 text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
-            <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-4 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg> <span><?= $weblink->date ?></span>
-            </p>
-            <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600" href="<?= $weblink->url; ?>"><?= $weblink->title ?></a></h3>
+          <div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+            <a href="<?= $weblink->url; ?>">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
+              </div>
+              <p class="leading-relaxed text-orange-500 text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
+              <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg> <span><?= $weblink->date ?></span>
+              </p>
+              <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600"><?= $weblink->title ?></h3>
+            </a>
           </div>
         <? endforeach; ?>
         </div>

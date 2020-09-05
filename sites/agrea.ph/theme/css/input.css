@@ -188,7 +188,7 @@ section.hero-alt:hover .hero-image {
 
 /* the actual hero image */
 .hero-image > div {
-  background-position: center;
+  background-position: right;
 }
 
 .font-title {

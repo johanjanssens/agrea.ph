@@ -24,18 +24,16 @@ process:
 		</div>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<div class="bg-gray-100 p-6 rounded-lg">
+			<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
 				<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('team/article'), ['slug' => $article->slug]) ?>">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
-				</a>
-				<div class="text-sm"><?= $article->excerpt; ?></div>
-				<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">
-					<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('team/article'), ['slug' => $article->slug]) ?>">
+					<div class="text-sm"><?= $article->excerpt; ?></div>
+					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">
 						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name"><?= $article->title; ?></span>
 						</span>
-					</a>
-				</h2>
+					</h2>
+				</a>
 			</div>
 			<? endforeach; ?>
 		</div>

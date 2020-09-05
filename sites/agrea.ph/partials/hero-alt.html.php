@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="hero-image hidden md:block absolute top-0 right-0 z-10 h-full w-1/3">
-      <div style="background-image: url(<?= $articles->image->url ?>);background-position:right top;" class="h-full object-cover">
+      <div style="background-image: url(<?= $articles->image->url ?>);" class="h-full object-cover">
           <div class="h-full bg-gray-900 opacity-25"></div>
       </div>
   </div>

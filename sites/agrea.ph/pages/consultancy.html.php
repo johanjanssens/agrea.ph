@@ -71,17 +71,21 @@ slug: consultancy
 				</ul>
 			</div>
 			<div class="grid md:grid-cols-2 gap-8 mb-8">
-				<div class="bg-gray-100 p-6 rounded-lg">
-					<?= import('/partials/articles/image-title-excerpt',[
-						'id' => 45, 
-						'category' => 'news',
-					]); ?>
+				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+					<a href="<?= route(page('news/article'), ['slug' => article(45)->slug]) ?>">
+						<?= import('/partials/articles/image-title-excerpt',[
+							'id' => 45, 
+							'category' => 'news',
+						]); ?>
+					</a>
 				</div>
-				<div class="bg-gray-100 p-6 rounded-lg">
+				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+					<a href="<?= route(page('news/article'), ['slug' => article(64)->slug]) ?>">
 					<?= import('/partials/articles/image-title-excerpt',[
 						'id' => 64,
 						'category' => 'news',
 					]); ?>
+					</a>
 				</div>
 			</div>
 			<div class="mb-8">
