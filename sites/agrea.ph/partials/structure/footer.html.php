@@ -59,11 +59,11 @@
           </svg>
         </a>
         <a href="https://www.joomlatools.com" title="Built by Joomlatools" class="ml-3">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="w-5 h-5">
+          <svg class="h5 w-5" viewBox="0 0 32 32" xml:space="preserve">
             <style type="text/css">
               .st0{fill:none;}
-              .st1{fill:var(--agrea-green);}
-              .st2{fill:var(--agrea-lime);}
+              .st1{fill:var(--agrea-lime);}
+              .st2{fill:var(--agrea-green);}
               .st3{fill:url(#SVGID_1_);}
               .st4{fill:url(#SVGID_2_);}
               .st5{fill:url(#SVGID_3_);}
@@ -82,7 +82,7 @@
             </pattern>
             <pattern  id="SVGID_1_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4238 -7041.7847)">
             </pattern>
-            <path class="st1" d="M32,20.31c0-2.06-0.52-4.15-1.63-6.05C28.75,11.45,26.13,9.44,23,8.6c-3.13-0.84-6.41-0.41-9.22,1.21
+            <path class="st3" d="M32,20.31c0-2.06-0.52-4.15-1.63-6.05C28.75,11.45,26.13,9.44,23,8.6c-3.13-0.84-6.41-0.41-9.22,1.21
             c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85c1.74-1,3.76-1.27,5.7-0.75c1.94,0.52,3.56,1.76,4.56,3.5
             c2.07,3.59,0.84,8.2-2.75,10.27c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85C29.82,28.61,32,24.51,32,20.31z"/>
             <pattern  id="SVGID_2_" xlink:href="#New_Pattern_Swatch_2" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4243 -7041.7847)">
