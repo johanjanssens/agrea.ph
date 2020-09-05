@@ -62,7 +62,7 @@
     <? endif; ?>
 </head>
 
-<body class="<?= config()->site->body_class ?>">
+<body id="top" class="<?= config()->site->body_class ?>">
 
 <script>function hasClass(e,t){return e.className.match(new RegExp("(\\s|^)"+t+"(\\s|$)"))}var el=document.documentElement;var cl="no-js";if(hasClass(el,cl)){var reg=new RegExp("(\\s|^)"+cl+"(\\s|$)");el.className=el.className.replace(reg,"js ")}</script>
 
