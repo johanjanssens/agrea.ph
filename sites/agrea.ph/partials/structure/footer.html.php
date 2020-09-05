@@ -59,46 +59,7 @@
           </svg>
         </a>
         <a href="https://www.joomlatools.com" title="Built by Joomlatools" class="ml-3">
-          <svg class="h5 w-5" viewBox="0 0 32 32" xml:space="preserve">
-            <style type="text/css">
-              .st0{fill:none;}
-              .st1{fill:var(--agrea-lime);}
-              .st2{fill:var(--agrea-green);}
-              .st3{fill:url(#SVGID_1_);}
-              .st4{fill:url(#SVGID_2_);}
-              .st5{fill:url(#SVGID_3_);}
-            </style>
-            <pattern  x="-234" y="-234" width="204.84" height="204.84" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_2" viewBox="0 -204.84 204.84 204.84" style="overflow:visible;">
-              <g>
-                <rect x="0" y="-204.84" class="st0" width="204.84" height="204.84"/>
-                <rect x="0" y="-204.84" class="st1" width="204.84" height="204.84"/>
-              </g>
-            </pattern>
-            <pattern  x="-234" y="-234" width="204.84" height="204.84" patternUnits="userSpaceOnUse" id="New_Pattern_Swatch_5" viewBox="0 -204.84 204.84 204.84" style="overflow:visible;">
-              <g>
-                <rect y="-204.84" class="st0" width="204.84" height="204.84"/>
-                <rect y="-204.84" class="st2" width="204.84" height="204.84"/>
-              </g>
-            </pattern>
-            <pattern  id="SVGID_1_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4238 -7041.7847)">
-            </pattern>
-            <path class="st3" d="M32,20.31c0-2.06-0.52-4.15-1.63-6.05C28.75,11.45,26.13,9.44,23,8.6c-3.13-0.84-6.41-0.41-9.22,1.21
-            c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85c1.74-1,3.76-1.27,5.7-0.75c1.94,0.52,3.56,1.76,4.56,3.5
-            c2.07,3.59,0.84,8.2-2.75,10.27c-1.11,0.64-1.49,2.06-0.85,3.16c0.64,1.11,2.06,1.49,3.16,0.85C29.82,28.61,32,24.51,32,20.31z"/>
-            <pattern  id="SVGID_2_" xlink:href="#New_Pattern_Swatch_2" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4243 -7041.7847)">
-            </pattern>
-            <path class="st4" d="M24.56,4.55c0-0.79-0.4-1.55-1.13-1.99c-3.78-2.27-8.51-2.31-12.32-0.1C8.3,4.08,6.29,6.7,5.45,9.84
-            c-0.84,3.13-0.41,6.41,1.21,9.22c1.09,1.89,2.67,3.45,4.57,4.52c1.12,0.63,2.53,0.23,3.15-0.89c0.63-1.11,0.23-2.53-0.89-3.15
-            c-1.17-0.66-2.15-1.62-2.82-2.79c-1-1.74-1.27-3.76-0.75-5.7c0.52-1.94,1.76-3.56,3.5-4.56c2.36-1.36,5.29-1.34,7.63,0.06
-            c1.1,0.66,2.52,0.3,3.18-0.8C24.45,5.37,24.56,4.96,24.56,4.55z"/>
-            <pattern  id="SVGID_3_" xlink:href="#New_Pattern_Swatch_5" patternTransform="matrix(0.1067 0 0 0.1067 -6887.4238 -7041.7847)">
-            </pattern>
-            <path class="st5" d="M24.3,18.97c0-0.07,0-0.13,0-0.2c-0.02-1.28-1.07-2.3-2.35-2.28c-1.27,0.02-2.28,1.05-2.28,2.31
-            c0,0.01,0,0.02,0,0.04c0.05,2.74-1.4,5.28-3.76,6.64c-1.74,1-3.76,1.27-5.7,0.75c-1.94-0.52-3.56-1.76-4.56-3.5
-            c-0.68-1.17-1.02-2.5-1.01-3.84c0-0.01,0-0.02,0-0.03c0-1.27-1.02-2.3-2.29-2.31C1.07,16.53,0.02,17.55,0,18.83
-            c-0.03,2.18,0.54,4.32,1.63,6.22c1.62,2.81,4.24,4.82,7.38,5.66c3.13,0.84,6.41,0.41,9.22-1.21C21.98,27.32,24.3,23.3,24.3,18.97z"
-            />
-          </svg>
+            <svg class="w-5 h-5" viewBox="0 0 32 30.3303"><defs><style>.cls-1{fill:none;}.cls-2{fill:#c9ca48;}.cls-3{fill:#798023;}.cls-4{fill:url(#jtp-5);}.cls-5{fill:url(#jtp-2);}</style><pattern id="jtp-5" width="204.843" height="204.842" patternTransform="translate(-2.5053 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-3" width="204.843" height="204.842"/></pattern><pattern id="jtp-2" width="204.843" height="204.842" patternTransform="translate(-2.5058 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-2" width="204.843" height="204.842"/></pattern></defs><g><path class="cls-4" d="M30.3747,14.26A12.1484,12.1484,0,0,0,13.7805,9.8135,2.3155,2.3155,0,1,0,16.096,13.824a7.5168,7.5168,0,0,1,7.5165,13.02,2.3158,2.3158,0,0,0,2.3158,4.0111A12.154,12.154,0,0,0,30.3747,14.26Z" transform="translate(0 -0.8348)"/><path class="cls-4" d="M24.2974,18.7688a2.3157,2.3157,0,0,0-4.631.0366v.0374a7.5181,7.5181,0,1,1-15.0347.047l0-.03A2.3155,2.3155,0,0,0,.0012,18.832a12.1491,12.1491,0,1,0,24.2974.1332C24.2983,18.8994,24.298,18.8343,24.2974,18.7688Z" transform="translate(0 -0.8348)"/></g><path id="accent" class="cls-5" d="M24.5575,4.5516a2.3153,2.3153,0,0,0-1.1263-1.9888A12.1492,12.1492,0,1,0,11.2275,23.5715a2.3153,2.3153,0,0,0,2.2658-4.0385A7.518,7.518,0,1,1,21.0512,6.5362a2.3165,2.3165,0,0,0,3.5063-1.9846Z" transform="translate(0 -0.8348)"/></svg>
         </a>
       </span>
     </div>
