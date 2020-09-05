@@ -19,27 +19,27 @@
     <meta name="apple-mobile-web-app-title" content="<?= config()->site->name ?>"/>
     <meta name="application-name" content="<?= config()->site->name ?>"/>
     <meta name="theme-color" content="<?= config()->site->main_color ?>"/>
-    <meta name="msapplication-config" content="theme://images/favicons/browserconfig.xml"/>
+    <meta name="msapplication-config" content="theme://images/icons/browserconfig.xml"/>
     <meta name="msapplication-TileColor" content="<?= config()->site->main_color ?>" />
-    <meta name="msapplication-TileImage" content="theme://images/favicons/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="theme://images/favicons/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="theme://images/favicons/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="theme://images/favicons/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="theme://images/favicons/mstile-310x310.png" />
+    <meta name="msapplication-TileImage" content="theme://images/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="theme://images/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="theme://images/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="theme://images/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="theme://images/icons/mstile-310x310.png" />
         
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="theme://images/favicons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="theme://images/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="theme://images/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="theme://images/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="theme://images/favicons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="theme://images/favicons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="theme://images/favicons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="theme://images/favicons/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="theme://images/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="theme://images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="theme://images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="theme://images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="theme://images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="theme://images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="theme://images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="theme://images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="theme://images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="theme://images/icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="theme://images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="theme://images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="theme://images/icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
     
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
