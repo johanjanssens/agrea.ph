@@ -43,7 +43,7 @@
       <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <span class="inline-flex mr-2 bg-green-500 rounded border-dark-green-600 border p-2 pb-1 -mt-2">
-          <span class="text-gray-200 border-dark-green-600 border-r pr-2 mr-1 -mt-1">Follow our social feeds</span>
+          <span class="text-gray-200 text-xs border-dark-green-600 border-r pr-2 mr-1">Follow our social feeds</span>
           <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-gray-200 hover:text-dark-green-600 transition duration-300 ease-in-out">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
