@@ -30,7 +30,9 @@ name: Home
         $category_slug = (strpos($article->category->slug, 'prouts') == true) ? 'news' : $article->category->slug;
       ?>
       <div class="h-full border-2 border-dark-green-300 rounded-lg overflow-hidden">
-        <img class="lg:h-48 md:h-36 w-full object-cover object-center"  src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+        <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>">
+          <img class="lg:h-48 md:h-36 w-full object-cover object-center"  src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+        </a>
         <div class="p-6">
           <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">
             <a class="text-gray-900 hover:text-gray-600" href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>"><?= $article->category->name; ?></a>
@@ -41,9 +43,11 @@ name: Home
               </svg> <?= date($article->published_date, 'd M, Y'); ?>
             </span>
           </p>
-          <h1 class="font-title text-lg font-medium text-gray-900 mb-3"><?= $article->title ?></h1>
+          <h1 class="font-title text-lg font-medium text-gray-900 mb-3">
+            <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>" class="text-gray-900 hover:text-gray-600"><?= $article->title ?></a>
+          </h1>
           <p class="mb-3"><?= $article->excerpt ?></p>
-          <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>" class="text-green-500">Learn More
+          <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>" class="text-green-500 inline-flex items-center">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
