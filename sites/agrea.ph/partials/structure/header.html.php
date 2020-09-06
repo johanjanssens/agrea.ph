@@ -10,9 +10,8 @@
   <div class="w-full text-gray-700">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto md:items-center md:justify-between md:flex-row">
       <div class="p-4 flex flex-row items-center justify-between">
-        <a class="flex items-center mb-4 md:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
-            <title><?= config()->site->name ?></title>
+        <a class="flex items-center mb-4 md:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
+          <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
             <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
             c8.35,1.48,24.26,2.32,36.45-8.02L110.73,85.44z M92.62,92.15c0.88-0.09,1.47-0.21,2.81-0.46c0.85-0.2,2.18-0.46,2.82-0.68
             c-4.46-11.16-12.52-19.33-12.52-19.33c0,0-0.01,0.01-0.01,0.01c-0.02,0.02,0,0,0,0c-4.17-4.27-9.66-6.73-14.35-8.04l-2.23,4.98
