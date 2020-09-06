@@ -6,79 +6,80 @@ summary: With a strong belief in Ecology of Dignity, AGREA Social Programs is se
 slug: programs
 ---
 
-<div class="flex flex-col sm:flex-row">
-	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
+<div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">The Cultivation of Human Beings</h1>
+				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">The Cultivation of Human Beings</h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg">
 			</div>
 		</div>
+		<div itemprop="articleBody">
+			<p class="text-lg mb-4">With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. </p>
 
-		<p class="text-lg mb-4">With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. </p>
+			<figure class="my-10 text-center">
+				<img itemprop="image" class="rounded mx-auto object-contain" src="images://programs/one-island-economy-model.jpg">
+				<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
+			</figure>
 
-		<figure class="my-10 text-center">
-			<img class="rounded mx-auto object-contain" src="images://programs/one-island-economy-model.jpg">
-			<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
-		</figure>
+			<p>To achieve One-Island Economy in the Province of Marinduque, AGREA implements community-based and organization-based programs supported by training and workshops for individuals that address Zero Waste, Zero Hunger, and Zero Insufficiency.</p>
 
-		<p>To achieve One-Island Economy in the Province of Marinduque, AGREA implements community-based and organization-based programs supported by training and workshops for individuals that address Zero Waste, Zero Hunger, and Zero Insufficiency.</p>
+			<p>In order to achieve the One-Island Economy Model, AGREA dissects its programs into three impact areas. The said impact areas aim to thread together economic development, social well-being, and environmental sensitivity. </p>
 
-		<p>In order to achieve the One-Island Economy Model, AGREA dissects its programs into three impact areas. The said impact areas aim to thread together economic development, social well-being, and environmental sensitivity. </p>
+			<figure class="my-10 text-center">
+				<img class="rounded mx-auto object-contain" src="images://programs/zero-waste-one-island-economy.jpg">
+				<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
+			</figure>
 
-		<figure class="my-10 text-center">
-			<img class="rounded mx-auto object-contain" src="images://programs/zero-waste-one-island-economy.jpg">
-			<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
-		</figure>
+			<p>THREE ZEROS. One Island Economy is economic development with sensitivity to the environment and concern for social well-being. </p>
 
-		<p>THREE ZEROS. One Island Economy is economic development with sensitivity to the environment and concern for social well-being. </p>
+			<p>Our focus is on farmers and fishermen in Marinduque. AGREA believes that their role is as important as any other stakeholder in the goods value chain. AGREA believes that through technology, education and community empowerment, farmers can have a fairer business share, more autonomy, more dignity and a better quality of life.</p>
 
-		<p>Our focus is on farmers and fishermen in Marinduque. AGREA believes that their role is as important as any other stakeholder in the goods value chain. AGREA believes that through technology, education and community empowerment, farmers can have a fairer business share, more autonomy, more dignity and a better quality of life.</p>
+			<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Capacity-Building Framework</h2>
 
-		<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Capacity-Building Framework</h2>
+			<p>Among the key components of AGREA Social Programs is Capacity Building. It is a series of training and workshops designed for community-based farmers. </p>
 
-		<p>Among the key components of AGREA Social Programs is Capacity Building. It is a series of training and workshops designed for community-based farmers. </p>
+			<figure class="my-10 text-center">
+				<img class="rounded mx-auto object-contain" src="images://programs/trainees.jpg">
+				<figcaption class="text-sm mt-5">Visualized dreams and aspirations. Trainees during the Financial Literacy and Values Formation pose with AGREA President Cherrie Atilano and representatives from DAR Marinduque.</figcaption>
+			</figure>
 
-		<figure class="my-10 text-center">
-			<img class="rounded mx-auto object-contain" src="images://programs/trainees.jpg">
-			<figcaption class="text-sm mt-5">Visualized dreams and aspirations. Trainees during the Financial Literacy and Values Formation pose with AGREA President Cherrie Atilano and representatives from DAR Marinduque.</figcaption>
-		</figure>
+			<p>The goal is to enable farmers by making them: (1) Grounded Farmers thru Values Formation, (2) Skilled Farmers thru Technical Training, and (3) Empowered Farmer thru Financial Literacy. Training and workshops under the Capacity Building Program is anchored to farming activities as the core activity of the beneficiaries. </p>
 
-		<p>The goal is to enable farmers by making them: (1) Grounded Farmers thru Values Formation, (2) Skilled Farmers thru Technical Training, and (3) Empowered Farmer thru Financial Literacy. Training and workshops under the Capacity Building Program is anchored to farming activities as the core activity of the beneficiaries. </p>
+			<figure class="my-10 text-center">
+				<img class="rounded mx-auto object-contain" src="images://programs/capacity-building-framework.jpg">
+			</figure>
 
-		<figure class="my-10 text-center">
-			<img class="rounded mx-auto object-contain" src="images://programs/capacity-building-framework.jpg">
-		</figure>
+			<p>READ: Empowering farmers through Values Formation and Financial Literacy</p>
 
-		<p>READ: Empowering farmers through Values Formation and Financial Literacy</p>
+			<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Youth in Agriculture and Entrepreneurship Workshops</h2>
 
-		<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Youth in Agriculture and Entrepreneurship Workshops</h2>
+			<p>Partnered with different organizations, AGREA designs and implements workshops about agriculture and entrepreneurship for community-based youths, student leaders, indigenous peoples, and war-torn youths. </p>
 
-		<p>Partnered with different organizations, AGREA designs and implements workshops about agriculture and entrepreneurship for community-based youths, student leaders, indigenous peoples, and war-torn youths. </p>
+			<p>Together with Keep Hope Alive, AGREA implemented myLEADER Agripreneurship Workshop in the provinces of Oriental Mindoro, Marinduque, and Palawan. It aimed to facilitate collaboration between student leaders, community-based youths, and indigenous peoples of MIMAROPA to develop enterprises based on existing agricultural potentials in their community. </p>
 
-		<p>Together with Keep Hope Alive, AGREA implemented myLEADER Agripreneurship Workshop in the provinces of Oriental Mindoro, Marinduque, and Palawan. It aimed to facilitate collaboration between student leaders, community-based youths, and indigenous peoples of MIMAROPA to develop enterprises based on existing agricultural potentials in their community. </p>
+			<figure class="my-10 text-center">
+				<img class="rounded mx-auto object-contain" src="images://programs/agri-summer-immersion.jpg">
+				<figcaption class="text-sm mt-5">Other AGREA agri-entrepreneurship workshops:<br>
+				Agri-Summer Immersion Marinduque</figcaption>
+			</figure>
 
-		<figure class="my-10 text-center">
-			<img class="rounded mx-auto object-contain" src="images://programs/agri-summer-immersion.jpg">
-			<figcaption class="text-sm mt-5">Other AGREA agri-entrepreneurship workshops:<br>
-			Agri-Summer Immersion Marinduque</figcaption>
-		</figure>
+			<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Beneficiary Demographics</h2>
 
-		<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Beneficiary Demographics</h2>
+			<p>The individual training and workshops are designed to address the following stakeholders: (1) farmers, (2) small entrepreneurs, (3) students, and (4) community-based individuals.</p>
 
-		<p>The individual training and workshops are designed to address the following stakeholders: (1) farmers, (2) small entrepreneurs, (3) students, and (4) community-based individuals.</p>
+			<p>Such approach is utilized in order to capacitate every member of the society as they engage in community-wide and organization-wide programs that are designed to piece together a One-Island Economy.</p>
 
-		<p>Such approach is utilized in order to capacitate every member of the society as they engage in community-wide and organization-wide programs that are designed to piece together a One-Island Economy.</p>
+			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
+				<h3 class=" font-medium font-title mb-4">Know more about AGREA's social programs</h3>
 
-		<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-			<h3 class=" font-medium font-title mb-4">Know more about AGREA's social programs</h3>
-
-			<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, call our landline at (042) 332-0025, or send an email to <a href="mailto:agreaph@gmail.com">agreaph@gmail.com</a>.</p>
+				<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, call our landline at (042) 332-0025, or send an email to <a href="mailto:agreaph@gmail.com">agreaph@gmail.com</a>.</p>
+			</div>
 		</div>
-	</div>
+	</article>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
@@ -151,4 +152,4 @@ slug: programs
 			</a>
 		</div>
 	</div>
-</div>
+</article>

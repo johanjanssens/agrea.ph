@@ -6,11 +6,11 @@ summary: Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA i
 slug: consultancy
 ---
 
-<div class="flex flex-col sm:flex-row">
+<div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
 	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
+				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
@@ -28,7 +28,7 @@ slug: consultancy
 			<li>Sustainability Services</li>
 		</ul>
 
-		<p><img alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
+		<p><img itemprop="image" alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
 
 		<h3 class="text-gray-900 font-medium font-title my-4">Capacity-building &amp; sustainable agriculture training for farmers</h3>
 

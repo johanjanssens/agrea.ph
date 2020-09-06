@@ -6,19 +6,24 @@ summary: YSEALI GROW is a week-long leadership/agri-preneurship training that ha
 slug: yseali-grow
 ---
 
-<article class="flex flex-col sm:flex-row">
+<article itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name"><?= config()->site->name ?></span>
+	</span>
 	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
+				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg">
 			</div>
 		</div>
-		<?= article(3)->excerpt ?>
-		<?= article(3)->text ?>
+		<div itemprop="articleBody">
+			<?= article(3)->excerpt ?>
+			<?= article(3)->text ?>
+		</div>
 	</div>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 		

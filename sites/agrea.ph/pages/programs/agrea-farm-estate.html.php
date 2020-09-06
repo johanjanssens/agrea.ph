@@ -6,22 +6,27 @@ summary: Located in Barangay Cawit, Boac, Marinduque and situated between the oc
 slug: agrea-farm-estate
 ---
 
-<article class="flex flex-col sm:flex-row">
+<article itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+		<span itemprop="name"><?= config()->site->name ?></span>
+	</span>
 	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
+				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg">
 			</div>
 		</div>
-		<?= article(5)->excerpt ?>
-		<?= article(5)->text ?>
-		<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-			<h3 class="font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
-			<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, call our landline at (042) 332-0025, please call/text mobile +63 917 124-0905, or send an email to <a href="mailto:agreaph@gmail.com?subject=AGREA%20Model%20Farm">agreaph@gmail.com</a>.</p>
+		<div itemprop="articleBody">
+			<?= article(5)->excerpt ?>
+			<?= article(5)->text ?>
+			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
+				<h3 class="font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
+				<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, call our landline at (042) 332-0025, please call/text mobile +63 917 124-0905, or send an email to <a href="mailto:agreaph@gmail.com?subject=AGREA%20Model%20Farm">agreaph@gmail.com</a>.</p>
+			</div>
 		</div>
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
