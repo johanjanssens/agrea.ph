@@ -40,7 +40,7 @@
         </svg>
         <span class="ml-3 text-xl font-agrea"><?= config()->site->name ?></span>
       </a>
-      <p class="sm:text-sm text-xs text-gray-500 sm:ml-6 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
+      <p class="text-gray-500 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <span class="inline-flex mr-2 bg-green-500 rounded border-green-900 border p-2 -mt-2">
           <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-dark-green-600 hover:text-lime-500 transition duration-500 ease-in-out">
