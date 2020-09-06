@@ -25,17 +25,17 @@ process:
 		</div>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<div itemscope itemtype="http://schema.org/JobPosting" class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
-				<span itemprop="hiringOrganization" class="hidden"><?= config()->site->name ?></span>
+			<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+				<span class="hidden"><?= config()->site->name ?></span>
 				<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('careers/article'), ['slug' => $article->slug]) ?>">
 					<img class="rounded w-full object-contain object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
-					<p itemprop="datePosted" class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2 flex items-center">
+					<p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
 						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
 						</svg> <?= date($article->published_date, 'd M, Y'); ?>
 					</p>
-					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight" itemprop="title"><?= $article->title; ?></h2>
-					<div class="text-sm" itemprop="description"><?= $article->excerpt; ?></div>
+					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight" ><?= $article->title; ?></h2>
+					<div class="text-sm" ><?= $article->excerpt; ?></div>
 					<p class="text-xs mt-2">
 						Posted by: <?= $article->getEditor()->getName(); ?>
 					</p>

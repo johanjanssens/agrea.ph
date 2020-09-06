@@ -16,4 +16,4 @@
 		</span>
 	</p>
 	<div class="mt-2" itemprop="articleBody" content="<?= $article->text ?>"><?= $article->text ?></div>
-</article>
+</div>
