@@ -11,8 +11,6 @@ collection:
         category: [9]
         sort: date
         order: asc
-process:
-    filters: [plugins]
 ---
 <div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">

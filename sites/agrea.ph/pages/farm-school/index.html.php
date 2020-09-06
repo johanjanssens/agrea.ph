@@ -11,8 +11,6 @@ collection:
         category: [13]
         sort: date
         order: desc
-process:
-    filters: [plugins]
 ---
 
 <div class="flex flex-col sm:flex-row">
