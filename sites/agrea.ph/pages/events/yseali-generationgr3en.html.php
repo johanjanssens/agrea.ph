@@ -13,7 +13,7 @@ slug: yseali-generationgr3en
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow/grow.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg">
 			</div>
 		</div>
 		<p><span class="font-bold ">YSEALI GenerationGR3EN Workshop</span> is a 4-day eco-entrepreneurship workshop held in Brunei Darussalam with a focus on eco-tourism. The workshop was held last 25-28 February 2017.</p>
@@ -29,37 +29,44 @@ slug: yseali-generationgr3en
 		<h3 class="text-gray-900 font-medium font-title my-4">YSEALI TV for YSEALI GenGR3EN</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 1.</span> Check out the activities on the first day of&nbsp;YSEALI GenerationGR3EN in Brunei Darussalam.</p>
+		<div class="lg:grid lg:grid-cols-2 lg:gap-8">
+			<div class="generationgr3en-video-episode">
+				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 1.</span> Check out the activities on the first day of&nbsp;YSEALI GenerationGR3EN in Brunei Darussalam.</p>
 
-		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1876910839221281%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				<div class="embed-responsive aspect-ratio-16/9">
+					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1876910839221281%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<div class="generationgr3en-video-episode">
+				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 2.</span> In this episode you will learn more about the speakers and watch the amazing performances by the participants at the Cultural Night.</p>
+
+				<div class="embed-responsive aspect-ratio-16/9">
+					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878350365743995%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<div class="generationgr3en-video-episode">
+				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 3.</span> Participants learn more about ecotourism and infrastructure, right in the heart of Brunei's rain forest.</p>
+
+				<div class="embed-responsive aspect-ratio-16/9">
+					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878676755711356%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<div class="generationgr3en-video-episode">
+				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 4.</span> Participants What's the output of&nbsp;YSEALI GenerationGR3EN in&nbsp;Brunei Darussalam? Check out the answer in the 4th episode of YSEALI TV!</p>
+
+				<div class="embed-responsive aspect-ratio-16/9">
+					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1879255605653471%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</div>
+			<div class="generationgr3en-video-episode">
+				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 5.</span> YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
+
+				<div class="embed-responsive aspect-ratio-16/9">
+					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1908462842732747%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+				</div>
+			</div>
 		</div>
-
-		<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 2.</span> In this episode you will learn more about the speakers and watch the amazing performances by the participants at the Cultural Night.</p>
-
-		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878350365743995%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-		</div>
-
-		<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 3.</span> Participants learn more about ecotourism and infrastructure, right in the heart of Brunei's rain forest.</p>
-
-		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878676755711356%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-		</div>
-
-		<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 4.</span> Participants What's the output of&nbsp;YSEALI GenerationGR3EN in&nbsp;Brunei Darussalam? Check out the answer in the 4th episode of YSEALI TV!</p>
-
-		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1879255605653471%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-		</div>
-
-		<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 5.</span> YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
-
-		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1908462842732747%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-		</div>
-
-		<p><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/grow/grow/grow-sidebar-3.jpg" /></p>
+		<p><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/grow/grow-sidebar-3.jpg" /></p>
 	</article>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 		
