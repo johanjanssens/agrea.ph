@@ -1,0 +1,77 @@
+
+## Define environment variable
+SetEnvIf Host ^staging\.agrea\.ph$ SITE=staging
+SetEnvIf Host ^www\.agrea\.ph$ SITE=production
+
+## No directory listings
+<IfModule autoindex>
+  IndexIgnore *
+</IfModule>
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymlinks
+Options -Indexes
+
+## Disable inline JavaScript when directly opening SVG files or embedding them with the object-tag
+<FilesMatch "\.svg$">
+  <IfModule mod_headers.c>
+    Header always set Content-Security-Policy "script-src 'none'"
+  </IfModule>
+</FilesMatch>
+
+RewriteEngine On
+
+## Begin - Redirects
+#
+
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+#
+## End - Redirects
+
+## Begin - Image Cache
+#
+
+  # Condition - Do not serve from cache on browser refresh or when caching is not allowed
+  RewriteCond %{HTTP:Cache-Control} ^(no-cache)$ [OR]
+  RewriteCond %{QUERY_STRING} !^$ [OR]
+  RewriteCond %{REQUEST_URI} !(?i)(.+)\.(jpe?g|png|gif).php$
+  RewriteRule .* - [S=2]
+
+  # Find WebP image (if browser supports it)
+  RewriteCond %{HTTP_ACCEPT} image/webp [OR]
+  RewriteCond %{HTTP_USER_AGENT} "Google Page Speed Insights"
+  RewriteCond %{QUERY_STRING} format
+  RewriteCond %{DOCUMENT_ROOT}/sites/agrea.php/cache/$1\.webp_%{QUERY_STRING} -f
+  RewriteRule (.+)\.(jpe?g|png|gif).php$ /sites/agrea.php/cache/$1.webp_%{QUERY_STRING} [NC,T=image/webp,E=IMAGE,L]
+
+  # Find other image
+  RewriteCond %{DOCUMENT_ROOT}/sites/agrea.ph/cache/$1\.$2_%{QUERY_STRING} -f
+  RewriteRule (.+)\.(jpe?g|png|gif).php$ /sites/agrea.php/cache/$1.$2_%{QUERY_STRING} [NC,E=IMAGE,L]
+
+  # Generate image
+  RewriteCond %{QUERY_STRING} !^$
+  RewriteCond %{REQUEST_URI} !^/sites/agrea.php/cache
+  RewriteRule (.+)\.(jpe?g|png|gif).php$ image.php [NC,E=IMAGE,L]
+
+  # Add Accept to the Vary header
+  Header append Vary Accept,User-Agent env=REDIRECT_IMAGE
+
+  # Remove Etag header
+  Header unset ETag env=REDIRECT_IMAGE
+
+#
+## End - Image cache
+
+## Begin - Joomla! core SEF Section.
+#
+
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+  RewriteCond %{REQUEST_URI} !^/index\.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule .* index.php [L]
+
+#
+## End - Joomla! core SEF Section.
