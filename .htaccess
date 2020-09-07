@@ -34,9 +34,11 @@ RewriteEngine On
 ## Begin - Image Cache
 #
 
+  # Define the filesystem location of the cache
+  SetEnvIf Request_URI "^.*" KPATH_PAGES_CACHE=/sites/agrea.php/cache
+
   # Condition - Do not serve from cache on browser refresh or when caching is not allowed
   RewriteCond %{HTTP:Cache-Control} ^(no-cache)$ [OR]
-  RewriteCond %{QUERY_STRING} !^$ [OR]
   RewriteCond %{REQUEST_URI} !(?i)(.+)\.(jpe?g|png|gif).php$
   RewriteRule .* - [S=2]
 
@@ -44,16 +46,15 @@ RewriteEngine On
   RewriteCond %{HTTP_ACCEPT} image/webp [OR]
   RewriteCond %{HTTP_USER_AGENT} "Google Page Speed Insights"
   RewriteCond %{QUERY_STRING} format
-  RewriteCond %{DOCUMENT_ROOT}/sites/agrea.php/cache/$1\.webp_%{QUERY_STRING} -f
-  RewriteRule (.+)\.(jpe?g|png|gif).php$ /sites/agrea.php/cache/$1.webp_%{QUERY_STRING} [NC,T=image/webp,E=IMAGE,L]
+  RewriteCond %{DOCUMENT_ROOT}/%{ENV:KPATH_PAGES_CACHE}/$1\.webp_%{QUERY_STRING} -f
+  RewriteRule (.+)\.(jpe?g|png|gif).php$ %{ENV:KPATH_PAGES_CACHE}/$1.webp_%{QUERY_STRING} [NC,T=image/webp,E=IMAGE,L]
 
   # Find other image
-  RewriteCond %{DOCUMENT_ROOT}/sites/agrea.ph/cache/$1\.$2_%{QUERY_STRING} -f
-  RewriteRule (.+)\.(jpe?g|png|gif).php$ /sites/agrea.php/cache/$1.$2_%{QUERY_STRING} [NC,E=IMAGE,L]
+  RewriteCond %{DOCUMENT_ROOT}/%{ENV:KPATH_PAGES_CACHE}/$1\.$2_%{QUERY_STRING} -f
+  RewriteRule (.+)\.(jpe?g|png|gif).php$ %{ENV:KPATH_PAGES_CACHE}/$1.$2_%{QUERY_STRING} [NC,E=IMAGE,L]
 
   # Generate image
-  RewriteCond %{QUERY_STRING} !^$
-  RewriteCond %{REQUEST_URI} !^/sites/agrea.php/cache
+  RewriteCond %{REQUEST_URI} !^%{ENV:KPATH_PAGES_CACHE}
   RewriteRule (.+)\.(jpe?g|png|gif).php$ image.php [NC,E=IMAGE,L]
 
   # Add Accept to the Vary header

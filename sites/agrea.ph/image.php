@@ -5,9 +5,11 @@ if(getenv('REDIRECT_IMAGE') !== false)
     /**
      * Config options
      */
-    $cache_time = '1year';  //time to cache the image on the network
     $gc_time    = '1week';  //time before images that are not accessed are garbage collected
-    $cache_dir  = __DIR__.'/sites/agrea.ph/cache';
+
+    $cache_time   = '1year';  //time to cache the image on the network
+    $cache_dir    = getenv('KPATH_PAGES_CACHE') ? $_SERVER['DOCUMENT_ROOT'].getenv('KPATH_PAGES_CACHE') : false;
+    $cache_bypass = isset($_SERVER['HTTP_CACHE_CONTROL']) && strstr($_SERVER['HTTP_CACHE_CONTROL'], 'no-cache') !== false;
 
     $gc_time    = is_string($gc_time) ? strtotime($gc_time) - strtotime('now') : $gc_time;
     $cache_time = is_string($cache_time) ? strtotime($cache_time) - strtotime('now') : $cache_time;
@@ -100,23 +102,25 @@ if(getenv('REDIRECT_IMAGE') !== false)
         }
 
         //Create the filename
-        if($type)
+        if($cache_dir)
         {
-            $search  = pathinfo($filepath, PATHINFO_EXTENSION);
-            $replace = image_type_to_extension($type, false);
-            $path    = str_replace($search, $replace, $filepath);
-        }
-        else $path = $filepath;
+            $path  = $filepath;
+            $query = $parameters;
 
-        $query = $parameters;
-        unset($query['fm']);
-        $generated = $cache_dir.'/'.$path.'_'.http_build_query($query, '', '&');
+            if($type)
+            {
+                $search  = pathinfo($filepath, PATHINFO_EXTENSION);
+                $replace = image_type_to_extension($type, false);
+                $path    = str_replace($search, $replace, $filepath);
+            }
+
+            unset($query['fm']);
+            $generated = $cache_dir.'/'.$path.'_'.http_build_query($query, '', '&');
+        }a
 
         //Generate image
-        $image    = null;
-        $no_cache = isset($_SERVER['HTTP_CACHE_CONTROL']) && strstr($_SERVER['HTTP_CACHE_CONTROL'], 'no-cache') !== false;
-
-        if(!file_exists($generated) || $no_cache)
+        $image = null;
+        if(!$generated || !file_exists($generated) || $cache_bypass)
         {
             try
             {
@@ -483,7 +487,7 @@ Class Image
         //Default: GD
         if(!$this->_image instanceof Imagick) {
             $result = imagesy($this->_image);
-            //Imagick
+        //Imagick
         } else {
             $result = $this->_image->getImageHeight();
         }
