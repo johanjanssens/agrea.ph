@@ -5,7 +5,7 @@
 			<? if (strpos(page()->path, $page->path) === 0): ?>
 				<? if ($child->getChildren()): ?>
 					<li class="hover:bg-gray-100 items-center transition-colors duration-500 ease-in-out p-2 flex flex-row sm:flex-col sm:items-center lg:flex-row justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
-						<a class="flex-1 focus:outline-none focus:shadow-outline" href="<?= route($child) ?>"><?= $child->name ?></a>
+						<a class="flex-1 focus:outline-none focus:shadow-outline block" href="<?= route($child) ?>"><?= $child->name ?></a>
 						<button
 							@click="isOpen = !isOpen"
 							type="button"
@@ -38,13 +38,13 @@
 					>
 						<? foreach($child->getChildren() as $sub): ?>
 							<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2 pl-6 pr-4<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
-								<a class="w-full" href="<?= route($sub) ?>"><?= $sub->name ?></a>
+								<a class="block" href="<?= route($sub) ?>"><?= $sub->name ?></a>
 							</li>
 						<? endforeach ?>
 					</ul>
 				<? else: ?>
 					<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
-						<a class="w-full" href="<?= route($child) ?>"><?= $child->name ?></a>
+						<a class="block" href="<?= route($child) ?>"><?= $child->name ?></a>
 					</li>
 				<? endif; ?>
 			<? endif; ?>
