@@ -26,7 +26,7 @@
     <meta name="msapplication-square150x150logo" content="theme://images/icons/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="theme://images/icons/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="theme://images/icons/mstile-310x310.png" />
-        
+
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="theme://images/icons/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="theme://images/icons/apple-touch-icon-114x114.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="theme://images/icons/apple-touch-icon-72x72.png" />
@@ -41,12 +41,14 @@
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
-    
+
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
-    <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
-    <ktml:script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer="defer" />
     <ktml:style src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="preload" as="style" />
+
+    <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
+    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.6.0/alpine.js" defer="defer" />
     <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer="defer" />
+    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async="async" />
     <ktml:script src="media://com_pages/js/prefetcher-v1.0.0.min.js" defer="defer" />
 
     <? if (config()->ga_code): ?>
