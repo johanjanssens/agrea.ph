@@ -42,11 +42,12 @@
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
     <link href="https://unpkg.com/" rel="preconnect" />
-    
+
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:style src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.css" rel="preload" as="style" />
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
-    
+
+    <ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.js" async="async" />
     <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
     <ktml:script src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.js" defer="defer" />
     <ktml:script src="media://com_pages/js/prefetcher-v1.0.0.min.js" defer="defer" />
