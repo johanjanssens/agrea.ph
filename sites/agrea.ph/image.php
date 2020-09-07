@@ -131,7 +131,7 @@ if(getenv('REDIRECT_IMAGE') !== false)
                 if(isset($parameters['w']) || isset($parameters['w']))
                 {
                     $density = $parameters['dpr'] ?? 1;
-                    $image->resize((int) $parameters['w'] ?? null, (int) parameters['w'] ?? null, (int) $density);
+                    $image->resize((int) $parameters['w'] ?? null, (int) $parameters['w'] ?? null, (int) $density);
                 }
 
                 //Pixellate
