@@ -41,16 +41,6 @@
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
-<<<<<<< Updated upstream
-
-    <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
-    <ktml:style src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css" rel="preload" as="style" />
-
-    <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
-    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.6.0/alpine.js" defer="defer" />
-    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer="defer" />
-    <ktml:script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async="async" />
-=======
     <link href="https://unpkg.com/" rel="preconnect" />
     
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
@@ -59,7 +49,6 @@
     
     <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
     <ktml:script src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.js" defer="defer" />
->>>>>>> Stashed changes
     <ktml:script src="media://com_pages/js/prefetcher-v1.0.0.min.js" defer="defer" />
 
     <? if (config()->ga_code): ?>
