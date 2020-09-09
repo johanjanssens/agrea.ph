@@ -34,9 +34,4 @@ return array(
     // Google Analytics
     'ga_code' => 'O-gAbCcD1E2FGHIJKlmnO3PqRst4Uv5wXzz-O1xx_xx',
 
-    //Extension Configuration
-    'ext:pages.template.helper.image'   => [
-        'max_width' => 1600,
-        'base_path' => JPATH_ROOT,
-    ],
 );

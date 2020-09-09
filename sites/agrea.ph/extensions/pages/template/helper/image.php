@@ -7,7 +7,10 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         $config->append(array(
             'max_width' => 1920,
             'min_width' => 320,
-            'base_path' => JPATH_ROOT,
+            'base_url'  => $this->getObject('request')->getBaseUrl(),
+            'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
+            'exclude'    => ['svg'],
+            'parameters' => ['auto' => 'true']
         ));
 
         parent::_initialize($config);
@@ -19,7 +22,6 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         $config->append(array(
             'image'   => '',
             'alt'     => '',
-            'bg'      => '',
             'class'   => array('lazyload'),
             'width'   => null,
             'height'  => null,
@@ -30,84 +32,130 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             'attributes' => array('class' => $config->class),
         ));
 
-        //Calculate the max width
-        if(stripos($config->max_width, '%') !== false) {
-            $config->max_width = ceil($this->getConfig()->max_width / 100 * (int) $config->max_width);
-        }
+        //Get the image format
+        $format  = strtolower(pathinfo($config->image, PATHINFO_EXTENSION));
+        $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
 
-        if(stripos($config->min_width, '%') !== false) {
-            $config->min_width = ceil($this->getConfig()->min_width / 100 * (int) $config->min_width);
-        }
-
-        //Build path for the high quality image
-        $hqi_url = $this->url($config->image.'.php');
-
-        //Build the path for the low quality image
-        $lqi_url = $this->url($config->image.'.php', ['px' => 2, 'bl' => 80, 'q' => 25, 'bg' => $config->bg]);
-
-        //Responsive image with auto sizing through lazysizes
-        $html = '';
-        if(!isset($config['width']) && !isset($config['height']))
+        if($this->_isSupported($config->image))
         {
-            $breakpoints = $this->_calculateBreakpoints($config->image, $config->max_width, $config->min_width);
+            //Calculate the max width
+            if(stripos($config->max_width, '%') !== false) {
+                $config->max_width = ceil($this->getConfig()->max_width / 100 * (int) $config->max_width);
+            }
 
-            $srcset = sprintf($lqi_url.'&fm=jpg&w=%1$s', $breakpoints[0]);
+            if(stripos($config->min_width, '%') !== false) {
+                $config->min_width = ceil($this->getConfig()->min_width / 100 * (int) $config->min_width);
+            }
 
-            //Generate data url for low quality image and preload it inline
-            if($config['preload']) {
+            //Build path for the high quality image
+            $hqi_url = $this->url($config->image);
 
-                if($data = @file_get_contents($srcset)) {
-                    $srcset = 'data:image/jpg;base64,'.base64_encode($data);
+            //Build the path for the low quality image
+            $lqi_url = $this->url($config->image, ['bl' => 75, 'q' => 40]);
+
+            //Responsive image with auto sizing through lazysizes
+            $html = '';
+            if(!isset($config['width']) && !isset($config['height']))
+            {
+                $breakpoints = $this->_calculateBreakpoints($config->image, $config->max_width, $config->min_width);
+
+                $srcset = sprintf($lqi_url.'&fm=jpg&w=%1$s', $breakpoints[0]);
+
+                //Generate data url for low quality image and preload it inline
+                if($config['preload'])
+                {
+                    $context = stream_context_create([
+                        "ssl" => [
+                            "verify_peer"      =>false,
+                            "verify_peer_name" =>false,
+                        ],
+                    ]);
+
+                    if($data = @file_get_contents($this->getConfig()->base_url.$srcset, false, $context)) {
+                        $srcset = 'data:image/jpg;base64,'.base64_encode($data);
+                    }
                 }
-            }
 
-            $data_srcset = array();
-            foreach($breakpoints as $breakpoint) {
-                $data_srcset[] = sprintf($hqi_url.'&w=%1$s %1$sw', $breakpoint);
-            }
+                $data_srcset = array();
+                foreach($breakpoints as $breakpoint) {
+                    $data_srcset[] = sprintf($hqi_url.'&w=%1$s %1$sw', $breakpoint);
+                }
 
-            //Combine a normal src attribute with a low quality image as srcset value and a data-srcset attribute.
-            //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
-            //to the initial src attribute (without lazyload).
-            //
-            //Set data-expaned to -10 to only load the image when it becomes visible in the viewport
-            $html .='<img width="'.$breakpoints[0].'" src="'.$hqi_url.'&w='.$breakpoints[0].'"
+                //Combine a normal src attribute with a low quality image as srcset value and a data-srcset attribute.
+                //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
+                //to the initial src attribute (without lazyload).
+                //
+                //Set data-expaned to -10 to only load the image when it becomes visible in the viewport
+                $html .='<img width="'.$breakpoints[0].'" src="'.$hqi_url.'&w='.$breakpoints[0].'"
                 srcset="'.$srcset.'"
                 data-sizes="auto"
                 data-srcset="'. implode(', ', $data_srcset).'"
                 alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'  data-expand="-10"  />';
+            }
+            //Fixed image with display density description
+            else
+            {
+                $width  = $config->width;
+                $height = $config->height;
+
+                if(!$width && !$height)
+                {
+                    $size = @getimagesize($this->getConfig()->base_path.$config->image);
+                    $width = $size[0];
+                }
+
+                if($height)
+                {
+                    $srcset = array(
+                        sprintf($hqi_url.'&h=%1$s&dpr=1 1x', $height),
+                        sprintf($hqi_url.'&h=%1$s&dpr=2 2x', $height),
+                        sprintf($hqi_url.'&h=%1$s&dpr=3 3x', $height),
+                    );
+
+                    $size = 'height="'.$height.'"';
+                }
+                else
+                {
+                    $srcset = array(
+                        sprintf($hqi_url.'&w=%1$s&dpr=1 1x', $width),
+                        sprintf($hqi_url.'&w=%1$s&dpr=2 2x', $width),
+                        sprintf($hqi_url.'&w=%1$s&dpr=3 3x', $width),
+                    );
+
+                    $size = 'width="'.$width.'"';
+                }
+
+                //Combine transparent image as srcset value and a data-srcset attribute. In case disabled JavaScript is
+                //disabled, fallback on the noscript element.
+                //
+                //Set data-expand to 300 to delay loading the image
+                $html = '<noscript>';
+                $html .=    '<img '.$size.' src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
+                $html .= '</noscript>';
+                $html .='<img '.$size.'
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-srcset="'. implode(',', $srcset).'"
+                alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' data-expand="300" />';
+            }
         }
-        //Fixed image with display density description
         else
         {
-            list($width, $height) = @getimagesize($this->getConfig()->base_path.$config->image);
+            $width  = $config->width;
+            $height = $config->height;
 
-            $width  = $config->width ?? $width;
-            $height = $config->height ?? $height;
+            if(!$width && !$height)
+            {
+                $size = @getimagesize($this->getConfig()->base_path.$config->image);
+                $width = $size[0];
+            }
 
-            $srcset = array(
-                sprintf($hqi_url.'&w=%1$s&h=%2$s&&dpr=1 1x', $width, $height),
-                sprintf($hqi_url.'&w=%1$s&h=%2$s&dpr=2 2x', $width, $height),
-                sprintf($hqi_url.'&w=%1$s&h=%2$s&dpr=3 3x', $width, $height),
-            );
-
-            if($config->height) {
+            if($height) {
                 $size = 'height="'.$height.'"';
             } else {
                 $size = 'width="'.$width.'"';
             }
 
-            //Combine transparent image as srcset value and a data-srcset attribute. In case disabled JavaScript is
-            //disabled, fallback on the noscript element.
-            //
-            //Set data-expand to 300 to delay loading the image
-            $html = '<noscript>';
-            $html .=    '<img '.$size.' src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
-            $html .= '</noscript>';
-            $html .='<img '.$size.'
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="'. implode(',', $srcset).'"
-                alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' data-expand="300" />';
+            $html ='<img '.$size.'src="'.$config->image.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
         }
 
         return $html;
@@ -116,16 +164,20 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
     public function url($image, $parameters = array())
     {
         $config = new KObjectConfigJson($parameters);
-        $config->append(array(
-            'auto' => 'true',
-        ));
+        $config->append($this->getConfig()->parameters);
 
-        $url = $image.'?'.urldecode(http_build_query(array_filter(KObjectConfig::unbox($config, '&'))));
+        $parts = parse_url($image);
+
+        $query = array();
+        parse_str($parts['query'], $query);
+        $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
+
+        $url = $parts['path'].'.php?'.urldecode(http_build_query($query));
 
         return $url;
     }
 
-    public function html($html, $options = array())
+    public function filter($html, $options = array())
     {
         $matches = array();
         if(preg_match_all('#<img(.*)>#siU', $html, $matches))
@@ -134,9 +186,10 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             {
                 $attribs = $this->parseAttributes($match);
                 $src     = $attribs['src'] ?? null;
+                $srcset  = $attribs['srcset'] ?? null;
 
-                //Only handle local none gif-images
-                if($src && substr($src, 0, 4) != 'http' && pathinfo($src, PATHINFO_EXTENSION) != 'gif')
+                //Only handle none responsive, local none gif-images
+                if($src && !$srcset && $this->_isSupported($src))
                 {
                     //Convert class to array
                     if(isset($attribs['class'])) {
@@ -146,10 +199,20 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                     $attribs['image'] = $src;
                     unset($attribs['src']);
 
+                   foreach($attribs as $name => $value)
+                   {
+                        if(strpos($name, 'data-') !== false)
+                        {
+                            unset($attribs[$name]);
+
+                            $name = str_replace('data-', '', $name);
+                            $attribs[$name] = $value;
+                        }
+                   }
+
                     //Merge config and attribs
                     $config = array_merge_recursive($options, $attribs);
-
-                    $html  = str_replace($matches[0][$key], $this->__invoke($config), $html);
+                    $html   = str_replace($matches[0][$key], $this->__invoke($config), $html);
                 }
             }
         }
@@ -231,6 +294,20 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         }
 
         return $breakpoints;
+    }
+
+    protected function _isSupported($image)
+    {
+        $result = true;
+
+        $format  = strtolower(pathinfo($image, PATHINFO_EXTENSION));
+        $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
+
+        if(in_array($format, $exclude) || strpos($image, 'data:') !== false || substr($image, 0, 4) == 'http') {
+            $result = false;
+        }
+
+        return $result;
     }
 
 }
