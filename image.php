@@ -11,7 +11,7 @@ if(getenv('REDIRECT_IMAGE') === false)
  * Config options
  */
 
-$basepath      = $_SERVER['DOCUMENT_ROOT'];
+$basepath      = trim($_SERVER['DOCUMENT_ROOT'], '/');
 $enhance       = false;
 $quality       = 100;
 $compress      = false;
