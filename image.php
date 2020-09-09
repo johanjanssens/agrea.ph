@@ -27,7 +27,7 @@ $cache_bypass = isset($_SERVER['HTTP_CACHE_CONTROL']) && strstr($_SERVER['HTTP_C
 //Request
 $host    = filter_var($_SERVER['HTTP_HOST'], FILTER_SANITIZE_URL);
 $request = filter_var($_SERVER['REQUEST_URI'], FILTER_SANITIZE_URL);
-$parts   = parse_url('https://'.strtolower($host.$request));
+$parts   = parse_url('https://'.$host.$request);
 
 //Time
 $time = microtime(true);
