@@ -35,7 +35,7 @@ RewriteEngine On
 #
 
 # Define the filesystem location of the cache
- SetEnvIf Request_URI ^.* KPATH_PAGES_CACHE=/cache
+ SetEnvIf Request_URI ^.* KPATH_PAGES_CACHE=/sites/agrea.php/cache
 
  # Condition - Do not serve from cache on browser refresh or when caching is not allowed
  #RewriteCond %{HTTP:Cache-Control} ^(no-cache)$ [OR]
