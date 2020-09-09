@@ -191,7 +191,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         if($this->enabled())
         {
             $matches = array();
-            if(preg_match_all('#(?!<noscript>.*)<img(.*) \/?>(?!.*<\/noscript>)#siU', $html, $matches))
+            if(preg_match_all('#<img\s([^>]*?[\'\"][^>]*?)>(?!\s*<\/noscript>)#siU', $html, $matches))
             {
                 foreach($matches[1] as $key => $match)
                 {
