@@ -207,7 +207,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                           $attribs['class'] = explode(' ', $attribs['class']);
                         }
 
-                        $attribs['image'] = $src;
+                        $attribs['image'] = '/'.ltrim($src, '/');
                         unset($attribs['src']);
 
                         foreach($attribs as $name => $value)
