@@ -164,69 +164,77 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
     }
 
     public function url($image, $parameters = array())
-  {
-      $config = new KObjectConfigJson($parameters);
-      $config->append($this->getConfig()->parameters);
+    {
+        $config = new KObjectConfigJson($parameters);
+        $config->append($this->getConfig()->parameters);
 
-      $parts = parse_url($image);
-      $query = array();
+        $parts = parse_url($image);
+        $query = array();
 
-      if(isset($parts['query'])) {
-          parse_str($parts['query'], $query);
-      }
+        if(isset($parts['query'])) {
+            parse_str($parts['query'], $query);
+        }
 
-      $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
+        $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
 
-      if($this->getConfig()->suffix) {
+        if($this->getConfig()->suffix) {
           $parts['path'] = $parts['path'].'.'.$this->getConfig()->suffix;
+        }
+
+        $url = $parts['path'].'?'.urldecode(http_build_query($query));
+
+        return $url;
       }
-
-      $url = $parts['path'].'?'.urldecode(http_build_query($query));
-
-      return $url;
-  }
 
     public function filter($html, $options = array())
     {
-        $matches = array();
-        if(preg_match_all('#(?!<noscript>.*)<img(.*) \/?>(?!.*<\/noscript>)#siU', $html, $matches))
+        if($this->enabled())
         {
-            foreach($matches[1] as $key => $match)
+            $matches = array();
+            if(preg_match_all('#(?!<noscript>.*)<img(.*) \/?>(?!.*<\/noscript>)#siU', $html, $matches))
             {
-                $attribs = $this->parseAttributes($match);
-                $src     = $attribs['src'] ?? null;
-                $srcset  = $attribs['srcset'] ?? null;
-
-                //Only handle none responsive, local none gif-images
-                if($src && !$srcset && $this->_isSupported($src))
+                foreach($matches[1] as $key => $match)
                 {
-                    //Convert class to array
-                    if(isset($attribs['class'])) {
-                        $attribs['class'] = explode(' ', $attribs['class']);
-                    }
+                    $attribs = $this->parseAttributes($match);
+                    $src     = $attribs['src'] ?? null;
+                    $srcset  = $attribs['srcset'] ?? null;
 
-                    $attribs['image'] = $src;
-                    unset($attribs['src']);
-
-                   foreach($attribs as $name => $value)
-                   {
-                        if(strpos($name, 'data-') !== false)
-                        {
-                            unset($attribs[$name]);
-
-                            $name = str_replace('data-', '', $name);
-                            $attribs[$name] = $value;
+                    //Only handle none responsive, local none gif-images
+                    if($src && !$srcset && $this->_isSupported($src))
+                    {
+                        //Convert class to array
+                        if(isset($attribs['class'])) {
+                          $attribs['class'] = explode(' ', $attribs['class']);
                         }
-                   }
 
-                    //Merge config and attribs
-                    $config = array_merge_recursive($options, $attribs);
-                    $html   = str_replace($matches[0][$key], $this->__invoke($config), $html);
+                        $attribs['image'] = $src;
+                        unset($attribs['src']);
+
+                        foreach($attribs as $name => $value)
+                        {
+                            if(strpos($name, 'data-') !== false)
+                            {
+                                unset($attribs[$name]);
+
+                                $name = str_replace('data-', '', $name);
+                                $attribs[$name] = $value;
+                            }
+                        }
+
+                        //Merge config and attribs
+                        $config = array_merge_recursive($options, $attribs);
+                        $html   = str_replace($matches[0][$key], $this->__invoke($config), $html);
+                    }
                 }
             }
         }
 
         return $html;
+    }
+
+    public function enabled()
+    {
+        return (bool) $this->getConfig()->enable;
     }
 
     public function parseAttributes($string)
@@ -300,6 +308,10 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             if ($width < $max_width) {
                 $breakpoints[] = $width;
             }
+        }
+
+        if(empty($breakpoints)) {
+          $breakpoints[] = $max_width;
         }
 
         return $breakpoints;
