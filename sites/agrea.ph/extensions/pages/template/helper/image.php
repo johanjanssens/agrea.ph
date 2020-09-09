@@ -5,11 +5,13 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
+            'enable'    => JDEBUG ? false : true,
             'max_width' => 1920,
             'min_width' => 320,
             'base_url'  => $this->getObject('request')->getBaseUrl(),
             'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
             'exclude'    => ['svg'],
+            'suffix'     => '',
             'parameters' => ['auto' => 'true']
         ));
 
@@ -162,25 +164,32 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
     }
 
     public function url($image, $parameters = array())
-    {
-        $config = new KObjectConfigJson($parameters);
-        $config->append($this->getConfig()->parameters);
+  {
+      $config = new KObjectConfigJson($parameters);
+      $config->append($this->getConfig()->parameters);
 
-        $parts = parse_url($image);
+      $parts = parse_url($image);
+      $query = array();
 
-        $query = array();
-        parse_str($parts['query'], $query);
-        $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
+      if(isset($parts['query'])) {
+          parse_str($parts['query'], $query);
+      }
 
-        $url = $parts['path'].'.php?'.urldecode(http_build_query($query));
+      $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
 
-        return $url;
-    }
+      if($this->getConfig()->suffix) {
+          $parts['path'] = $parts['path'].'.'.$this->getConfig()->suffix;
+      }
+
+      $url = $parts['path'].'?'.urldecode(http_build_query($query));
+
+      return $url;
+  }
 
     public function filter($html, $options = array())
     {
         $matches = array();
-        if(preg_match_all('#<img(.*)>#siU', $html, $matches))
+        if(preg_match_all('#(?!<noscript>.*)<img(.*) \/?>(?!.*<\/noscript>)#siU', $html, $matches))
         {
             foreach($matches[1] as $key => $match)
             {
