@@ -31,13 +31,7 @@ name: Home
       ?>
       <div class="h-full border-2 border-dark-green-300 rounded-lg overflow-hidden">
         <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>">
-          <?= helper('image', [
-            'image' => $article->image->url,
-            'max_width' => '33%',
-            'preload' => true,
-            'alt' => $article->title,
-            'class' => ['lg:h-48 md:h-36 w-full object-cover object-center']
-          ]); ?>
+          <img src="<?= $article->image->url ?>" data-max_width="33%" data-preload="true" alt="<?= $article->title ?>" class="lg:h-48 md:h-36 w-full object-cover object-center">
         </a>
         <div class="p-6">
           <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">
