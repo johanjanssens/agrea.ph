@@ -38,7 +38,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         $format  = strtolower(pathinfo($config->image, PATHINFO_EXTENSION));
         $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
 
-        if($this->_isSupported($config->image))
+        if($this->supported($config->image))
         {
             //Calculate the max width
             if(stripos($config->max_width, '%') !== false) {
@@ -200,7 +200,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                     $srcset  = $attribs['srcset'] ?? null;
 
                     //Only handle none responsive, local none gif-images
-                    if($src && !$srcset && $this->_isSupported($src))
+                    if($src && !$srcset && $this->supported($src))
                     {
                         //Convert class to array
                         if(isset($attribs['class'])) {
@@ -236,6 +236,21 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
     {
         return (bool) $this->getConfig()->enable;
     }
+
+    public function supported($image)
+    {
+        $result = true;
+
+        $format  = strtolower(pathinfo($image, PATHINFO_EXTENSION));
+        $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
+
+        if(in_array($format, $exclude) || strpos($image, 'data:') !== false || substr($image, 0, 4) == 'http') {
+            $result = false;
+        }
+
+        return $result;
+    }
+
 
     public function parseAttributes($string)
     {
@@ -316,19 +331,4 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
 
         return $breakpoints;
     }
-
-    protected function _isSupported($image)
-    {
-        $result = true;
-
-        $format  = strtolower(pathinfo($image, PATHINFO_EXTENSION));
-        $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
-
-        if(in_array($format, $exclude) || strpos($image, 'data:') !== false || substr($image, 0, 4) == 'http') {
-            $result = false;
-        }
-
-        return $result;
-    }
-
 }
