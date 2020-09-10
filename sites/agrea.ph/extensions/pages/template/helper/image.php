@@ -12,7 +12,8 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
             'exclude'    => ['svg'],
             'suffix'     => '',
-            'parameters' => ['auto' => 'true']
+            'parameters' => ['auto' => 'true'],
+            'parameters_lqi' => ['bl' => 75, 'q' => 40]
         ));
 
         parent::_initialize($config);
@@ -59,7 +60,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             $hqi_url = $this->url($config->image);
 
             //Build the path for the low quality image
-            $lqi_url = $this->url($config->image, ['bl' => 75, 'q' => 40]);
+            $lqi_url = $this->url_lqi($config->image);
 
             //Responsive image with auto sizing through lazysizes
             $html = '';
@@ -193,13 +194,21 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
 
         if($this->getConfig()->suffix) {
-          $parts['path'] = $parts['path'].'.'.$this->getConfig()->suffix;
+            $parts['path'] = $parts['path'].'.'.$this->getConfig()->suffix;
         }
 
         $url = $parts['path'].'?'.urldecode(http_build_query($query));
 
         return $url;
-      }
+    }
+
+    public function url_lqi($image, $parameters = array())
+    {
+        $config = new KObjectConfigJson($parameters);
+        $config->append($this->getConfig()->parameters_lqi);
+
+        return $this->url($image, $config);
+    }
 
     public function filter($html, $options = array())
     {
