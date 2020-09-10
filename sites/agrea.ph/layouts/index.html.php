@@ -47,10 +47,9 @@
     <ktml:style src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.css" rel="preload" as="style" />
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
 
-    <ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.js" async="async" />
-    <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
-    <ktml:script src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.js" defer="defer" />
-    <ktml:script src="media://com_pages/js/prefetcher-v1.0.0.min.js" defer="defer" />
+    <ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.min.js" async="async" />
+    <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.min.js" defer="defer" />
+    <ktml:script src="https://unpkg.com/tiny-slider@2.9.3/dist/tiny-slider.min.js" defer="defer" />
 
     <? if (config()->ga_code): ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
