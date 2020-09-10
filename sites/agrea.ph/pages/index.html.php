@@ -1,6 +1,7 @@
 ---
 layout: agreaph
 name: Home
+title: Agrea - Ecology of Dignity
 ---
 
 <?= import('/partials/hero-alt',[
