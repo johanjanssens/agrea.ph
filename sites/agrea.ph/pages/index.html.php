@@ -210,12 +210,12 @@ name: Home
           <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-5"></div>
         </div>
         <div class="flex flex-col justify-start mb-10">
-          <div class="champion-slider">
-            <div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farming-is/farming-is-1.jpg"></div>
-            <div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farming-is/farming-is-2.jpg"></div>
-            <div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farming-is/farming-is-3.jpg"></div>
-            <div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farming-is/farming-is-4.jpg"></div>
-            <div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farming-is/farming-is-5.jpg"></div>
+          div class="champion-slider">
+            <div><img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-src="images://<?= helper('image.url', 'slider/farming-is/farming-is-1.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" ></div>
+            <div><img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-src="images://<?= helper('image.url', 'slider/farming-is/farming-is-2.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>"></div>
+            <div><img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-src="images://<?= helper('image.url', 'slider/farming-is/farming-is-3.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>"></div>
+            <div><img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-src="images://<?= helper('image.url', 'slider/farming-is/farming-is-4.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>"></div>
+            <div><img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-src="images://<?= helper('image.url', 'slider/farming-is/farming-is-5.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>"></div>
           </div>
           <script>
             window.addEventListener('load', function(){
@@ -226,6 +226,8 @@ name: Home
                 items: 1,
                 autoplay: true,
                 autoplayText: ["",""],
+                lazyload: true,
+                lazyloadSelector: '.tns-lazy',
               });
             })
           </script>
