@@ -4,7 +4,7 @@ return [
         'enable'    => getenv('SITE') ? true : false,
         'suffix'    => 'php',
         'exclude'   => ['gif'],
-        'max_width' => 1600,
+        'max_width' => 1280,
         'base_path' => JPATH_ROOT,
     ],
 ];

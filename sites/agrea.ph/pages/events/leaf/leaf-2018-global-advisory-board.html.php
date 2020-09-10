@@ -20,8 +20,8 @@ slug: leaf-2018-global-advisory-board
 	<li>Indradi Soemardjan, Anapana</li>
 </ul>
 
+<ktml:images max_width="25%">
 <h2 class="text-lg text-gray-900 font-medium font-title mb-4">Global Advisory Board in Focus</h2>
-
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Jose Ma. Joey Concepcion" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/board/concepcion.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Dr. William D. Dar" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/board/dar.jpg" /></div>
@@ -34,3 +34,4 @@ slug: leaf-2018-global-advisory-board
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Carine Kiala" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/board/kiala.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Indradi Soemardjan" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/board/soemardjan.jpg" /></div>
 </div>
+</ktml:images>

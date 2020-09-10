@@ -244,8 +244,8 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                             }
                         }
 
-                        //Merge config and attribs
-                        $config = array_merge_recursive($options, $attribs);
+                        //Replace config and attribs
+                        $config = array_replace_recursive($options, $attribs);
                         $html   = str_replace($matches[0][$key], $this->__invoke($config), $html);
                     }
                 }

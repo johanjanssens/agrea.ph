@@ -17,9 +17,10 @@ slug: agrea-1000-strong
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max_width="50%" data-preload="true">
 			</div>
 		</div>
+		<ktml:images max_width="80%">
 		<div itemprop="articleBody">
 			<?= article(4)->excerpt ?>
 			<div class="thousand-strong-slider mb-8">
@@ -41,17 +42,19 @@ slug: agrea-1000-strong
 								autoplay: true,
 								autoplayText: ["",""],
 					});
-				}) 
+				})
 			</script>
 			<?= article(4)->text ?>
 		</div>
+		</ktml:images>
 	</div>
+	<ktml:images max_width="20%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
-		
+
 		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/1000strong/1000strong-5.jpg" />
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -174,7 +177,7 @@ slug: agrea-1000-strong
 							autoplay: true,
 							autoplayText: ["",""],
 				});
-			}) 
+			})
 		</script>
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -182,4 +185,5 @@ slug: agrea-1000-strong
 		<blockquote class="text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
 		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
 	</div>
+	</ktml:images>
 </article>

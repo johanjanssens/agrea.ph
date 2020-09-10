@@ -1,6 +1,7 @@
 <meta name="article:published_time" content="<?= $article->published_time ?>"/>
 <meta name="article:modified_time" content="<?= $article->modified_time ?>"/>
 
+<ktml:images max_width="80%">
 <div class="max-w-4xl m-auto mt-8">
 	<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $article->title ?></h1>
 	<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
@@ -17,3 +18,4 @@
 	</p>
 	<div class="mt-2" itemprop="articleBody" content="<?= $article->text ?>"><?= $article->text ?></div>
 </div>
+</ktml:images>

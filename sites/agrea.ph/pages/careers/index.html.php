@@ -2,7 +2,7 @@
 layout: default
 name: Careers
 title: Career opportunities at AGREA
-summary: AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane. 
+summary: AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane.
 collection:
     model: ext:joomla.model.articles
     state:
@@ -21,6 +21,7 @@ collection:
 				<p>AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. <br />We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane. </p>
 			</article>
 		</div>
+    <ktml:images max_width="33%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
 			<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
@@ -41,7 +42,9 @@ collection:
 			</div>
 			<? endforeach; ?>
 		</div>
+    </ktml:images>
 	</div>
+  <ktml:images max_width="25%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<h3 class="text-gray-900 font-medium font-title my-4">Be Part of the AGREA Team</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -53,4 +56,5 @@ collection:
 		<p>For interested applicants, please fill out the required boxes below, including attachments, and submit accordingly. For personal emails, please submit your 1-page CV and cover letter to <a href="mailto:hr@agrea.ph">hr@agrea.ph</a> with the subject line: APPLICATION:</p>
 		<?= import('/partials/job-application-form'); ?>
 	</div>
+  </ktml:images>
 </div>

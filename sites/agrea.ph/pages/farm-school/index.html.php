@@ -35,10 +35,11 @@ collection:
 							autoplay: true,
 							autoplayText: ["",""],
 						});
-					}) 
+					})
 				</script>
 			</div>
 		</div>
+    <ktml:images max_width="25%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
 			<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
@@ -58,6 +59,7 @@ collection:
 			</div>
 			<? endforeach; ?>
 		</div>
+    </ktml:images>
 		<?= helper('paginator.pagination') ?>
 		<div class="flex flex-col sm:flex-row my-8">
 			<div class="sm:w-1/4 sm:pr-8 sm:pb-8 sm:pt-0 sm:border-r border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
@@ -73,7 +75,7 @@ collection:
 			<div class="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 				<h3 class="font-medium font-title text-gray-900 text-lg">Why tesda scholarship?</h3>
 				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-				<p><img src="images://farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full"></p>
+				<p><img src="images://farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full" data-max_width="70%"></p>
 				<p>In the interest of service and in line with the TESDA Reform and Development Agenda, the AGREA Farm School is registered and certified to provide scholarships to target beneficiaries. For the complete guidelines and list of catered beneficiaries, please click <a href="http://www.tesda.gov.ph/About/TESDA/1277" target="_blank">here</a>.</p>
 				<p><span style="font-size: medium;"><strong class="">Scholarship Benefits</strong></span>
 					<br>TESDA scholars enrolled at the AGREA Farm School are entitled to free training and assessment. Other additional benefits vary depending on the scholarship availed.
@@ -84,21 +86,22 @@ collection:
 			</div>
 		</div>
 	</div>
+  <ktml:images max_width="25%">
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<div class="flex flex-col">
 			<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-certified-organic-agri-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 142, 
+				'id' => 142,
 				'category' => 'farm-school',
 			]); ?>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 129, 
+				'id' => 129,
 				'category' => 'farm-school',
 			]); ?>
 			<?= import('/partials/articles/image-title-excerpt',[
-				'id' => 130, 
+				'id' => 130,
 				'category' => 'farm-school',
 			]); ?>
 			<h3 class="font-medium font-title text-gray-900 text-lg">Testimonials</h3>
@@ -108,4 +111,5 @@ collection:
 			<img class=" mb-4" src="images://testimonials/mj-larraquel.png">
 		</div>
 	</div>
+</ktml:images>
 </div>

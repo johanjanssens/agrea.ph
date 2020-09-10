@@ -9,6 +9,7 @@ title: Agrea - Ecology of Dignity
     ]);
 ?>
 
+<ktml:images max_width="33%" preload="true">
 <section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
@@ -27,12 +28,13 @@ title: Agrea - Ecology of Dignity
           'order' => 'desc',
           'limit' => 3,
       ]); ?>
+
       <? foreach($articles as $article) :
         $category_slug = (strpos($article->category->slug, 'prouts') == true) ? 'news' : $article->category->slug;
       ?>
       <div class="h-full border-2 border-dark-green-300 rounded-lg overflow-hidden">
         <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>">
-          <img src="<?= $article->image->url ?>" data-max_width="33%" data-preload="true" alt="<?= $article->title ?>" class="lg:h-48 md:h-36 w-full object-cover object-center">
+          <img src="<?= $article->image->url ?>" alt="<?= $article->title ?>" class="lg:h-48 md:h-36 w-full object-cover object-center">
         </a>
         <div class="p-6">
           <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">
@@ -60,7 +62,9 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
 </section>
+</ktml:images>
 
+<ktml:images max_width="25%">
 <section class="text-gray-700 mb-24">
   <div class="container px-5 pt-12 pb-24 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-20">
@@ -78,6 +82,7 @@ title: Agrea - Ecology of Dignity
           'order' => 'desc',
           'limit' => 8,
       ]); ?>
+
       <? foreach($newSprouts as $newSprout) :?>
       <div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
         <a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
@@ -94,7 +99,9 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
 </section>
+</ktml:images>
 
+<ktml:images max_width="33%">
 <section class="text-gray-700">
   <div class="container px-5 pb-24 mx-auto">
   <div class="flex flex-wrap w-full mb-20">
@@ -143,7 +150,9 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
 </section>
+</ktml:images>
 
+<ktml:images max_width="50%">
 <section class="text-gray-200 bg-dark-green-500">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
@@ -174,7 +183,9 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
 </section>
+</ktml:images>
 
+<ktml:images max_width="33%">
 <section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="flex flex-col sm:flex-row mt-10">
@@ -278,3 +289,4 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
 </section>
+</ktml:images>

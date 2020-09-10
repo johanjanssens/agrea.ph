@@ -2,11 +2,12 @@
 layout: default
 name: Programs
 title: Programs
-summary: With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. 
+summary: With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs.
 slug: programs
 ---
 
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+	<ktml:images max_width="80%">
 	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -14,7 +15,7 @@ slug: programs
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg" data-preload="true">
 			</div>
 		</div>
 		<div itemprop="articleBody">
@@ -80,8 +81,10 @@ slug: programs
 			</div>
 		</div>
 	</article>
+	</ktml:images>
+  <ktml:images max_width="20%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
@@ -120,7 +123,7 @@ slug: programs
 							autoplay: true,
 							autoplayText: ["",""],
 				});
-			}) 
+			})
 		</script>
 		<h3 class=" text-gray-900 font-medium font-title my-4 leading-tight">AGREA Events</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -152,4 +155,5 @@ slug: programs
 			</a>
 		</div>
 	</div>
-</article>
+  </ktml:images>
+</div>

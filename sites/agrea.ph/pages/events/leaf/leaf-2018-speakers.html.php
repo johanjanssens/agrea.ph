@@ -79,6 +79,7 @@ slug: leaf-2018-speakers
 		<li>Joshua Gilbert, PriceWaterhouseCoopers Indigenous Consulting</li>
 	</ul>
 </div>
+<ktml:images max_width="25%">
 <h3 class="text-gray-900 font-medium font-title my-4">LEAF 2018 Speakers In Focus</h3>
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>
@@ -98,3 +99,4 @@ slug: leaf-2018-speakers
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Simon Bakker_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/bakker.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Roger Barroga_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/barroga.jpg" /></div>
 </div>
+</ktml:images>

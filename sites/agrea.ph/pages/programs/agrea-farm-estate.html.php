@@ -17,9 +17,10 @@ slug: agrea-farm-estate
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg" data-max_width="50%" data-preload="true">
 			</div>
 		</div>
+		 <ktml:images max_width="80%">
 		<div itemprop="articleBody">
 			<?= article(5)->excerpt ?>
 			<?= article(5)->text ?>
@@ -28,6 +29,8 @@ slug: agrea-farm-estate
 				<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, call our landline at (042) 332-0025, please call/text mobile +63 917 124-0905, or send an email to <a href="mailto:agreaph@gmail.com?subject=AGREA%20Model%20Farm">agreaph@gmail.com</a>.</p>
 			</div>
 		</div>
+		 </ktml:images>
+		<ktml:images max_width="50%">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<div class="rounded-lg h-64 overflow-hidden">
@@ -40,23 +43,27 @@ slug: agrea-farm-estate
 					</svg> <?= date(article(38)->published_date, 'd M, Y'); ?>
 				</p>
 			</div>
+
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<?= import('/partials/articles/image-title-date',[
-					'id' => 40, 
+					'id' => 40,
 					'category' => 'news',
 				]); ?>
 			</div>
+
 		</div>
 	</div>
+	</ktml:images>
+	<ktml:images max_width="20%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
-		
+
 		<h3 class="text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg" /></p>
+		<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg"></p>
 
 		<h3 class="text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -128,4 +135,5 @@ slug: agrea-farm-estate
 
 		<p class="text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
 	</div>
+  </ktml:images>
 </article>

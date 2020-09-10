@@ -30,6 +30,7 @@ slug: leaf-2018-moderators-and-facilitators
 			<li>Indradi Soemardjan, Anapana</li>
 		</ul>
 
+		<ktml:images max_width="25%">
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">LEAF 2018 Moderators In Focus</h3>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Cherrie Atilano_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/atilano.jpg" /></div>
@@ -46,16 +47,17 @@ slug: leaf-2018-moderators-and-facilitators
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Joshua Gilbert_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/gilbert.jpg" /></div>
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Indradi Soemardjan_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/soemardjan.jpg" /></div>
 		</div>
+		</ktml:images>
 	</article>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
-		
+
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu',[
 			'menuOpen'=>1,
 		]);?>
-		
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Register now</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p><img class="rounded w-full" src="images://events/leaf/moderators/coming-soon.jpg" /></p>

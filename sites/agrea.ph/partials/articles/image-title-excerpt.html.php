@@ -1,6 +1,6 @@
 <div class="rounded-lg h-32 overflow-hidden my-4">
 	<a href="<?= route(page($category . '/article'), ['slug' => article($id)->slug]) ?>">
-		<img alt="<?= article($id)->title ?>" class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article($id)->image->url ?>">
+		<img alt="<?= article($id)->title ?>" class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article($id)->image->url ?>" data-max_width="50%">
 	</a>
 </div>
 <h3 class="font-medium text-gray-900 mb-4">
