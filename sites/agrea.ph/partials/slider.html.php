@@ -45,6 +45,7 @@ endif ?>
               type: 'fade',
               perPage: 1,
               autoplay: true,
+              rewind: true,
               interval: 2500,
               lazyLoad: 'sequential',
               accessibility: true
