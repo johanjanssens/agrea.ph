@@ -21,7 +21,7 @@ collection:
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-        <?= import('/partials/slider', ['folder' = 'images://slider/farm-school', 'max_width' => '50%']); ?>
+        <?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
 		</div>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article):
