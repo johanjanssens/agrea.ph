@@ -224,6 +224,7 @@ title: Agrea - Ecology of Dignity
         <div class="flex flex-col justify-start mb-10">
           <div class="flex flex-col justify-start mb-10">
               <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
+          </div>    
           <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
         </div>
       </div>

@@ -234,6 +234,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                 foreach($matches[1] as $key => $match)
                 {
                     $attribs = $this->parseAttributes($match);
+                    $src     = $attribs['src'] ?? null;  
                     $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
 
                     //Only handle none responsive supported images
