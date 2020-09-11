@@ -179,35 +179,49 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
         return $html;
     }
 
-    public function url($image, $parameters = array())
+    public function url($url, $parameters = array())
     {
         $config = new KObjectConfigJson($parameters);
         $config->append($this->getConfig()->parameters);
 
-        $parts = parse_url($image);
-        $query = array();
+        if($this->supported($url))
+        {
+          $parts = parse_url($url);
+          $query = array();
 
-        if(isset($parts['query'])) {
-            parse_str($parts['query'], $query);
-        }
+          if(isset($parts['query'])) {
+              parse_str($parts['query'], $query);
+          }
 
-        $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
+          $query = array_merge(array_filter(KObjectConfig::unbox($config)), $query);
 
-        if($this->getConfig()->suffix) {
+          if($this->getConfig()->suffix) {
             $parts['path'] = $parts['path'].'.'.$this->getConfig()->suffix;
-        }
+          }
 
-        $url = $parts['path'].'?'.urldecode(http_build_query($query));
+          if(isset($parts['scheme']))
+          {
+            $url = $parts['scheme'].'://';
+
+            if(isset($parts['host'])) {
+              $url .= $parts['host'].'/';
+            }
+          }
+          else $url = '/';
+
+          $url .= trim($parts['path'], '/').'?'.urldecode(http_build_query($query));
+
+        }
 
         return $url;
     }
 
-    public function url_lqi($image, $parameters = array())
+    public function url_lqi($url, $parameters = array())
     {
         $config = new KObjectConfigJson($parameters);
         $config->append($this->getConfig()->parameters_lqi);
 
-        return $this->url($image, $config);
+        return $this->url($url, $config);
     }
 
     public function filter($html, $options = array())

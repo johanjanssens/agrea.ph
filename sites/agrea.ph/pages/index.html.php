@@ -223,39 +223,7 @@ title: Agrea - Ecology of Dignity
         </div>
         <div class="flex flex-col justify-start mb-10">
           <div class="flex flex-col justify-start mb-10">
-            <div id="champion-slider" class="splide">
-            	<div class="splide__track">
-            		<ul class="splide__list">
-            			<li class="splide__slide">
-            				<img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="images://<?= helper('image.url', 'slider/farming-is/farming-is-1.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" >
-            			</li>
-            			<li class="splide__slide">
-            				<img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="images://<?= helper('image.url', 'slider/farming-is/farming-is-2.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" >
-            			</li>
-            			<li class="splide__slide">
-            				<img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="images://<?= helper('image.url', 'slider/farming-is/farming-is-3.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" >
-            			</li>
-                  <li class="splide__slide">
-            				<img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="images://<?= helper('image.url', 'slider/farming-is/farming-is-4.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" >
-            			</li>
-                  <li class="splide__slide">
-            				<img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="images://<?= helper('image.url', 'slider/farming-is/farming-is-5.jpg', ['w' => 352, 'fm' => 'pjpg']) ?>" >
-            			</li>
-            		</ul>
-            	</div>
-            </div>
-
-            <script>
-              document.addEventListener( 'DOMContentLoaded', function () {
-  	               new Splide( '#champion-slider', {
-                       type: 'fade',
-                       perPage: 1,
-	                     autoPlay: true,
-                       lazyLoad: 'sequential',
-                       accessibility: true
-                    }).mount();
-              });
-          </script>
+              <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
           <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
         </div>
       </div>

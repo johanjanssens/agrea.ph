@@ -21,26 +21,10 @@ collection:
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<div class="archives-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/farm-school.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/tesda-scholar.jpg"></div>
-				</div>
-				<script>
-					window.addEventListener('load', function(){
-						var slider = tns({
-							container: '.archives-slider',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-						});
-					}) 
-				</script>
-			</div>
+        <?= import('/partials/slider', ['folder' = 'images://slider/farm-school', 'max_width' => '50%']); ?>
 		</div>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
-			<? foreach(collection() as $article): 
+			<? foreach(collection() as $article):
 				$category_slug = (
 					(strpos($article->category->slug,'prouts') == true)
 					|| (strpos($article->category->slug,'icks') == true))
@@ -68,15 +52,14 @@ collection:
 		<?= helper('paginator.pagination') ?>
 	</div>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
+
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
-		
+
 		<h3 class="text-gray-900 font-medium font-title my-4">Subscribe to AGREA</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p>Get the latest news and updates from the AGREA Team.</p>
 		<?= import('/partials/subscription-form'); ?>
 	</div>
 </div>
-

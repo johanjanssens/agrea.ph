@@ -23,32 +23,12 @@ slug: agrea-1000-strong
 		<ktml:images max_width="80%">
 		<div itemprop="articleBody">
 			<?= article(4)->excerpt ?>
-			<div class="thousand-strong-slider mb-8">
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/agriculture.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/collaboration.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/communication.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/entreprenuership.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/environment.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/health-and-nutrition.jpg"></div>
-				<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/1000strong/tourism.jpg"></div>
-			</div>
-			<script>
-				window.addEventListener('load', function(){
-					var slider = tns({
-						container: '.thousand-strong-slider',
-								mode: 'gallery',
-								controlsPosition: 'bottom',
-								items: 1,
-								autoplay: true,
-								autoplayText: ["",""],
-					});
-				})
-			</script>
+			<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/1000strong', 'max_width' => '80%']); ?>
 			<?= article(4)->text ?>
 		</div>
 		</ktml:images>
 	</div>
-	<ktml:images max_width="20%">
+	<ktml:images max_width="25%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
@@ -163,22 +143,7 @@ slug: agrea-1000-strong
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Join AGREA Events as a Volunteer</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">Click the photo below to see details on how to join.</p>
-		<div class="volunteer-slider mb-8">
-			<a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2061544637443979/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-1.jpg"></a>
-			<a href="https://www.facebook.com/agreaph/photos/a.1589243744674073.1073741829.1573291842935930/2062142677384175/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-2.jpg"></a>
-		</div>
-		<script>
-			window.addEventListener('load', function(){
-				var slider = tns({
-					container: '.volunteer-slider',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-				});
-			})
-		</script>
+		<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/arborday', 'max_width' => '25%']); ?>
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>

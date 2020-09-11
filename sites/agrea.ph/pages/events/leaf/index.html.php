@@ -15,22 +15,7 @@ slug: leaf
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<div class="leaf-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/events/leaf/slider-1.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/events/leaf/slider-2.jpg"></div>
-				</div>
-				<script>
-					window.addEventListener('load', function(){
-						var slider = tns({
-							container: '.leaf-slider',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-						});
-					})
-				</script>
+				<?= import('/partials/slider', ['folder' => 'images://slider/events/leaf', 'max_width' => '50%']); ?>
 			</div>
 		</div>
 		<p>LEAF is a global <strong>community</strong> of champions uniting as advocates across different sectors for <strong>better agriculture</strong>. Through mentorship and inclusive dialogue, delegates help to develop <strong>new generations</strong> of agricultural practitioners and allies.</p>
@@ -86,46 +71,22 @@ slug: leaf
 		<h3 class="text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<div class="core-slider1">
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-1.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-2.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-3.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-4.jpg"></div>
-		</div>
-		<script>
-			window.addEventListener('load', function(){
-				var slider = tns({
-					container: '.core-slider1',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-				});
-			})
-		</script>
+		<?= import('/partials/slider', ['images' => [
+				'images://slider/events/leaf/core-sessions/core-sessions-1.jpg',
+				'images://slider/events/leaf/core-sessions/core-sessions-2.jpg',
+				'images://slider/events/leaf/core-sessions/core-sessions-3.jpg',
+				'images://slider/events/leaf/core-sessions/core-sessions-4.jpg',
+			], 'max_width' => '80%']); ?>
 
 		<h3 class="text-gray-900 font-medium font-title my-4">Agritech core sessions</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<div class="core-slider2">
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-5.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-6.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-7.jpg"></div>
-			<div><img class="rounded w-full object-cover object-center" src="images://slider/events/leaf/core-sessions/core-sessions-8.jpg"></div>
-		</div>
-		<script>
-			window.addEventListener('load', function(){
-				var slider = tns({
-					container: '.core-slider2',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-				});
-			})
-		</script>
+		<?= import('/partials/slider', ['images' => [
+			'images://slider/events/leaf/core-sessions/core-sessions-5.jpg',
+			'images://slider/events/leaf/core-sessions/core-sessions-6.jpg',
+			'images://slider/events/leaf/core-sessions/core-sessions-7.jpg',
+			'images://slider/events/leaf/core-sessions/core-sessions-8.jpg',
+		], 'max_width' => '80%']); ?>
 
 		<h3 class="text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>

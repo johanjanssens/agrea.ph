@@ -21,22 +21,7 @@ collection:
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<div class="events-slider">
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/farm-school.jpg"></div>
-					<div><img class="md:h-36 rounded w-full object-cover object-center" src="images://slider/farm-school/tesda-scholar.jpg"></div>
-				</div>
-				<script>
-					window.addEventListener('load', function(){
-						var slider = tns({
-							container: '.events-slider',
-							mode: 'gallery',
-							controlsPosition: 'bottom',
-							items: 1,
-							autoplay: true,
-							autoplayText: ["",""],
-						});
-					})
-				</script>
+        <?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
 			</div>
 		</div>
     <ktml:images max_width="25%">
