@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/sites/agrea.php/theme/images/icons/agrea-xtouch-icon.png"/>
+            <square150x150logo src="/sites/agrea.ph/theme/images/icons/agrea-xtouch-icon.png"/>
             <TileColor>#0089D6</TileColor>
         </tile>
     </msapplication>
