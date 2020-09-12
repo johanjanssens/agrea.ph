@@ -50,8 +50,6 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
             $html = '';
             if (!static::isLoaded('lazysizes'))
             {
-                $selector = json_encode($config->selector);
-
                 $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
                 static::setLoaded('lazysizes');
             }
@@ -109,13 +107,13 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                         srcset="'.$lqi_srcset.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $hqi_srcset).'"
-                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'  data-expand="-10"  />';
+                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'  data-expand="-10">';
                 }
                 else
                 {
                     $html .='<img width="'.$breakpoints[0].'" src="'.$hqi_url.'&w='.$breakpoints[0].'"
                         srcset="'. implode(', ', $hqi_srcset).'"
-                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
+                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
             }
             //Fixed image with display density description
@@ -155,13 +153,13 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                 //disabled, fallback on the noscript element.
                 //
                 //Set data-expand to 300 to delay loading the image
-                $html = '<noscript>';
-                $html .=    '<img '.$size.' src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
+                $html .= '<noscript>';
+                $html .=    '<img '.$size.' src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 $html .= '</noscript>';
                 $html .='<img '.$size.'
                 srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                 data-srcset="'. implode(',', $srcset).'"
-                alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' data-expand="300" />';
+                alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' data-expand="300">';
             }
         }
         else
@@ -181,7 +179,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                 $size = 'width="'.$width.'"';
             }
 
-            $html ='<img '.$size.'src="'.$config->image.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).' />';
+            $html ='<img '.$size.'src="'.$config->image.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
         }
 
         return $html;
