@@ -1,6 +1,6 @@
 <?php
 
-class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
+class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
 {
     protected function _initialize(KObjectConfig $config)
     {
@@ -47,6 +47,15 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
 
         if($this->supported($config->image))
         {
+            $html = '';
+            if (!static::isLoaded('lazysizes'))
+            {
+                $selector = json_encode($config->selector);
+
+                $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
+                static::setLoaded('lazysizes');
+            }
+
             //Calculate the max width
             if(stripos($config->max_width, '%') !== false) {
                 $config->max_width = ceil($this->getConfig()->max_width / 100 * (int) $config->max_width);
@@ -63,7 +72,6 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
             $lqi_url = $this->url_lqi($config->image);
 
             //Responsive image with auto sizing through lazysizes
-            $html = '';
             if(!isset($config['width']) && !isset($config['height']))
             {
                 $breakpoints = $this->_calculateBreakpoints($config->image, $config->max_width, $config->min_width);
@@ -234,7 +242,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperAbstract
                 foreach($matches[1] as $key => $match)
                 {
                     $attribs = $this->parseAttributes($match);
-                    $src     = $attribs['src'] ?? null;  
+                    $src     = $attribs['src'] ?? null;
                     $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
 
                     //Only handle none responsive supported images

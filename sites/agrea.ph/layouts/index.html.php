@@ -45,8 +45,6 @@
 
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
-
-    <ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.js" async="async" />
     <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
 
     <? if (config()->ga_code): ?>
