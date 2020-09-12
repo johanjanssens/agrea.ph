@@ -1,7 +1,7 @@
 
 ## Define environment variable
-SetEnvIf Host ^staging\.agrea\.ph$ SITE=staging
-SetEnvIf Host ^www\.agrea\.ph$ SITE=production
+SetEnvIf Host ^staging\.agrea\.ph$ SITE=agrea.ph
+SetEnvIf Host ^www\.agrea\.ph$ SITE=agrea.ph
 
 ## No directory listings
 <IfModule autoindex>
