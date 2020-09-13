@@ -39,7 +39,7 @@ collection:
     </ktml:images>
 	</div>
   <ktml:images max_width="25%">
-	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<img class="rounded w-full mb-6 object-contain" src="images://team/agrea-team.jpg" alt="<?= $title; ?>" title="<?= $title; ?>">
 		<h3 class="text-gray-900 font-medium font-title my-4">Contact Details:</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -89,6 +89,6 @@ collection:
 			<dt>Website:</dt>
 			<dd><a href="https://www.agreaph.com" itemprop="url">Website</a></dd>
 		</dl>
-	</div>
+	</aside>
   </ktml:images>
 </div>

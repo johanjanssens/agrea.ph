@@ -6,11 +6,11 @@ summary: Self-Palayance is AGREA’s plan to partner with Marinduque communities
 slug: self-palayance
 ---
 
-<article itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+<div class="flex flex-col sm:flex-row">
 	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
-	<div class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
+	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
@@ -42,8 +42,8 @@ slug: self-palayance
 			</div>
 		</div>
 		</ktml:images>
-	</div>
-	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	</article>
+	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -53,5 +53,5 @@ slug: self-palayance
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">To know more about AGREA's Self-Palayance Program, if you have questions, or you would like to lend a helping hand, send us an email through <a href="mailto:agreaph@gmail.com">agreaph@gmail.com</a> or fill-out the form below.</p>
 		<?= import('/partials/contact-form'); ?>
-	</div>
-</article>
+	</aside>
+</div>
