@@ -7,7 +7,7 @@ slug: consultancy
 ---
 
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
-	<ktml:images max_width="80%">
+	<ktml:images max-width="80%">
 	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -15,7 +15,7 @@ slug: consultancy
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max_width="50%" data-preload="true">
+				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
 		<h3 class="text-gray-900 font-medium font-title my-4">Your Guide to Agricultural Abundance</h3>
@@ -176,7 +176,7 @@ slug: consultancy
 		</div>
 	</article>
 	</ktml:images>
-	<ktml:images max_width="25%">
+	<ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">AGREA Consultancy</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>

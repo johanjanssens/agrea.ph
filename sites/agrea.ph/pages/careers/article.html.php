@@ -8,7 +8,7 @@ metadata:
 visible: false
 ---
 
-<ktml:images max_width="80%">
+<ktml:images max-width="80%">
 <div itemscope itemtype="http://schema.org/JobPosting" class="flex flex-col sm:flex-row">
 	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 		<div class="flex flex-wrap w-full mb-20">

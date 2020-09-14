@@ -17,16 +17,16 @@ slug: self-palayance
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/self-palayance/self-palayance-1.jpg" data-max_width="50%" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/self-palayance/self-palayance-1.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
-		<ktml:images max_width="80%">
+		<ktml:images max-width="80%">
 		<div itemprop="articleBody">
 			<?= article(146)->excerpt ?>
 			<?= article(146)->text ?>
 		</div>
 		</ktml:images>
-		<ktml:images max_width="50%">
+		<ktml:images max-width="50%">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<?= import('/partials/articles/image-title-date',[

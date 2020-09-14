@@ -30,7 +30,7 @@ slug: leaf-2018-moderators-and-facilitators
 			<li>Indradi Soemardjan, Anapana</li>
 		</ul>
 
-		<ktml:images max_width="25%">
+		<ktml:images max-width="25%">
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">LEAF 2018 Moderators In Focus</h3>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Cherrie Atilano_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/atilano.jpg" /></div>

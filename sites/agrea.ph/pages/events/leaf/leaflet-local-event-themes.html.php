@@ -14,11 +14,11 @@ slug: leaflet-local-event-themes
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="images://events/leaf/leaflet/leaflet-1.jpg" data-max_width="50%" data-preload="true">
+				<img class="md:h-36 rounded w-full object-cover object-center" src="images://events/leaf/leaflet/leaflet-1.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
 
-		<ktml:images max_width="25%">
+		<ktml:images max-width="25%">
 		<h3 class="text-gray-900 font-medium font-title my-4">LEAF Focus Dialogues: Right Here, Right Now</h3>
 		<p>The Leaders and Entrepreneurs in Agriculture Forum (LEAF) is a community of champions across all sectors uniting as advocates for better agriculture. Launched in September 2018 via the <a href="/events/leaf" target="_blank">“Redefining + Revitalizing Agriculture” conference</a>, LEAF is a growing force of 400+ agri-leaders from 20 countries. AGREA has planned five Focus Dialogues for 2019 (called LEAFlets), gathering new generations to act on the biggest issues affecting the agricultural landscape.</p>
 		<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">

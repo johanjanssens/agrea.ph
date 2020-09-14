@@ -9,7 +9,7 @@ title: Agrea - Ecology of Dignity
     ]);
 ?>
 
-<ktml:images max_width="33%" preload="true">
+<ktml:images max-width="33%" preload="true">
 <section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
@@ -64,7 +64,7 @@ title: Agrea - Ecology of Dignity
 </section>
 </ktml:images>
 
-<ktml:images max_width="25%">
+<ktml:images max-width="25%">
 <section class="text-gray-700 mb-24">
   <div class="container px-5 pt-12 pb-24 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-20">
@@ -101,7 +101,7 @@ title: Agrea - Ecology of Dignity
 </section>
 </ktml:images>
 
-<ktml:images max_width="33%">
+<ktml:images max-width="33%">
 <section class="text-gray-700">
   <div class="container px-5 pb-24 mx-auto">
   <div class="flex flex-wrap w-full mb-20">
@@ -152,7 +152,7 @@ title: Agrea - Ecology of Dignity
 </section>
 </ktml:images>
 
-<ktml:images max_width="50%">
+<ktml:images max-width="50%">
 <section class="text-gray-200 bg-dark-green-500">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
@@ -185,7 +185,7 @@ title: Agrea - Ecology of Dignity
 </section>
 </ktml:images>
 
-<ktml:images max_width="33%">
+<ktml:images max-width="33%">
 <section class="text-gray-700">
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="flex flex-col sm:flex-row mt-10">

@@ -17,10 +17,10 @@ slug: agrea-farm-estate
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg" data-max_width="50%" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
-		 <ktml:images max_width="80%">
+		 <ktml:images max-width="80%">
 		<div itemprop="articleBody">
 			<?= article(5)->excerpt ?>
 			<?= article(5)->text ?>
@@ -30,7 +30,7 @@ slug: agrea-farm-estate
 			</div>
 		</div>
 		 </ktml:images>
-		<ktml:images max_width="50%">
+		<ktml:images max-width="50%">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<div class="rounded-lg h-64 overflow-hidden">
@@ -54,7 +54,7 @@ slug: agrea-farm-estate
 		</div>
 	</div>
 	</ktml:images>
-	<ktml:images max_width="25%">
+	<ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>

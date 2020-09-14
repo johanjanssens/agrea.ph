@@ -17,10 +17,10 @@ slug: agrea-1000-strong
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max_width="50%" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
-		<ktml:images max_width="80%">
+		<ktml:images max-width="80%">
 		<div itemprop="articleBody">
 			<?= article(4)->excerpt ?>
 			<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/1000strong', 'max_width' => '80%']); ?>
@@ -28,7 +28,7 @@ slug: agrea-1000-strong
 		</div>
 		</ktml:images>
 	</div>
-	<ktml:images max_width="25%">
+	<ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>

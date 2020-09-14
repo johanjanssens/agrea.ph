@@ -24,7 +24,7 @@ collection:
         		<?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
     		</div>
 		</div>
-		<ktml:images max_width="33%">
+		<ktml:images max-width="33%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article):
 				$category_slug = (
@@ -54,7 +54,7 @@ collection:
 		</ktml:images>
 		<?= helper('paginator.pagination') ?>
 	</div>
-	<ktml:images max_width="25%">
+	<ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
