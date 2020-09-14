@@ -151,6 +151,7 @@ section[class*="bg-"]:not(.bg-white) {
 }
 
 section[class*="bg-"]:not(.bg-white) {
+  background-attachment: fixed; /* CSS only parallax */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
