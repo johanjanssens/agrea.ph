@@ -15,5 +15,7 @@ return array(
         'X-Permitted-Cross-Domain-Policies' => 'none',
         'Content-Security-Policy'   => 'upgrade-insecure-requests',
         'X-Content-Type-Options'    => 'nosniff',
+        'Accept-CH'                 => 'DPR, Viewport-Width, Width',
+        'Accept-CH-Lifetime'        => '86400',
     ],
 );
