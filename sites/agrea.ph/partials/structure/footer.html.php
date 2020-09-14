@@ -1,4 +1,4 @@
-<footer class="text-gray-700 text-base body-font" style="background-image: url(theme://images/background/rice-farmer.jpg);">
+<footer class="text-gray-700 text-base body-font" style="background-image: url(<?= page()->footer_bg; ?>);">
   <div class="container px-5 pt-10 pb-40 md:pt-20 md:pb-10 mx-auto">
     <div class="flex md:justify-end justify-around">
       <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
@@ -74,11 +74,3 @@
     </div>
   </div>
 </footer>
-<style type="text/css">
-    @-webkit-keyframes image-swap {
-      0% {background-image: url(theme://images/background/rice-farmer.jpg)}
-      33% {background-image: url(theme://images/background/footer-bg.jpg)}
-      66% {background-image: url(theme://images/background/take-a-break.jpg)}
-      100% {background-image: url(theme://images/background/farmer-couple.jpg)}
-    }
-</style>

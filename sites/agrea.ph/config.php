@@ -25,6 +25,7 @@ return array(
 
         'visible'   => true,
         'published' => true,
+        'footer_bg' => '/sites/agrea.ph/theme/images/background/rice-farmer.jpg',
     ],
 
     'aliases' => [
