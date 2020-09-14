@@ -140,6 +140,9 @@ body > footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  -webkit-animation: image-swap 140s infinite alternate;
+  -ms-transition: image-swap 140s infinite alternate;
+  transition: image-swap 140s infinite alternate;
   background-position: 0 calc(100% - 5rem);
   background-repeat: no-repeat;
   background-size: 100vw;
