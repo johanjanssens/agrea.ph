@@ -35,13 +35,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="theme://images/icons/apple-touch-icon-120x120.png" />
     <link rel="apple-touch-icon-precomposed" sizes="76x76" href="theme://images/icons/apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="theme://images/icons/apple-touch-icon-152x152.png" />
+
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-196x196.png" sizes="196x196" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
+
     <link href="https://unpkg.com/" rel="preconnect" />
+
+    <link href="<?= route('news.rss') ?>" rel="alternate" type="application/rss+xml" title="Agrea News Sprouts"  />
 
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
