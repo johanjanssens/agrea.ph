@@ -140,7 +140,7 @@ body > footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url(../images/background/footer/rice-farmer.jpg); /* fallback */
+  background-image: url(../images/background/rice-farmer.jpg); /* fallback */
   -webkit-animation: image-swap 140s infinite alternate;
   -ms-transition: image-swap 140s infinite alternate;
   transition: image-swap 140s infinite alternate;
@@ -163,7 +163,7 @@ section[class*="bg-"]:not(.bg-white):after {
   width:100%;
   height:100%;
   z-index:1;
-  background-image: url(../images/background/hero-bg.svg); /* The image used */
+  background-image: url(../images/background/hero-bg.png); /* The image used */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */

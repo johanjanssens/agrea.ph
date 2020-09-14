@@ -49,10 +49,10 @@
 
     <style type="text/css">
         @-webkit-keyframes image-swap {
-          0% {background-image: url(theme://images/background/footer/rice-farmer.jpg)}
-          33% {background-image: url(theme://images/background/footer/footer-bg.jpg)}
-          66% {background-image: url(theme://images/background/footer/take-a-break.jpg)}
-          100% {background-image: url(theme://images/background/footer/farmer-couple.jpg)}
+          0% {background-image: url(theme://images/background/rice-farmer.jpg)}
+          33% {background-image: url(theme://images/background/footer-bg.jpg)}
+          66% {background-image: url(theme://images/background/take-a-break.jpg)}
+          100% {background-image: url(theme://images/background/farmer-couple.jpg)}
         }
     </style>
 
