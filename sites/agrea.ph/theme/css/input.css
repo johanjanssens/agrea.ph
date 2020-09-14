@@ -140,10 +140,6 @@ body > footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: url(../images/background/rice-farmer.jpg); /* fallback */
-  -webkit-animation: image-swap 140s infinite alternate;
-  -ms-transition: image-swap 140s infinite alternate;
-  transition: image-swap 140s infinite alternate;
   background-position: 0 calc(100% - 5rem);
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -154,16 +150,7 @@ section[class*="bg-"]:not(.bg-white) {
   position:relative;
 }
 
-section[class*="bg-"]:not(.bg-white):after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:100%;
-  z-index:1;
-  background-image: url(../images/background/hero-bg.png); /* The image used */
+section[class*="bg-"]:not(.bg-white) {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */

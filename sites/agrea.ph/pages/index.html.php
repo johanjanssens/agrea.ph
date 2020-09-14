@@ -153,7 +153,7 @@ title: Agrea - Ecology of Dignity
 </ktml:images>
 
 <ktml:images max-width="50%">
-<section class="text-gray-200 bg-dark-green-500">
+<section class="text-gray-200 bg-dark-green-500" style="background-image: url(theme://images/background/hero-bg.png);">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-dark-green-500 rounded overflow-hidden">
