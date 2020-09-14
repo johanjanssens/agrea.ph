@@ -144,8 +144,8 @@ body > footer {
   -webkit-animation: image-swap 140s infinite alternate;
   -ms-transition: image-swap 140s infinite alternate;
   transition: image-swap 140s infinite alternate;
-  background-position: 0 calc(100% - 2vh);
-  background-repat: no-repeat;
+  background-position: 0 calc(100% - 5rem);
+  background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
 }
