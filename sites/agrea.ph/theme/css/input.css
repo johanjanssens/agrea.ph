@@ -140,7 +140,12 @@ body > footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: url(../images/background/rice-farmer.svg) 0 calc(100% - 2vh) no-repeat;
+  background-image: url(../images/background/footer/rice-farmer.jpg); /* fallback */
+  -webkit-animation: image-swap 140s infinite alternate;
+  -ms-transition: image-swap 140s infinite alternate;
+  transition: image-swap 140s infinite alternate;
+  background-position: 0 calc(100% - 2vh);
+  background-repat: no-repeat;
   background-size: 100vw;
   z-index:0;
 }
