@@ -1,5 +1,8 @@
 ---
-layout: default
+layout:
+    path: default
+    footer:
+        image: theme://images/background/farmer-couple.jpg
 name: Consultancy
 title: Consultancy
 summary: Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.

@@ -1,11 +1,11 @@
 ---
 layout: index
-header:  []
-content: []
+footer:
+    image: theme://images/background/rice-farmer.jpg
 ---
 
 <main class="flex flex-col text-base bg-white shadow-lg">
-    
+
     <?= import('/partials/structure/header'); ?>
 
     <ktml:content>
