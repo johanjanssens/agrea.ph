@@ -1,5 +1,5 @@
 <footer class="text-gray-700 text-base body-font">
-  <div class="container px-5 pt-20 pb-10 mx-auto">
+  <div class="container px-5 pt-10 pb-40 md:pt-20 md:pb-10 mx-auto">
     <div class="flex md:justify-end justify-around">
       <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
         <div class="flex content-between">
@@ -42,7 +42,7 @@
       </a>
       <p class="text-gray-500 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <span class="inline-flex mr-2 bg-green-500 rounded border-green-900 border p-2 -mt-2">
+        <span class="inline-flex mr-2 bg-green-500 rounded border-green-900 border p-1 ml-2 md:p-2 -mt-2">
           <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-dark-green-600 hover:text-lime-500 transition duration-500 ease-in-out">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
