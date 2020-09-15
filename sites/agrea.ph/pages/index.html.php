@@ -9,7 +9,7 @@ title: Agrea - Ecology of Dignity
         background-image: url(<?= helper('image.url', 'theme://images/background/hero-bg.jpg?auto=true&w=1600') ?>);
     }
 </style>
-    
+
 <?= import('/partials/hero-alt',[
       'class' => 'bg-lime-500',
     ]);
@@ -26,14 +26,13 @@ title: Agrea - Ecology of Dignity
     </div>
     <div class="grid md:grid-cols-2 gap-4">
       <div>
+        <h3 class="font-medium font-title mb-6 text-gray-900 leading-none">Championing a new narrative for agriculture</h3>
         <p>We believe that Filipino Farmers are world class. They are the point of change in our food system. In living our mission we strive for an Ecology of Dignity of all the stakeholders involved in bringing food on our tables. Rich or poor, young or old: everyone needs to eat!</p>
         <p>We are focused on making the Philippine archipelago agriculturally sustainable by building on the One Island Economy model guided by three major goals: Zero Hunger, Zero Waste and Zero Insufficiency.</p>
         <p>In all our work environmental local impact is a key consideration, by using a transformational approach, we make sure every transaction made with AGREA from producing to bringing food to consumers is contributing to impactful changes in every point along the way.</p>
       </div>
       <div>
-        <div class="embed-responsive aspect-ratio-16/9 rounded-lg">
-          <iframe class="rounded-lg" allowfullscreen="" src="https://video.toggle.sg/en/embed/469498" style="width: 640px; height: 360px;" frameborder="0" class="rounded-lg"></iframe>
-        </div>
+        <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
       </div>
     </div>
   </div>
@@ -179,7 +178,7 @@ title: Agrea - Ecology of Dignity
             'category' => ['12'], // fresh picks
             'sort' => 'date',
             'order' => 'desc',
-            'limit' => 2,
+            'limit' => 3,
         ]); ?>
         <? foreach($freshPicks as $freshPick) :?>
         <div class="flex flex-col justify-start mb-10">
@@ -196,16 +195,6 @@ title: Agrea - Ecology of Dignity
           </p>
         </div>
         <? endforeach ?>
-        <div class="flex flex-col justify-center">
-          <h2 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Championing a new narrative for agriculture</h2>
-          <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-5"></div>
-        </div>
-        <div class="flex flex-col justify-start mb-10">
-          <div class="flex flex-col justify-start mb-10">
-              <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
-          </div>
-          <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
-        </div>
       </div>
 
       <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
