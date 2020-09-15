@@ -1,4 +1,4 @@
-<section class="relative hero-alt <?= $class ?>" style="background: #c9ca48 url(theme://images/background/hero-bg.jpg) left top/cover; background-blend-mode: multiply;">
+<section class="relative hero-alt <?= $class ?>">
   <div class="container m-auto">
     <?
     $articles = collection('ext:joomla.model.articles', [
