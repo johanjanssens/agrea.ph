@@ -54,22 +54,6 @@ if($parts['query'] && $parts['path'])
         {
             $format = 'pjpeg';
 
-            //Return JPEG200 if supported (Safari 6+ only)
-            if(isset($_SERVER['HTTP_USER_AGENT']) && strstr($_SERVER['HTTP_USER_AGENT'], 'Safari') !== false)
-            {
-                preg_match('/Version\/(?P<version>[0-9]{2})/', $_SERVER['HTTP_USER_AGENT'], $params);
-
-                //Because Safari 5 only represents 0.22% of browser usage on the world, ignore Windows/Mac
-                //detection and start from version 6. Safari Accept Header does not specify JP2 support,
-                //so as a fallback we are going to check if the browser is Safari, and check it’s version.
-                if ((preg_match('/Version\/(?P<version>[0-9])/', $_SERVER['HTTP_USER_AGENT'], $params)) && (round($params['version']) >= 6))
-                {
-                    if(Image::isSupported('jp2')) {
-                        $format = 'jp2';
-                    }
-                }
-            }
-
             //Return WebP if supported (be forward compat when Safari offers Webp support)
             if(isset($_SERVER['HTTP_ACCEPT']) && strstr($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false)
             {
@@ -146,7 +130,7 @@ if($parts['query'] && $parts['path'])
             }
 
             //Interlace
-            if($format == 'pjpg' || $format == 'jp2') {
+            if($format == 'pjpeg') {
                 $image->interlace();
             }
 
@@ -293,7 +277,6 @@ Class Image
         {
             switch($format)
             {
-                case 'jp2'  :
                 case 'jpg'  :
                 case 'pjpeg':
                 case 'jpeg' : imagejpeg($this->_image, $file, $quality); break;
