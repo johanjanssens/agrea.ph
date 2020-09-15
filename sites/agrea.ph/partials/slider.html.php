@@ -28,7 +28,7 @@ endif ?>
   <div class="splide__track">
     <ul class="splide__list">
       <? foreach((array)$images as $image): ?>
-        <? $image = helper('image.url', $image, ['fm' => 'pjpg']) ?>
+        <? $image = helper('image.url', $image) ?>
         <li class="splide__slide">
           <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="<?= $image ?>" >
         </li>
