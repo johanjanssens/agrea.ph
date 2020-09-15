@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="hero-image hidden md:block absolute top-0 right-0 z-10 h-full w-2/5">
-      <div style="background-image: url(<?= $articles->image->url ?>?h=400);" class="h-full object-cover">
+      <div style="background: url(<?= helper('image.url', $articles->image->url.'?h=400&fm=pjpeg') ?>);" class="h-full object-cover">
           <div class="h-full bg-gray-900 opacity-25"></div>
       </div>
   </div>
