@@ -52,7 +52,7 @@ if($parts['query'] && $parts['path'])
 
         if(!isset($parameters['fm']) && (in_array('format', $directives) || in_array('true', $directives)))
         {
-            $format = 'pjpg';
+            $format = 'pjpeg';
 
             //Return JPEG200 if supported (Safari 6+ only)
             if(isset($_SERVER['HTTP_USER_AGENT']) && strstr($_SERVER['HTTP_USER_AGENT'], 'Safari') !== false)
@@ -99,9 +99,9 @@ if($parts['query'] && $parts['path'])
 
     //Set the format
     if(isset($parameters['fm']) && $format != $parameters['fm']) {
-      $format = $parameters['fm'];
+        $format = $parameters['fm'];
     } else {
-      unset($parameters['fm']);
+        unset($parameters['fm']);
     }
 
     //Create the filename
@@ -293,12 +293,13 @@ Class Image
         {
             switch($format)
             {
-                case 'jp2' :
-                case 'jpg' :
-                case 'jpeg': imagejpeg($this->_image, $file, $quality); break;
-                case 'gif' : imagegif($this->_image, $file); break;
-                case 'png' : imagepng($this->_image, $file,  (int)(9 - round(($quality/100) * 9))); break;
-                case 'webp': imagewebp($this->_image, $file,  $quality); break;
+                case 'jp2'  :
+                case 'jpg'  :
+                case 'pjpeg':
+                case 'jpeg' : imagejpeg($this->_image, $file, $quality); break;
+                case 'gif'  : imagegif($this->_image, $file); break;
+                case 'png'  : imagepng($this->_image, $file,  (int)(9 - round(($quality/100) * 9))); break;
+                case 'webp' : imagewebp($this->_image, $file,  $quality); break;
             }
         }
         //Imagick
