@@ -39,7 +39,7 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                     $result = $this->filterImages($matches[2][$key], $attribs);
 
                     //Filter background images
-                    $result = $this->filterBackgroundImages($result, $attribs);
+                    //$result = $this->filterBackgroundImages($result, $attribs);
 
                     $text = str_replace($match, $result, $text);
                 }
@@ -49,7 +49,7 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
             $text =  $this->filterImages($text);
 
             //Second pass- Filter the background images
-            $text = $this->filterBackgroundImages($text);
+            //$text = $this->filterBackgroundImages($text);
         }
     }
 
