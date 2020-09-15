@@ -39,7 +39,7 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                     $result = $this->filterImages($matches[2][$key], $attribs);
 
                     //Filter background images
-                    $result = $this->filterBackgroundImages($result);
+                    $result = $this->filterBackgroundImages($result, $attribs);
 
                     $text = str_replace($match, $result, $text);
                 }
@@ -97,12 +97,9 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                             }
                         }
 
-                        //Replace config and attribs
-                        $attribs = array_replace_recursive($config, $attribs);
-
                         //Rename hyphen to underscore
                         $options = array();
-                        foreach($attribs as $name => $value)
+                        foreach(array_replace_recursive($config, $attribs) as $name => $value)
                         {
                             $name = str_replace('-', '_', $name);
                             $options[$name] = $value;
@@ -151,16 +148,15 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                         }
                     }
 
-                    //Replace config and attribs
-                    $attribs = array_replace_recursive($config, $attribs);
 
                     //Rename hyphen to underscore
                     $options = array();
-                    foreach($attribs as $name => $value)
+                    foreach(array_replace_recursive($config, $attribs) as $name => $value)
                     {
                         $name = str_replace('-', '_', $name);
                         $options[$name] = $value;
                     }
+
 
                     if($srcset = $this->getTemplate()->helper('image.srcset', $matches[3][$key], $options))
                     {
@@ -168,9 +164,9 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                         $attribs['data-bgset'] = implode(',', $srcset);
 
                         if(isset($attribs['class'])) {
-                          $attribs['class'] = $attribs['class'].' lazyload';
+                            $attribs['class'] = $attribs['class'].' lazyload';
                         } else {
-                          $attribs['class'] = 'lazyload';
+                              $attribs['class'] = 'lazyload';
                         }
 
                         $attribs['style'] = str_replace($matches[2][$key], '', $attribs['style']);
