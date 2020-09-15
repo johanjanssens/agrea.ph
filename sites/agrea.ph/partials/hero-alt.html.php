@@ -1,4 +1,4 @@
-<section class="relative hero-alt <?= $class ?>" style="background-image: url(theme://images/background/hero-bg.jpg);">
+<section class="relative hero-alt <?= $class ?>" style="background: #c9ca48 url(theme://images/background/hero-bg.jpg) left top/cover; background-blend-mode: multiply;">
   <div class="container m-auto">
     <?
     $articles = collection('ext:joomla.model.articles', [
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="hero-image hidden md:block absolute top-0 right-0 z-10 h-full w-2/5">
-      <div style="background-image: url(<?= helper('image.url', $articles->image->url.'?h=400&fm=pjpeg') ?>);background-position: right;background-repeat: no-repeat;background-size: cover;" class="h-full">
+      <div style="background: url(<?= helper('image.url', $articles->image->url.'?h=400&fm=pjpeg') ?>) right center/cover;" class="h-full">
           <div class="h-full bg-gray-900 opacity-25"></div>
       </div>
   </div>
