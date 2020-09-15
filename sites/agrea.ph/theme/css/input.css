@@ -17,14 +17,14 @@
 
 /* Custom stuff */
 :root {
-  --agrea-green:#788023;
-  --agrea-dark-green:#3E462E;
-  --agrea-lime:#C9CA48;
-  --agrea-gray:#8E8E8C;
-  --agrea-light-gray:#E3E3E2;
-  --agrea-orange:#C67042;
+  --green-500:#788023;
+  --dark-green-500:#3E462E;
+  --lime-500:#C9CA48;
+  --gray-500:#8E8E8C;
+  --light-gray-500:#E3E3E2;
+  --orange-500:#C67042;
   --rounded-border-radius:0.25rem;
-  --link-colour:var(--agrea-green);
+  --link-colour:var(--green-500);
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -148,11 +148,11 @@ body > footer {
 
 section[class*="bg-"]:not(.bg-white) {
   position:relative;
-  background-blend-mode: multiply;
   background-attachment: fixed; /* CSS only parallax */
-  background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: left top;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
@@ -216,16 +216,16 @@ li:focus-within a {
 }
 
 .k-pagination__pages li.k-is-active a {
-  background-color: var(--agrea-green);
+  background-color: var(--green-500);
   color: white;
 }
 
 .k-pagination__pages li:not(.k-is-active):hover a {
-  background-color: var(--agrea-light-gray);
+  background-color: var(--light-gray-500);
 }
 
 p > a:not([class]) {
-  color: var(--agrea-green);
+  color: var(--green-500);
 }
 
 article > img:not([class]) {
@@ -337,14 +337,14 @@ article > img:not([class]) {
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
   input[type='radio'] {
-    --active: var(--agrea-dark-green);
+    --active: var(--dark-green-500);
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, .3);
-    --border: var(--agrea-green);
-    --border-hover: var(--agrea-dark-green);
+    --border: var(--green-500);
+    --border-hover: var(--dark-green-500);
     --background: #fff;
-    --disabled: var(--agrea-gray);
-    --disabled-inner: var(--agrea-light-gray);
+    --disabled: var(--gray-500);
+    --disabled-inner: var(--light-gray-500);
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 21px;
