@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: 
+    path: default
+    footer: 
+        image: theme://images/background/farmer-couple.jpg
 name: Careers
 title: Career opportunities at AGREA
 summary: AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane.
-footer_bg: theme://images/background/farmer-couple.jpg
 collection:
     model: ext:joomla.model.articles
     state:

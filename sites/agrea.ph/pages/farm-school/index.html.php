@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: 
+    path: default
+    footer: 
+        image: theme://images/background/footer-bg.jpg
 name: Farm School
 title: AGREA Farm School
 summary: AGREA, the first TESDA-accredited farm school in Marinduque and certified by the Department of Agriculture - Agricultural Training Institute as an Organic Agriculture Learning Site.
-footer_bg: theme://images/background/footer-bg.jpg
 collection:
     model: ext:joomla.model.articles
     state:
