@@ -153,7 +153,7 @@ title: Agrea - Ecology of Dignity
 </ktml:images>
 
 <ktml:images max-width="50%">
-<section class="text-gray-200 bg-dark-green-500" style="background-image: url(theme://images/background/hero-bg.png);">
+<section class="text-gray-200 bg-dark-green-500" style="background-image: url(theme://images/background/hero-bg.png?auto=compress);">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-dark-green-500 rounded overflow-hidden">
@@ -224,7 +224,7 @@ title: Agrea - Ecology of Dignity
         <div class="flex flex-col justify-start mb-10">
           <div class="flex flex-col justify-start mb-10">
               <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
-          </div>    
+          </div>
           <p class=" text-gray-600 mt-2">AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.</p>
         </div>
       </div>
