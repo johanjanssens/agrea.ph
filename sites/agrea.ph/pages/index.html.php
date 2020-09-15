@@ -11,54 +11,24 @@ title: Agrea - Ecology of Dignity
 
 <ktml:images max-width="33%" preload="true">
 <section class="text-gray-700">
-  <div class="container px-5 py-24 mx-auto">
+  <div class="container px-5 pt-12 pb-24 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
       <div class="w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Top stories</h1>
+        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
       </div>
     </div>
-
-    <div class="grid md:grid-cols-3 gap-4">
-      <?
-          $articles = collection('ext:joomla.model.articles', [
-          'published' => 1,
-          'category' => ['11','13'], // new sprouts & farm school
-          'sort' => 'date',
-          'order' => 'desc',
-          'limit' => 3,
-      ]); ?>
-
-      <? foreach($articles as $article) :
-        $category_slug = (strpos($article->category->slug, 'prouts') == true) ? 'news' : $article->category->slug;
-      ?>
-      <div class="h-full border-2 border-dark-green-300 rounded-lg overflow-hidden">
-        <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>">
-          <img src="<?= $article->image->url ?>" alt="<?= $article->title ?>" class="lg:h-48 md:h-36 w-full object-cover object-center">
-        </a>
-        <div class="p-6">
-          <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">
-            <a class="text-gray-900 hover:text-gray-600" href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>"><?= $article->category->name; ?></a>
-            <br>
-            <span class="text-gray-600 text-sm flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg> <?= date($article->published_date, 'd M, Y'); ?>
-            </span>
-          </p>
-          <h1 class="font-title text-lg font-medium text-gray-900 mb-3">
-            <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>" class="text-gray-900 hover:text-gray-600"><?= $article->title ?></a>
-          </h1>
-          <p class="mb-3"><?= $article->excerpt ?></p>
-          <a href="<?= route(page($category_slug.'/article'), ['slug' => $article->slug]) ?>" class="text-green-500 inline-flex items-center">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <p>We believe that Filipino Farmers are world class. They are the point of change in our food system. In living our mission we strive for an Ecology of Dignity of all the stakeholders involved in bringing food on our tables. Rich or poor, young or old: everyone needs to eat!</p>
+        <p>We are focused on making the Philippine archipelago agriculturally sustainable by building on the One Island Economy model guided by three major goals: Zero Hunger, Zero Waste and Zero Insufficiency.</p>
+        <p>In all our work environmental local impact is a key consideration, by using a transformational approach, we make sure every transaction made with AGREA from producing to bringing food to consumers is contributing to impactful changes in every point along the way.</p>
+      </div>
+      <div>
+        <div class="embed-responsive aspect-ratio-16/9 rounded-lg">
+          <iframe class="rounded-lg" allowfullscreen="" src="https://video.toggle.sg/en/embed/469498" style="width: 640px; height: 360px;" frameborder="0" class="rounded-lg"></iframe>
         </div>
       </div>
-      <? endforeach ?>
     </div>
   </div>
 </section>
@@ -66,10 +36,10 @@ title: Agrea - Ecology of Dignity
 
 <ktml:images max-width="25%">
 <section class="text-gray-700 mb-24">
-  <div class="container px-5 pt-12 pb-24 mx-auto bg-dark-green-200 rounded">
+  <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-20">
       <div class="w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none uppercase">New sprouts</h1>
+        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none uppercase">Latest News Sprouts</h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
       </div>
     </div>
@@ -96,6 +66,9 @@ title: Agrea - Ecology of Dignity
         </a>
       </div>
       <? endforeach ?>
+    </div>
+    <div class="flex justify-center mt-12">
+        <a href="/news" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
     </div>
   </div>
 </section>
@@ -153,7 +126,7 @@ title: Agrea - Ecology of Dignity
 </ktml:images>
 
 <ktml:images max-width="50%">
-<section class="text-gray-200 bg-dark-green-500" style="background: #3e462e url(theme://images/background/hero-bg.jpg) left top/cover; background-blend-mode: multiply;">
+<section class="text-gray-200 bg-dark-green-500" style="background-image: url(theme://images/background/hero-bg.jpg);">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-dark-green-500 rounded overflow-hidden">
