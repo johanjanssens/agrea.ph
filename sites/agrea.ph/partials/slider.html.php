@@ -24,14 +24,22 @@
 
 endif ?>
 
+<? /* Shuffle the images */ ?>
+<? if(isset($shuffle) && $shuffle):
+  shuffle($images);
+endif ?>
+
 <div class="<?= $class ?>">
   <div class="splide__track">
     <ul class="splide__list">
-      <? foreach((array)$images as $image): ?>
-        <? $image = helper('image.url', $image) ?>
+      <? foreach((array)$images as $i => $image): ?>
         <li class="splide__slide">
-          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="<?= $image ?>" >
+        <? if($i == 0): ?>
+          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" src="<?= $image ?>" data-preload="true">
+        <? else : ?>
+          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="<?= helper('image.url', $image) ?>" >
         </li>
+        <? endif; ?>
       <? endforeach; ?>
     </ul>
   </div>
@@ -46,7 +54,7 @@ endif ?>
               perPage: 1,
               autoplay: true,
               rewind: true,
-              interval: 2500,
+              interval: 3000,
               lazyLoad: 'sequential',
               accessibility: true
           }).mount();
