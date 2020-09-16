@@ -27,8 +27,8 @@ title: Agrea - Ecology of Dignity
     <div class="grid lg:grid-cols-2 gap-4">
       <div class="">
         <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Championing a new narrative for agriculture</h3>
-        <p>We believe that Filipino Farmers are world class. They are the point of change in our food system. In living our mission we strive for an Ecology of Dignity of all the stakeholders involved in bringing food on our tables. Rich or poor, young or old: everyone needs to eat!</p>
-        <p>We are focused on making the Philippine archipelago agriculturally sustainable by building on the One Island Economy model guided by three major goals: Zero Hunger, Zero Waste and Zero Insufficiency.</p>
+        <p>We believe that Filipino Farmers are world class. They are the point of change in our food system. In living our mission we strive for an <span class="text-gray-700 font-bold">Ecology of Dignity</span> of all the stakeholders involved in bringing food on our tables. Rich or poor, young or old: everyone needs to eat!</p>
+        <p>We are focused on making the Philippine archipelago agriculturally sustainable by building on the <span class="text-gray-700 font-bold">One Island Economy</span> model guided by three major goals: <span class="text-gray-700 font-bold">Zero Hunger</span>, <span class="text-gray-700 font-bold">Zero Waste</span> and <span class="text-gray-700 font-bold">Zero Insufficiency</span>.</p>
         <p>In all our work environmental local impact is a key consideration, by using a transformational approach, we make sure every transaction made with AGREA from producing to bringing food to consumers is contributing to impactful changes in every point along the way.</p>
       </div>
       <div class="">
