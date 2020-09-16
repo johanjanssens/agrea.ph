@@ -3,7 +3,7 @@ layout: default
 title: Cherrie Atilano
 position: Founding Farmer, President and CEO
 visible: false
-summary: Cherrie Atilano's bio
+summary: Cherrie is the President and Founding Farmer of AGREA Philippines. She is also a co-founder of HATIENDA Holdings Inc., an agritourism and agri-processing space to produce Filipino agricultural products for local and exports market.
 slug: cherrie-atilano
 ---
 <ktml:images max-width="80%">
