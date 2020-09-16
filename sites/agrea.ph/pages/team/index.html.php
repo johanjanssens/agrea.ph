@@ -18,7 +18,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 			<? if ($member->slug !== ""): ?>
 			<a class="text-gray-900 hover:text-gray-600" href="/team/<?= $member->slug; ?>">
 			<? endif; ?>
-				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+				<div class="h-full bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
 					<div class="text-sm"><?= $member->position; ?></div>
 					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">
