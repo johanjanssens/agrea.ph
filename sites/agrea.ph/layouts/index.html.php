@@ -51,6 +51,16 @@
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
     <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
 
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if ("connection" in navigator) {
+          if (navigator.connection.saveData === true) {
+              document.documentElement.classList.add('save-data');
+          }
+      }
+    })
+    </script>
+
     <? if (config()->ga_code): ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?= config()->ga_code ?>"></script>
