@@ -32,7 +32,7 @@ title: Agrea - Ecology of Dignity
         <p>In all our work environmental local impact is a key consideration, by using a transformational approach, we make sure every transaction made with AGREA from producing to bringing food to consumers is contributing to impactful changes in every point along the way.</p>
       </div>
       <div class="">
-        <?= import('/partials/slider', ['folder' => 'images://slider/farming-is']); ?>
+          <?= import('/partials/slider', ['folder' => 'images://slider/farming-is', 'shuffle' => true]); ?>
       </div>
     </div>
   </div>

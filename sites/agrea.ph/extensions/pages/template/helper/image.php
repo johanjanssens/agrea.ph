@@ -7,6 +7,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
         $config->append(array(
             'max_width' => 1920,
             'min_width' => 320,
+            'max_dpr'   => 3,
             'base_url'  => $this->getObject('request')->getBaseUrl(),
             'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
             'exclude'    => ['svg'],
@@ -30,6 +31,7 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
             'height'  => null,
             'max_width' => $this->getConfig()->max_width,
             'min_width' => $this->getConfig()->min_width,
+            'max_dpr'   => $this->getConfig()->max_dpr,
             'preload'   => false,
             'lazyload'  => true,
             'expand'    => $this->getConfig()->expand,
@@ -83,7 +85,6 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
 
                 if($config->lazyload)
                 {
-
                     //Combine a normal src attribute with a low quality image as srcset value and a data-srcset attribute.
                     //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
                     //to the initial src attribute (without lazyload).
@@ -114,23 +115,20 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                     $width = $size[0];
                 }
 
+                $srcset = [];
                 if($height)
                 {
-                    $srcset = array(
-                        sprintf($hqi_url.'&h=%1$s&dpr=1 1x', $height),
-                        sprintf($hqi_url.'&h=%1$s&dpr=2 2x', $height),
-                        sprintf($hqi_url.'&h=%1$s&dpr=3 3x', $height),
-                    );
+                    for($i=1; $i <= $config->max_dpr; $i++) {
+                        $srcset[] = sprintf($hqi_url.'&h=%1$s&dpr=%2$d %2$dx', $height, $i);
+                    }
 
                     $size = 'height="'.$height.'"';
                 }
                 else
                 {
-                    $srcset = array(
-                        sprintf($hqi_url.'&w=%1$s&dpr=1 1x', $width),
-                        sprintf($hqi_url.'&w=%1$s&dpr=2 2x', $width),
-                        sprintf($hqi_url.'&w=%1$s&dpr=3 3x', $width),
-                    );
+                    for($i=1; $i <= $config->max_dpr; $i++) {
+                        $srcset[] = sprintf($hqi_url.'&w=%1$s&dpr=%2$d %2$dx', $width, $i);
+                    }
 
                     $size = 'width="'.$width.'"';
                 }
@@ -346,8 +344,13 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
             }
         }
 
-        if(empty($breakpoints)) {
-            $breakpoints[] = $max_width;
+        if(empty($breakpoints))
+        {
+            if(is_int($max_width) && $max_width < $width) {
+                $breakpoints[] = $max_width;
+            } else {
+                $breakpoints[] = $width;
+            }
         }
 
         return $breakpoints;
