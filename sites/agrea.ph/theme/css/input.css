@@ -138,11 +138,11 @@ body > main {
 
 body > footer {
   /* place on the bottom */
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 500px;
   background-position: 0 calc(100% - 5rem);
   background-repeat: no-repeat;
   background-size: 100vw;
