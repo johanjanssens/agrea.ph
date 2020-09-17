@@ -146,6 +146,7 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
+  -webkit-overflow-scrolling: touch;
 }
 
 section[class*="bg-"]:not(.bg-white) {
