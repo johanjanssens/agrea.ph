@@ -148,13 +148,10 @@ body > footer {
   z-index:0;
 }
 
+/* non-sticky footer on mobile */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* CSS Rules Here */
-  body > main {
-    margin-bottom:500px;
-  }
   body > footer {
-    height: 500px;
+    position:static;
   }
 }
 
