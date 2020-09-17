@@ -18,7 +18,7 @@ visible: false
 				<img itemprop="image" class="rounded w-full mb-6" src="<?= collection()->image->url ?>" alt="<?= collection()->title; ?>">
 				<p class="mt-2 text-xs font-medium flex flex-row justify-between">
 					<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-						<span itemprop="name"><?//= collection()->getEditor()->getName() ?></span>
+						<span itemprop="name"><?//= collection()->getAuthor()->getName() ?></span>
 					</span>
 					<span class="leading-relaxed text-dark-green-500 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">

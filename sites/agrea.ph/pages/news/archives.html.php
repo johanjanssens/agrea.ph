@@ -45,7 +45,7 @@ collection:
 					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
 					<div class="mb-2"><?= $article->excerpt; ?></div>
 					<p class="text-xs mt-2">
-						Written by: <?= $article->getEditor()->getName(); ?>
+						Written by: <?= $article->getAuthor()->getName(); ?>
 					</p>
 				</a>
 			</div>

@@ -39,7 +39,7 @@ collection:
 					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight" ><?= $article->title; ?></h2>
 					<div class="text-sm" ><?= $article->excerpt; ?></div>
 					<p class="text-xs mt-2">
-						Posted by: <?= $article->getEditor()->getName(); ?>
+						Posted by: <?= $article->getAuthor()->getName(); ?>
 					</p>
 				</a>
 			</div>
