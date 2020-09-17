@@ -73,11 +73,15 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                     //Generate data url for low quality image and preload it inline
                     if($config->preload)
                     {
+                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
+                        //This will generate a blur up effect
+                        $config->attributes['data-expand'] = $config->expand;
+
                         $context = stream_context_create([
                             "ssl" => [
                                 "verify_peer"      =>false,
                                 "verify_peer_name" =>false,
-                              ],
+                            ],
                         ]);
 
                         if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
@@ -89,12 +93,11 @@ class ExtPagesTemplateHelperImage extends ComPagesTemplateHelperBehavior
                     //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
                     //to the initial src attribute (without lazyload).
                     //
-                    //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
                     $html .='<img width="'.key($srcset).'" src="'.$hqi_url.'&w='.key($srcset).'"
                         srcset="'. $lqi_url.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
-                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'  data-expand="'.$config->expand.'">';
+                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
                 else
                 {
