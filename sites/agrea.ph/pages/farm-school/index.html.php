@@ -16,8 +16,8 @@ collection:
         order: desc
 ---
 
-<div class="flex flex-col sm:flex-row">
-	<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+<div class="flex flex-col sm:flex-row sm:pb-4">
+	<div class="sm:w-3/4 sm:pr-8 sm:pt-4">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
@@ -49,7 +49,7 @@ collection:
 		</div>
     </ktml:images>
 		<?= helper('paginator.pagination') ?>
-		<div class="flex flex-col sm:flex-row my-8">
+		<div class="flex flex-col sm:flex-row mt-8">
 			<div class="sm:w-1/4 sm:pr-8 sm:pb-8 sm:pt-0 sm:border-r border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 				<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Scholarship Programs Offered at the AGREA Farm School</h3>
 				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -60,7 +60,7 @@ collection:
 					<li class="text-gray-600"><a href="/farm-school/free-farming-education-plus-benefits-await-less-fortunate-youth-through-uaqtea" target="_blank">Universal Access to Quality Tertiary Education Act Scholarship (UAQTEA)</a></li>
 				</ul>
 			</div>
-			<div class="sm:w-3/4 sm:pl-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
+			<div class="sm:w-3/4 sm:pl-8 sm:pt-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 				<h3 class="font-medium font-title text-gray-900 text-lg">Why tesda scholarship?</h3>
 				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 				<p><img src="images://farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full" data-max-width="70%"></p>
@@ -75,7 +75,7 @@ collection:
 		</div>
 	</div>
   <ktml:images max-width="25%">
-	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<div class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<div class="flex flex-col">
 			<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
