@@ -138,6 +138,7 @@ body > main {
 
 body > footer {
   /* place on the bottom */
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -146,7 +147,6 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
-  -webkit-overflow-scrolling: touch;
 }
 
 section[class*="bg-"]:not(.bg-white) {
