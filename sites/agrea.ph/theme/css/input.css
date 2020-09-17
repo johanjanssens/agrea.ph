@@ -38,6 +38,8 @@
   --leading-tight: 1.25;
   --leading-normal: 1.5;
   --leading-none: 1;
+  /* plyr.js colour override */
+  --plyr-color-main: var(--green-500);
 }
 
 /**
