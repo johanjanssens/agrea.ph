@@ -146,12 +146,7 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
-}
-/* footer scroll on mobile devices */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  body > footer {
-    position:static;
-  }
+  -webkit-overflow-scrolling: touch;
 }
 
 section[class*="bg-"]:not(.bg-white) {
