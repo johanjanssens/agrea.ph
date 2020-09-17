@@ -1,4 +1,4 @@
-<header class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white mb-3" 
+<header class="relative flex flex-wrap items-center justify-between px-2 py-1 lg:py-3 navbar-expand-lg bg-white lg:mb-3" 
      x-data="scrollToReveal()" 
      x-ref="navbar"
      x-on:scroll.window="scroll()"

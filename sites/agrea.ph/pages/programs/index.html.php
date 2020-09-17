@@ -8,7 +8,7 @@ slug: programs
 
 <div class="flex flex-col sm:flex-row">
 	<ktml:images max-width="80%">
-	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
+	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<div class="flex flex-wrap w-full mb-20">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">The Cultivation of Human Beings</h1>
