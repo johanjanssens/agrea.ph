@@ -77,7 +77,7 @@ slug: yseali-grow
 			</li>
 		</ol>
 
-		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/grow/grow-sidebar-3.jpg" /></p>
+		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
 	</div>
 	</ktml:images>
 </article>
