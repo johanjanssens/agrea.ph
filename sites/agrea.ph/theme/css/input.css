@@ -134,6 +134,7 @@ body > main {
   min-height: 100vh;
   position: relative;
   z-index: 1;
+  -webkit-overflow-scrolling: touch;
 }
 
 body > footer {
@@ -146,7 +147,6 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
-  -webkit-overflow-scrolling: touch;
 }
 
 section[class*="bg-"]:not(.bg-white) {
