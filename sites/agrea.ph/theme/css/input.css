@@ -149,11 +149,8 @@ body > footer {
 }
 /* footer scroll on mobile devices */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  body > main {
-    margin-bottom:500px;
-  }
   body > footer {
-    height: 500px;
+    position:static;
   }
 }
 
