@@ -1,5 +1,5 @@
 ---
-title: AAgrea - Ecology of Dignity
+title: Agrea - Ecology of Dignity
 summary: There's lots happening at Agrea, our news sprouts will keep you up-to-date.
 collection:
     extend: news
