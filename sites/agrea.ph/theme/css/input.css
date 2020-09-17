@@ -241,67 +241,6 @@ article > img:not([class]) {
   border-radius: var(--rounded-border-radius);
 }
 
-/* Slider*/
-.tns-outer {
-  border-radius: var(--rounded-border-radius);
-  position:relative;
-}
-
-.tns-outer div[aria-label$="Pagination"],
-.tns-outer button[data-action="start"],
-.tns-outer button[data-action="stop"] {
-  display:none;
-}
-
-.tns-outer div[aria-label$="Navigation"] {
-  color:white;
-  position:absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width:100%;
-  outline: 0;
-}
-
-.tns-outer button[data-controls="prev"],
-.tns-outer button[data-controls="next"] {
-  display: none;
-  transition: 0.5s;
-  width: 48px;
-  padding: 48px 0 0 0;
-  height: 0;
-  background-size: cover;
-  overflow: hidden;
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-.tns-outer:hover button[data-controls="prev"],
-.tns-outer:hover button[data-controls="next"] {
-  display: block;
-}
-
-.tns-outer:hover button[data-controls="prev"]:hover,
-.tns-outer:hover button[data-controls="next"]:hover {
-  opacity: 1;
-}
-
-.tns-outer button[data-controls="prev"] {
-  background: url("../images/slider/prev.svg") no-repeat;
-  margin-left: 0.75vw;
-}
-
-.tns-outer button[data-controls="next"] {
-  background: url("../images/slider/next.svg") no-repeat;
-  position: absolute;
-  right: 0.75vw;
-  top: 0;
-}
-
-.tns-outer button[data-controls="prev"]:hover,
-.tns-outer button[data-controls="next"]:hover {
-  transform: scale(1.2);
-}
-
 /* responsive checkboxes */
 .embed-responsive {
   position: relative;
