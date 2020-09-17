@@ -134,11 +134,11 @@ body > main {
   min-height: 100vh;
   position: relative;
   z-index: 1;
-  -webkit-overflow-scrolling: touch;
 }
 
 body > footer {
   /* place on the bottom */
+  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
