@@ -1,6 +1,6 @@
 <?php
 return [
-    'ext:pages.subscriber.minify' => ['enable' => getenv('SITE') ? true : false],
+    'ext:pages.subscriber.minify' => ['enable' => getenv('SITE') == 'www.agrea.ph' ? true : false],
     'ext:pages.template.helper.image' => [
         'suffix'    => getenv('SITE') ? 'php': '',
         'exclude'   => ['gif'],
