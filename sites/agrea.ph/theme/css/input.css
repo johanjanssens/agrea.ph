@@ -138,7 +138,6 @@ body > main {
 
 body > footer {
   /* place on the bottom */
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -147,6 +146,16 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
   z-index:0;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* CSS Rules Here */
+  body > main {
+    margin-bottom:500px;
+  }
+  body > footer {
+    height: 500px;
+  }
 }
 
 section[class*="bg-"]:not(.bg-white) {
