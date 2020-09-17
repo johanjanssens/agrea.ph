@@ -160,7 +160,7 @@ section[class*="bg-"]:not(.bg-white) {
   background-attachment: fixed; /* CSS only parallax */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: left top;
-  background-size: 100% auto;
+  background-size: cover;
   background-blend-mode: multiply;
 }
 
