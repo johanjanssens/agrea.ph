@@ -16,6 +16,7 @@
 			</svg> <?= date($article->published_date, 'd M, Y'); ?>
 		</span>
 	</p>
-	<div class="mt-2" itemprop="articleBody" content='<?= strip_tags($article->text) ?>'><?= $article->text ?></div>
+	<div class="mt-2" itemprop="articleBody" content="<?= escape(strip_tags($article->text)) ?>"><?= $article->text ?></div>
 </div>
 </ktml:images>
+
