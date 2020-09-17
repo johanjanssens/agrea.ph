@@ -151,8 +151,17 @@ title: Agrea - Ecology of Dignity
         <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
       </div>
       <div class="md:w-1/2 mb-10 px-4">
-        <div class="embed-responsive aspect-ratio-16/9 rounded-lg">
-          <iframe class="rounded-lg" allowfullscreen="" src="https://video.toggle.sg/en/embed/469498" style="width: 640px; height: 360px;" frameborder="0" class="rounded-lg"></iframe>
+        <div class="rounded-lg md:mb-4 px-5">
+          <?= helper('video')  ?>
+          <div class="plyr__video-embed" id="player">
+            <iframe
+              src="https://player.vimeo.com/video/458341133??loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+              allowfullscreen
+              allowtransparency
+              allow="autoplay; fullscreen"
+              style="width: 600px; height: 315px" frameborder="0">
+            </iframe>
+          </div>
         </div>
         <p class="text-grey-400 text-sm items-center">Video courtesy of Asia NewsChannel</p>
         <h2 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h2>
