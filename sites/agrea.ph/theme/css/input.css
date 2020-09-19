@@ -52,7 +52,7 @@
   }
 }
 
-/* responsive font size for browser that understand: https://caniuse.com/mdn-css_types_clamp; */
+/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
 body > * {
   font-size: clamp(0.75rem, 4vw, 1rem);
 }

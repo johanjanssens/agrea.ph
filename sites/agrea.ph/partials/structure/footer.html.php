@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="bg-gray-800 h-20">
-    <div class="container mx-auto flex flex-row items-center px-5 md:pt-6 pt-3 border-box">
+    <div class="container mx-auto flex flex-row items-center justify-between px-5 md:pt-6 pt-3 border-box">
       <a class="hidden md:flex font-title font-medium items-center md:justify-start justify-center text-gray-500" title="AGREA homepage">
         <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
           <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
@@ -40,28 +40,28 @@
         </svg>
         <span class="ml-3 text-xl font-agrea"><?= config()->site->name ?></span>
       </a>
-      <p class="text-gray-500 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->copyright_notice ?></p>
+      <p class="text-gray-500 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <span class="inline-flex mr-2 bg-green-500 rounded border-green-900 border p-1 ml-2 md:p-2 -mt-2">
-          <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="text-dark-green-600 hover:text-lime-500 transition duration-500 ease-in-out">
+        <span class="text-gray-500 text-xs sm:ml-4 sm:mt-0 hidden md:inline">Follow our social feeds</span>
+        <span class="inline-flex mx-2 -mt-2">
+          <a href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="bg-green-500 rounded border-green-900 border p-1 text-dark-green-600 hover:bg-green-200 transition duration-500 ease-in-out">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a href="https://www.instagram.com/agreaphl/" title="Follow our instagram" class="ml-3 text-dark-green-600 hover:text-lime-500 transition duration-500 ease-in-out">
+          <a href="https://www.instagram.com/agreaphl/" title="Follow our instagram" class="bg-green-500 rounded border-green-900 border p-1 ml-1 text-dark-green-600 hover:bg-green-200 transition duration-500 ease-in-out">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a href="https://www.twitter.com/agreaphl" title="Follow us on twitter" class="ml-3 text-dark-green-600 hover:text-lime-500 transition duration-500 ease-in-out">
+          <a href="https://www.twitter.com/agreaphl" title="Follow us on twitter" class="bg-green-500 rounded border-green-900 border p-1 ml-1 text-dark-green-600 hover:bg-green-200 transition duration-500 ease-in-out">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
               <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
             </svg>
           </a>
-          <span class="text-lime-900 text-xs border-dark-green-600 border-l pl-2 ml-3 hidden md:inline-block">Follow our social feeds</span>
         </span>
-        <span class="text-gray-500 text-xs sm:ml-4 sm:mt-0 mt-4 hidden md:inline-block">Built by</span>
+        <span class="text-gray-500 text-xs sm:ml-2 sm:mt-0">Built by</span>
         <a href="https://www.joomlatools.com" title="By Joomlatools" class="ml-1 mr-4">
             <svg class="w-5 h-5" viewBox="0 0 32 30.3303"><defs><style>.cls-1{fill:none;}.cls-2{fill:var(--agrea-lime);}.cls-3{fill:var(--agrea-green);}.cls-4{fill:url(#jtp-5);}.cls-5{fill:url(#jtp-2);}</style><pattern id="jtp-5" width="204.843" height="204.842" patternTransform="translate(-2.5053 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-3" width="204.843" height="204.842"/></pattern><pattern id="jtp-2" width="204.843" height="204.842" patternTransform="translate(-2.5058 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-2" width="204.843" height="204.842"/></pattern></defs><g><path class="cls-4" d="M30.3747,14.26A12.1484,12.1484,0,0,0,13.7805,9.8135,2.3155,2.3155,0,1,0,16.096,13.824a7.5168,7.5168,0,0,1,7.5165,13.02,2.3158,2.3158,0,0,0,2.3158,4.0111A12.154,12.154,0,0,0,30.3747,14.26Z" transform="translate(0 -0.8348)"/><path class="cls-4" d="M24.2974,18.7688a2.3157,2.3157,0,0,0-4.631.0366v.0374a7.5181,7.5181,0,1,1-15.0347.047l0-.03A2.3155,2.3155,0,0,0,.0012,18.832a12.1491,12.1491,0,1,0,24.2974.1332C24.2983,18.8994,24.298,18.8343,24.2974,18.7688Z" transform="translate(0 -0.8348)"/></g><path id="accent" class="cls-5" d="M24.5575,4.5516a2.3153,2.3153,0,0,0-1.1263-1.9888A12.1492,12.1492,0,1,0,11.2275,23.5715a2.3153,2.3153,0,0,0,2.2658-4.0385A7.518,7.518,0,1,1,21.0512,6.5362a2.3165,2.3165,0,0,0,3.5063-1.9846Z" transform="translate(0 -0.8348)"/></svg>
         </a>

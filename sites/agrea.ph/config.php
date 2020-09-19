@@ -4,7 +4,6 @@ return array(
     // Site
     'site' => [
         'body_class'        => 'h-full',
-        'copyright_notice'  => 'Agrea | All rights reserved',
         'main_color'        => '#788023',
         'name'              => 'AGREA',
     ],
