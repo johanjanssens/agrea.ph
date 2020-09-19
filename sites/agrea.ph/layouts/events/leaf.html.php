@@ -7,7 +7,7 @@ content: []
 <section id="top" class="container px-5 py-8 mx-auto leading-relaxed text-gray-700 flex-1 bg-white">
 	<div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 		<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-			<div class="flex flex-wrap w-full mb-20">
+			<div class="flex flex-wrap w-full mb-10">
 				<div class="lg:w-2/3 w-full mb-6 lg:mb-0">
 					<h1 class="sm:text-3xl text-2xl font-medium font-title mb-2 text-gray-900"><?= $title; ?></h1>
 					<div class="h-1 w-20 bg-green-500 rounded"></div>

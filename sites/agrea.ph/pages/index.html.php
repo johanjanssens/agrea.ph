@@ -18,7 +18,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="33%" preload="true">
 <section class="text-gray-700">
   <div class="container px-5 pt-12 pb-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20">
+    <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -42,7 +42,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="25%">
 <section class="text-gray-700 mb-24">
   <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
-    <div class="flex flex-wrap w-full mb-20">
+    <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none uppercase">Latest News Sprouts</h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -82,7 +82,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="33%">
 <section class="text-gray-700">
   <div class="container px-5 pb-24 mx-auto">
-  <div class="flex flex-wrap w-full mb-20">
+  <div class="flex flex-wrap w-full mb-10">
     <div class="w-full mb-6 lg:mb-0">
       <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Classrooms, fora and reports</h1>
       <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -207,7 +207,7 @@ title: Agrea - Ecology of Dignity
       </div>
 
       <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-        <div class="flex flex-wrap w-full mb-20">
+        <div class="flex flex-wrap w-full mb-10">
           <div class="w-full mb-6 lg:mb-0">
             <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Agrea in the news</h1>
             <div class="h-1 w-20 bg-green-500 rounded"></div>

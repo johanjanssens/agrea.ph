@@ -52,6 +52,11 @@
   }
 }
 
+/* responsive font size for browser that understand: https://caniuse.com/mdn-css_types_clamp; */
+body > * {
+  font-size: clamp(0.75rem, 4vw, 1rem);
+}
+
 /* Normalise font sizes for any text element that doesn't have a font size */
 main,
 footer,
