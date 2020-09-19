@@ -3,7 +3,7 @@
      x-ref="navbar"
      x-on:scroll.window="scroll()"
      x-bind:class="{
-                   'sticky top-0 shadow-lg': sticky,
+                   'sticky z-50 top-0 shadow-lg': sticky,
                    'relative': !sticky
                    }">
   <!-- Navbar -->
