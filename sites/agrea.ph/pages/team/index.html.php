@@ -59,7 +59,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		</dl>
 		<dl>
 			<dt>Tel:</dt>
-			<dd itemprop="telephone">+63 (02) 886-9800</dd>
+			<dd itemprop="telephone"><a href="tel:+63028869800">+63 (02) 886-9800</a></dd>
 		</dl>
 		<h3 class="text-gray-900 font-medium font-title my-4">Email Addresses:</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
