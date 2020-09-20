@@ -16,18 +16,20 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
 			<? if ($member->slug !== ""): ?>
-			<a class="text-gray-900 hover:text-gray-600" href="/team/<?= $member->slug; ?>">
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/team/<?= $member->slug; ?>">
+			<? else: ?>
+			<div class="h-full bg-gray-100 text-gray-900 p6 rounded-lg">
 			<? endif; ?>
-				<div class="h-full bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-					<h2 class="text-lg text-gray-900 font-medium font-title leading-tight">
+					<h2 class="text-lg font-medium font-title leading-tight">
 						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name"><?= $member->name; ?></span>
 						</span>
 					</h2>
-					<div class="text-sm"><?= $member->position; ?></div>
-				</div>
-			<? if ($member->slug !== ""): ?>
+					<p class="text-sm"><?= $member->position; ?></p>
+			<? if ($member->slug == ""): ?>
+			</div>
+			<? else: ?>
 			</a>
 			<? endif; ?>
 			<? endforeach; ?>
