@@ -78,28 +78,28 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<ul itemscope itemtype="http://schema.org/Organization" class="mb-2">
 			<link itemprop="url" href="https://www.agrea.ph">
 			<li>
-	          <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="inline-flex transition duration-500 ease-in-out">
-	            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+	          <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="inline-flex hover:text-blue-900 transition duration-500 ease-in-out">
+	            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 text-blue-800" viewBox="0 0 24 24">
 	              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
 	            </svg>
-	            <span class="ml-2 text-green-500 hover:text-green-700">facebook.com/agreaph</span>
+	            <span class="ml-2">facebook.com/agreaph</span>
 	          </a>
 	      	</li>
 			<li>
-	          <a itemprop="sameAs" href="https://www.instagram.com/agreaphl/" title="Follow our instagram" class="inline-flex transition duration-500 ease-in-out">
-	            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+	          <a itemprop="sameAs" href="https://www.instagram.com/agreaphl/" title="Follow our instagram" class="inline-flex hover:text-gray-900 transition duration-500 ease-in-out">
+	            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 text-gray-800" viewBox="0 0 24 24">
 	              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
 	              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
 	            </svg>
-	            <span class="ml-2 text-green-500 hover:text-green-700">@agreaphl</span>
+	            <span class="ml-2">@agreaphl</span>
 	          </a>
 	      	</li>
 			<li>
-	          <a itemprop="sameAs" href="https://www.twitter.com/agreaphl" title="Follow us on twitter" class="inline-flex transition duration-500 ease-in-out">
-	            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+	          <a itemprop="sameAs" href="https://www.twitter.com/agreaphl" title="Follow us on twitter" class="inline-flex hover:text-blue-500 transition duration-500 ease-in-out">
+	            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 text-blue-400" viewBox="0 0 24 24">
 	              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
 	            </svg>
-	            <span class="ml-2 text-green-500 hover:text-green-700">@agreaphl</span>
+	            <span class="ml-2">@agreaphl</span>
 	          </a>
 	      	</li>
 	    </ul>
@@ -107,11 +107,11 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<ul class="mb-2">
 			<li>
-	          <a href="/news.rss" title="Follow us on twitter" class="inline-flex transition duration-500 ease-in-out">
-	            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-5 h-5" viewBox="0 0 24 24" stroke="currentColor">
+	          <a href="/news.rss" title="Follow us on twitter" class="inline-flex hover:text-orange-600 transition duration-500 ease-in-out">
+	            <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" stroke="currentColor">
 				  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
 				</svg>
-	            <span class="ml-2 text-green-500 hover:text-green-700">RSS News Feed</span>
+	            <span class="ml-2">RSS News Feed</span>
 	          </a>
 	      	</li>
 	    </ul>
