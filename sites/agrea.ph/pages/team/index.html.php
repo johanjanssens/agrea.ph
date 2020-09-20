@@ -47,9 +47,9 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		</dl>
 		<dl>
 			<dt>Tel:</dt>
-			<dd itemprop="telephone">+63 (042) 332-0025</dd>
-			<dd itemprop="telephone">+63 917 888 6505</dd>
-			<dd itemprop="telephone">+63 933 824 6020</dd>
+			<dd itemprop="telephone"><a href="tel:+630423320025">+63 (042) 332-0025</a></dd>
+			<dd itemprop="telephone"><a href="tel:+639178886505">+63 917 888 6505</a></dd>
+			<dd itemprop="telephone"><a href="tel:+639338246020">+63 933 824 6020</a></dd>
 		</dl>
 		<dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 			<dt>Makati Office:</dt>

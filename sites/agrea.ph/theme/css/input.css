@@ -68,10 +68,10 @@ article > img:not([class]) {
 b:not([class]),
 dt:not([class]),
 strong:not([class]) {
-  @apply font-bold;
+  @apply font-semibold;
 }
 dt:not([class]) {
-  @apply mb-3;
+  @apply mt-2 mb-1;
 }
 sub:not([class]),
 sup:not([class]) {
