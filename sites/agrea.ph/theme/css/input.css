@@ -71,7 +71,7 @@ strong:not([class]) {
   @apply font-semibold;
 }
 dt:not([class]) {
-  @apply mt-2 mb-1;
+  @apply leading-tight mt-2 mb-1;
 }
 sub:not([class]),
 sup:not([class]) {
