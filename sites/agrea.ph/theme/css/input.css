@@ -70,8 +70,14 @@ dt:not([class]),
 strong:not([class]) {
   @apply font-semibold;
 }
+dl + dl {
+  @apply mt-4;
+}
 dt:not([class]) {
-  @apply leading-tight mt-2 mb-1;
+  @apply leading-tight mt-4 mb-1;
+}
+dl:not([class]) dt:not([class]):first-child {
+  @apply mt-2;
 }
 sub:not([class]),
 sup:not([class]) {

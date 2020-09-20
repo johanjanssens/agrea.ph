@@ -61,20 +61,6 @@
     })
     </script>
 
-    <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Organization",
-      "name" : "Agrea",
-      "url" : "https://www.agrea.ph",
-      "sameAs" : [
-        "https://www.facebook.com/agreaph",
-        "https://www.instagram.com/agreaphl/",
-        "https://www.twitter.com/agreaphl"
-      ]
-    }
-    </script>
-
     <? if (config()->ga_code): ?>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?= config()->ga_code ?>"></script>
