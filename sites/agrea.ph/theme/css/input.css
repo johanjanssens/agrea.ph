@@ -1,5 +1,16 @@
 /* tailwind */
 @tailwind base;
+/*  declare our base styles for preflight - move these to a @layer once we get it working */
+/* AGREA Logo font */
+@font-face {
+  font-family: 'typo3';
+  src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
+  url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
+  url('../fonts/Typo3-Medium.ttf.eot'),
+  url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 main {
   @apply min-h-screen;
 }
@@ -70,7 +81,7 @@ dt:not([class]),
 strong:not([class]) {
   @apply font-semibold;
 }
-dl + dl {
+dl:not([class]) + dl:not([class]) {
   @apply mt-4;
 }
 dt:not([class]) {
@@ -157,18 +168,6 @@ sup:not([class]) {
 }
 
 /* Anything we can't do easily with tailwind classes */
-
-/* AGREA Logo font */
-@font-face {
-  font-family: 'typo3';
-  src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
-  url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
-  url('../fonts/Typo3-Medium.ttf.eot'),
-  url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
-  font-weight: normal;
-  font-style: normal;
-}
-
 /*
  * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
 */
