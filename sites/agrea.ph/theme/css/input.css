@@ -1,9 +1,6 @@
-/* Import Tailwind */
-@import url("vendor/tailwind.css");
-
-/* Import the baseline grid for anything that doesn't have a class */
-@import url("vendor/fluid-baseline-grid.css");
-
+/* tailwind */
+@tailwind base;
+/*  declare our base styles for preflight - move these to a @layer once we get it working */
 /* AGREA Logo font */
 @font-face {
   font-family: 'typo3';
@@ -14,14 +11,142 @@
   font-weight: normal;
   font-style: normal;
 }
+main {
+  @apply min-h-screen;
+}
+main,
+footer {
+  @apply text-base;
+}
+h1:not([class]) {
+  @apply text-4xl uppercase text-gray-900 leading-none mb-2;
+}
+h2:not([class]) {
+  @apply text-3xl uppercase text-gray-900 leading-none mb-2;
+}
+h3:not([class]) {
+  @apply text-2xl uppercase text-gray-900 leading-tight mb-3;
+}
+h4:not([class]) {
+  @apply text-xl uppercase text-gray-900 mb-4;
+}
+h5:not([class]) {
+  @apply text-lg uppercase text-gray-900 mb-5;
+}
+blockquote:not([class]),
+label:not([class]),
+p:not([class]),
+pre:not([class]),
+td:not([class]),
+th:not([class]),
+ul:not([class]),
+ol:not([class]) {
+  @apply text-base mb-6;
+}
+small:not([class]) {
+  @apply text-sm mb-8;
+}
+table:not([class]) {
+  @apply border-collapse mb-6;
+}
+td:not([class]),
+th:not([class]),
+tr:not([class]) {
+  @apply pr-6;
+}
+ul:not([class]) {
+  @apply list-star list-inside;
+}
+ol:not([class]) {
+  @apply list-decimal list-inside;
+}
+li:not([class]) > ol:not([class]), 
+li:not([class]) > ul:not([class]) {
+  @apply px-6 py-3;
+}
+li:focus-within a {
+  @apply outline-none;
+}
+a:not([class]) {
+  @apply text-green-500;
+}
+a:not([class]):hover {
+  @apply underline;
+}
+article > img:not([class]) {
+  @apply rounded;
+}
+b:not([class]),
+dt:not([class]),
+strong:not([class]) {
+  @apply font-semibold;
+}
+dl:not([class]) + dl:not([class]) {
+  @apply mt-4;
+}
+dt:not([class]) {
+  @apply leading-tight mt-4 mb-1;
+}
+dl:not([class]) dt:not([class]):first-child {
+  @apply mt-2;
+}
+sub:not([class]),
+sup:not([class]) {
+  @apply text-xs relative align-baseline;
+}
+/* titles */
+.font-title {
+  @apply uppercase;
+}
+/* hero image */
+.hero-image > div {
+  @apply bg-right;
+}
+/* pagination */
+.k-pagination__pages li {
+  @apply inline-flex mr-1;
+}
 
-/* Custom stuff */
+.k-pagination__pages a {
+  @apply rounded py-2 px-4 no-underline;
+}
+
+.k-pagination__pages a:hover {
+  @apply no-underline;
+}
+
+.k-pagination__pages li.k-is-active a {
+  @apply bg-green-500 text-white;
+}
+
+.k-pagination__pages li:not(.k-is-active):hover a {
+  @apply bg-gray-200;
+}
+/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
+.aspect-ratio-none {
+  @apply pb-0;
+}
+/* responsive embeds */
+.embed-responsive {
+  @apply relative block h-0 p-0 overflow-hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  @apply absolute top-0 left-0 bottom-0 h-full w-full border-0;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Vars that we can use throughout the site */
 :root {
   --green-500:#788023;
   --dark-green-500:#3E462E;
   --lime-500:#C9CA48;
   --gray-500:#8E8E8C;
-  --light-gray-500:#E3E3E2;
+  --gray-200:#E3E3E2;
   --orange-500:#C67042;
   --rounded-border-radius:0.25rem;
   --link-colour:var(--green-500);
@@ -42,9 +167,10 @@
   --plyr-color-main: var(--green-500);
 }
 
-/**
+/* Anything we can't do easily with tailwind classes */
+/*
  * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
- */
+*/
 @media screen and (prefers-reduced-motion: no-preference) {
   html,
   body {
@@ -52,107 +178,14 @@
   }
 }
 
-/* Normalise font sizes for any text element that doesn't have a font size */
-main,
-footer,
-p:not([class]) {
-  font-size: var(--text-base);
+/* Main header story and IN FOUCS area on the homepage */
+section.hero-alt .hero-image {
+  clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+  transition: 1s;
 }
 
-h1:not([class]),
-h2:not([class]),
-h3:not([class]),
-h4:not([class]),
-h5:not([class]),
-h6:not([class]){
-  text-transform: uppercase;
-  color: rgba(43,43,42,1);
-  margin-bottom: 1rem;
-  margin-top: .5rem;
-}
-
-h1:not([class]) {
-  font-size: var(--text-4xl);
-  line-height: var(--leading-none);
-}
-
-h2:not([class]) {
-  font-size: var(--text-3xl);
-  line-height: var(--leading-none);
-}
-
-h3:not([class]) {
-  font-size: var(--text-2xl);
-  line-height: var(--leading-tight);
-}
-
-h4:not([class]) {
-  font-size: var(--text-xl);
-}
-
-h5:not([class]) {
-  font-size: var(--text-lg);
-}
-
-h6:not([class]) {
-  font-size: var(--text-base);
-}
-
-ul:not([class]) {
-  list-style: "☆" outside;
-  margin-left: 1.05rem;
-}
-
-li:not([class]) {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-li:not([class]) > ol:not([class]), 
-li:not([class]) > ul:not([class]) {
-  padding: 1rem .5rem;
-}
-
-/* Submenu border override */
-.submenu > li:first-child[class$="children"] {
-  border-top:0!important;
-  border-top-right-radius: var(--rounded-border-radius);
-  border-top-left-radius: var(--rounded-border-radius);
-}
-
-.submenu > li:last-child[class$="children"] {
-  border-bottom-right-radius: var(--rounded-border-radius);
-  border-bottom-left-radius: var(--rounded-border-radius);
-}
-
-header.sticky {
-  z-index:999;
-}
-
-body > main {
-  /* make sure to cover the screen */
-  min-height: 100vh;
-  position: relative;
-  z-index: 1;
-}
-
-body > footer {
-  /* place on the bottom */
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-position: 0 calc(100% - 5rem);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  z-index:0;
-}
-
-/* non-sticky footer on mobile */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
-  body > footer {
-    position:static;
-  }
+section.hero-alt:hover .hero-image {
+  clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
 }
 
 section[class*="bg-"]:not(.bg-white) {
@@ -166,7 +199,7 @@ section[class*="bg-"]:not(.bg-white) {
 
 section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
   position:relative;
-  z-index:2;
+  z-index:20;
 }
 
 section[class*="bg-"]:not(.bg-white) h1 {
@@ -177,24 +210,36 @@ section[class*="bg-"]:not(.bg-white) p {
   text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
 }
 
-section.hero-alt .hero-image {
-  clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-  transition: 1s;
+/* Footer illustration */
+body > footer {
+  background-position: 0 calc(100% - 5rem);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
-section.hero-alt:hover .hero-image {
-  clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+/* sticky footer
+ * tailwind doesn't handle this well so let's add it here for large screens
+*/
+@media only screen and (min-device-width: 1024px) {
+  main {
+    position: relative;
+    z-index: 10;
+  }
+  body > footer {
+    position: sticky;
+    z-index:0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
-/* the actual hero image */
-.hero-image > div {
-  background-position: right;
+/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+body > * {
+  font-size: clamp(0.75rem, 4vw, 1rem);
 }
 
-.font-title {
-  text-transform:uppercase;
-}
-
+/* Titles use the Raleway google font */
 h1:not([class]),
 h2:not([class]),
 h3:not([class]),
@@ -204,70 +249,21 @@ h6:not([class]) {
   font-family: Raleway,sans-serif;
 }
 
-li:focus-within a {
-  outline: none;
+ul:not([class]) > li:not([class]) {
+  display: list-item;
+  text-align: -webkit-match-parent;
 }
 
-/* pagination */
-.k-pagination__pages li {
-  display: inline-block;
-  margin-right: 4px;
+/* Position 'sub' and 'sup' without affecting line-height */
+sup:not([class]) {
+    top: -0.5em;
+}
+/* Move superscripted text up */
+sub:not([class]) {
+    bottom: -0.25em;
 }
 
-.k-pagination__pages a {
-  border-radius: var(--rounded-border-radius);
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.k-pagination__pages a:hover {
-  text-decoration: none;
-}
-
-.k-pagination__pages li.k-is-active a {
-  background-color: var(--green-500);
-  color: white;
-}
-
-.k-pagination__pages li:not(.k-is-active):hover a {
-  background-color: var(--light-gray-500);
-}
-
-p > a:not([class]) {
-  color: var(--green-500);
-}
-
-article > img:not([class]) {
-  border-radius: var(--rounded-border-radius);
-}
-
-/* responsive checkboxes */
-.embed-responsive {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
-
-/* tailwindcss-aspect-ratio generates these */
-.aspect-ratio-none {
-  padding-bottom: 0;
-}
+/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
 .aspect-ratio-square {
   padding-bottom: 100%;
 }
@@ -281,6 +277,21 @@ article > img:not([class]) {
   padding-bottom: 42.86%;
 }
 
+/* Sidebar
+ * todo: first and last can be done in tailwind, swap it out - https://tailwindcss.com/docs/pseudo-class-variants#first-child
+ */
+/* Submenu border override */
+.submenu > li:first-child[class$="children"] {
+  border-top:0!important;
+  border-top-right-radius: var(--rounded-border-radius);
+  border-top-left-radius: var(--rounded-border-radius);
+}
+
+.submenu > li:last-child[class$="children"] {
+  border-bottom-right-radius: var(--rounded-border-radius);
+  border-bottom-left-radius: var(--rounded-border-radius);
+}
+
 /* CSS3 Checkboxes */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
@@ -292,7 +303,7 @@ article > img:not([class]) {
     --border-hover: var(--dark-green-500);
     --background: #fff;
     --disabled: var(--gray-500);
-    --disabled-inner: var(--light-gray-500);
+    --disabled-inner: var(--gray-200);
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 21px;

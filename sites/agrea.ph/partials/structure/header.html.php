@@ -3,14 +3,14 @@
      x-ref="navbar"
      x-on:scroll.window="scroll()"
      x-bind:class="{
-                   'sticky top-0 shadow-lg': sticky,
+                   'sticky z-50 top-0 shadow-lg': sticky,
                    'relative': !sticky
                    }">
   <!-- Navbar -->
   <div class="w-full text-gray-700">
-    <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto md:items-center md:justify-between md:flex-row">
+    <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="p-4 flex flex-row items-center justify-between">
-        <a class="flex items-center mb-4 md:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
+        <a class="flex items-center mb-4 lg:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
           <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
             <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
             c8.35,1.48,24.26,2.32,36.45-8.02L110.73,85.44z M92.62,92.15c0.88-0.09,1.47-0.21,2.81-0.46c0.85-0.2,2.18-0.46,2.82-0.68
@@ -37,7 +37,7 @@
           <span class="ml-3 text-xl font-agrea font-medium uppercase text-gray-900"><?= config()->site->name ?></span>
         </a>
         <!-- Button Mobile Nav -->
-        <button class="md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+        <button class="lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
             <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -46,7 +46,7 @@
         <!-- End Button Mobile Nav -->
       </div>
       <!-- Navbar Mobile -->
-      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden bg-white pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden bg-white pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row">
         <?= import('/partials/navigation/mainmenu',['levels'=>1,]); ?>
       </nav>
     </div>

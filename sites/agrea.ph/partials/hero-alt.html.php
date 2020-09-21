@@ -1,5 +1,5 @@
-<section class="relative hero-alt <?= $class ?>">
-  <div class="container m-auto">
+<section class="relative hero-alt mb-12 <?= $class ?>">
+  <div class="container px-5 py-12 md:py-24 mx-auto">
     <?
     $articles = collection('ext:joomla.model.articles', [
       'published' => 1,
@@ -8,7 +8,7 @@
       'order' => 'desc',
       'limit' => 1,
     ]); ?>
-    <div class="relative z-10 md:flex md:justify-center md:w-3/5 py-24 sm:py-36 md:py-42 md:mx-0 mx-8">
+    <div class="relative z-10 md:flex md:justify-center md:w-3/5 md:mx-0 mx-8">
         <div class="md:hidden mb-4">
           <img class="object-cover object-center rounded" src="<?= $articles->image->url ?>" alt="<?= $articles->title; ?>">
         </div>

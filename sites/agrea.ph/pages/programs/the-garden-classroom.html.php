@@ -11,7 +11,7 @@ slug: the-garden-classroom
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
 	<aritcle itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-		<div class="flex flex-wrap w-full mb-20">
+		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>

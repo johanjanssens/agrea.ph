@@ -18,7 +18,7 @@ collection:
 
 <div class="flex flex-col sm:flex-row sm:pb-4">
 	<div class="sm:w-3/4 sm:pr-8 sm:pt-4">
-		<div class="flex flex-wrap w-full mb-20">
+		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -30,21 +30,19 @@ collection:
     <ktml:images max-width="25%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
-				<a class="text-gray-900 hover:text-gray-600" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
-					<p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2 flex items-center">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-						</svg> <?= date($article->published_date, 'd M, Y'); ?>
-					</p>
-					<h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
-					<div class="text-sm"><?= $article->excerpt; ?></div>
-					<p class="text-xs mt-2">
-						Written by: <?= $article->getAuthor()->getName(); ?>
-					</p>
-				</a>
-			</div>
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
+				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+				<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+					  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg> <?= date($article->published_date, 'd M, Y'); ?>
+				</p>
+				<h2 class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
+				<div class="text-sm"><?= $article->excerpt; ?></div>
+				<p class="text-xs mt-2">
+					Written by: <?= $article->getAuthor()->getName(); ?>
+				</p>
+			</a>
 			<? endforeach; ?>
 		</div>
     </ktml:images>

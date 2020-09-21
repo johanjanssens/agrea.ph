@@ -18,7 +18,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="33%" preload="true">
 <section class="text-gray-700">
   <div class="container px-5 pt-12 pb-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20">
+    <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -42,7 +42,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="25%">
 <section class="text-gray-700 mb-24">
   <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
-    <div class="flex flex-wrap w-full mb-20">
+    <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none uppercase">Latest News Sprouts</h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -59,17 +59,15 @@ title: Agrea - Ecology of Dignity
       ]); ?>
 
       <? foreach($newSprouts as $newSprout) :?>
-      <div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
-        <a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
-          <p class="text-xs text-gray-600 flex items-center mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg> <?= date($newSprout->published_date, 'd M, Y'); ?>
-          </p>
-          <h2 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><?= $newSprout->title; ?></h2>
-        </a>
-      </div>
+      <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
+        <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
+        <p class="text-xs flex items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg> <?= date($newSprout->published_date, 'd M, Y'); ?>
+        </p>
+        <h2 class="text-lg font-medium font-title mb-4 leading-tight"><?= $newSprout->title; ?></h2>
+      </a>
       <? endforeach ?>
     </div>
     <div class="flex justify-center mt-12">
@@ -82,7 +80,7 @@ title: Agrea - Ecology of Dignity
 <ktml:images max-width="33%">
 <section class="text-gray-700">
   <div class="container px-5 pb-24 mx-auto">
-  <div class="flex flex-wrap w-full mb-20">
+  <div class="flex flex-wrap w-full mb-10">
     <div class="w-full mb-6 lg:mb-0">
       <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Classrooms, fora and reports</h1>
       <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -207,7 +205,7 @@ title: Agrea - Ecology of Dignity
       </div>
 
       <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-        <div class="flex flex-wrap w-full mb-20">
+        <div class="flex flex-wrap w-full mb-10">
           <div class="w-full mb-6 lg:mb-0">
             <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Agrea in the news</h1>
             <div class="h-1 w-20 bg-green-500 rounded"></div>
@@ -215,20 +213,18 @@ title: Agrea - Ecology of Dignity
         </div>
         <div class="grid lg:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
-          <div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
-            <a href="<?= $weblink->url; ?>">
-              <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
-              </div>
-              <p class="leading-relaxed text-orange-500 text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
-              <p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-4 flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg> <span><?= $weblink->date ?></span>
-              </p>
-              <h3 class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600"><?= $weblink->title ?></h3>
-            </a>
-          </div>
+          <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= $weblink->url; ?>">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
+            </div>
+            <p class="leading-relaxed text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
+            <p class="leading-relaxed text-xs font-medium mb-4 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg> <span><?= $weblink->date ?></span>
+            </p>
+            <h3 class="text-lg font-medium font-title mb-4 leading-tight"><?= $weblink->title ?></h3>
+          </a>
         <? endforeach; ?>
         </div>
       </div>

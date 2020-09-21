@@ -1,5 +1,5 @@
-<section class="<?= $class ?>">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+<section class="mb-12 <?= $class ?>">
+  <div class="container mx-auto flex px-5 md:pt-12 md:pb-24 md:flex-row flex-col items-center">
     <? 
     $articles = collection('ext:joomla.model.articles', [
       'published' => 1,
