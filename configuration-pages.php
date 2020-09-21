@@ -11,7 +11,7 @@ return array(
         'X-Xss-Protection'          => '1; mode=block',
         'X-Frame-Options'           => 'DENY',
         'Feature-Policy'            => "camera 'none'; microphone 'none'",
-        'Referrer-Policy'           => 'strict-origin',
+        'Referrer-Policy'           => 'strict-origin-when-cross-origin',
         'X-Permitted-Cross-Domain-Policies' => 'none',
         'Content-Security-Policy'   => 'upgrade-insecure-requests',
         'X-Content-Type-Options'    => 'nosniff',
