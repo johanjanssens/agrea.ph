@@ -150,17 +150,12 @@ title: Agrea - Ecology of Dignity
       </div>
       <div class="md:w-1/2 mb-10 px-4">
         <div class="rounded-lg md:mb-4 px-5">
-          <?= helper('video')  ?>
-          <div class="plyr__video-embed" id="player">
-            <iframe
-              src="https://player.vimeo.com/video/458341133??loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
-              allowfullscreen
-              allowtransparency
-              allow="autoplay; fullscreen"
-              style="width: 600px; height: 315px" frameborder="0">
-            </iframe>
+          <div class="rounded-lg md:mb-4 px-5">
+            <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls>
+              <source src="/videos/458341133.m3u8?key=2e73e78627" type="application/x-mpegURL">
+              <source src="/videos/458341133.mp4?key=2e73e78627" type="video/mp4">
+            </video>
           </div>
-        </div>
         <p class="text-grey-400 text-sm items-center">Video courtesy of Asia NewsChannel</p>
         <h2 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h2>
         <p class="">In the Philippines, where farmers toil for meager sums, Cherrie Atilano is an invigorating ray of hope. Spending her childhood among farmers, the harsh reality of their plight led to her life's calling. Today, she's sowing the seeds of change to allow farmers to cultivate dreams of their own.</p>
