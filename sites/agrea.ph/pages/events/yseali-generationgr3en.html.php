@@ -69,7 +69,7 @@ slug: yseali-generationgr3en
 				<div class="embed-responsive aspect-ratio-16/9">
 					<video class="w-full" poster="/videos/460711074?key=f6d8247ec1" controlsList="nodownload" playsinline controls>
             <source src="/videos/460711074.m3u8?key=f6d8247ec1" type="application/x-mpegURL">
-            <source src="/videos/460711074.mp4?key=f6d8247ec1&q=540" type="video/mp4">
+            <source src="/videos/460711074.mp4?key=f6d8247ec1&q=540p" type="video/mp4">
           </video>
 				</div>
 			</div>
