@@ -23,7 +23,10 @@ slug: yseali-generationgr3en
 		<p>Check out the highlights of the YSEALI GenerationGR3EN Workshop in the video below.</p>
 
 		<div class="embed-responsive aspect-ratio-16/9">
-			<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1879914602254238%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+			<video class="w-full" poster="/videos/460708970?key=db252cebe2" controlsList="nodownload" playsinline controls>
+				<source src="/videos/460708970.m3u8?key=db252cebe2" type="application/x-mpegURL">
+				<source src="/videos/460708970.mp4?key=db252cebe2" type="video/mp4">
+			</video>
 		</div>
 
 		<h3 class="text-gray-900 font-medium font-title my-4">YSEALI TV for YSEALI GenGR3EN</h3>
@@ -34,35 +37,50 @@ slug: yseali-generationgr3en
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 1.</span> Check out the activities on the first day of&nbsp;YSEALI GenerationGR3EN in Brunei Darussalam.</p>
 
 				<div class="embed-responsive aspect-ratio-16/9">
-					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1876910839221281%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<video class="w-full" poster="/videos/460709917?key=fae19e171b" controlsList="nodownload" playsinline controls>
+            <source src="/videos/460709917.m3u8?key=fae19e171b" type="application/x-mpegURL">
+            <source src="/videos/460709917.mp4?key=fae19e171b&q=540p" type="video/mp4">
+          </video>
 				</div>
 			</div>
 			<div class="generationgr3en-video-episode">
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 2.</span> In this episode you will learn more about the speakers and watch the amazing performances by the participants at the Cultural Night.</p>
 
 				<div class="embed-responsive aspect-ratio-16/9">
-					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878350365743995%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<video class="w-full" poster="/videos/460710250?key=ae18ddc710" controlsList="nodownload" playsinline controls>
+            <source src="/videos/460710250.m3u8?key=ae18ddc710" type="application/x-mpegURL">
+            <source src="/videos/460710250.mp4?key=ae18ddc710&q=540p" type="video/mp4">
+          </video>
 				</div>
 			</div>
 			<div class="generationgr3en-video-episode">
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 3.</span> Participants learn more about ecotourism and infrastructure, right in the heart of Brunei's rain forest.</p>
 
 				<div class="embed-responsive aspect-ratio-16/9">
-					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1878676755711356%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<video class="w-full" poster="/videos/460710714?key=2a70bb3271" controlsList="nodownload" playsinline controls>
+            <source src="/videos/460710714.m3u8?key=2a70bb3271" type="application/x-mpegURL">
+            <source src="/videos/460710714.mp4?key=2a70bb3271&q=540p" type="video/mp4">
+          </video>
 				</div>
 			</div>
 			<div class="generationgr3en-video-episode">
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 4.</span> Participants What's the output of&nbsp;YSEALI GenerationGR3EN in&nbsp;Brunei Darussalam? Check out the answer in the 4th episode of YSEALI TV!</p>
 
 				<div class="embed-responsive aspect-ratio-16/9">
-					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1879255605653471%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<video class="w-full" poster="/videos/460711074?key=f6d8247ec1" controlsList="nodownload" playsinline controls>
+            <source src="/videos/460711074.m3u8?key=f6d8247ec1" type="application/x-mpegURL">
+            <source src="/videos/460711074.mp4?key=f6d8247ec1&q=540" type="video/mp4">
+          </video>
 				</div>
 			</div>
 			<div class="generationgr3en-video-episode">
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 5.</span> YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
 
 				<div class="embed-responsive aspect-ratio-16/9">
-					<iframe allowfullscreen="true" allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fyseali%2Fvideos%2F1908462842732747%2F&amp;show_text=0&amp;width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<video class="w-full" poster="/videos/460711372?key=0fc08bafb5" controlsList="nodownload" playsinline controls>
+            <source src="/videos/460711372.m3u8?key=0fc08bafb5" type="application/x-mpegURL">
+            <source src="/videos/460711372.mp4?key=0fc08bafb5&q=540p" type="video/mp4">
+          </video>
 				</div>
 			</div>
 		</div>
