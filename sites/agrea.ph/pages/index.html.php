@@ -153,7 +153,10 @@ title: Agrea - Ecology of Dignity
           <div class="rounded-lg md:mb-4 px-5">
             <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls>
               <source src="/videos/458341133.m3u8?key=2e73e78627" type="application/x-mpegURL">
-              <source src="/videos/458341133.mp4?key=2e73e78627" type="video/mp4">
+              <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
+              <source src="/videos/4583411334.mp4" type="video/mp4" size="720">
+    					<source src="/videos/458341133.mp4?q=360p" type="video/mp4" size="360">
+    					<source src="/videos/458341133.mp4?q=240p" type="video/mp4" size="240">
             </video>
           </div>
         <p class="text-grey-400 text-sm items-center">Video courtesy of Asia NewsChannel</p>
