@@ -52,13 +52,11 @@
     <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
 
     <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      if ("connection" in navigator) {
-          if (navigator.connection.saveData === true) {
-              document.documentElement.classList.add('save-data');
-          }
-      }
-    })
+      document.addEventListener("DOMContentLoaded", () => {
+        if ("connection" in navigator && navigator.connection.saveData === true) {
+          document.documentElement.classList.add('save-data');
+        }
+      })
     </script>
 
     <? if (config()->ga_code): ?>
