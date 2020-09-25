@@ -20,12 +20,12 @@ slug: self-palayance
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/self-palayance/self-palayance-1.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
-		<ktml:images max-width="80%">
 		<div itemprop="articleBody">
+		<ktml:images max-width="80%">
 			<?= article(146)->excerpt ?>
 			<?= article(146)->text ?>
-		</div>
 		</ktml:images>
+		</div>
 		<ktml:images max-width="50%">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">

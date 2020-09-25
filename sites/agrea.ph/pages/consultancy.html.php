@@ -10,8 +10,8 @@ slug: consultancy
 ---
 
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
-	<ktml:images max-width="80%">
 	<article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<ktml:images max-width="80%">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
@@ -177,10 +177,10 @@ slug: consultancy
 			<p><strong>Can I contract AGREA to construct my agricultural site?</strong><br />
 			No, AGREA does not offer construction services.</p>
 		</div>
-	</article>
 	</ktml:images>
+	</article>
+	<aside class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 	<ktml:images max-width="25%">
-	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">AGREA Consultancy</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
@@ -196,6 +196,6 @@ slug: consultancy
 		<p><img class="rounded w-full" src="images://consultancy/phone.jpg" /></p>
 
 		<p><img class="rounded w-full" src="images://consultancy/address.jpg" /></p>
-	</div>
 	</ktml:images>
+	</aside>
 </div>

@@ -6,27 +6,27 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 ---
 <div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 	<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+		<ktml:images max-width="33%">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 		</div>
-    <ktml:images max-width="33%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
 			<? if ($member->slug !== ""): ?>
 			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/team/<?= $member->slug; ?>">
 			<? else: ?>
-			<div class="h-full bg-gray-100 text-gray-900 p6 rounded-lg">
+			<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
 			<? endif; ?>
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-					<h2 class="text-lg font-medium font-title leading-tight">
-						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
-							<span itemprop="name"><?= $member->name; ?></span>
-						</span>
-					</h2>
-					<p class="text-sm"><?= $member->position; ?></p>
+				<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
+				<h2 class="text-lg font-medium font-title leading-tight">
+					<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+						<span itemprop="name"><?= $member->name; ?></span>
+					</span>
+				</h2>
+				<p class="text-sm"><?= $member->position; ?></p>
 			<? if ($member->slug == ""): ?>
 			</div>
 			<? else: ?>
@@ -34,10 +34,10 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 			<? endif; ?>
 			<? endforeach; ?>
 		</div>
-    </ktml:images>
+		</ktml:images>
 	</div>
-  <ktml:images max-width="25%">
 	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+		<ktml:images max-width="25%">
 		<img class="rounded w-full mb-6 object-contain" src="images://team/2020-agrea-profile-team.jpg" alt="<?= $title; ?>" title="<?= $title; ?>">
 		<h3 class="text-gray-900 font-medium font-title my-4">Contact Details:</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -117,6 +117,6 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 	          </a>
 	      	</li>
 	    </ul>
+		</ktml:images>
 	</aside>
-  </ktml:images>
 </div>

@@ -18,6 +18,7 @@ collection:
 
 <div class="flex flex-col sm:flex-row sm:pb-4">
 	<div class="sm:w-3/4 sm:pr-8 sm:pt-4">
+		<ktml:images max-width="33%">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
@@ -27,7 +28,6 @@ collection:
           <?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
 			</div>
 		</div>
-    <ktml:images max-width="25%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
 			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
@@ -45,7 +45,6 @@ collection:
 			</a>
 			<? endforeach; ?>
 		</div>
-    </ktml:images>
 		<?= helper('paginator.pagination') ?>
 		<div class="flex flex-col sm:flex-row mt-8">
 			<div class="sm:w-1/4 sm:pr-8 sm:pb-8 sm:pt-0 sm:border-r border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
@@ -71,9 +70,10 @@ collection:
 				</p>
 			</div>
 		</div>
+		</ktml:images>
 	</div>
-  <ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+		<ktml:images max-width="25%">
 		<div class="flex flex-col">
 			<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -92,10 +92,10 @@ collection:
 			]); ?>
 			<h3 class="font-medium font-title text-gray-900 text-lg">Testimonials</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-			<img class=" mb-4" src="images://testimonials/bry-monsanto.png">
-			<img class=" mb-4" src="images://testimonials/donna-naling.png">
-			<img class=" mb-4" src="images://testimonials/mj-larraquel.png">
+			<img class=" mb-4" src="images://testimonials/bry-monsanto.jpg">
+			<img class=" mb-4" src="images://testimonials/donna-naling.jpg">
+			<img class=" mb-4" src="images://testimonials/mj-larraquel.jpg">
 		</div>
+		</ktml:images>
 	</div>
-</ktml:images>
 </div>

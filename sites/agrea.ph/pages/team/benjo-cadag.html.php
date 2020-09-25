@@ -6,8 +6,8 @@ visible: false
 summary: Benjo Cadag's bio
 slug: benjo-cadag
 ---
-<ktml:images max-width="80%">
 <article itemscope itemtype="https://schema.org/Person" class="max-w-4xl m-auto mt-8">
+<ktml:images max-width="80%">
 	<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 	<p itemprop="jobTitle" class="mb-2 text-sm font-medium"><?= $position ?></p>
 	<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
@@ -16,5 +16,5 @@ slug: benjo-cadag
 		<p>Benjo is a graduate of Bachelor of Science in Agriculture Major in Agronomy Specializing in Crop Production and Management at the University of the Philippines - Los Baños. He is a Licensed Agriculturist.</p>
 		<p>Benjo was President of the University of the Philippines Moriones - Los Baños Chapter (2014), Vice President for External Affairs of the UP Guild of United Minds (2015), and Assistant Publication Committee Head of The League of Agricultural Engineering Students (2011). He was also an Alumnus of UP Weed Science Society (2016), and Senior Patrol Leader of Marinduque Council in 2009 Asia-Pacific Regional Scout Jamboree.</p>
 	</div>
-</article>
 </ktml:images>
+</article>

@@ -2,7 +2,13 @@ const mason = require('@joomlatools/mason-tools-v1');
 
 async function postcss() {
   await mason.css.process(`css/input.css`, `css/output.css`, {
-    tailwind: {
+    tailwind: {    
+      purge: {
+        enabled: true,
+        content: [
+          '../**/*.html.php',
+        ],
+      },
       theme: {
         extend: {
           colors: {
