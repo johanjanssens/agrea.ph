@@ -1,11 +1,9 @@
 <? //https://splidejs.com/ ?>
-<ktml:style src="https://unpkg.com/@splidejs/splide@2.4.14/dist/css/splide.min.css" as="style" />
-<ktml:script src="https://unpkg.com/@splidejs/splide@2.4.14/dist/js/splide.min.js" defer="defer" />
 
 <? if(isset($class)): ?>
-  <? $class = 'splide '.implode(' ', (array) $class); ?>
+  <? $class = 'lazyload splide '.implode(' ', (array) $class); ?>
 <? else : ?>
-  <? $class = 'splide' ?>
+  <? $class = 'lazyload splide' ?>
 <? endif ?>
 
 <? /* TODO: Use static asset routing when available */ ?>
@@ -46,18 +44,35 @@ endif ?>
 </div>
 
 <script>
-    document.addEventListener( 'DOMContentLoaded', function () {
-      els = document.getElementsByClassName('splide' )
-      Array.from(els).forEach((el) => {
-          new Splide( el, {
-              type: 'fade',
-              perPage: 1,
-              autoplay: true,
-              rewind: true,
-              interval: 3000,
-              lazyLoad: 'sequential',
-              accessibility: true
-          }).mount();
-       });
-    });
+document.addEventListener('lazybeforeunveil', (e) =>
+{
+    if((typeof Splide == 'undefined') && e.target.matches('.splide'))
+    {
+        var style = document.createElement('link');
+        style.rel = 'stylesheet'
+        style.href = 'https://unpkg.com/@splidejs/splide@2.4.14/dist/css/splide.min.css'
+        document.head.appendChild(style)
+
+        var script = document.createElement('script')
+        script.async = false
+        script.src   = 'https://unpkg.com/@splidejs/splide@2.4.14/dist/js/splide.min.js'
+        document.head.appendChild(script)
+
+        script.addEventListener('load', () =>
+        {
+            els = document.getElementsByClassName('splide')
+            Array.from(els).forEach((el) => {
+                new Splide( el, {
+                    type: 'fade',
+                    perPage: 1,
+                    autoplay: true,
+                    rewind: true,
+                    interval: 3000,
+                    lazyLoad: 'sequential',
+                    accessibility: true
+                }).mount();
+            });
+        })
+    }
+})
 </script>
