@@ -116,7 +116,7 @@ title: Agrea - Ecology of Dignity
           <img alt="content" class="object-cover object-center h-full w-full"  src="images://events/leaf/leaf-report.png" alt="LEAF 2018 Terminal Report">
         </div>
         <h3 class="text-xl font-medium font-title text-gray-900 mt-5">LEAF 2018 Terminal Report</h3>
-        <p class=" mt-2">Agriculture is changing, in step with a changing world. AGREA organized its inaugural LEAF Forum in 2018 as a venue to discuss the various challenges and opportunities for agricultural practitioners, with a focus on three specific areas: agripreneurship, agritechnology, and agritourism.</p>
+        <p class=" mt-2">Agriculture is changing, in step with a changing world. AGREA organized its inaugural LEAF Forum in 2018 as a venue to discuss the various challenges and opportunities for agricultural practitioners, with a focus on three specific areas: <span class="text-gray-700 font-bold">agripreneurship</span>, <span class="text-gray-700 font-bold">agritechnology</span>, <span class="text-gray-700 font-bold">and agritourism</span>.</p>
         Download the report <a href="https://drive.google.com/file/d/1NDrii6VzmPu-8e5GvHQHOjtpQp6dN7rF/view?usp=sharing" class="text-green-500 inline-flex items-center mt-3">here
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
