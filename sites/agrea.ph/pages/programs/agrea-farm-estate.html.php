@@ -20,16 +20,16 @@ slug: agrea-farm-estate
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg" data-max-width="50%" data-preload="true">
 			</div>
 		</div>
-		 <ktml:images max-width="80%">
 		<div itemprop="articleBody">
+		<ktml:images max-width="80%">
 			<?= article(5)->excerpt ?>
 			<?= article(5)->text ?>
 			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
 				<h3 class="font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
 				<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, call our landline at (042) 332-0025, please call/text mobile +63 917 124-0905, or send an email to <a href="mailto:agreaph@gmail.com?subject=AGREA%20Model%20Farm">agreaph@gmail.com</a>.</p>
 			</div>
+		</ktml:images>
 		</div>
-		 </ktml:images>
 		<ktml:images max-width="50%">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
@@ -50,13 +50,11 @@ slug: agrea-farm-estate
 					'category' => 'news',
 				]); ?>
 			</div>
-
 		</div>
+		</ktml:images>
 	</article>
-	</ktml:images>
-	<ktml:images max-width="25%">
 	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-
+	<ktml:images max-width="25%">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
@@ -134,6 +132,6 @@ slug: agrea-farm-estate
 		<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
 
 		<p class="text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
+	</ktml:images>
 	</aside>
-  </ktml:images>
 </div>

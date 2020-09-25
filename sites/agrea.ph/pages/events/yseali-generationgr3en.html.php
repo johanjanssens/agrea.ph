@@ -106,9 +106,8 @@ slug: yseali-generationgr3en
 		</div>
 		<p class="mt-8"><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
 	</article>
-	<ktml:images max-width="25%">
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-
+	<ktml:images max-width="25%">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
@@ -158,6 +157,6 @@ slug: yseali-generationgr3en
 			<li><a href="https://www.flickr.com/photos/yseali/sets/72157679114544700" target="_blank">Official GenerationGR3EN Photos</a></li>
 			<li><a href="https://www.facebook.com/yseali/" target="_blank">YSEALI Facebook Page</a></li>
 		</ul>
-	</div>
 	</ktml:images>
+	</div>
 </div>

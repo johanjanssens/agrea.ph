@@ -15,8 +15,8 @@ title: Agrea - Ecology of Dignity
     ]);
 ?>
 
-<ktml:images max-width="33%" preload="true">
 <section class="text-gray-700">
+  <ktml:images max-width="33%" preload="true">
   <div class="container px-5 pt-12 pb-24 mx-auto">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
@@ -36,11 +36,11 @@ title: Agrea - Ecology of Dignity
       </div>
     </div>
   </div>
+  </ktml:images>
 </section>
-</ktml:images>
 
-<ktml:images max-width="25%">
 <section class="text-gray-700 mb-24">
+  <ktml:images max-width="25%">
   <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
@@ -74,11 +74,11 @@ title: Agrea - Ecology of Dignity
         <a href="/news" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
     </div>
   </div>
+  </ktml:images>
 </section>
-</ktml:images>
 
-<ktml:images max-width="33%">
 <section class="text-gray-700">
+  <ktml:images max-width="33%">
   <div class="container px-5 pb-24 mx-auto">
   <div class="flex flex-wrap w-full mb-10">
     <div class="w-full mb-6 lg:mb-0">
@@ -125,11 +125,11 @@ title: Agrea - Ecology of Dignity
       </div>
     </div>
   </div>
+  </ktml:images>
 </section>
-</ktml:images>
 
-<ktml:images max-width="50%">
 <section class="text-gray-200 bg-dark-green-500">
+  <ktml:images max-width="50%">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-dark-green-500 rounded overflow-hidden">
@@ -165,11 +165,11 @@ title: Agrea - Ecology of Dignity
       </div>
     </div>
   </div>
+  </ktml:images>
 </section>
-</ktml:images>
 
-<ktml:images max-width="33%">
 <section class="text-gray-700">
+  <ktml:images max-width="33%">
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="flex flex-col sm:flex-row mt-10">
       <div class="sm:w-1/3 sm:pr-8 sm:py-8">
@@ -228,5 +228,5 @@ title: Agrea - Ecology of Dignity
       </div>
     </div>
   </div>
+  </ktml:images>
 </section>
-</ktml:images>

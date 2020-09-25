@@ -15,6 +15,7 @@ collection:
 
 <div class="flex flex-col sm:flex-row">
 	<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+		<ktml:images max-width="33%">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
@@ -24,7 +25,6 @@ collection:
         		<?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
     		</div>
 		</div>
-		<ktml:images max-width="33%">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article):
 				$category_slug = (
@@ -49,12 +49,11 @@ collection:
 			</a>
 			<? endforeach; ?>
 		</div>
-		</ktml:images>
 		<?= helper('paginator.pagination') ?>
+		</ktml:images>
 	</div>
-	<ktml:images max-width="25%">
 	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-
+		<ktml:images max-width="25%">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
@@ -67,6 +66,6 @@ collection:
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p>Get the latest news and updates from the AGREA Team.</p>
 		<?= import('/partials/subscription-form'); ?>
+		</ktml:images>
 	</aside>
-	</ktml:images>
 </div>
