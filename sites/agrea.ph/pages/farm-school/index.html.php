@@ -73,11 +73,11 @@ collection:
 		</ktml:images>
 	</div>
 	<div class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<ktml:images max-width="25%">
 		<div class="flex flex-col">
 			<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-certified-organic-agri-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
+			<ktml:images max-width="33%">
 			<?= import('/partials/articles/image-title-excerpt',[
 				'id' => 142,
 				'category' => 'farm-school',
@@ -90,12 +90,25 @@ collection:
 				'id' => 130,
 				'category' => 'farm-school',
 			]); ?>
+			</ktml:images>
 			<h3 class="font-medium font-title text-gray-900 text-lg">Testimonials</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-			<img class=" mb-4" src="images://testimonials/bry-monsanto.jpg">
-			<img class=" mb-4" src="images://testimonials/donna-naling.jpg">
-			<img class=" mb-4" src="images://testimonials/mj-larraquel.jpg">
+			<? foreach (data('testimonials') as $testimonial) : ?>
+			<!-- testimonial card -->
+			<div class="flex flex-row py-6">
+				<? if($testimonial->avatar === true) :?>
+					<img class="w-10 h-10 mb-8 object-cover object-center rounded-full inline-block mr-4 shadow" src="images://testimonials/<?= strtolower(str_replace([". "," "], "-", $testimonial->name)); ?>.jpg" alt="<?= $testimonial->name; ?>">
+				<? endif;?>
+				<div class="testimonial-body">
+					<h4 class="text-md font-semibold text-gray-900 -mt-1"><?= $testimonial->name; ?></h4>
+					<p class="text-gray-500 text-xs font-semibold"><?= $testimonial->course; ?></p>
+					<p class="text-gray-500 text-xs"><?= $testimonial->college; ?></p>
+					<p class="mt-3 text-sm font-agrea normal-case">
+					<?= $testimonial->quote; ?>
+					</p>
+				</div>
+			</div>
+			<? endforeach; ?>
 		</div>
-		</ktml:images>
 	</div>
 </div>
