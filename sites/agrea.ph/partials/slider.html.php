@@ -63,13 +63,14 @@ document.addEventListener('lazybeforeunveil', (e) =>
             els = document.getElementsByClassName('splide')
             Array.from(els).forEach((el) => {
                 new Splide( el, {
-                    type: 'fade',
-                    perPage: 1,
-                    autoplay: true,
-                    rewind: true,
-                    interval: 3000,
-                    lazyLoad: 'sequential',
-                    accessibility: true
+                  type: 'fade',
+                  ease: false,
+                  perPage: 1,
+                  autoplay: true,
+                  rewind: true,
+                  interval: 3000,
+                  lazyLoad: 'nearby',
+                  accessibility: true
                 }).mount();
             });
         })
