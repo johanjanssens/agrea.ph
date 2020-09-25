@@ -151,7 +151,7 @@ title: Agrea - Ecology of Dignity
       <div class="md:w-1/2 mb-10 px-4">
         <div class="rounded-lg md:mb-4 px-5">
           <div class="rounded-lg md:mb-4 px-5">
-            <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls>
+            <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
               <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
               <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
               <source src="/videos/4583411334.mp4" type="video/mp4" size="720">

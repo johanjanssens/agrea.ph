@@ -23,7 +23,7 @@ slug: yseali-generationgr3en
 		<p>Check out the highlights of the YSEALI GenerationGR3EN Workshop in the video below.</p>
 
 		<div>
-			<video class="w-full" poster="/videos/460708970?key=db252cebe2" controlsList="nodownload" playsinline controls>
+			<video class="w-full" poster="/videos/460708970?key=db252cebe2" controlsList="nodownload" playsinline controls preload="none">
 				<source src="/videos/460708970.m3u8" type="application/x-mpegURL">
 				<source src="/videos/460708970.mp4?q=540p" type="video/mp4" size="540">
 				<source src="/videos/460708970.mp4" type="video/mp4" size="720">
@@ -40,7 +40,7 @@ slug: yseali-generationgr3en
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 1.</span> Check out the activities on the first day of&nbsp;YSEALI GenerationGR3EN in Brunei Darussalam.</p>
 
 				<div>
-					<video class="w-full" poster="/videos/460709917?key=fae19e171b" controlsList="nodownload" playsinline controls data-expand="10">
+					<video class="w-full" poster="/videos/460709917?key=fae19e171b" controlsList="nodownload" playsinline controls data-expand="10" preload="none">
             <source src="/videos/460709917.m3u8" type="application/x-mpegURL">
 						<source src="/videos/460709917.mp4?q=540p" type="video/mp4" size="540">
             <source src="/videos/460709917.mp4" type="video/mp4" size="720">
@@ -53,7 +53,7 @@ slug: yseali-generationgr3en
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 2.</span> In this episode you will learn more about the speakers and watch the amazing performances by the participants at the Cultural Night.</p>
 
 				<div>
-					<video class="w-full" poster="/videos/460710250?key=ae18ddc710" controlsList="nodownload" playsinline controls data-expand="10">
+					<video class="w-full" poster="/videos/460710250?key=ae18ddc710" controlsList="nodownload" playsinline controls data-expand="10" preload="none">
             <source src="/videos/460710250.m3u8" type="application/x-mpegURL">
 						<source src="/videos/460710250.mp4?q=540p" type="video/mp4" size="540">
             <source src="/videos/460710250.mp4" type="video/mp4" size="720">
@@ -66,7 +66,7 @@ slug: yseali-generationgr3en
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 3.</span> Participants learn more about ecotourism and infrastructure, right in the heart of Brunei's rain forest.</p>
 
 				<div>
-					<video class="w-full" poster="/videos/460710714?key=2a70bb3271" controlsList="nodownload" playsinline controls data-expand="10">
+					<video class="w-full" poster="/videos/460710714?key=2a70bb3271" controlsList="nodownload" playsinline controls data-expand="10" preload="none">
             <source src="/videos/460710714.m3u8" type="application/x-mpegURL">
 						<source src="/videos/460710714.mp4?q=540p" type="video/mp4" size="540">
 						<source src="/videos/460710714.mp4" type="video/mp4" size="720">
@@ -79,7 +79,7 @@ slug: yseali-generationgr3en
 				<p><span class="font-bold ">YSEALI TV for GenGR3EN Episode 4.</span> Participants What's the output of&nbsp;YSEALI GenerationGR3EN in&nbsp;Brunei Darussalam? Check out the answer in the 4th episode of YSEALI TV!</p>
 
 				<div>
-					<video class="w-full" poster="/videos/460711074?key=f6d8247ec1" controlsList="nodownload" playsinline controls data-expand="10">
+					<video class="w-full" poster="/videos/460711074?key=f6d8247ec1" controlsList="nodownload" playsinline controls data-expand="10" preload="none">
             <source src="/videos/460711074.m3u8" type="application/x-mpegURL">
 						<source src="/videos/460711074.mp4?q=540p" type="video/mp4" size="540">
             <source src="/videos/460711074.mp4" type="video/mp4" size="720">
@@ -96,7 +96,7 @@ slug: yseali-generationgr3en
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 	  <p>YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
 		<div>
-			<video class="w-full" poster="/videos/460711372?key=0fc08bafb5" controlsList="nodownload" playsinline controls data-expand="10">
+			<video class="w-full" poster="/videos/460711372?key=0fc08bafb5" controlsList="nodownload" playsinline controls data-expand="10" preload="none">
 				<source src="/videos/460711372.m3u8" type="application/x-mpegURL">
 				<source src="/videos/460711372.mp4?q=540p" type="video/mp4" size="540">
 				<source src="/videos/460711372.mp4" type="video/mp4" size="720">
