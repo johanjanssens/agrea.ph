@@ -92,9 +92,9 @@ collection:
 			]); ?>
 			<h3 class="font-medium font-title text-gray-900 text-lg">Testimonials</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-			<img class=" mb-4" src="images://testimonials/bry-monsanto.png">
-			<img class=" mb-4" src="images://testimonials/donna-naling.png">
-			<img class=" mb-4" src="images://testimonials/mj-larraquel.png">
+			<img class=" mb-4" src="images://testimonials/bry-monsanto.jpg">
+			<img class=" mb-4" src="images://testimonials/donna-naling.jpg">
+			<img class=" mb-4" src="images://testimonials/mj-larraquel.jpg">
 		</div>
 		</ktml:images>
 	</div>
