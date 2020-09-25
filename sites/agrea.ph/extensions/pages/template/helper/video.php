@@ -1,81 +1,67 @@
 <?php
 
-class ExtPagesTemplateHelperVideo extends ComPagesTemplateHelperBehavior
+class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
 {
-  public function player($config = array())
+    public function player($config = array())
     {
         $config = new KObjectConfigJson($config);
         $config->append(array(
-          'debug' =>  JFactory::getApplication()->getCfg('debug'),
           'quality_default' => '540',
-          'quality_lowest'  => '240'
+          'quality_lowest'  => '240',
+          'selector'        => 'video'
         ));
 
         $html = '';
         if (!static::isLoaded('plyr'))
         {
-            $html .= '<ktml:script src="https://unpkg.com/plyr@3.6.2/dist/plyr.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
-            $html .= '<ktml:style src="https://unpkg.com/plyr@3.6.2/dist/plyr.css" defer="defer" />';
+            $script = 'https://unpkg.com/plyr@3.6.2/dist/plyr.'.(!$config->debug ? 'min.js' : 'js');
+            $style  = 'https://unpkg.com/plyr@3.6.2/dist/plyr.css';
 
             $html .= <<<PLYR
    <script>
-   document.addEventListener("lazyloaded", (e) =>
+   document.addEventListener("lazybeforeunveil", (e) =>
    {
-      if(e.target.tagName.toLowerCase() == 'video')
+      if((typeof Plyr == 'undefined') && e.target.matches('{$config->selector}'))
       {
           const video = e.target
 
-          if ("connection" in navigator && navigator.connection.saveData === true) {
-              var quality = {$config->quality_lowest}
-          } else {
-              var quality = {$config->quality_default}
-          }
+          var style = document.createElement('link');
+          style.rel = 'stylesheet'
+          style.href = '{$style}'
+          document.head.appendChild(style)
 
-          if(!video.canPlayType('application/x-mpegURL')) {
-              var settings = ['quality']
-          } else {
-             var settings = []
-          }
+          var script = document.createElement('script')
+          script.async = false
+          script.src   = '{$script}'
+          document.head.appendChild(script)
 
-          var player = new Plyr(video, {
-            fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-            settings: settings,
-            quality: { default: quality, options: [720, 540, 360, 240] }
-          })
+          script.addEventListener('load', () =>
+          {
+              if ("connection" in navigator && navigator.connection.saveData === true) {
+                var quality = {$config->quality_lowest}
+              } else {
+                var quality = {$config->quality_default}
+              }
 
+              if(!video.canPlayType('application/x-mpegURL')) {
+                var settings = ['quality']
+              } else {
+                var settings = []
+              }
+
+              Array.from(document.querySelectorAll('{$config->selector}')).map(p => new Plyr(p, {
+                  fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+                  settings: settings,
+                  quality: { default: quality, options: [720, 540, 360, 240] }
+                }
+              ));
+          });
       }
    })
    </script>
    PLYR;
 
             static::setLoaded('plyr');
-        }
-
-        return $html;
-    }
-
-    public function import($plugin = '', $config = array())
-    {
-        $config = new KObjectConfigJson($config);
-        $config->append(array(
-            'debug' =>  JFactory::getApplication()->getCfg('debug'),
-        ));
-
-        $html   = '';
-        $script = $plugin ? 'lazysizes-'.$plugin : 'lazysizes';
-        if (!static::isLoaded($script))
-        {
-            if($script == 'lazysizes') {
-                $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
-            }
-
-            if($script == 'lazysizes-unveilhooks')
-            {
-                $html .= $this->import();
-                $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/plugins/unveilhooks/ls.unveilhooks.' . (!$config->debug ? 'min.js' : 'js') . '" defer="defer" />';
-            }
-
-            static::setLoaded($script);
         }
 
         return $html;
