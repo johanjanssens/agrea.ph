@@ -6,9 +6,7 @@ async function postcss() {
       purge: {
         enabled: true,
         content: [
-          '../layouts/**/*.html.php',
-          '../pages/**/*.html.php',
-          '../partials/**/*.html.php',
+          '../**/*.html.php',
         ],
       },
       theme: {
