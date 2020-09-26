@@ -1,16 +1,28 @@
+<<<<<<< HEAD
 <form method="post" action="<?= route('newsletter') ?>" class="bg-white shadow-md rounded px-8 pt-6 pb-8 ml-auto mr-auto">
+=======
+<form class="bg-white shadow-md rounded px-8 pt-6 pb-8 ml-auto mr-auto">
+>>>>>>> 17d564c27c3da5cd084d8cb6b40bb3ea85b0c335
 	<div class="grid md:grid-cols-2 gap-4 mb-4">
 		<div class="mb-6 md:mb-0">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="grid-first-name">
 			First Name
 			</label>
+<<<<<<< HEAD
 			<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="grid-first-name" type="text" placeholder="Jane" name="firstName">
+=======
+			<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="grid-first-name" type="text" placeholder="Jane">
+>>>>>>> 17d564c27c3da5cd084d8cb6b40bb3ea85b0c335
 		</div>
 		<div class="mb-6 md:mb-0">
 			<label class="block text-gray-700 text-sm font-bold mb-2" for="grid-last-name">
 			Last Name
 			</label>
+<<<<<<< HEAD
 			<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="grid-last-name" type="text" placeholder="Doe" name="lastName">
+=======
+			<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="grid-last-name" type="text" placeholder="Doe">
+>>>>>>> 17d564c27c3da5cd084d8cb6b40bb3ea85b0c335
 		</div>
 	</div>
 
