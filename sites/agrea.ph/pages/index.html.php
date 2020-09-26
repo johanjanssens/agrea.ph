@@ -82,7 +82,7 @@ title: Agrea - Ecology of Dignity
   <div class="container px-5 pb-24 mx-auto">
   <div class="flex flex-wrap w-full mb-10">
     <div class="w-full mb-6 lg:mb-0">
-      <h2 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Classrooms, fora and reports</h2>
+      <h2 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">Farm schools, fora and reports</h2>
       <div class="h-1 w-20 bg-green-500 rounded"></div>
     </div>
   </div>
