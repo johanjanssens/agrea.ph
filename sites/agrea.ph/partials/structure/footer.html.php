@@ -1,4 +1,4 @@
-<footer class="text-gray-700 text-base body-font" style="background-image: url(<?= $footer['image'] ?? 'theme://images/background/rice-farmer.jpg' ?>);">
+<footer class="text-gray-700 text-base body-font" style="background-image: url(<?= $footer['image'] ?? 'images://background/rice-farmer.jpg' ?>);">
   <div class="container px-5 pt-10 pb-40 md:pt-20 md:pb-10 mx-auto">
     <div class="flex md:justify-end justify-around">
       <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
@@ -8,7 +8,7 @@
           </svg>
           <h2 class="font-title font-medium tracking-widest text-sm mb-3 text-center">Get the <span class="font-agrea">AGREA</span> newsletter</h2>
         </div>
-        <?= import('/partials/subscription-form'); ?>
+        <?= import('/partials/form/subscribe'); ?>
       </div>
     </div>
   </div>

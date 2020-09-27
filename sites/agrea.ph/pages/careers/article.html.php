@@ -34,6 +34,6 @@ visible: false
 	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
         <h2 class="font-title font-medium text-gray-900 tracking-widest mb-3">Apply Now!</h2>
         <div class="h-1 w-10 bg-green-500 rounded mb-3"></div>
-		<?= import('/partials/contact-form'); ?>
+		<?= import('/partials/form/contact'); ?>
 	</aside>
 </div>
