@@ -8,7 +8,7 @@
           </svg>
           <h2 class="font-title font-medium tracking-widest text-sm mb-3 text-center">Get the <span class="font-agrea">AGREA</span> newsletter</h2>
         </div>
-        <?= import('/partials/subscription-form'); ?>
+        <?= import('/partials/form/subscribe'); ?>
       </div>
     </div>
   </div>

@@ -52,6 +52,6 @@ slug: self-palayance
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Support Self-Palayance</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">To know more about AGREA's Self-Palayance Program, if you have questions, or you would like to lend a helping hand, send us an email through <a href="mailto:agreaph@gmail.com">agreaph@gmail.com</a> or fill-out the form below.</p>
-		<?= import('/partials/contact-form'); ?>
+		<?= import('/partials/form/contact'); ?>
 	</aside>
 </div>
