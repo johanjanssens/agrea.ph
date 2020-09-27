@@ -258,6 +258,7 @@ Class Image
             {
                 $this->_image = new Imagick();
 
+                //Fill with background color
                 if($background)
                 {
                     $color = sprintf('rgb(%d, %d, %d)', $background['r'], $background['g'], $background['b']);
@@ -284,6 +285,7 @@ Class Image
             // Convert pallete images to true color images
             imagepalettetotruecolor($this->_image);
 
+            //Fill with background color
             if($background)
             {
                 $resampled = imagecreatetruecolor($this->getWidth(), $this->getHeight());
@@ -492,7 +494,7 @@ Class Image
         return $this;
     }
 
-    public function enhance()
+    public function enhance($sharpen = 10)
     {
         if($this->_image instanceof Imagick)
         {
@@ -505,9 +507,23 @@ Class Image
             if(method_exists('Imagick', 'adaptiveSharpenImage')) {
                 $this->_image->adaptiveSharpenImage(0.25, 0.25);
             } else {
-                $this->_image->unsharpMaskImage(0.25, 0.25, 8, 0.065);
+                $this->_image->unsharpMaskImage(0.25, 0.25, $sharpen, 0.065);
             }
 
+        }
+        else
+        {
+            // Normalize amount
+            $amount = max(1, min(100, $sharpen)) / 100;
+
+            $sharpen = [
+                [-1, -1, -1],
+                [-1,  8 / $amount, -1],
+                [-1, -1, -1],
+            ];
+
+            $divisor = array_sum(array_map('array_sum', $sharpen));
+            imageconvolution($this->_image, $sharpen, $divisor, 0);
         }
 
         return $this;
