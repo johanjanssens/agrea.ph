@@ -1,4 +1,12 @@
 <?php
+
+//Load server environment
+if(isset($_SERVER['HOME']) && file_exists($_SERVER['HOME'].'/private_html/.env.'.getenv('SITE')))
+{
+  $dotenv = new Symfony\Component\Dotenv\Dotenv();
+  $dotenv->usePutenv()->load($_SERVER['HOME'].'/private_html/.env.'.getenv('SITE'));
+}
+
 return array(
 
     // Site

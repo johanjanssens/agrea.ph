@@ -7,7 +7,7 @@ class ExtPagesProcessorNewsletter extends ComPagesControllerProcessorWebhook
 		$config->append([
 			'url'   => 'https://api.sendgrid.com/v3/marketing/contacts',
 			'headers' => [
-				'Authorization' => 'Bearer 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',
+				'Authorization' => 'Bearer '.getenv('SENDGRID_API_KEY'),
         'Content-Type'  => 'application/json'
 			],
 			'format' => 'json',
