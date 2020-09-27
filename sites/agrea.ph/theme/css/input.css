@@ -67,6 +67,9 @@ li:not([class]) > ul:not([class]) {
 li:focus-within a {
   @apply outline-none;
 }
+a[href] {
+  @apply cursor-pointer;
+}
 a:not([class]) {
   @apply text-green-500;
 }
