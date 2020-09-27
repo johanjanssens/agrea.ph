@@ -1,13 +1,12 @@
 ---
 layout: default
-name: Thank You
-slug: thank-you
 title: Thank you for contacting us
 summary: Thank you for contacting us
 metadata:
     robots: [noindex, nofollow]
+visible: false
 ---
 <div class="align-center">
-    <h1>Thank you for contacting us!</h1>
-    <p>We've received your enquiry and we will be in touch as soon as possible.</p>
+    <h1>Thank you for for contacting us</h1>
+    <p>One of our team will be in touch!</p>
 </div>

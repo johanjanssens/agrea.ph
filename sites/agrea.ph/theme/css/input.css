@@ -73,6 +73,9 @@ a:not([class]) {
 a:not([class]):hover {
   @apply underline;
 }
+a:not([class]):focus {
+  @apply outline-none shadow-outline;
+}
 article > img:not([class]) {
   @apply rounded;
 }
@@ -102,23 +105,28 @@ sup:not([class]) {
 .hero-image > div {
   @apply bg-right;
 }
+/* Sidebar
+ * Submenu border override 
+*/
+.submenu > li:first-child[class$="children"] {
+  @apply border-t-0 rounded-tr rounded-tl;
+}
+.submenu > li:last-child[class$="children"] {
+  @apply rounded-br rounded-bl;
+}
 /* pagination */
 .k-pagination__pages li {
   @apply inline-flex mr-1;
 }
-
 .k-pagination__pages a {
   @apply rounded py-2 px-4 no-underline;
 }
-
 .k-pagination__pages a:hover {
   @apply no-underline;
 }
-
 .k-pagination__pages li.k-is-active a {
   @apply bg-green-500 text-white;
 }
-
 .k-pagination__pages li:not(.k-is-active):hover a {
   @apply bg-gray-200;
 }
@@ -140,34 +148,18 @@ sup:not([class]) {
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Vars that we can use throughout the site */
+/* Anything we can't do easily with tailwind classes */
+/* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {
   --green-500:#788023;
   --dark-green-500:#3E462E;
   --lime-500:#C9CA48;
   --gray-500:#8E8E8C;
   --gray-200:#E3E3E2;
-  --orange-500:#C67042;
-  --rounded-border-radius:0.25rem;
   --link-colour:var(--green-500);
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
-  --text-6xl: 4rem;
-  --leading-tight: 1.25;
-  --leading-normal: 1.5;
-  --leading-none: 1;
   /* plyr.js colour override */
   --plyr-color-main: var(--green-500);
 }
-
-/* Anything we can't do easily with tailwind classes */
 /*
  * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
 */
@@ -177,17 +169,18 @@ sup:not([class]) {
     scroll-behavior: smooth;
   }
 }
-
+/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+body > * {
+  font-size: clamp(0.75rem, 4vw, 1rem);
+}
 /* Main header story and IN FOUCS area on the homepage */
 section.hero-alt .hero-image {
   clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
   transition: 1s;
 }
-
 section.hero-alt:hover .hero-image {
   clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
 }
-
 section[class*="bg-"]:not(.bg-white) {
   position:relative;
   background-attachment: fixed; /* CSS only parallax */
@@ -196,31 +189,20 @@ section[class*="bg-"]:not(.bg-white) {
   background-size: auto 100%;
   background-blend-mode: multiply;
 }
-
 section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
   position:relative;
   z-index:20;
 }
-
 section[class*="bg-"]:not(.bg-white) h1 {
   text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
 }
-
 section[class*="bg-"]:not(.bg-white) p {
   text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
 }
-
-/* Footer illustration */
-body > footer {
-  background-position: 0 calc(100% - 5rem);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-
 /* sticky footer
- * tailwind doesn't handle this well so let's add it here for large screens
+ * tailwind doesn't handle this well inline so let's add it here for large screens
 */
-@media only screen and (min-device-width: 1024px) {
+@screen lg {
   main {
     position: relative;
     z-index: 10;
@@ -233,12 +215,12 @@ body > footer {
     width: 100%;
   }
 }
-
-/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
-body > * {
-  font-size: clamp(0.75rem, 4vw, 1rem);
+/* Footer illustration */
+body > footer {
+  background-position: 0 calc(100% - 5rem);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
-
 /* Titles use the Raleway google font */
 h1:not([class]),
 h2:not([class]),
@@ -248,12 +230,10 @@ h5:not([class]),
 h6:not([class]) {
   font-family: Raleway,sans-serif;
 }
-
 ul:not([class]) > li:not([class]) {
   display: list-item;
   text-align: -webkit-match-parent;
 }
-
 /* Position 'sub' and 'sup' without affecting line-height */
 sup:not([class]) {
     top: -0.5em;
@@ -262,7 +242,6 @@ sup:not([class]) {
 sub:not([class]) {
     bottom: -0.25em;
 }
-
 /* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
 .aspect-ratio-square {
   padding-bottom: 100%;
@@ -276,22 +255,6 @@ sub:not([class]) {
 .aspect-ratio-21\/9 {
   padding-bottom: 42.86%;
 }
-
-/* Sidebar
- * todo: first and last can be done in tailwind, swap it out - https://tailwindcss.com/docs/pseudo-class-variants#first-child
- */
-/* Submenu border override */
-.submenu > li:first-child[class$="children"] {
-  border-top:0!important;
-  border-top-right-radius: var(--rounded-border-radius);
-  border-top-left-radius: var(--rounded-border-radius);
-}
-
-.submenu > li:last-child[class$="children"] {
-  border-bottom-right-radius: var(--rounded-border-radius);
-  border-bottom-left-radius: var(--rounded-border-radius);
-}
-
 /* CSS3 Checkboxes */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
@@ -382,7 +345,6 @@ sub:not([class]) {
     cursor: pointer;
     margin-left: 4px;
   }
-
   input[type='checkbox']:not(.switch) {
     border-radius: 7px;
   }
@@ -421,7 +383,6 @@ sub:not([class]) {
   input[type='checkbox'].switch:disabled:not(:checked):after {
     opacity: .6;
   }
-
   input[type='radio'] {
     border-radius: 50%;
   }
