@@ -73,6 +73,9 @@ async function postcss() {
               900: '#3B2214',
             },
           },
+          boxShadow: {
+            outline: '0 0 0 3px rgba(120, 128, 35, 0.5)',
+          },
           fontFamily: {
             'title': ['Raleway', 'sans-serif'],
             'agrea': ['typo3', 'serif'],
