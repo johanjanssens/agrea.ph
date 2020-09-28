@@ -10,10 +10,7 @@ title: Agrea - Ecology of Dignity
     }
 </style>
 
-<?= import('/partials/hero-alt',[
-      'class' => 'bg-lime-500',
-    ]);
-?>
+<?= import('/partials/hero-alt',['class' => 'bg-lime-500']);?>
 
 <section class="text-gray-700">
   <ktml:images max-width="33%" preload="true">
