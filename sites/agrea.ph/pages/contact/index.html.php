@@ -3,8 +3,8 @@ layout:
     path: default
     footer:
         image: images://background/farmer-couple.jpg
-name: Contact Us
-title: Contact Agrea
+name: Contact
+title: Send us a message
 summary: Contact page for AGREA, the Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.
 slug: contact
 form:
@@ -23,7 +23,6 @@ form:
         message: [string, required]
     redirect: contact/thank-you
     honeypot: firstName_407d3z05
-visible: false
 ---
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
     <article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
@@ -32,9 +31,10 @@ visible: false
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
                 <h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
                 <div class="h-1 w-20 bg-green-500 rounded"></div>
+                <p class="mt-4">To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
             </div>
-            <div class="lg:w-1/2 w-full">
-                <img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-preload="true">
+            <div class="lg:w-1/2 md:block hidden w-full">
+                <img class="md:h-36 rounded w-full object-cover object-center" src="images://contact/contact-agrea.jpg" alt="<?= $title ?>" data-max-width="50%" data-preload="true">
             </div>
         </div>
         <?= import('/partials/form/contact'); ?>
