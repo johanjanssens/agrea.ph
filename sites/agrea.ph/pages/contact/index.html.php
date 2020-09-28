@@ -75,7 +75,7 @@ form:
         <dl>
             <dt>General Inquiries:</dt>
             <dd itemprop="email"><a href="mailto:hello@agrea.ph">hello@agrea.ph</a></dd>
-            <dt>Careers, Internships, Recruitment, & Human Resources:</dt>
+            <dt>Careers, Internships, Recruitment and Human Resources:</dt>
             <dd itemprop="email"><a href="mailto:hr@agrea.ph">hr@agrea.ph</a></dd>
             <dt>AGREA Farm School:</dt>
             <dd itemprop="email"><a href="mailto:farmschool@agrea.ph">farmschool@agrea.ph</a></dd>
