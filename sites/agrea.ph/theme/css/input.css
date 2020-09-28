@@ -184,12 +184,14 @@ body > * {
   font-size: clamp(0.75rem, 4vw, 1rem);
 }
 /* Main header story and IN FOUCS area on the homepage */
-section.hero-alt .hero-image {
-  clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-  transition: 1s;
-}
-section.hero-alt:hover .hero-image {
-  clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+@screen lg {
+  section.hero-alt .hero-image {
+    clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+    transition: 1s;
+  }
+  section.hero-alt:hover .hero-image {
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+  }
 }
 section[class*="bg-"]:not(.bg-white) {
   position:relative;
