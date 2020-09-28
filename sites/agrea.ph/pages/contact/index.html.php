@@ -24,8 +24,8 @@ form:
     redirect: contact/thank-you
     honeypot: firstName_407d3z05
 ---
-<div class="flex flex-col sm:flex-row">
-    <article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+<div itemscope itemtype="http://schema.org/Organization" class="flex flex-col sm:flex-row">
+    <article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
     <ktml:images max-width="80%">
         <div class="flex flex-wrap w-full mb-10">
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -75,7 +75,7 @@ form:
         <dl>
             <dt>General Inquiries:</dt>
             <dd itemprop="email"><a href="mailto:hello@agrea.ph">hello@agrea.ph</a></dd>
-            <dt>Careers, Internships, Recruitment, & Human Resources:</dt>
+            <dt>Careers, Internships, Recruitment and Human Resources:</dt>
             <dd itemprop="email"><a href="mailto:hr@agrea.ph">hr@agrea.ph</a></dd>
             <dt>AGREA Farm School:</dt>
             <dd itemprop="email"><a href="mailto:farmschool@agrea.ph">farmschool@agrea.ph</a></dd>
@@ -84,7 +84,7 @@ form:
         </dl>
         <h3 class="text-gray-900 font-medium font-title my-4">Social Media Accounts:</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-        <ul itemscope itemtype="http://schema.org/Organization" class="mb-2">
+        <ul class="mb-2">
             <link itemprop="url" href="https://www.agrea.ph">
             <li>
               <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="inline-flex hover:text-blue-900 transition duration-500 ease-in-out">
