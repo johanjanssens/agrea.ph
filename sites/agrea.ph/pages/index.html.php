@@ -6,7 +6,7 @@ title: Agrea - Ecology of Dignity
 
 <style type="text/css">
     section[class*="bg-"]:not(.bg-white){
-        background-image: url(<?= helper('image.url', 'images://background/hero-bg.jpg?auto=compress&q=50&w=1600') ?>);
+        background-image: url(<?= helper('image.url', 'images://background/hero-bg.jpg?auto=compress&q=50&w=1500') ?>);
     }
 </style>
 
