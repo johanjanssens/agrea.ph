@@ -14,7 +14,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'suffix'     => '',
             'expand'     => -10,
             'parameters'     => ['auto' => 'true'],
-            'parameters_lqi' => ['bl' => 75, 'q' => 40]
+            'parameters_lqi' => ['bl' => 80, 'q' => 30, 'auto' => 'compress']
         ));
 
         parent::_initialize($config);
@@ -60,16 +60,31 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             {
                 $srcset = $this->srcset($config->url, $config);
 
-                //Build the path for the low quality image
-                $parameters = $this->getConfig()->parameters_lqi;
-                $parameters['fm'] = 'jpg';
-                $parameters['w']  = key($srcset);
+                //Find the width for the none-responsive image
+                if (stripos($config->max_width, '%') !== false) {
+                    $width = ceil($this->getConfig()->max_width / 100 * (int)$config->max_width);
+                } else {
+                    $width = $config->max_width;
+                }
 
-                //Build path for the high quality image
-                $lqi_url = $this->url($config->url, $parameters);
+                foreach(array_reverse(array_keys($srcset)) as $breakpoint)
+                {
+                    if($breakpoint > $width)
+                    {
+                       $width = $breakpoint;
+                       break;
+                    }
+                }
 
                 if($config->lazyload)
                 {
+                    //Build path for the low quality image
+                    $parameters = $this->getConfig()->parameters_lqi;
+                    $parameters['fm'] = 'jpg';
+                    $parameters['w']  = $width;
+
+                    $lqi_url = $this->url($config->url, $parameters);
+
                     //Generate data url for low quality image and preload it inline
                     if($config->preload)
                     {
@@ -93,7 +108,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
                     //to the initial src attribute (without lazyload).
                     //
-                    $html .='<img width="'.key($srcset).'" src="'.$hqi_url.'&w='.key($srcset).'"
+                    $html .='<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'"
                         srcset="'. $lqi_url.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
@@ -101,7 +116,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 }
                 else
                 {
-                    $html .='<img width="'.key($srcset).'" src="'.$hqi_url.'&w='.key($srcset).'"
+                    $html .='<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'"
                         srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
