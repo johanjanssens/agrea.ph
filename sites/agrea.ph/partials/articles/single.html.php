@@ -1,6 +1,3 @@
-<meta name="article:published_time" content="<?= $article->published_time ?>"/>
-<meta name="article:modified_time" content="<?= $article->modified_time ?>"/>
-
 <div class="max-w-4xl m-auto mt-8">
 <ktml:images max-width="80%">
 	<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $article->title ?></h1>
@@ -19,4 +16,3 @@
 	<div class="mt-2" itemprop="articleBody" content="<?= escape(strip_tags($article->text)) ?>"><?= $article->text ?></div>
 </ktml:images>
 </div>
-
