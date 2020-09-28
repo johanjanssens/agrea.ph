@@ -24,8 +24,8 @@ form:
     redirect: contact/thank-you
     honeypot: firstName_407d3z05
 ---
-<div class="flex flex-col sm:flex-row">
-    <article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+<div itemscope itemtype="http://schema.org/Organization" class="flex flex-col sm:flex-row">
+    <article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
     <ktml:images max-width="80%">
         <div class="flex flex-wrap w-full mb-10">
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -68,9 +68,8 @@ form:
         <?= import('/partials/form/contact'); ?>
     </ktml:images>
     </article>
-    <aside itemscope itemtype="http://schema.org/Organization" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
+    <aside class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
     <ktml:images max-width="25%">
-    <link itemprop="url" href="https://www.agrea.ph">
     <h3 class="text-gray-900 font-medium font-title my-4">Email Addresses:</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
         <dl>
@@ -86,6 +85,7 @@ form:
         <h3 class="text-gray-900 font-medium font-title my-4">Social Media Accounts:</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
         <ul class="mb-2">
+            <link itemprop="url" href="https://www.agrea.ph">
             <li>
               <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="inline-flex hover:text-blue-900 transition duration-500 ease-in-out">
                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 text-blue-800" viewBox="0 0 24 24">
