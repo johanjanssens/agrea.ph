@@ -2,7 +2,7 @@
 
 class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 {
-  protected function _initialize(KObjectConfig $config)
+    protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
             'max_width' => 1920,
@@ -32,8 +32,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'max_width' => $this->getConfig()->max_width,
             'min_width' => $this->getConfig()->min_width,
             'max_dpr'   => $this->getConfig()->max_dpr,
-            'preload'   => false,
-            'lazyload'  => true,
+            'lazyload'  => true, //progressive, progressive-inline
             'expand'    => $this->getConfig()->expand,
         ))->append(array(
             'attributes' => array('class' => $config->class),
@@ -76,40 +75,44 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                 }
 
-                if($config->lazyload)
+                if($config->lazyload !== false)
                 {
-                    //Build path for the low quality image
-                    $parameters = $this->getConfig()->parameters_lqi;
-                    $parameters['fm'] = 'jpg';
-                    $parameters['w']  = $width;
-
-                    $lqi_url = $this->url($config->url, $parameters);
-
-                    //Generate data url for low quality image and preload it inline
-                    if($config->preload)
+                    if(strpos($config->lazyload, 'progressive') !== false)
                     {
-                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
-                        //This will generate a blur up effect
-                        $config->attributes['data-expand'] = $config->expand;
+                        //Build path for the low quality image
+                        $parameters = $this->getConfig()->parameters_lqi;
+                        $parameters['fm'] = 'jpg';
+                        $parameters['w']  = $width;
 
-                        $context = stream_context_create([
-                            "ssl" => [
-                                "verify_peer"      =>false,
-                                "verify_peer_name" =>false,
-                            ],
-                        ]);
+                        $lqi_url = $this->url($config->url, $parameters);
 
-                        if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
-                            $lqi_url = 'data:image/jpg;base64,'.base64_encode($data);
+                        //Generate data url for low quality image and preload it inline
+                        if($config->lazyload == 'progressive-inline')
+                        {
+                            //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
+                            //This will generate a blur up effect
+                            $config->attributes['data-expand'] = $config->expand;
+
+                            $context = stream_context_create([
+                                "ssl" => [
+                                    "verify_peer"      =>false,
+                                    "verify_peer_name" =>false,
+                                ],
+                            ]);
+
+                            if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
+                              $lqi_url = 'data:image/jpg;base64,'.base64_encode($data);
+                            }
                         }
                     }
+                    else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine a normal src attribute with a low quality image as srcset value and a data-srcset attribute.
-                    //Modern browsers will lazy load without loading the src attribute and all others will simply fallback
-                    //to the initial src attribute (without lazyload).
-                    //
-                    $html .='<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'"
-                        srcset="'. $lqi_url.'"
+                    //Combine low quality image as srcset value and a data-srcset attribute and
+                    //provide a fallback if javascript is disabled
+                    $html .= '<noscript>';
+                    $html .=    '<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .= '</noscript>';
+                    $html .='<img width="'.$width.'" srcset="'. $lqi_url.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
@@ -140,7 +143,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         $srcset[] = sprintf($hqi_url.'&h=%1$s&dpr=%2$d %2$dx', $height, $i);
                     }
 
-                    $size = 'height="'.$height.'"';
+                    $size    = 'height="'.$height.'"';
+                    $hqi_url = $hqi_url.'&h='.$height;
                 }
                 else
                 {
@@ -148,19 +152,56 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         $srcset[] = sprintf($hqi_url.'&w=%1$s&dpr=%2$d %2$dx', $width, $i);
                     }
 
-                    $size = 'width="'.$width.'"';
+                    $size    = 'width="'.$width.'"';
+                    $hqi_url = $hqi_url.'&w='.$width;
                 }
 
-                //Combine transparent image as srcset value and a data-srcset attribute. In case disabled JavaScript is
-                //disabled, fallback on the noscript element.
-                //
+                if($config->lazyload !== false)
+                {
+                    if(strpos($config->lazyload, 'progressive') !== false)
+                    {
+                        //Build path for the low quality image
+                        $parameters = $this->getConfig()->parameters_lqi;
+                        $parameters['fm'] = 'jpg';
+
+                        if($height) {
+                            $parameters['h'] = $height;
+                        } else {
+                            $parameters['w'] = $width;
+                        }
+
+                        $lqi_url = $this->url($config->url, $parameters);
+
+                        //Generate data url for low quality image and preload it inline
+                        if($config->lazyload == 'progressive-inline')
+                        {
+                            //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
+                            //This will generate a blur up effect
+                            $config->attributes['data-expand'] = $config->expand;
+
+                            $context = stream_context_create([
+                                "ssl" => [
+                                    "verify_peer"      =>false,
+                                    "verify_peer_name" =>false,
+                                ],
+                            ]);
+
+                            if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
+                                $lqi_url = 'data:image/jpg;base64,'.base64_encode($data);
+                            }
+                        }
+                    }
+                }
+                else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+
+                //Combine low quality image as srcset value and a data-srcset attribute and
+                //provide a fallback if javascript is disabled
                 $html .= '<noscript>';
-                $html .=    '<img '.$size.' src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 $html .= '</noscript>';
-                $html .='<img '.$size.'
-                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-srcset="'. implode(',', $srcset).'"
-                alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                $html .='<img '.$size.' srcset="'. $lqi_url.'"
+                  data-srcset="'. implode(',', $srcset).'"
+                  alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
             }
         }
         else
