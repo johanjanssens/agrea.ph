@@ -79,30 +79,15 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 {
                     if(strpos($config->lazyload, 'progressive') !== false)
                     {
-                        //Build path for the low quality image
-                        $parameters = $this->getConfig()->parameters_lqi;
-                        $parameters['fm'] = 'jpg';
-                        $parameters['w']  = $width;
+                        $data_url   = (bool) $config->lazyload == 'progressive-inline';
+                        $parameters['w'] = $width;
 
-                        $lqi_url = $this->url($config->url, $parameters);
+                        $lqi_url = $this->url_lqi($config->url, $parameters, $data_url);
 
-                        //Generate data url for low quality image and preload it inline
-                        if($config->lazyload == 'progressive-inline')
-                        {
-                            //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
-                            //This will generate a blur up effect
+                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
+                        //This will generate a blur up effect
+                        if($data_url) {
                             $config->attributes['data-expand'] = $config->expand;
-
-                            $context = stream_context_create([
-                                "ssl" => [
-                                    "verify_peer"      =>false,
-                                    "verify_peer_name" =>false,
-                                ],
-                            ]);
-
-                            if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
-                              $lqi_url = 'data:image/jpg;base64,'.base64_encode($data);
-                            }
                         }
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
@@ -160,9 +145,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 {
                     if(strpos($config->lazyload, 'progressive') !== false)
                     {
-                        //Build path for the low quality image
-                        $parameters = $this->getConfig()->parameters_lqi;
-                        $parameters['fm'] = 'jpg';
+                        $data_url   = (bool) $config->lazyload == 'progressive-inline';
+                        $parameters = array();
 
                         if($height) {
                             $parameters['h'] = $height;
@@ -170,38 +154,32 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                             $parameters['w'] = $width;
                         }
 
-                        $lqi_url = $this->url($config->url, $parameters);
+                        $lqi_url = $this->url_lqi($config->url, $parameters, $data_url);
 
-                        //Generate data url for low quality image and preload it inline
-                        if($config->lazyload == 'progressive-inline')
-                        {
-                            //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
-                            //This will generate a blur up effect
+                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
+                        //This will generate a blur up effect
+                        if($data_url) {
                             $config->attributes['data-expand'] = $config->expand;
-
-                            $context = stream_context_create([
-                                "ssl" => [
-                                    "verify_peer"      =>false,
-                                    "verify_peer_name" =>false,
-                                ],
-                            ]);
-
-                            if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($lqi_url, '/'), false, $context)) {
-                                $lqi_url = 'data:image/jpg;base64,'.base64_encode($data);
-                            }
                         }
                     }
-                }
-                else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+                    else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                //Combine low quality image as srcset value and a data-srcset attribute and
-                //provide a fallback if javascript is disabled
-                $html .= '<noscript>';
-                $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
-                $html .= '</noscript>';
-                $html .='<img '.$size.' srcset="'. $lqi_url.'"
-                  data-srcset="'. implode(',', $srcset).'"
-                  alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    //Combine low quality image as srcset value and a data-srcset attribute and
+                    //provide a fallback if javascript is disabled
+                    $html .= '<noscript>';
+                    $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .= '</noscript>';
+                    $html .='<img '.$size.' srcset="'. $lqi_url.'"
+                      data-srcset="'. implode(',', $srcset).'"
+                      alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+
+                }
+                else
+                {
+                    $html .='<img '.$size.' src="'.$hqi_url.'"
+                        srcset="'. implode(', ', $srcset).'"
+                        alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                }
             }
         }
         else
@@ -234,8 +212,11 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
         if($this->supported($url))
         {
-            $url = KHttpUrl::fromString($url);
-            $url->query = array_merge(array_filter(KObjectConfig::unbox($config)), $url->query);
+            $url   = KHttpUrl::fromString($url);
+            $query = array_merge(array_filter(KObjectConfig::unbox($config)), $url->query);
+
+            ksort($query); //sort alphabetically
+            $url->query = $query;
 
             if($this->getConfig()->suffix) {
                 $url->setPath($url->getPath().'.'.$this->getConfig()->suffix);
@@ -243,6 +224,38 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         }
 
         return $url;
+    }
+
+    public function url_lqi($url, $parameters = array(), $data_url = false)
+    {
+        $config = new KObjectConfigJson($parameters);
+        $config->append($this->getConfig()->parameters_lqi);
+        $config->append(array(
+            'fm' => 'jpg'
+        ));
+
+        if($this->supported($url))
+        {
+            $result = (string) $this->url($url, $config);
+
+            //Generate data url for low quality image
+            if($data_url)
+            {
+                $context = stream_context_create([
+                    "ssl" => [
+                        "verify_peer"      =>false,
+                        "verify_peer_name" =>false,
+                    ],
+                ]);
+
+                if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($url, '/'), false, $context)) {
+                    $result = 'data:image/jpg;base64,'.base64_encode($data);
+                }
+            }
+        }
+        else $result = $url;
+
+        return $result;
     }
 
     public function srcset($url, $parameters = array())
