@@ -55,14 +55,14 @@ tr:not([class]) {
   @apply pr-6;
 }
 ul:not([class]) {
-  @apply list-star list-inside;
+  @apply list-disc list-outside ml-4;
 }
 ol:not([class]) {
-  @apply list-decimal list-inside;
+  @apply list-decimal list-outside ml-4;
 }
 li:not([class]) > ol:not([class]), 
 li:not([class]) > ul:not([class]) {
-  @apply px-6 py-3;
+  @apply mx-4 my-2;
 }
 li:focus-within a {
   @apply outline-none;
