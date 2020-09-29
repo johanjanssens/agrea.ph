@@ -55,14 +55,14 @@ tr:not([class]) {
   @apply pr-6;
 }
 ul:not([class]) {
-  @apply list-star list-inside;
+  @apply list-disc list-outside ml-4;
 }
 ol:not([class]) {
-  @apply list-decimal list-inside;
+  @apply list-decimal list-outside ml-4;
 }
 li:not([class]) > ol:not([class]), 
 li:not([class]) > ul:not([class]) {
-  @apply px-6 py-3;
+  @apply mx-4 my-2;
 }
 li:focus-within a {
   @apply outline-none;
@@ -114,6 +114,9 @@ sup:not([class]) {
 /* hero image */
 .hero-image > div {
   @apply bg-right;
+}
+.plyr {
+  @apply rounded-lg;
 }
 /* Sidebar
  * Submenu border override 
@@ -183,6 +186,12 @@ sup:not([class]) {
 body > * {
   font-size: clamp(0.75rem, 4vw, 1rem);
 }
+header,
+main,
+aside,
+footer {
+  content-visibility: auto;
+}
 /* Main header story and IN FOUCS area on the homepage */
 @screen lg {
   section.hero-alt .hero-image {
@@ -198,7 +207,7 @@ section[class*="bg-"]:not(.bg-white) {
   background-attachment: fixed; /* CSS only parallax */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: left top;
-  background-size: auto 100%;
+  background-size: cover;
   background-blend-mode: multiply;
 }
 section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {

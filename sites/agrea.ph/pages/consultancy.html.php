@@ -43,7 +43,7 @@ slug: consultancy
 			<li>Financial Literacy Training</li>
 			<li>Leadership &amp; Values Formation Training</li>
 			<li>Technical Training on Sustainable Agriculture:
-			<ul class="list-star list-outside pt-1 pl-2">
+			<ul>
 				<li class="pl-2">Integrated farming</li>
 				<li class="pl-2">System of Rice Intensification</li>
 				<li class="pl-2">Organic agriculture production: vegetables; chicken; hog raising; organic fertilizer and concoctions production</li>
@@ -179,23 +179,24 @@ slug: consultancy
 		</div>
 	</ktml:images>
 	</article>
-	<aside class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-	<ktml:images max-width="25%">
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">AGREA Consultancy</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-
-		<p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
-
-		<p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-
-		<p><a href="mailto:consultancy@agrea.ph?subject=AGREA%20Consultancy"><img class="rounded w-full" src="images://consultancy/email.jpg" /></a></p>
-
-		<p><img class="rounded w-full" src="images://consultancy/phone.jpg" /></p>
-
-		<p><img class="rounded w-full" src="images://consultancy/address.jpg" /></p>
-	</ktml:images>
+	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+		<ktml:images max-width="25%">
+        <p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
+        <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
+        <h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
+        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <dl itemscope itemtype="https://schema.org/Organization">
+            <link itemprop="url" href="https://www.agrea.ph">
+            <dt>Email Address:</dt>
+            <span itemprop="email"><a href="mailto:consultancy@agrea.ph">consultancy@agrea.ph</a></span>
+            <dt>Tel:</dt>
+            <dd itemprop="telephone"><a href="tel:+63632240521">+63 2 240 521</a></dd>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <dt>Address:</dt>
+                <dd itemprop="streetAddress">Suite 318A, 3/F LRI Design Plaza, 210 Nicanor Garcia, Makati City,</dd>
+                <dd itemprop="postalCode">1209,</dd>
+                <dd itemprop="addressLocality">Metro Manila, Philippines</dd>
+            </div>
+        </dl>
 	</aside>
 </div>

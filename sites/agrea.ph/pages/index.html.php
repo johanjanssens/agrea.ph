@@ -142,28 +142,28 @@ title: Agrea - Ecology of Dignity
     </div>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="md:w-1/2 mb-10 px-4">
-        <div class="rounded-lg md:mb-16">
+        <div class="rounded-lg md:mb-10">
           <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
         </div>
-        <h3 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">Be a #AGREA1000Strong Volunteer</h3>
+        <h3 class="font-title text-2xl font-medium text-lime-500 lg:pt-3 mb-3">Be a #AGREA1000Strong Volunteer</h3>
         <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
         <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
       </div>
-      <div class="md:w-1/2 mb-10 px-4">
-        <div class="rounded-lg md:mb-4 px-5">
-          <div class="rounded-lg md:mb-4 px-5">
-            <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
-              <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
-              <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
-              <source src="/videos/4583411334.mp4" type="video/mp4" size="720">
-    					<source src="/videos/458341133.mp4?q=360p" type="video/mp4" size="360">
-    					<source src="/videos/458341133.mp4?q=240p" type="video/mp4" size="240">
-            </video>
-          </div>
-        <p class="text-grey-400 text-sm items-center">Video courtesy of Asia NewsChannel</p>
+      <div class="md:w-1/2 mb-12 px-4">
+        <figure class="rounded-lg md:mb-4 px-5">
+          <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
+            <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
+            <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
+            <source src="/videos/4583411334.mp4" type="video/mp4" size="720">
+            <source src="/videos/458341133.mp4?q=360p" type="video/mp4" size="360">
+            <source src="/videos/458341133.mp4?q=240p" type="video/mp4" size="240">
+          </video>
+          <figcaption class="text-grey-400 text-sm items-center mt-2 italic">
+            Video courtesy of Asia NewsChannel
+          </figcaption>
+        </figure>
         <h3 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h3>
         <p class="">In the Philippines, where farmers toil for meager sums, Cherrie Atilano is an invigorating ray of hope. Spending her childhood among farmers, the harsh reality of their plight led to her life's calling. Today, she's sowing the seeds of change to allow farmers to cultivate dreams of their own.</p>
-      </div>
     </div>
   </div>
   </ktml:images>
