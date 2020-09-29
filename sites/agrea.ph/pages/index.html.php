@@ -8,6 +8,10 @@ title: Agrea - Ecology of Dignity
     section[class*="bg-"]:not(.bg-white){
         background-image: url(<?= helper('image.url', 'images://background/hero-bg.jpg?auto=compress&q=50&w=1500') ?>);
     }
+
+    .save-data section {
+        background-image: none !important;
+    }
 </style>
 
 <?= import('/partials/hero-alt',['class' => 'bg-lime-500']);?>
