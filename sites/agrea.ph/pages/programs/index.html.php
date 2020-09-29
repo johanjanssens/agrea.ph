@@ -8,14 +8,14 @@ slug: programs
 
 <div class="flex flex-col sm:flex-row">
 	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-	<ktml:images max-width="80%">
+	<ktml:images max-width="80%" data-lazyload="progressive">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">The Cultivation of Human Beings</h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg" data-lazyload="progressive-inline">
 			</div>
 		</div>
 		<div itemprop="articleBody">

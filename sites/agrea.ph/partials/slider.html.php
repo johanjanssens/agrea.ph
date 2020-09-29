@@ -33,7 +33,7 @@ endif ?>
       <? foreach((array)$images as $i => $image): ?>
         <li class="splide__slide">
         <? if($i == 0): ?>
-          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" src="<?= $image ?>" data-preload="true">
+          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" src="<?= $image ?>" data-lazyload="progressive-inline">
         <? else : ?>
           <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="<?= helper('image.url', $image) ?>" >
         </li>

@@ -11,7 +11,7 @@ form:
     name: contact-form
     processors:
         - 'email':
-            recipients: 
+            recipients:
                 - hello@agrea.ph
                 - someonelse@agrea.ph
             title: Contact Form
@@ -34,7 +34,7 @@ form:
                 <p class="mt-4">To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
             </div>
             <div class="lg:w-1/2 md:block hidden w-full">
-                <img class="md:h-36 rounded w-full object-cover object-center" src="images://contact/contact-agrea.jpg" alt="<?= $title ?>" data-max-width="50%" data-preload="true">
+                <img class="md:h-36 rounded w-full object-cover object-center" src="images://contact/contact-agrea.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive-inline">
             </div>
         </div>
         <div class="grid md:grid-cols-2 mb-10">

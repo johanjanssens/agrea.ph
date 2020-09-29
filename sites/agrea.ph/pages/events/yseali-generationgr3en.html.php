@@ -13,7 +13,7 @@ slug: yseali-generationgr3en
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-lazyload="progressive-inline">
 			</div>
 		</div>
 		<p><span class="font-bold ">YSEALI GenerationGR3EN Workshop</span> is a 4-day eco-entrepreneurship workshop held in Brunei Darussalam with a focus on eco-tourism. The workshop was held from 25-28 February 2017.</p>

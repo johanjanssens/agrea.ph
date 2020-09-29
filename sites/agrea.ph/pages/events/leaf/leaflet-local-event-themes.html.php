@@ -15,7 +15,7 @@ slug: leaflet-local-event-themes
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="images://events/leaf/leaflet/leaflet-1.jpg" data-max-width="50%" data-preload="true">
+				<img class="md:h-36 rounded w-full object-cover object-center" src="images://events/leaf/leaflet/leaflet-1.jpg" data-max-width="50%" data-lazyload="progressive-inline">
 			</div>
 		</div>
 		<h3 class="text-gray-900 font-medium font-title my-4">LEAF Focus Dialogues: Right Here, Right Now</h3>

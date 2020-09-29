@@ -17,12 +17,12 @@ slug: agrea-1000-strong
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-preload="true">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-lazyload="progressive-inline">
 			</div>
 		</div>
 		<div itemprop="articleBody">
-		<ktml:images max-width="80%">
-		
+		<ktml:images max-width="80%" data-lazyload="progressive">
+
 			<?= article(4)->excerpt ?>
 			<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/1000strong', 'max_width' => '80%']); ?>
 			<?= article(4)->text ?>
