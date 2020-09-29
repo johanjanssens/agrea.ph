@@ -149,7 +149,7 @@ title: Agrea - Ecology of Dignity
         <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
         <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
       </div>
-      <div class="md:w-1/2 mb-10 px-4">
+      <div class="md:w-1/2 mb-12 px-4">
         <figure class="rounded-lg md:mb-4 px-5">
           <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
             <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
