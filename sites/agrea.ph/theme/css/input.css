@@ -115,6 +115,9 @@ sup:not([class]) {
 .hero-image > div {
   @apply bg-right;
 }
+.plyr {
+  @apply rounded-lg;
+}
 /* Sidebar
  * Submenu border override 
 */
