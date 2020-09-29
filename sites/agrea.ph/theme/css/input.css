@@ -186,6 +186,12 @@ sup:not([class]) {
 body > * {
   font-size: clamp(0.75rem, 4vw, 1rem);
 }
+header,
+main,
+aside,
+footer {
+  content-visibility: auto;
+}
 /* Main header story and IN FOUCS area on the homepage */
 @screen lg {
   section.hero-alt .hero-image {
@@ -201,7 +207,7 @@ section[class*="bg-"]:not(.bg-white) {
   background-attachment: fixed; /* CSS only parallax */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-position: left top;
-  background-size: auto 100%;
+  background-size: cover;
   background-blend-mode: multiply;
 }
 section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
