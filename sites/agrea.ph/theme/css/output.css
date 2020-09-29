@@ -2412,8 +2412,8 @@ sub:not([class]) {
     margin-left: 1rem;
   }
 
-  .md\:mb-16 {
-    margin-bottom: 4rem;
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:py-24 {

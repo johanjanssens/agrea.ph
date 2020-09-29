@@ -142,10 +142,10 @@ title: Agrea - Ecology of Dignity
     </div>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="md:w-1/2 mb-10 px-4">
-        <div class="rounded-lg md:mb-16">
+        <div class="rounded-lg md:mb-10">
           <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
         </div>
-        <h3 class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">Be a #AGREA1000Strong Volunteer</h3>
+        <h3 class="font-title text-2xl font-medium text-lime-500 mt-2 mb-3">Be a #AGREA1000Strong Volunteer</h3>
         <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
         <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
       </div>
