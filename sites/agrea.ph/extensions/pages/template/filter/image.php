@@ -50,6 +50,10 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
 
             //Second pass- Filter the background images
             $text = $this->filterBackgroundImages($text);
+
+            //Add client hints
+            $text .= '<meta http-equiv="Accept-CH" content="dpr, width, viewport-width, downlink" />';
+            $text .= '<meta http-equiv="Accept-CH-Lifetime" content="86400" />';
         }
     }
 
