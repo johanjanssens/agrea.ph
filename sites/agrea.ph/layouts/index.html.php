@@ -48,8 +48,8 @@
     <link href="<?= route('news.rss') ?>" rel="alternate" type="application/rss+xml" title="Agrea News Sprouts"  />
 
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
+    <ktml:script src="theme://js/alpinejs-v2.7.0.js" defer="defer" />
     <ktml:style src="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="preload" as="style" />
-    <ktml:script src="https://unpkg.com/alpinejs@2.6.0/dist/alpine.js" defer="defer" />
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
