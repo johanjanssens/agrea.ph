@@ -53,7 +53,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        if ("connection" in navigator && navigator.connection.saveData === true) {
+        if ('connection' in navigator && navigator.connection.saveData === true) {
           document.documentElement.classList.add('save-data');
         }
       })
@@ -69,7 +69,7 @@
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <!-- End Google Analytics -->
     <? endif; ?>
-    
+
 </head>
 
 <body class="<?= config()->site->body_class ?>">

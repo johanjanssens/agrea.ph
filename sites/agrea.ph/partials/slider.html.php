@@ -46,6 +46,11 @@ endif ?>
 <script>
 document.addEventListener('lazybeforeunveil', (e) =>
 {
+    //Do not enable the slider for slow connection or if save-data is enabled
+    if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g')) {
+        return;
+    }
+
     if((typeof Splide == 'undefined') && e.target.matches('.splide'))
     {
         var style = document.createElement('link');

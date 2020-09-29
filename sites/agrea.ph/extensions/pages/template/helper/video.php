@@ -37,10 +37,10 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
 
           script.addEventListener('load', () =>
           {
-              if ("connection" in navigator && navigator.connection.saveData === true) {
-                var quality = {$config->quality_lowest}
+              if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g'))) {
+                  var quality = {$config->quality_lowest}
               } else {
-                var quality = {$config->quality_default}
+                  var quality = {$config->quality_default}
               }
 
               if(!video.canPlayType('application/x-mpegURL')) {
