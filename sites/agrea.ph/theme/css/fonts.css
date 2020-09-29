@@ -3,6 +3,7 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
+    font-display: swap;
     src: local(''),
       url('../fonts/raleway-v17-latin-ext_latin-800.woff2') format('woff2'),
       url('../fonts/raleway-v17-latin-ext_latin-800.woff') format('woff');
