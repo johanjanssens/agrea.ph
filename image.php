@@ -19,6 +19,15 @@ $quality       = 100;
 $compress      = false;
 $refresh_time  = '1week';  //time before images that are not accessed are garbage collected
 
+$w    = null;  //width
+$h    = null;  //height
+$dpr  = 1;     //device pixel ratio
+$vary = ['accept'];
+
+$max_w   = 1920;
+$min_w   = 320;
+$max_dpr = 3;
+
 /**
  * Route request
  */
@@ -40,7 +49,7 @@ if($parts['query'] && $parts['path'])
 
     $source      = $basepath.'/'.$filepath;
     $destination = false;
-   $background   = null;
+    $background   = null;
 
     $format   = strtolower(pathinfo($filepath, PATHINFO_EXTENSION));
 
@@ -76,6 +85,52 @@ if($parts['query'] && $parts['path'])
         if(in_array('enhance', $directives) || in_array('true', $directives)) {
             $enhance = true;
         }
+    }
+
+    //Auto DPR
+    if(isset($parameters['dpr']))
+    {
+        if($parameters['dpr'] == 'auto')
+        {
+            $dpr = isset($_SERVER['HTTP_DPR']) ? floatval($_SERVER['HTTP_DPR']) : $dpr;
+            $dpr = floor($dpr * 2) / 2; //round with 0.5 precision
+
+            $vary[] = 'dpr'; //Add dpr to Vary
+        }
+        else $dpr = floatval($parameters['dpr']);
+
+        $parameters['dpr'] = max($dpr, $max_dpr);
+    }
+
+    //Auto Width
+    if(isset($parameters['w']))
+    {
+        if($parameters['w'] == 'auto')
+        {
+            if(isset($_SERVER['HTTP_VIEWPORT_WIDTH'])) {
+                $max_w = min(intval($_SERVER['HTTP_VIEWPORT_WIDTH']), $max_w);
+            }
+
+            if(isset($_SERVER['HTTP_WIDTH'])) {
+                $w = intval($_SERVER['HTTP_WIDTH']);
+            } else {
+                $w = $max_w;
+            }
+
+            $sizes = Image::calculateSizes($source, $max_w, $min_w);
+
+            foreach(array_reverse($sizes) as $size)
+            {
+                if($size > $w) {
+                   $w = $size; break;
+                }
+            }
+
+            $vary[] = 'width'; //Add width to Vary
+        }
+        else $w = intval($parameters['w']);
+
+        $parameters['w'] = $w;
     }
 
     //Set quality
@@ -123,10 +178,8 @@ if($parts['query'] && $parts['path'])
             $image = (new Image())->read($source, $format, $background);
 
             //Resize
-            if(isset($parameters['w']) || isset($parameters['h']))
-            {
-                $density = $parameters['dpr'] ?? 1;
-                $image->resize($parameters['w'] ?? null, $parameters['h'] ?? null, (int) $density);
+            if(isset($parameters['w']) || isset($parameters['h'])) {
+                $image->resize($parameters['w'] ?? null, $parameters['h'] ?? null, $dpr);
             }
 
             //Pixellate
@@ -197,7 +250,7 @@ if($parts['query'] && $parts['path'])
     header('Content-Length: '.filesize($file));
     header('Date: '.date('D, d M Y H:i:s', strtotime('now')).' GMT');
     header('Last-Modified: '.date('D, d M Y H:i:s', filemtime($file)).' GMT');
-    header('Vary: Accept');
+    header('Vary: '.implode(',', $vary));
 
     //Set X-Created-With
     if($image)
@@ -762,4 +815,61 @@ Class Image
        return $result;
    }
 
+   /*
+    * Dynamically calculate the response image breakpoints based on fixed filesize reduction
+    *
+    * Inspired by https://stitcher.io/blog/tackling_responsive_images-part_2
+    */
+   public static function calculateSizes($file, $max_width, $min_width = 320)
+   {
+       $min_filesize = 1024 * 10; //10kb
+       $modifier     = 0.7;       //70% (each image should be +/- 30% smaller in expected size)
+
+       //Get dimensions
+       list($width, $height) = @getimagesize($file);
+
+       //Get filesize
+       $filesize = @filesize($file);
+
+       $sizes = array();
+       if ($width < $max_width) {
+           $sizes[] = $width;
+       }
+
+       $ratio   = $height / $width;
+       $area    = $height * $width;
+
+       $density = $filesize / $area;
+
+       while(true)
+       {
+           $filesize *= $modifier;
+
+           if ((int) $filesize < $min_filesize) {
+               break;
+           }
+
+           $width = (int) floor(sqrt(( $filesize / $density) / $ratio));
+
+           if ($width < $min_width) {
+               break;
+           }
+
+           //Add the width
+           if ($width < $max_width) {
+               $sizes[] = $width;
+           }
+       }
+
+       if(empty($sizes))
+       {
+           if(is_int($max_width) && $max_width < $width) {
+               $sizes[] = $max_width;
+           } else {
+               $sizes[] = $width;
+           }
+       }
+
+       return $sizes;
+   }
 }

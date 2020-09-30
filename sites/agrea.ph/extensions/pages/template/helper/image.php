@@ -66,12 +66,10 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     $width = $config->max_width;
                 }
 
-                foreach(array_reverse(array_keys($srcset)) as $breakpoint)
+                foreach(array_reverse(array_keys($srcset)) as $size)
                 {
-                    if($breakpoint > $width)
-                    {
-                       $width = $breakpoint;
-                       break;
+                    if($size > $width) {
+                       $width = $size; break;
                     }
                 }
 
@@ -282,17 +280,16 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 $config->min_width = ceil($this->getConfig()->min_width / 100 * (int)$config->min_width);
             }
 
-            $file = $this->getConfig()->base_path . '/' . trim($url->getPath(), '/');
-            $breakpoints = $this->_calculateBreakpoints($file, $config->max_width * $config->max_dpr, $config->min_width);
+            $file  = $this->getConfig()->base_path . '/' . trim($url->getPath(), '/');
+            $sizes = $this->_calculateSizes($file, $config->max_width * $config->max_dpr, $config->min_width);
 
             //Build path for the high quality image
             $hqi_url = $this->url($url);
 
-            foreach ($breakpoints as $breakpoint)
+            foreach ($sizes as $size)
             {
-                $hqi_url->query['w'] = $breakpoint;
-
-                $srcset[$breakpoint] = sprintf((string)$hqi_url . ' %1$sw', $breakpoint);
+                $hqi_url->query['w'] = $size;
+                $srcset[$size] = sprintf((string)$hqi_url . ' %1$sw', $size);
             }
         }
 
@@ -349,7 +346,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
      *
      * Inspired by https://stitcher.io/blog/tackling_responsive_images-part_2
      */
-    protected function _calculateBreakpoints($file, $max_width, $min_width)
+    protected function _calculateSizes($file, $max_width, $min_width = 320)
     {
         $min_filesize = 1024 * 10; //10kb
         $modifier     = 0.7;       //70% (each image should be +/- 30% smaller in expected size)
@@ -360,7 +357,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         //Get filesize
         $filesize = @filesize($file);
 
-        $breakpoints = array();
+        $sizes = array();
         if ($width < $max_width) {
             $breakpoints[] = $width;
         }
@@ -386,19 +383,19 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
             //Add the width
             if ($width < $max_width) {
-                $breakpoints[] = $width;
+                $sizes[] = $width;
             }
         }
 
-        if(empty($breakpoints))
+        if(empty($sizes))
         {
             if(is_int($max_width) && $max_width < $width) {
-                $breakpoints[] = $max_width;
+                $sizes[] = $max_width;
             } else {
-                $breakpoints[] = $width;
+                $sizes[] = $width;
             }
         }
 
-        return $breakpoints;
+        return $sizes;
     }
 }
