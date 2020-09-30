@@ -62,7 +62,7 @@ RewriteEngine On
  Header set Cache-Control public,max-age=315360000 env=REDIRECT_IMAGE
 
  # Add Accept to the Vary header
- Header append Vary Accept,User-Agent env=REDIRECT_IMAGE
+ Header append Vary Accept env=REDIRECT_IMAGE
 
  # Remove Etag header (use Last-Modified to validate)
  Header unset ETag env=REDIRECT_IMAGE
