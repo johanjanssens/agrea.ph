@@ -36,14 +36,13 @@ if ('connection' in navigator)
 <style>
 img.progressive {
     filter: blur(8px);
-    transform: scale(1.05);
     transition: filter 400ms;
 }
 
 img.progressive.lazyloaded {
     filter: blur(0);
 }
-</style>    
+</style>
 LAZYSIZES;
             }
 
