@@ -51,12 +51,11 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
                 var settings = []
               }
 
-              Array.from(document.querySelectorAll('{$config->selector}')).map(p => new Plyr(p, {
-                  fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-                  settings: settings,
-                  quality: { default: quality, options: [720, 540, 360, 240] }
-                }
-              ));
+              document.querySelectorAll('{$config->selector}').forEach((p) => new Plyr(p, {
+                 fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+                 settings: settings,
+                 quality: { default: quality, options: [720, 540, 360, 240] }
+              }));
           });
       }
    })
