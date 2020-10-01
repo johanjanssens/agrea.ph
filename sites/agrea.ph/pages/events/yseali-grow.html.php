@@ -17,7 +17,7 @@ slug: yseali-grow
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-lazyload="progressive">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-lazyload="progressive,inline">
 			</div>
 		</div>
 		<div itemprop="articleBody">
