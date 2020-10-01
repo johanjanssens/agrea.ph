@@ -17,6 +17,8 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
             $script = 'https://unpkg.com/plyr@3.6.2/dist/plyr.'.(!$config->debug ? 'min.js' : 'js');
             $style  = 'https://unpkg.com/plyr@3.6.2/dist/plyr.css';
 
+            //Import lazysizes
+            $html .= $this->import('unveilhooks');
             $html .= <<<PLYR
    <script>
    document.addEventListener("lazybeforeunveil", (e) =>

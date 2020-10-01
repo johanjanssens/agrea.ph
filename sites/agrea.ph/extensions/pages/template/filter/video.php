@@ -20,9 +20,6 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
     //See: https://github.com/aFarkas/lazysizes/blob/gh-pages/plugins/unveilhooks/ls.unveilhooks.js#L9
     public function filter(&$text)
     {
-        //Enable plyr (custom player)
-        $text .= $this->getTemplate()->helper('video.player');
-
         //Filter the images only at the end of the rendering cycle
         if($this->getTemplate()->getLayout() === false && $this->enabled())
         {
@@ -69,8 +66,8 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
                         //Filter the images
                         $text = str_replace($matches[1][$key], $this->buildAttributes($attribs), $text);
 
-                        //Import lazysizes
-                        $text .= $this->getTemplate()->helper('video.import', 'unveilhooks');
+                        //Enable plyr (custom player)
+                        $text .= $this->getTemplate()->helper('video.player');
                     }
                 }
             }
