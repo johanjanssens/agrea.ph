@@ -13,7 +13,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'exclude'    => ['svg'],
             'suffix'     => '',
             'parameters'     => ['auto' => 'true'],
-            'parameters_lqi' => ['q' => 50, 'auto' => 'compress', 'fm' => 'jpg']
+            'parameters_lqi' => ['auto' => 'compress', 'fm' => 'jpg', 'q' => 50]
         ));
 
         parent::_initialize($config);
@@ -74,24 +74,24 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 if($config->lazyload !== false)
                 {
                     $lazyload = array_map('trim', explode(',', $config->lazyload));
-                    
+
                     if(in_array('progressive', $lazyload))
                     {
                         $config->attributes->class->append(['progressive']);
-                        
+
                         $parameters = array();
                         $parameters['w'] = (int) ($width / 8);
-                        
+
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine low quality image as srcset value and a data-srcset attribute and
+                    //Combine low quality image as data-srclow value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
                     $html .=    '<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                     $html .= '</noscript>';
-                    $html .='<img width="'.$width.'" srcset="'. $lqi_url.'"
+                    $html .='<img width="'.$width.'" data-srclow="'. $lqi_url.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
@@ -138,7 +138,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 if($config->lazyload !== false)
                 {
                     $lazyload =  array_map('trim', explode(',', $config->lazyload));
-                    
+
                     if(in_array('progressive', $lazyload))
                     {
                         $parameters = array();
@@ -153,12 +153,12 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine low quality image as srcset value and a data-srcset attribute and
+                    //Combine low quality image as data-srclow value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
                     $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                     $html .= '</noscript>';
-                    $html .='<img '.$size.' srcset="'. $lqi_url.'"
+                    $html .='<img '.$size.' data-srclow="'. $lqi_url.'"
                       data-srcset="'. implode(',', $srcset).'"
                       alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
 

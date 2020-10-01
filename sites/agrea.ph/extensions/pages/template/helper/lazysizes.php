@@ -31,6 +31,13 @@ if ('connection' in navigator)
         window.lazySizesConfig.loadMode = 1
     }
 }
+
+document.addEventListener("DOMContentLoaded", () =>
+{
+     document.querySelectorAll('img[data-srclow]').forEach((img) => {
+         img.src = img.getAttribute('data-srclow');
+     });
+});
 </script>
 
 <style>
