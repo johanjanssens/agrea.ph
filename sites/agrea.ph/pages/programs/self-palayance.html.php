@@ -21,12 +21,12 @@ slug: self-palayance
 			</div>
 		</div>
 		<div itemprop="articleBody">
-		<ktml:images max-width="80%" data-lazyload="progressive">
+		<ktml:images max-width="80%" lazyload="progressive,inline">
 			<?= article(146)->excerpt ?>
 			<?= article(146)->text ?>
 		</ktml:images>
 		</div>
-		<ktml:images max-width="50%">
+		<ktml:images max-width="50%" lazyload="progressive,inline">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<?= import('/partials/articles/image-title-date',[

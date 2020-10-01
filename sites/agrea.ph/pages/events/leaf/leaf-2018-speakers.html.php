@@ -81,7 +81,7 @@ slug: leaf-2018-speakers
 </div>
 <h3 class="text-gray-900 font-medium font-title my-4">LEAF 2018 Speakers In Focus</h3>
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
-	<ktml:images max-width="25%">
+	<ktml:images max-width="25%" lazyload="progressive,inline">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Boden_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/boden.jpg" /></div>
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Helianti Hilman_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/hilman.jpg" /></div>

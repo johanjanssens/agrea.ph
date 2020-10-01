@@ -107,7 +107,7 @@ slug: yseali-generationgr3en
 		<p class="mt-8"><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
 	</article>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-	<ktml:images max-width="25%">
+	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 

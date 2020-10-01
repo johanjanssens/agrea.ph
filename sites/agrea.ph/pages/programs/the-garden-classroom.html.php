@@ -21,7 +21,7 @@ slug: the-garden-classroom
 			</div>
 		</div>
 		<div itemprop="articleBody">
-		<ktml:images max-width="80%" data-lazyload="progressive">
+		<ktml:images max-width="80%" lazyload="progressive,inline">
 			<?= article(145)->excerpt ?>
 			<?= article(145)->text ?>
 		</ktml:images>
@@ -35,7 +35,7 @@ slug: the-garden-classroom
 
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">TGC by the Numbers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<ktml:images max-width="25%">
+		<ktml:images max-width="25%" lazyload="progressive,inline">
 		<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/garden-classroom/tgc-sidebar.jpg" />
 		</ktml:images>
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Support The Garden Classroom</h3>

@@ -7,7 +7,7 @@ summary: Mary Ann Reyes's bio
 slug: mary-ann-reyes
 ---
 <article itemscope itemtype="https://schema.org/Person" class="max-w-4xl m-auto mt-8">
-<ktml:images max-width="80%">
+<ktml:images max-width="80%" lazyload="progressive,inline">
 	<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 	<p itemprop="jobTitle" class="mb-2 text-sm font-medium"><?= $position ?></p>
 	<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
