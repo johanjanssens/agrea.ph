@@ -1,16 +1,6 @@
 /* tailwind */
 @tailwind base;
 /*  declare our base styles for preflight - move these to a @layer once we get it working */
-/* AGREA Logo font */
-@font-face {
-  font-family: 'typo3';
-  src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
-  url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
-  url('../fonts/Typo3-Medium.ttf.eot'),
-  url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
-  font-weight: normal;
-  font-style: normal;
-}
 main {
   @apply min-h-screen;
 }
@@ -182,15 +172,21 @@ sup:not([class]) {
     scroll-behavior: smooth;
   }
 }
-/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
-body > * {
-  font-size: clamp(0.75rem, 4vw, 1rem);
-}
-header,
 main,
+header,
 aside,
 footer {
   content-visibility: auto;
+}
+header {
+  contain-intrinsic-size: 100px;
+}
+footer {
+  contain-intrinsic-size: 400px;
+}
+/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+body > * {
+  font-size: clamp(0.75rem, 4vw, 1rem);
 }
 /* Main header story and IN FOUCS area on the homepage */
 @screen lg {
@@ -230,10 +226,14 @@ section[class*="bg-"]:not(.bg-white) p {
   }
   body > footer {
     position: sticky;
+    position: -webkit-sticky;
     z-index:0;
     bottom: 0;
     left: 0;
     width: 100%;
+  }
+  _::-webkit-full-page-media, _:future, :root footer {
+    position: static;
   }
 }
 /* Footer illustration */

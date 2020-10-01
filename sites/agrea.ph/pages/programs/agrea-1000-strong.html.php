@@ -17,7 +17,7 @@ slug: agrea-1000-strong
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-lazyload="progressive-inline">
+				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-lazyload="progressive">
 			</div>
 		</div>
 		<div itemprop="articleBody">

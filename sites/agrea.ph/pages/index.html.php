@@ -17,7 +17,7 @@ title: Agrea - Ecology of Dignity
 <?= import('/partials/hero-alt',['class' => 'bg-lime-500']);?>
 
 <section class="text-gray-700">
-  <ktml:images max-width="33%" preload="true">
+  <ktml:images max-width="33%">
   <div class="container px-5 pt-12 pb-24 mx-auto">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
@@ -41,7 +41,7 @@ title: Agrea - Ecology of Dignity
 </section>
 
 <section class="text-gray-700 mb-24">
-  <ktml:images max-width="25%">
+  <ktml:images max-width="25%" lazyload="progressive">
   <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">

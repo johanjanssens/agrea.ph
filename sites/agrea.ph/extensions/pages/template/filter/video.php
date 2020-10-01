@@ -5,7 +5,7 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => self::PRIORITY_LOWEST,
+            'priority' => self::PRIORITY_LOW,
             'enable'   => JDEBUG ? false : true,
         ));
 
@@ -20,8 +20,11 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
     //See: https://github.com/aFarkas/lazysizes/blob/gh-pages/plugins/unveilhooks/ls.unveilhooks.js#L9
     public function filter(&$text)
     {
-        //Do not filter the images if we are rendering the page
-        if($this->getTemplate()->getLayout() !== NULL && $this->enabled())
+        //Enable plyr (custom player)
+        $text .= $this->getTemplate()->helper('video.player');
+
+        //Filter the images only at the end of the rendering cycle
+        if($this->getTemplate()->getLayout() === false && $this->enabled())
         {
             $matches = array();
             if(preg_match_all('#<video\s([^>]*?[\'\"][^>]*?)>#iU', $text, $matches))

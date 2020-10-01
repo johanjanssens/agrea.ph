@@ -12,9 +12,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
             'exclude'    => ['svg'],
             'suffix'     => '',
-            'expand'     => -10,
             'parameters'     => ['auto' => 'true'],
-            'parameters_lqi' => ['bl' => 80, 'q' => 30, 'auto' => 'compress']
+            'parameters_lqi' => ['q' => 50, 'auto' => 'compress', 'fm' => 'jpg']
         ));
 
         parent::_initialize($config);
@@ -32,15 +31,14 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'max_width' => $this->getConfig()->max_width,
             'min_width' => $this->getConfig()->min_width,
             'max_dpr'   => $this->getConfig()->max_dpr,
-            'lazyload'  => true, //progressive, progressive-inline
-            'expand'    => $this->getConfig()->expand,
+            'lazyload'  => true, //progressive, inline
         ))->append(array(
             'attributes' => array('class' => $config->class),
         ));
 
         //Set lazyload class for lazysizes
         if($config->lazyload) {
-            $config->attributes->class[] = 'lazyload';
+            $config->attributes->class->append(['lazyload']);
         }
 
         //Get the image format
@@ -49,7 +47,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
         if($this->supported($config->url))
         {
-            $html = $this->import();
+            $html = $this->import(); //import lazysizes script
 
             //Build path for the high quality image
             $hqi_url = $this->url($config->url);
@@ -75,18 +73,16 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                 if($config->lazyload !== false)
                 {
-                    if(strpos($config->lazyload, 'progressive') !== false)
+                    $lazyload = array_map('trim', explode(',', $config->lazyload));
+                    
+                    if(in_array('progressive', $lazyload))
                     {
-                        $data_url   = (bool) $config->lazyload == 'progressive-inline';
-                        $parameters['w'] = $width;
-
-                        $lqi_url = $this->url_lqi($config->url, $parameters, $data_url);
-
-                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
-                        //This will generate a blur up effect
-                        if($data_url) {
-                            $config->attributes['data-expand'] = $config->expand;
-                        }
+                        $config->attributes->class->append(['progressive']);
+                        
+                        $parameters = array();
+                        $parameters['w'] = (int) ($width / 8);
+                        
+                        $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
@@ -141,24 +137,19 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                 if($config->lazyload !== false)
                 {
-                    if(strpos($config->lazyload, 'progressive') !== false)
+                    $lazyload =  array_map('trim', explode(',', $config->lazyload));
+                    
+                    if(in_array('progressive', $lazyload))
                     {
-                        $data_url   = (bool) $config->lazyload == 'progressive-inline';
                         $parameters = array();
 
                         if($height) {
-                            $parameters['h'] = $height;
+                            $parameters['h'] = (int) ($height / 8);
                         } else {
-                            $parameters['w'] = $width;
+                            $parameters['w'] = (int) ($width / 8);
                         }
 
-                        $lqi_url = $this->url_lqi($config->url, $parameters, $data_url);
-
-                        //Set data-expaned to -10 (default) to only load the image when it becomes visible in the viewport
-                        //This will generate a blur up effect
-                        if($data_url) {
-                            $config->attributes['data-expand'] = $config->expand;
-                        }
+                        $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
@@ -246,7 +237,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     ],
                 ]);
 
-                if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($url, '/'), false, $context)) {
+                if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($result, '/'), false, $context)) {
                     $result = 'data:image/jpg;base64,'.base64_encode($data);
                 }
             }

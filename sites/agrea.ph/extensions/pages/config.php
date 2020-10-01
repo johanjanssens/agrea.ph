@@ -10,4 +10,7 @@ return [
     'ext:pages.template.filter.image'   => [
          'enable'    => getenv('SITE') ? true : false,
    ],
+   'ext:pages.template.filter.video'   => [
+        'enable'    => true
+  ],
 ];

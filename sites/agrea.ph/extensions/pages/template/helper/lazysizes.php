@@ -13,7 +13,8 @@ class ExtPagesTemplateHelperLazysizes extends ComPagesTemplateHelperBehavior
         $script = $plugin ? 'lazysizes-'.$plugin : 'lazysizes';
         if (!static::isLoaded($script))
         {
-            if($script == 'lazysizes') {
+            if($script == 'lazysizes')
+            {
                 $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
                 $html .= <<<LAZYSIZES
 <script>
@@ -31,8 +32,19 @@ if ('connection' in navigator)
     }
 }
 </script>
-LAZYSIZES;
 
+<style>
+img.progressive {
+    filter: blur(8px);
+    transform: scale(1.05);
+    transition: filter 400ms;
+}
+
+img.progressive.lazyloaded {
+    filter: blur(0);
+}
+</style>    
+LAZYSIZES;
             }
 
             if($script == 'lazysizes-bgset')

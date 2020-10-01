@@ -33,7 +33,7 @@ endif ?>
       <? foreach((array)$images as $i => $image): ?>
         <li class="splide__slide">
         <? if($i == 0): ?>
-          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" src="<?= $image ?>" data-lazyload="progressive-inline">
+          <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" src="<?= $image ?>" data-lazyload="progressive,inline">
         <? else : ?>
           <img class="md:h-36 rounded w-full object-cover object-center tns-lazy" data-splide-lazy="<?= helper('image.url', $image) ?>" >
         </li>
@@ -44,10 +44,10 @@ endif ?>
 </div>
 
 <script>
-document.addEventListener('lazybeforeunveil', (e) =>
+document.addEventListener('lazyloaded', (e) =>
 {
     //Do not enable the slider for slow connection or if save-data is enabled
-    if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g')) {
+    if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g'))) {
         return;
     }
 
@@ -68,14 +68,14 @@ document.addEventListener('lazybeforeunveil', (e) =>
             els = document.getElementsByClassName('splide')
             Array.from(els).forEach((el) => {
                 new Splide( el, {
-                  type: 'fade',
-                  ease: false,
-                  perPage: 1,
-                  autoplay: true,
-                  rewind: true,
-                  interval: 3000,
-                  lazyLoad: 'nearby',
-                  accessibility: true
+                    type: 'fade',
+                    ease: false,
+                    perPage: 1,
+                    autoplay: true,
+                    rewind: true,
+                    interval: 3000,
+                    lazyLoad: 'nearby',
+                    accessibility: true
                 }).mount();
             });
         })

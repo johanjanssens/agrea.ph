@@ -5,7 +5,7 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => self::PRIORITY_LOWEST,
+            'priority' => self::PRIORITY_LOW,
             'enable'   => JDEBUG ? false : true,
         ));
 
@@ -19,8 +19,8 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
 
     public function filter(&$text)
     {
-        //Do not filter the images if we are rendering the page
-        if($this->getTemplate()->getLayout() !== NULL && $this->enabled())
+        //Filter the images only at the end of the rendering cycle
+        if($this->getTemplate()->getLayout() === false && $this->enabled())
         {
             $matches = array();
             //First pass - Find images between <ktml:images></ktml:images>
@@ -62,54 +62,54 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
         $matches = array();
         if(preg_match_all('#<img\s([^>]*?[\'\"][^>]*?)>(?!\s*<\/noscript>)#siU', $html, $matches))
         {
-          foreach($matches[1] as $key => $match)
-          {
-              $attribs = $this->parseAttributes($match);
-              $src     = $attribs['src'] ?? null;
-              $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
+            foreach($matches[1] as $key => $match)
+            {
+                $attribs = $this->parseAttributes($match);
+                $src     = $attribs['src'] ?? null;
+                $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
 
-              //Only handle none responsive supported images
-              if($src && $valid && $this->getTemplate()->helper('image.supported', $src))
-              {
-                  //Convert class to array
-                  if(isset($attribs['class'])) {
-                      $attribs['class'] = explode(' ', $attribs['class']);
-                  }
+                //Only handle none responsive supported images
+                if($src && $valid && $this->getTemplate()->helper('image.supported', $src))
+                {
+                    //Convert class to array
+                    if(isset($attribs['class'])) {
+                        $attribs['class'] = explode(' ', $attribs['class']);
+                    }
 
-                  $attribs['url'] = '/'.ltrim($src, '/');
-                  unset($attribs['src']);
+                    $attribs['url'] = '/'.ltrim($src, '/');
+                    unset($attribs['src']);
 
-                  foreach($attribs as $name => $value)
-                  {
-                      if(strpos($name, 'data-') !== false)
-                      {
-                          unset($attribs[$name]);
+                    foreach($attribs as $name => $value)
+                    {
+                        if(strpos($name, 'data-') !== false)
+                        {
+                            unset($attribs[$name]);
 
-                          $name = str_replace('data-', '', $name);
+                            $name = str_replace('data-', '', $name);
 
-                          if($value === 'true') {
-                              $value = true;
-                          }
+                            if($value === 'true') {
+                                $value = true;
+                            }
 
-                          if($value === 'false') {
-                              $value = false;
-                          }
+                            if($value === 'false') {
+                                $value = false;
+                            }
 
-                          $attribs[$name] = $value;
-                      }
-                  }
+                            $attribs[$name] = $value;
+                        }
+                    }
 
-                  //Rename hyphen to underscore
-                  $options = array();
-                  foreach(array_replace_recursive($config, $attribs) as $name => $value)
-                  {
-                      $name = str_replace('-', '_', $name);
-                      $options[$name] = $value;
-                  }
+                    //Rename hyphen to underscore
+                    $options = array();
+                    foreach(array_replace_recursive($config, $attribs) as $name => $value)
+                    {
+                        $name = str_replace('-', '_', $name);
+                        $options[$name] = $value;
+                    }
 
-                  //Filter the images
-                  $html = str_replace($matches[0][$key], $this->getTemplate()->helper('image', $options), $html);
-              }
+                    //Filter the images
+                    $html = str_replace($matches[0][$key], $this->getTemplate()->helper('image', $options), $html);
+                }
             }
         }
 
