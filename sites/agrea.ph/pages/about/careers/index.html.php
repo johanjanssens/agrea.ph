@@ -60,7 +60,7 @@ collection:
 		<h3 class="text-gray-900 font-medium font-title my-4">Apply now!</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p>For interested applicants, please fill in the form below:</p>
-		<?= import('/partials/form/contact'); ?>
+		<?= import('/partials/form/apply'); ?>
   	</ktml:images>
 	</aside>
 </div>
