@@ -40,7 +40,7 @@ slug: the-garden-classroom
 		</ktml:images>
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Support The Garden Classroom</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-gray-900 my-4">To know more about AGREA's School Garden Program, if you have questions, or you would like to lend a helping hand, send us an email through agreaph@gmail.com or fill-out the form below.</p>
+		<p class="text-gray-900 my-4">To know more about AGREA's School Garden Program, if you have questions, or you would like to lend a helping hand, send us a message by filling-out the form below.</p>
 		<?= import('/partials/form/contact'); ?>
 	</aside>
 </div>
