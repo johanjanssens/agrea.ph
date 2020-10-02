@@ -47,19 +47,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
         <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
         <h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-        <dl itemscope itemtype="https://schema.org/Organization">
-            <link itemprop="url" href="https://www.agrea.ph">
-            <dt>Email Address:</dt>
-            <span itemprop="email"><a href="mailto:consultancy@agrea.ph">consultancy@agrea.ph</a></span>
-            <dt>Tel:</dt>
-            <dd itemprop="telephone"><a href="tel:+63632240521">+63 2 240 521</a></dd>
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <dt>Address:</dt>
-                <dd itemprop="streetAddress">Suite 318A, 3/F LRI Design Plaza, 210 Nicanor Garcia, Makati City,</dd>
-                <dd itemprop="postalCode">1209,</dd>
-                <dd itemprop="addressLocality">Metro Manila, Philippines</dd>
-            </div>
-        </dl>
+        <p>Find more about our <a href="/consultancy">consultancy services</a> or <a href="/about/contact">contact us</a> and send us a message.</p>
     	</ktml:images>
 	</aside>
 </div>
