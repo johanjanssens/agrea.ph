@@ -3,6 +3,21 @@ layout: default
 route: about/careers/[:slug]
 collection:
     extend: about/careers
+form:
+    name: contact-form
+    processors:
+        - 'email':
+            recipients:
+                - hr@agrea.ph
+            title: Job application
+            subject: New job application
+    schema:
+        firstName: [string, required]
+        lastName: [string, required]
+        email: [email, required]
+        message: [string, required]
+    redirect: about/contact/thank-you
+    honeypot: firstName_407d3z05
 metadata:
     'og:type': article
 visible: false

@@ -21,7 +21,7 @@ form:
         lastName: [string, required]
         email: [email, required]
         message: [string, required]
-    redirect: contact/thank-you
+    redirect: about/contact/thank-you
     honeypot: firstName_407d3z05
 ---
 <div itemscope itemtype="http://schema.org/Organization" class="flex flex-col sm:flex-row">
