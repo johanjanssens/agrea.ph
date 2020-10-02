@@ -143,9 +143,6 @@ slug: agrea-1000-strong
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
-		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Join AGREA Events as a Volunteer</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-gray-900 my-4">Click the photo below to see details on how to join.</p>
 		<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/arborday', 'max_width' => '25%']); ?>
 		<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
