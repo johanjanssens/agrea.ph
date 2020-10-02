@@ -13,7 +13,6 @@ form:
         - 'email':
             recipients:
                 - hello@agrea.ph
-                - someonelse@agrea.ph
             title: Contact Form
             subject: New enquiry from the contact form
     schema:
