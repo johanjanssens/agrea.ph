@@ -24,6 +24,38 @@ slug: yseali-grow
 		<ktml:images max-width="80%" lazyload="progressive,inline">
 			<?= article(3)->excerpt ?>
 			<?= article(3)->text ?>
+
+			<h3 class="font-title">Background</h3>
+			Due to successful prior projects by USG alumni in otherwise hard-to-reach communities in Mindanao, we have an unusual opportunity to engage youth in these conflict-affected areas from a position of trust. This workshop is focused on youth aged 18-25 years old from Mindanao, particularly out-of-school youth (OSY) from Muslim and indigenous peoples (IP) communities.</p>
+
+			<blockquote>Out-of-School Youth are often marginalized populations, yet in many rural communities these populations outnumber the in-school youth populations. These youths are untapped resources who, when encouraged to dream and actualize those dreams, can make a real difference in their communities.</blockquote>
+
+			<p>The program leveraged the expertise of Filipino USG alumni in agriculture, development, interfaith dialogue, Muslim culture, and indigenous peoples.</p>
+
+			<h3 class="font-title">YSEALI Grow Overview</h3>
+
+			<p>The workshop facilitates dream building and taking action sessions for the participants and assisted by carefully-selected USG alumni.</p>
+
+			<p><img class="rounded" src="images://events/grow/grow-sidebar-2.jpg" /></p>
+
+			<p>YSEALI Grow sessions cover these components:</p>
+
+			<ol class="mb-2">
+				<li class="mb-2">Haraya: Dreaming awake
+					<ul class="font-bold">
+						<li>Journeying Within</li>
+						<li>Spiral of Life</li>
+						<li>Dream building</li>
+					</ul>
+				</li>
+				<li>Manawari: Practical tools to cultivate your dreams
+					<ul class="font-bold">
+						<li>Leadership</li>
+						<li>Agriculture</li>
+						<li>Call to Action</li>
+					</ul>
+				</li>
+			</ol>
 		</ktml:images>
 		</div>
 	</div>
@@ -43,38 +75,6 @@ slug: yseali-grow
 		<p>YSEALI Grow gathered 30 youth leaders 6 USG alumni mentors from Lanao del Sur, North Cotabato, and Bukidnon.</p>
 
 		<p>YSEALI Grow’s framework is “Haraya Manawari,” meaning “To dream and to make it happen”. After the training and with seed money from the program, the YSEALI Grow youth leaders implemented 6 agri-projects in their own communities in Mindanao.</p>
-
-		<p><strong>Background</strong><br />
-		Due to successful prior projects by USG alumni in otherwise hard-to-reach communities in Mindanao, we have an unusual opportunity to engage youth in these conflict-affected areas from a position of trust. This workshop is focused on youth aged 18-25 years old from Mindanao, particularly out-of-school youth (OSY) from Muslim and indigenous peoples (IP) communities.</p>
-
-		<blockquote>Out-of-School Youth are often marginalized populations, yet in many rural communities these populations outnumber the in-school youth populations. These youths are untapped resources who, when encouraged to dream and actualize those dreams, can make a real difference in their communities.</blockquote>
-
-		<p>The program leveraged the expertise of Filipino USG alumni in agriculture, development, interfaith dialogue, Muslim culture, and indigenous peoples.</p>
-
-		<h3 class="font-title">YSEALI Grow Overview</h3>
-
-		<p>The workshop facilitates dream building and taking action sessions for the participants and assisted by carefully-selected USG alumni.</p>
-
-		<p><img class="rounded" src="images://events/grow/grow-sidebar-2.jpg" /></p>
-
-		<p>YSEALI Grow sessions cover these components:</p>
-
-		<ol class="mb-2">
-			<li class="mb-2">Haraya: Dreaming awake
-				<ul class="font-bold">
-					<li>Journeying Within</li>
-					<li>Spiral of Life</li>
-					<li>Dream building</li>
-				</ul>
-			</li>
-			<li>Manawari: Practical tools to cultivate your dreams
-				<ul class="font-bold">
-					<li>Leadership</li>
-					<li>Agriculture</li>
-					<li>Call to Action</li>
-				</ul>
-			</li>
-		</ol>
 
 		<p><img alt="YSEALI Grow Logos 3" class="rounded" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
 	</ktml:images>
