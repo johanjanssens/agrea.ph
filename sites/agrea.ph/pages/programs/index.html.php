@@ -77,7 +77,7 @@ slug: programs
 			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
 				<h3 class=" font-medium font-title mb-4">Know more about AGREA's social programs</h3>
 
-				<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, call our landline at (042) 332-0025, or send an email to <a href="mailto:agreaph@gmail.com">agreaph@gmail.com</a>.</p>
+				<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, <a href="/about/contact">contact us</a> and send us a message.</p>
 			</div>
 		</div>
 	</ktml:images>
