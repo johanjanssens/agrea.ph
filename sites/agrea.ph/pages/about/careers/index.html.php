@@ -14,21 +14,6 @@ collection:
         category: [10]
         sort: date
         order: desc
-form:
-    name: contact-form
-    processors:
-        - 'email':
-            recipients:
-                - hr@agrea.ph
-            title: Job application
-            subject: New job application
-    schema:
-        firstName: [string, required]
-        lastName: [string, required]
-        email: [email, required]
-        message: [string, required]
-    redirect: about/contact/thank-you
-    honeypot: firstName_407d3z05
 ---
 <div class="flex flex-col sm:flex-row">
 	<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
