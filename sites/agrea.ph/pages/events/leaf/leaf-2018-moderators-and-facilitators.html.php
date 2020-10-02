@@ -50,34 +50,13 @@ slug: leaf-2018-moderators-and-facilitators
 	</ktml:images>
 	</article>
 	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-	<ktml:images max-width="25%">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu',[
 			'menuOpen'=>1,
 		]);?>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Register now</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded w-full" src="images://events/leaf/moderators/coming-soon.jpg" /></p>
-
-		<p>Registration is now open for the Leaders and Entrepreneurs in Agriculture Forum (LEAF) 2018! Join and experience this two-day collaborative event and enter a global community of agricultural leaders and entrepreneurs.</p>
-
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Related links:</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p><a href="https://www.facebook.com/LEAF.agreaph" target="_blank">LEAF2018 Official Facebook Page</a></p>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Reserve your spot today!</h3>
-
-		<p>Looking for accommodations during LEAF? Look no further than the event venue itself—Taal Vista Hotel! Situated in the Philippine countryside, the hotel offers a comfortable and affordable stay with a serene view of Taal Volcano. Better yet,</p>
-
-		<p>LEAF delegates can receive special discounts by booking with event code: <strong>LEAF18</strong></p>
-
-		<p><a href="https://www.taalvistahotel.com/" target="_blank"><img class="rounded w-full" src="images://events/leaf/moderators/accommodation-taal-vista.jpg" /></a></p>
-
-		<p>BOOK YOUR STAY TODAY: <a href="https://www.taalvistahotel.com/">https://www.taalvistahotel.com/</a></p>
-
-		<p><img class="frounded w-full" src="images://events/leaf/moderators/leaf-2018-conference-rates-updated.jpg" /></p>
-	</ktml:images>
 	</aside>
 </div>
