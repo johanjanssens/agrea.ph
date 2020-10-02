@@ -20,6 +20,29 @@ slug: yseali-generationgr3en
 
 		<p>The Workshop was sponsored by the U.S. Department of State, and funded through a Cooperative Agreement from the U.S. Embassy in Brunei Darussalam to AGREA for the administration of the workshop and follow-on activities which have been planned through 2017.</p>
 
+
+
+		<h3 class="text-gray-900 font-medium font-title my-4">Background</strong></h3>
+		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<p>The ASEAN region is home to four of the world’s 34 biodiversity hot spots that are characterized both by exceptional levels of plant and animal endemism. In the recent years, the ASEAN region has been undergoing dynamic transformation and modernization by a strong economic growth but driven by unsustainable practices which results to serious levels of biodiversity loss. </p>
+
+		<blockquote>Therefore, with the economic growth must come the development of greener businesses in order to better sustain it.</blockquote>
+
+		<p>Eco-tourism is just one opportunity that can be explored in the diverse field of eco-business. It can also serve as a platform for other opportunities in a broad range of business segments that can help drive community development by providing the alternate source of greater resilience livelihood to local communities.</p>
+
+		<h3 class="text-gray-900 font-medium font-title my-4">Core Topics</h3>
+		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+
+		<p>Environment | Economy | Empowerment | Networks</p>
+
+		<h3 class="text-gray-900 font-medium font-title my-4">Workshop Overview</strong></h3>
+
+		<ol>
+			<li><strong>Online Discussion.</strong>Took place prior to the 4-day workshop, the GenGR3EN Online Discussion is a platform for delegates to ask questions, open up discussions and share key eco-entrepreneurship practices in their home countries. This is also a platform for delegates to acquaint themselves with each other.</li>
+			<li><strong>4-Day Workshop.</strong> Held in Brunei, the workshop consisted of informational sessions that cover Green Business Components, immersion activities that give delegates first-hand exposure to the Bruneian environment, tourism and economy; and the opportunity for delegate teams to develop their own green business proposals for an ecotourism venture.</li>
+			<li><strong>CLIP or Continued Learning Immersion Program.</strong>This follow-on program took the training experience to a whole new level. It is packed with informational sessions, hands-on workshop activities, and tourism immersions all aligned with the objectives of GenerationGR3EN</li>
+		</ol>
+
 		<p>Check out the highlights of the YSEALI GenerationGR3EN Workshop in the video below.</p>
 
 		<div>
@@ -105,6 +128,11 @@ slug: yseali-generationgr3en
 			</video>
 		</div>
 		<p class="mt-8"><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
+
+		<h3 class="text-gray-900 font-medium font-title my-4">Moving Forward</h3>
+		<p>The GenerationGR3EN Workshop has finally come to a close, but the challenge to create sustainable green businesses in the ASEAN Region has just begun. We hope that GenerationGR3EN has given our delegates the resources they need to make their green ideas a reality.</p>
+
+		<p><img class="rounded" src="images://events/generationgr3en/generationgr3en-sidebar-3.jpg" /></p>
 	</article>
 	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
@@ -124,32 +152,6 @@ slug: yseali-generationgr3en
 		<p>GenerationGR3EN aimed to develop a generation of “eco-entrepreneurs” with the knowledge and skills to launch environmentally-friendly green businesses.</p>
 
 		<p>Delegates had the opportunity to hear from green business experts, explore tourism in Brunei Darussalam, connect with like-minded youth leaders, and develop innovative eco-tourism business plans.</p>
-
-		<h3 class="text-gray-900 font-medium font-title my-4">Background</strong></h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p>The ASEAN region is home to four of the world’s 34 biodiversity hot spots that are characterized both by exceptional levels of plant and animal endemism. In the recent years, the ASEAN region has been undergoing dynamic transformation and modernization by a strong economic growth but driven by unsustainable practices which results to serious levels of biodiversity loss. </p>
-
-		<blockquote>Therefore, with the economic growth must come the development of greener businesses in order to better sustain it.</blockquote>
-
-		<p>Eco-tourism is just one opportunity that can be explored in the diverse field of eco-business. It can also serve as a platform for other opportunities in a broad range of business segments that can help drive community development by providing the alternate source of greater resilience livelihood to local communities.</p>
-
-		<h3 class="text-gray-900 font-medium font-title my-4">Core Topics</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-
-		<p>Environment | Economy | Empowerment | Networks</p>
-
-		<h4 class="text-gray-900 font-medium font-title my-4">Workshop Overview</strong></h4>
-
-		<ol>
-			<li><strong>Online Discussion.</strong>Took place prior to the 4-day workshop, the GenGR3EN Online Discussion is a platform for delegates to ask questions, open up discussions and share key eco-entrepreneurship practices in their home countries. This is also a platform for delegates to acquaint themselves with each other.</li>
-			<li><strong>4-Day Workshop.</strong> Held in Brunei, the workshop consisted of informational sessions that cover Green Business Components, immersion activities that give delegates first-hand exposure to the Bruneian environment, tourism and economy; and the opportunity for delegate teams to develop their own green business proposals for an ecotourism venture.</li>
-			<li><strong>CLIP or Continued Learning Immersion Program.</strong>This follow-on program took the training experience to a whole new level. It is packed with informational sessions, hands-on workshop activities, and tourism immersions all aligned with the objectives of GenerationGR3EN</li>
-		</ol>
-
-		<h4 class="text-gray-900 font-medium font-title my-4">Moving Forward</h4>
-		<p>The GenerationGR3EN Workshop has finally come to a close, but the challenge to create sustainable green businesses in the ASEAN Region has just begun. We hope that GenerationGR3EN has given our delegates the resources they need to make their green ideas a reality.</p>
-
-		<p><img class="rounded" src="images://events/generationgr3en/generationgr3en-sidebar-3.jpg" /></p>
 
 		<h4 class="text-gray-900 font-medium font-title my-4">Related Links:</h4>
 
