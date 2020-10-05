@@ -22,8 +22,8 @@ slug: agrea-farm-estate
 		</div>
 		<div itemprop="articleBody">
 		<ktml:images max-width="80%" lazyload="progressive,inline">
-			<?= article(5)->excerpt ?>
-			<?= article(5)->text ?>
+			<?= article(147)->excerpt ?>
+			<?= article(147)->text ?>
 			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
 				<h3 class="font-medium font-title mb-4">Know More About The Agrea Model Farm</h3>
 				<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, please <a href="/about/contact">contact us</a> and send us a message.</p>

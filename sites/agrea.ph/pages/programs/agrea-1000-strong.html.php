@@ -23,9 +23,9 @@ slug: agrea-1000-strong
 		<div itemprop="articleBody">
 		<ktml:images max-width="80%" lazyload="progressive,inline">
 
-			<?= article(4)->excerpt ?>
+			<?= article(148)->excerpt ?>
 			<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/1000strong', 'max_width' => '80%']); ?>
-			<?= article(4)->text ?>
+			<?= article(148)->text ?>
 
 			<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/1000strong/1000strong-5.jpg" />
 			<h3 class="text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
