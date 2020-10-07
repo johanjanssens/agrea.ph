@@ -5,7 +5,7 @@ title: AGREA Team
 summary: AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.
 ---
 <div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
-	<div class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -15,28 +15,30 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		</div>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
-			<? if ($member->slug !== ""): ?>
-			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
-			<? else: ?>
-			<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
-			<? endif; ?>
-				<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-				<h2 class="text-lg font-medium font-title leading-tight">
-					<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
-						<span itemprop="name"><?= $member->name; ?></span>
-					</span>
-				</h2>
-				<p class="text-sm"><?= $member->position; ?></p>
-			<? if ($member->slug == ""): ?>
-			</div>
-			<? else: ?>
-			</a>
-			<? endif; ?>
+			<aside>
+				<? if ($member->slug !== ""): ?>
+				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
+				<? else: ?>
+				<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
+				<? endif; ?>
+					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
+					<h2 class="text-lg font-medium font-title leading-tight">
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name"><?= $member->name; ?></span>
+						</span>
+					</h2>
+					<p class="text-sm"><?= $member->position; ?></p>
+				<? if ($member->slug == ""): ?>
+				</div>
+				<? else: ?>
+				</a>
+				<? endif; ?>
+			</aside>
 			<? endforeach; ?>
 		</div>
 		</ktml:images>
 	</div>
-	<div class="sidebar sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%">
         <h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -51,5 +53,5 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 	        <p>Find more about our <a href="/consultancy">consultancy services</a> or <a href="/about/contact">contact us</a> and send us a message.</p>
 	    </aside>
     	</ktml:images>
-	</div>
+	</aside>
 </div>

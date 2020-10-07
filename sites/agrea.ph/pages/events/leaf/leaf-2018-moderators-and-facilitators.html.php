@@ -6,7 +6,7 @@ summary: The Leaders and Entrepreneurs in Agriculture Forum Moderators and Facil
 slug: leaf-2018-moderators-and-facilitators
 ---
 <div class="flex flex-col sm:flex-row">
-	<article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-2/3 w-full mb-6 lg:mb-0">
@@ -49,7 +49,7 @@ slug: leaf-2018-moderators-and-facilitators
 		</div>
 	</ktml:images>
 	</article>
-	<div class="sidebar sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu',[
@@ -58,5 +58,5 @@ slug: leaf-2018-moderators-and-facilitators
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Related links:</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p><a href="https://www.facebook.com/LEAF.agreaph" target="_blank">LEAF2018 Official Facebook Page</a></p>
-	</div>
+	</aside>
 </div>

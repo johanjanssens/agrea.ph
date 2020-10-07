@@ -10,7 +10,7 @@ slug: agrea-1000-strong
 	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
-	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<article role="main" itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
@@ -138,7 +138,7 @@ slug: agrea-1000-strong
 		</ktml:images>
 		</div>
 	</article>
-	<div class="sidebar sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -150,5 +150,5 @@ slug: agrea-1000-strong
 		<blockquote class="text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
 		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
 	</ktml:images>
-	</div>
+	</aside>
 </div>

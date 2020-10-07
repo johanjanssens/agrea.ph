@@ -7,7 +7,7 @@ slug: leaflet-local-event-themes
 ---
 
 <div class="flex flex-col sm:flex-row">
-	<article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -21,28 +21,28 @@ slug: leaflet-local-event-themes
 		<h3 class="text-gray-900 font-medium font-title my-4">LEAF Focus Dialogues: Right Here, Right Now</h3>
 		<p>The Leaders and Entrepreneurs in Agriculture Forum (LEAF) is a community of champions across all sectors uniting as advocates for better agriculture. Launched in September 2018 via the <a href="/events/leaf" target="_blank">“Redefining + Revitalizing Agriculture” conference</a>, LEAF is a growing force of 400+ agri-leaders from 20 countries. AGREA has planned five Focus Dialogues for 2019 (called LEAFlets), gathering new generations to act on the biggest issues affecting the agricultural landscape.</p>
 		<div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-			<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+			<aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
 				<?= import('/partials/articles/image-title-date',[
 					'id' => 2,
 					'category' => 'events',
 				]); ?>
-			</div>
-			<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+			</aside>
+			<aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
 				<?= import('/partials/articles/image-title-date',[
 					'id' => 1,
 					'category' => 'events',
 				]); ?>
-			</div>
-			<div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+			</aside>
+			<aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
 				<?= import('/partials/articles/image-title-date',[
 					'id' => 73,
 					'category' => 'events',
 				]); ?>
-			</div>
+			</aside>
 		</div>
 	</ktml:images>
 	</article>
-	<div class="sidebar sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
@@ -50,5 +50,5 @@ slug: leaflet-local-event-themes
 			'menuOpen'=>1,
 		]);?>
 
-	</div>
+	</aside>
 </div>
