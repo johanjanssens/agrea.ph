@@ -72,7 +72,7 @@ collection:
 		</div>
 		</ktml:images>
 	</div>
-	<div class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<div class="sidebar sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<div class="flex flex-col">
 			<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>

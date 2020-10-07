@@ -53,85 +53,86 @@ slug: agrea-farm-estate
 		</div>
 		</ktml:images>
 	</article>
-	<aside class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<div class="sidebar sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
+		<aside>
+			<h3 class="text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg"></p>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg"></p>
+			<h3 class="text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<p class="text-gray-900 my-4">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers Organic Backyard Gardening Skills Training.</p>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-gray-900 my-4">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers Organic Backyard Gardening Skills Training.</p>
+			<h3 class="text-gray-900 font-medium font-title my-4">Hands-On Organic Farming Training</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Hands-On Organic Farming Training</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<table class="text-sm text-gray-900 my-4 w-full">
+				<tbody>
+					<tr>
+						<td class="bg-orange-500 text-white w-2/5 w-2/5 font-bold p-2 box-border">
+							SESSION 1<br />
+							First Saturday
+						</td>
+						<td class="bg-orange-500 text-white w-3/5 w-3/5 p-2 box-border">Values Formation and Grounding, Plant Anatomy and Physiology, Seed Selection, Planting Techniques</td>
+					</tr>
+					<tr>
+						<td class="w-2/5 font-bold p-2 box-border">
+							SESSION 2<br />
+							Second Saturday
+						</td>
+						<td class="w-3/5 p-2 box-border">Introduction to Natural Farming, Soil Mixture Preparation, Soil Nutrient Management, Plant Nutrient Management</td>
+					</tr>
+					<tr>
+						<td class="bg-orange-500 text-white w-2/5 font-bold p-2 box-border">
+							SESSION 3<br />
+							Third Saturday
+						</td>
+						<td class="bg-orange-500 text-white w-3/5 p-2 box-border">Water Management, Crop Care and Maintenance, Pest and Disease Management</td>
+					</tr>
+					<tr>
+						<td class="w-2/5 font-bold p-2 box-border">
+							SESSION 4<br />
+							Fourth Saturday
+						</td>
+						<td class="w-3/5 p-2 box-border">Harvesting, Post-Harvest Handling, Waste Management</td>
+					</tr>
+				</tbody>
+			</table>
 
-		<table class="text-sm text-gray-900 my-4 w-full">
-			<tbody>
-				<tr>
-					<td class="bg-orange-500 text-white w-2/5 w-2/5 font-bold p-2 box-border">
-						SESSION 1<br />
-						First Saturday
-					</td>
-					<td class="bg-orange-500 text-white w-3/5 w-3/5 p-2 box-border">Values Formation and Grounding, Plant Anatomy and Physiology, Seed Selection, Planting Techniques</td>
-				</tr>
-				<tr>
-					<td class="w-2/5 font-bold p-2 box-border">
-						SESSION 2<br />
-						Second Saturday
-					</td>
-					<td class="w-3/5 p-2 box-border">Introduction to Natural Farming, Soil Mixture Preparation, Soil Nutrient Management, Plant Nutrient Management</td>
-				</tr>
-				<tr>
-					<td class="bg-orange-500 text-white w-2/5 font-bold p-2 box-border">
-						SESSION 3<br />
-						Third Saturday
-					</td>
-					<td class="bg-orange-500 text-white w-3/5 p-2 box-border">Water Management, Crop Care and Maintenance, Pest and Disease Management</td>
-				</tr>
-				<tr>
-					<td class="w-2/5 font-bold p-2 box-border">
-						SESSION 4<br />
-						Fourth Saturday
-					</td>
-					<td class="w-3/5 p-2 box-border">Harvesting, Post-Harvest Handling, Waste Management</td>
-				</tr>
-			</tbody>
-		</table>
+			<h3 class="text-gray-900 font-medium font-title my-4">Learn from the experts!</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Learn from the experts!</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<h4 class="text-gray-900 font-medium my-4">Cherrie D. Atilano</h4>
+			<p class="text-sm text-gray-900 my-4">AGREA President and Founding Farmer. Graduated Magna Cum Laude with a Bachelor’s Degree in Agriculture, Major in Horticulture Specializing on Tissue Culture from the Visayas State University in Leyte.</p>
 
-		<h4 class="text-gray-900 font-medium my-4">Cherrie D. Atilano</h4>
-		<p class="text-sm text-gray-900 my-4">AGREA President and Founding Farmer. Graduated Magna Cum Laude with a Bachelor’s Degree in Agriculture, Major in Horticulture Specializing on Tissue Culture from the Visayas State University in Leyte.</p>
+			<h4 class="text-gray-900 font-medium my-4">Jonathan C. Quinto</h4>
+			<p class="text-sm text-gray-900 my-4">AGREA Director of Agricultural Abundance. Holds a Bachelor's Degree in Agriculture Sciences from Marinduque State College - School of Agriculture.</p>
 
-		<h4 class="text-gray-900 font-medium my-4">Jonathan C. Quinto</h4>
-		<p class="text-sm text-gray-900 my-4">AGREA Director of Agricultural Abundance. Holds a Bachelor's Degree in Agriculture Sciences from Marinduque State College - School of Agriculture.</p>
+			<h4 class="text-gray-900 font-medium my-4">Benjamin Jorge L. Cadag</h4>
+			<p class="text-sm text-gray-900 my-4">AGREA Associate Director of Agricultural Abundance. Holds a Bachelor of Science Degree in Agriculture Major in Agronomy Specializing in Crop Production and Management at the University of the Philippines - Los Baños.</p>
 
-		<h4 class="text-gray-900 font-medium my-4">Benjamin Jorge L. Cadag</h4>
-		<p class="text-sm text-gray-900 my-4">AGREA Associate Director of Agricultural Abundance. Holds a Bachelor of Science Degree in Agriculture Major in Agronomy Specializing in Crop Production and Management at the University of the Philippines - Los Baños.</p>
+			<h3 class="text-gray-900 font-medium font-title my-4">Affordable Tuition Fee!</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<p class="text-gray-900 my-4">Pay only P750* per session per person or a one-time payment of P2,700* for all 4-sessions (10% discount).<br />
+				<em>*inclusive of healthy lunch and certificate</em>
+			</p>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Affordable Tuition Fee!</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p class="text-gray-900 my-4">Pay only P750* per session per person or a one-time payment of P2,700* for all 4-sessions (10% discount).<br />
-			<em>*inclusive of healthy lunch and certificate</em>
-		</p>
+			<div class="bg-lime-500 text-gray-900 my-4 px-4 py-2 rounded">
+				<h3 class="text-lg text-gray-900 font-medium my-4">SPECIAL GROUP OFFER!!</h3>
+				<p>Form a group of at least 15 individuals (maximum of 30), then select 4 specific dates in a month, and we will create a special session just for you!</p>
+			</div>
 
-		<div class="bg-lime-500 text-gray-900 my-4 px-4 py-2 rounded">
-			<h3 class="text-lg text-gray-900 font-medium my-4">SPECIAL GROUP OFFER!!</h3>
-			<p>Form a group of at least 15 individuals (maximum of 30), then select 4 specific dates in a month, and we will create a special session just for you!</p>
-		</div>
+			<h3 class="text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
+			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
-		<h3 class="text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
 
-		<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
-
-		<p class="text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
+			<p class="text-gray-900 my-4">As a supplement for your learning, AGREA also offers its very own fertilizer packs made exclusively at the Model Farm! Each pack is designed and curated for your personal organic farming requirements. <strong>Fertilizer Packs start at only P250.</strong></p>
+		</aside>
 	</ktml:images>
-	</aside>
+	</div>
 </div>
