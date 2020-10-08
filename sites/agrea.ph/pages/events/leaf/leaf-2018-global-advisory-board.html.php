@@ -20,7 +20,7 @@ slug: leaf-2018-global-advisory-board
 	<li>Indradi Soemardjan, Anapana</li>
 </ul>
 
-<h2 class="text-lg text-gray-900 font-medium font-title mb-4">Global Advisory Board in Focus</h2>
+<h2 role="heading" aria-level="2" class="text-lg text-gray-900 font-medium font-title mb-4">Global Advisory Board in Focus</h2>
 <ktml:images max-width="33%" lazyload="progressive,inline">
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Jose Ma. Joey Concepcion" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/board/concepcion.jpg" /></div>

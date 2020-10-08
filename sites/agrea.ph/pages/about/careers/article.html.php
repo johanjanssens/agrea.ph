@@ -1,4 +1,4 @@
----
+s---
 layout: default
 route: about/careers/[:slug]
 collection:
@@ -13,7 +13,7 @@ visible: false
 	<ktml:images max-width="80%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="w-full mb-6 lg:mb-0">
-				<h1 itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= collection()->title ?></h1>
+				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= collection()->title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
 				<img itemprop="image" class="rounded w-full mb-6" src="<?= collection()->image->url ?>" alt="<?= collection()->title; ?>">
 				<p class="mt-2 text-xs font-medium flex flex-row justify-between">
@@ -32,7 +32,7 @@ visible: false
 	</ktml:images>
 	</article>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-        <h2 class="font-title font-medium text-gray-900 tracking-widest mb-3">Apply Now!</h2>
+        <h2 role="heading" aria-level="2" class="font-title font-medium text-gray-900 tracking-widest mb-3">Apply Now!</h2>
         <div class="h-1 w-10 bg-green-500 rounded mb-3"></div>
 		<?= import('/partials/form/apply'); ?>
 	</aside>

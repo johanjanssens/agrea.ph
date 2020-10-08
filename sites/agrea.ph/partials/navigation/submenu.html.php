@@ -1,5 +1,5 @@
 <? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']]) ?>
-<ul class="submenu border border-gray-300 mb-8 rounded">
+<ul role="navigation" aria-label="Secondary menu" class="submenu border border-gray-300 mb-8 rounded">
 	<? foreach ($pages as $page) : ?>
 		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>

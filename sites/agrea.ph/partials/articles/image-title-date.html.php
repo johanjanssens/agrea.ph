@@ -3,7 +3,7 @@
 		<img alt="<?= article($id)->title ?>" class="object-cover object-center h-full w-full" src="<?= article($id)->image->url ?>">
 	</a>
 </div>
-<h3 class="font-medium text-gray-900 mt-6 mb-3">
+<h3 role="heading" aria-level="3" class="font-medium text-gray-900 mt-6 mb-3">
 	<a href="<?= route(page($category . '/article'), ['slug' => article($id)->slug]) ?>">
 		<?= article($id)->title ?>
 	</a>

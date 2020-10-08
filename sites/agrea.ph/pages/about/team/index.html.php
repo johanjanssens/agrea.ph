@@ -13,16 +13,16 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 		</div>
-		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
+		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
-			<aside>
+			<aside role="gridcell">
 				<? if ($member->slug !== ""): ?>
 				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
 				<? else: ?>
 				<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
 				<? endif; ?>
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-					<h2 class="text-lg font-medium font-title leading-tight">
+					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
 						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
 							<span itemprop="name"><?= $member->name; ?></span>
 						</span>
@@ -40,7 +40,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 	</div>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%">
-        <h3 class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+        <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
         <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
         <div  x-data="{ isOpen: false }">
             <?= import('/partials/navigation/submenu');?>
@@ -48,7 +48,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
         <aside>
 	        <p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
 	        <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
-	        <h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
+	        <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
 	        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 	        <p>Find more about our <a href="/consultancy">consultancy services</a> or <a href="/about/contact">contact us</a> and send us a message.</p>
 	    </aside>
