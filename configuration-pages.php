@@ -6,7 +6,7 @@ return array(
     ],
 
     //See: https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#xpcdp
-    'headers' => [
+/*    'headers' => [
         'Strict-Transport-Security' => 'max-age=63072000',
         'X-Xss-Protection'          => '1; mode=block',
         'X-Frame-Options'           => 'DENY',
@@ -16,4 +16,5 @@ return array(
         'Content-Security-Policy'   => 'upgrade-insecure-requests',
         'X-Content-Type-Options'    => 'nosniff',
     ],
+*/
 );
