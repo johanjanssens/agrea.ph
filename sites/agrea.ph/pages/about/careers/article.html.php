@@ -1,4 +1,4 @@
-s---
+---
 layout: default
 route: about/careers/[:slug]
 collection:
