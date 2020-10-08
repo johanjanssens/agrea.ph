@@ -15,23 +15,25 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
-			<? if ($member->slug !== ""): ?>
-			<a role="gridcell" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
-			<? else: ?>
-			<div role="gridcell" class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
-			<? endif; ?>
-				<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-				<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
-					<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
-						<span itemprop="name"><?= $member->name; ?></span>
-					</span>
-				</h2>
-				<p class="text-sm"><?= $member->position; ?></p>
-			<? if ($member->slug == ""): ?>
-			</div>
-			<? else: ?>
-			</a>
-			<? endif; ?>
+			<aside role="gridcell">
+				<? if ($member->slug !== ""): ?>
+				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
+				<? else: ?>
+				<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
+				<? endif; ?>
+					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
+					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
+						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name"><?= $member->name; ?></span>
+						</span>
+					</h2>
+					<p class="text-sm"><?= $member->position; ?></p>
+				<? if ($member->slug == ""): ?>
+				</div>
+				<? else: ?>
+				</a>
+				<? endif; ?>
+			</aside>
 			<? endforeach; ?>
 		</div>
 		</ktml:images>

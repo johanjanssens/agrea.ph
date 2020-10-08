@@ -30,19 +30,21 @@ collection:
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<a role="gridcell" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
-				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
-				<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-					  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-					</svg> <?= date($article->published_date, 'd M, Y'); ?>
-				</p>
-				<h2 role="heading" aria-level="2" class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
-				<div class="text-sm"><?= $article->excerpt; ?></div>
-				<p class="text-xs mt-2">
-					Written by: <?= $article->getAuthor()->getName(); ?>
-				</p>
-			</a>
+			<aside role="gridcell">
+				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
+					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg> <?= date($article->published_date, 'd M, Y'); ?>
+					</p>
+					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
+					<div class="text-sm"><?= $article->excerpt; ?></div>
+					<p class="text-xs mt-2">
+						Written by: <?= $article->getAuthor()->getName(); ?>
+					</p>
+				</a>
+			</aside>
 			<? endforeach; ?>
 		</div>
 		<?= helper('paginator.pagination') ?>
