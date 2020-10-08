@@ -1,6 +1,5 @@
 
 ## Define environment variable
-SetEnvIf Host ^agrea\.ph\.test$ SITE=agrea.ph.test
 SetEnvIf Host ^staging\.agrea\.ph$ SITE=staging.agrea.ph
 SetEnvIf Host ^www\.agrea\.ph$ SITE=www.agrea.ph
 
@@ -25,7 +24,6 @@ RewriteEngine On
 ## Begin - Redirects
 #
 
-  RewriteCond %{HTTP_HOST} !^agrea\.ph\.test [NC]
   RewriteCond %{HTTP_HOST} !^staging\. [NC]
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
