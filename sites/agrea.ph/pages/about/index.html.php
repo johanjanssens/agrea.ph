@@ -57,7 +57,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				</div>
 			</div>
 
-			<h2 role="heading" aria-level="2" class="mt-16 text-lg font-medium font-title leading-tight">Our History</h2>
+			<h2 role="heading" aria-level="2" class="text-gray-900 font-medium font-title text-lg mt-16 mb-4 leading-tight">Our History</h2>
 			
 			<p>Operating since November 2014 in a patch of land in the Island Province of Marinduque, AGREA is registered with the Securities and Exchange Commission in June 26, 2015. In the years that followed, AGREA went on to become successfully accredited by various Philippine government agencies.</p>
 			
