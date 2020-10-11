@@ -47,7 +47,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 						<div class="circle-text text-white text-3xl uppercase text-center font-title bg-orange-500">Goals</div>
 						<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:right-0 w-48">
 							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Goals</h3>
-							<ul class="text-gray-700 font-bold lg:-ml-4">
+							<ul class="text-gray-700 font-bold lg:-ml-3">
 								<li class="flex flex-row items-center">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-5 text-orange-500 font-medium">
 									  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
@@ -90,7 +90,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
-		<a class="text-grey-400" href="images://about-us/agrea2020-company-profile.pdf" title="Download our company profile">
+		<a class="text-grey-400" href="/images/agrea.ph/pages/about-us/agrea2020-company-profile.pdf" title="Download our company profile">
 			<figure>
 				<img src="images://about-us/agrea2020-company-profile.jpg?auto=compress&q=50&w=1500" alt="Marinduque Island Economies Map">
 				<figcaption class="text-center text-sm items-center mt-2 italic">Download our company profile</figcaption>

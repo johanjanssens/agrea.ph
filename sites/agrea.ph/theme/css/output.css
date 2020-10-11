@@ -2568,8 +2568,8 @@ sub:not([class]) {
     margin-bottom: 0.75rem;
   }
 
-  .lg\:-ml-4 {
-    margin-left: -1rem;
+  .lg\:-ml-3 {
+    margin-left: -0.75rem;
   }
 
   .lg\:-mt-12 {
