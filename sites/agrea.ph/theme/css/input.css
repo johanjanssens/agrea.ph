@@ -276,6 +276,18 @@ sub:not([class]) {
 .aspect-ratio-21\/9 {
   padding-bottom: 42.86%;
 }
+/* Circle text - Used on About Us page */
+.circles {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.circle-text {
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  border-radius: 50%;
+}
 /* CSS3 Checkboxes */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
