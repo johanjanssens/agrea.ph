@@ -22,8 +22,7 @@ slug: cherrie-atilano
 	</div>
 	</ktml:images>
 
-	<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">More about Cherrie</h3>
-	<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+	<h3 role="heading" aria-level="3" class="font-medium font-title my-4 text-gray-900 text-lg">More about Cherrie</h3>
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 		<?
