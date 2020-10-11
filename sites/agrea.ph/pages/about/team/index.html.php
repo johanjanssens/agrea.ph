@@ -1,6 +1,7 @@
 ---
 layout: default
-name: Team
+name: Meet the AGREA team
+slug: team
 title: AGREA Team
 summary: AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.
 ---

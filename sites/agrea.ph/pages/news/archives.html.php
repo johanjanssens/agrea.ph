@@ -1,6 +1,7 @@
 ---
 layout: default
-name: Archives
+name: News Archives
+slug: archives
 title: News Archives
 summary: An archive of the news items on the AGREA website
 collection:
