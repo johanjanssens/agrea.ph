@@ -7,7 +7,7 @@ summary: Cherrie is the President and Founding Farmer of AGREA Philippines. She 
 slug: cherrie-atilano
 ---
 <article itemscope itemtype="https://schema.org/Person" class="max-w-4xl m-auto mt-8">
-<ktml:images max-width="80%" lazyload="progressive,inline">
+	<ktml:images max-width="25%" lazyload="progressive,inline">
 	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
 	<p itemprop="jobTitle" class="mb-2 text-sm font-medium"><?= $position ?></p>
 	<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
@@ -20,5 +20,30 @@ slug: cherrie-atilano
 		<p>AGREA as a company and her as the social entrepreneur was also awarded by the Asia Pacific CSR Council and UN Global Compact the Global Responsible Business Award 2017 for Agriculture Excellence.</p>
 		<p>She is a radical optimist, a dreamer and a true believer that Filipino farmers are world-class. She has been traveling the world as an advocate and inspirational speaker especially on her advocacy for global food security.</p>
 	</div>
-</ktml:images>
+	</ktml:images>
+
+	<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">More about Cherrie</h3>
+	<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+	<ktml:images max-width="25%" lazyload="progressive,inline">
+		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
+		<?
+		$articles = collection('ext:joomla.model.articles', [
+		'published' => 1,
+		'category' => ['11'], // new sprouts
+		'sort' => 'date',
+		'order' => 'desc'
+		]); ?>
+		<? foreach($articles as $article) :?>
+			<? if(strpos($article->tags, "Cherrie Atilano") !== false): ?>
+				<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg">
+					<img class="md:h-36 rounded w-full object-cover object-center" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<p class=" text-gray-600 mt-2">
+						<?= $article->title; ?>
+					</p>
+				</a>
+			<? endif; ?>
+		<? endforeach ?>
+		</div>
+	</ktml:images>
+
 </article>
