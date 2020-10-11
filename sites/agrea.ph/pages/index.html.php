@@ -21,7 +21,7 @@ title: Agrea - Ecology of Dignity
   <div class="container px-5 pt-12 pb-24 mx-auto">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
+        <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
       </div>
     </div>
