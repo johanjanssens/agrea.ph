@@ -160,7 +160,7 @@ slug: consultancy
 				<li>Hongkong Shanghai Group of Hotels for Sustainable Agriculture and Food Systems</li>
 			</ul>
 
-			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 leading-none mb-2">Frequency Asked Questions</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 leading-none mb-2">Frequently Asked Questions</h2>
 
 			<p><strong>Do you have established pricing for your services?</strong><br />
 			Yes, please send an e-mail to consultancy@agrea.ph with a description of your desired project. You may also call our Metro Manila office at +63 2 240 5210 to schedule an initial online or in-person appointment.</p>
