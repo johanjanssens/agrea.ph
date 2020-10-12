@@ -145,7 +145,7 @@ title: Agrea - Ecology of Dignity
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <aside class="md:w-1/2 mb-10 px-4">
         <div class="flex flex-col justify-between">
-          <div class="rounded-lg">
+          <div class="rounded-lg md:mb-10">
             <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
           </div>
           <div class="mt-10">
