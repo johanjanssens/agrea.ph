@@ -25,7 +25,7 @@ slug: yseali-grow
 			<?= article(3)->excerpt ?>
 			<?= article(3)->text ?>
 			<aside>
-				<h3 role="heading" aria-level="3" class="font-title">Background</h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 leading-tight mb-3">Background</h3>
 				Due to successful prior projects by USG alumni in otherwise hard-to-reach communities in Mindanao, we have an unusual opportunity to engage youth in these conflict-affected areas from a position of trust. This workshop is focused on youth aged 18-25 years old from Mindanao, particularly out-of-school youth (OSY) from Muslim and indigenous peoples (IP) communities.</p>
 
 				<blockquote>Out-of-School Youth are often marginalized populations, yet in many rural communities these populations outnumber the in-school youth populations. These youths are untapped resources who, when encouraged to dream and actualize those dreams, can make a real difference in their communities.</blockquote>
@@ -33,7 +33,7 @@ slug: yseali-grow
 				<p>The program leveraged the expertise of Filipino USG alumni in agriculture, development, interfaith dialogue, Muslim culture, and indigenous peoples.</p>
 			</aside>
 			<aside>
-				<h3 role="heading" aria-level="3" class="font-title">YSEALI Grow Overview</h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 leading-tight mb-3">YSEALI Grow Overview</h3>
 
 				<p>The workshop facilitates dream building and taking action sessions for the participants and assisted by carefully-selected USG alumni.</p>
 
