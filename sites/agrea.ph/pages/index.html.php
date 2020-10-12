@@ -21,12 +21,12 @@ title: Agrea - Ecology of Dignity
   <div class="container px-5 pt-12 pb-24 mx-auto">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
+        <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
       </div>
     </div>
     <div class="grid lg:grid-cols-2 gap-4">
-      <div class="">
+      <div role="main">
         <h2 role="heading" aria-level="2" class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Championing a new narrative for agriculture</h2>
         <p>We believe that Filipino Farmers are world class. They are the point of change in our food system. In living our mission we strive for an <span class="text-gray-700 font-bold">Ecology of Dignity</span> of all the stakeholders involved in bringing food on our tables. Rich or poor, young or old: everyone needs to eat!</p>
         <p>We are focused on making the Philippine archipelago agriculturally sustainable by building on the <span class="text-gray-700 font-bold">One Island Economy</span> model guided by three major goals: <span class="text-gray-700 font-bold">Zero Hunger</span>, <span class="text-gray-700 font-bold">Zero Waste</span> and <span class="text-gray-700 font-bold">Zero Insufficiency</span>.</p>
@@ -42,7 +42,7 @@ title: Agrea - Ecology of Dignity
 
 <section class="text-gray-700 mb-24">
   <ktml:images max-width="25%" lazyload="progressive,inline">
-  <div class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
+  <div role="complimentary" class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none uppercase">Latest News Sprouts</h2>
@@ -61,18 +61,20 @@ title: Agrea - Ecology of Dignity
 
       <? foreach($newSprouts as $newSprout) :?>
       <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
-        <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
-        <p class="text-xs flex items-center mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg> <?= date($newSprout->published_date, 'd M, Y'); ?>
-        </p>
-        <h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $newSprout->title; ?></h3>
+        <aside>
+          <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
+          <p class="text-xs flex items-center mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg> <?= date($newSprout->published_date, 'd M, Y'); ?>
+          </p>
+          <h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $newSprout->title; ?></h3>
+        </aside>
       </a>
       <? endforeach ?>
     </div>
     <div class="flex justify-center mt-12">
-        <a href="/news" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
+        <a role="button" href="/news" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
     </div>
   </div>
   </ktml:images>
@@ -88,7 +90,7 @@ title: Agrea - Ecology of Dignity
     </div>
   </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
           <a href="/farm-school"><img alt="content" class="object-cover object-center h-full w-full" src="images://farm-school/agrea-farm-school-scholarship-program-50pax.jpg" alt="AGREA Farm School Scholarship Program header"></a>
         </div>
@@ -99,8 +101,8 @@ title: Agrea - Ecology of Dignity
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      </aside>
+      <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
           <a href="/events/leaf"><img class="object-cover object-center h-full w-full" src="images://events/leaf/leaf-2018-get-your-free-copy-now.jpg" alt="Leaders and Entrepreneurs in Agriculture Forum"></a>
         </div>
@@ -111,8 +113,8 @@ title: Agrea - Ecology of Dignity
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+      </aside>
+      <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full"  src="images://events/leaf/leaf-report.png" alt="LEAF 2018 Terminal Report">
         </div>
@@ -123,7 +125,7 @@ title: Agrea - Ecology of Dignity
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </a>
-      </div>
+      </aside>
     </div>
   </div>
   </ktml:images>
@@ -141,29 +143,38 @@ title: Agrea - Ecology of Dignity
       </div>
     </div>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
-      <div class="md:w-1/2 mb-10 px-4">
-        <div class="rounded-lg md:mb-10">
-          <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
+      <aside class="md:w-1/2 mb-10 px-4">
+        <div class="flex flex-col justify-between">
+          <div class="rounded-lg">
+            <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
+          </div>
+          <div class="mt-10">
+            <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 mb-3">Be a #AGREA1000Strong Volunteer</h3>
+            <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
+            <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
+          </div>
         </div>
-        <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 lg:pt-3 mb-3">Be a #AGREA1000Strong Volunteer</h3>
-        <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
-        <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
-      </div>
-      <div class="md:w-1/2 mb-12 px-4">
-        <figure class="rounded-lg md:mb-4 px-5">
-          <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
-            <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
-            <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
-            <source src="/videos/4583411334.mp4" type="video/mp4" size="720">
-            <source src="/videos/458341133.mp4?q=360p" type="video/mp4" size="360">
-            <source src="/videos/458341133.mp4?q=240p" type="video/mp4" size="240">
-          </video>
-          <figcaption class="text-grey-400 text-sm items-center mt-2 italic">
-            Video courtesy of Asia NewsChannel
-          </figcaption>
-        </figure>
-        <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 mt-6 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h3>
-        <p class="">In the Philippines, where farmers toil for meager sums, Cherrie Atilano is an invigorating ray of hope. Spending her childhood among farmers, the harsh reality of their plight led to her life's calling. Today, she's sowing the seeds of change to allow farmers to cultivate dreams of their own.</p>
+      </aside>
+      <aside class="md:w-1/2 mb-12 px-4">
+        <div class="flex flex-col justify-between">
+          <figure class="rounded-lg px-5">
+            <video class="w-full" poster="/videos/458341133?key=2e73e78627" controlsList="nodownload" playsinline controls preload="none">
+              <source src="/videos/458341133.m3u8" type="application/x-mpegURL">
+              <source src="/videos/458341133.mp4?q=540p" type="video/mp4" size="540">
+              <source src="/videos/4583411334.mp4" type="video/mp4" size="720">
+              <source src="/videos/458341133.mp4?q=360p" type="video/mp4" size="360">
+              <source src="/videos/458341133.mp4?q=240p" type="video/mp4" size="240">
+            </video>
+            <figcaption class="text-grey-400 text-sm items-center mt-2 italic">
+              Video courtesy of Asia NewsChannel
+            </figcaption>
+          </figure>
+          <div class="mt-12">
+            <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 mb-3">ASEAN's Next Generation Leaders (ANGeLs)</h3>
+            <p class="">In the Philippines, where farmers toil for meager sums, Cherrie Atilano is an invigorating ray of hope. Spending her childhood among farmers, the harsh reality of their plight led to her life's calling. Today, she's sowing the seeds of change to allow farmers to cultivate dreams of their own.</p>
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
   </ktml:images>
@@ -187,7 +198,7 @@ title: Agrea - Ecology of Dignity
             'limit' => 3,
         ]); ?>
         <? foreach($freshPicks as $freshPick) :?>
-        <div class="flex flex-col justify-start mb-10">
+        <aside class="flex flex-col justify-start mb-10">
           <a href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>">
             <img class="md:h-36 rounded w-full object-cover object-center" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
           </a>
@@ -199,7 +210,7 @@ title: Agrea - Ecology of Dignity
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg> <?= date($freshPick->published_date, 'd M, Y'); ?>
           </p>
-        </div>
+        </aside>
         <? endforeach ?>
       </div>
 
@@ -213,16 +224,18 @@ title: Agrea - Ecology of Dignity
         <div class="grid lg:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
           <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= $weblink->url; ?>">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
-            </div>
-            <p class="leading-relaxed text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
-            <p class="leading-relaxed text-xs font-medium mb-4 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg> <span><?= $weblink->date ?></span>
-            </p>
-            <h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $weblink->title ?></h3>
+            <aside>
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
+              </div>
+              <p class="leading-relaxed text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
+              <p class="leading-relaxed text-xs font-medium mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg> <span><?= $weblink->date ?></span>
+              </p>
+              <h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $weblink->title ?></h3>
+            </aside>
           </a>
         <? endforeach; ?>
         </div>

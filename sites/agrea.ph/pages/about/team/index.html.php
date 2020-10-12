@@ -1,6 +1,7 @@
 ---
 layout: default
-name: Team
+name: Meet the AGREA team
+slug: team
 title: AGREA Team
 summary: AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.
 ---
@@ -15,22 +16,23 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
-			<aside role="gridcell">
 				<? if ($member->slug !== ""): ?>
 				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
+					<aside role="gridcell">
 				<? else: ?>
-				<div class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
-				<? endif; ?>
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
-					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
-						<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
-							<span itemprop="name"><?= $member->name; ?></span>
-						</span>
-					</h2>
-					<p class="text-sm"><?= $member->position; ?></p>
-				<? if ($member->slug == ""): ?>
-				</div>
+					<aside role="gridcell" class="h-full bg-gray-100 text-gray-900 p-6 rounded-lg">
+					<? endif; ?>
+						<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
+						<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
+							<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
+								<span itemprop="name"><?= $member->name; ?></span>
+							</span>
+						</h2>
+						<p class="text-sm"><?= $member->position; ?></p>
+					<? if ($member->slug == ""): ?>
+					</aside>
 				<? else: ?>
+					</aside>
 				</a>
 				<? endif; ?>
 			</aside>

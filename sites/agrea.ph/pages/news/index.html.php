@@ -27,8 +27,8 @@ collection:
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<aside role="gridcell">
-				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('news/article', ['slug' => $article->slug]) ?>">
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('news/article', ['slug' => $article->slug]) ?>">
+				<aside role="gridcell">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -40,8 +40,8 @@ collection:
 					<p class="text-xs mt-2">
 						Written by: <?= $article->getAuthor()->getName(); ?>
 					</p>
-				</a>
-			</aside>
+				</aside>
+			</a>
 			<? endforeach; ?>
 		</div>
 		<?= helper('paginator.pagination') ?>

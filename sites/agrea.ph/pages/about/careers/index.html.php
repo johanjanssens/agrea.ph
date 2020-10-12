@@ -3,7 +3,8 @@ layout:
     path: default
     footer:
         image: images://background/farmer-couple.jpg
-name: Careers
+name: Career opportunities at AGREA
+slug: careers
 title: Career opportunities at AGREA
 summary: AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane.
 collection:
@@ -27,8 +28,8 @@ collection:
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<aside role="gridcell">
-				<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('/about/careers/article'), ['slug' => $article->slug]) ?>">
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('/about/careers/article'), ['slug' => $article->slug]) ?>">
+				<aside role="gridcell">
 					<span class="hidden"><?= config()->site->name ?></span>
 					<img class="rounded w-full object-contain object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
@@ -41,8 +42,8 @@ collection:
 					<p class="text-xs mt-2">
 						Posted by: <?= $article->getAuthor()->getName(); ?>
 					</p>
-				</a>
-			</aside>
+				</aside>
+			</a>
 			<? endforeach; ?>
 		</div>
     </ktml:images>

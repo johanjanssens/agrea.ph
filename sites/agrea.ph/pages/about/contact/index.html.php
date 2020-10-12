@@ -3,10 +3,10 @@ layout:
     path: default
     footer:
         image: images://background/farmer-couple.jpg
-name: Contact
+name: Send us a message
+slug: contact
 title: Send us a message
 summary: Contact page for AGREA, the Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.
-slug: contact
 form:
     name: contact-form
     processors:
