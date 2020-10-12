@@ -30,8 +30,7 @@ pre:not([class]),
 td:not([class]),
 th:not([class]),
 ul:not([class]),
-ol:not([class]),
-figure:not([class]) {
+ol:not([class]) {
   @apply mb-6;
 }
 small:not([class]) {
@@ -93,6 +92,12 @@ dt:not([class]) {
 }
 dl:not([class]) dt:not([class]):first-child {
   @apply mt-2;
+}
+figure:not([class]) {
+  @apply rounded-lg mb-6;
+}
+figcaption {
+  @apply text-center text-sm italic mt-2;
 }
 sub:not([class]),
 sup:not([class]) {

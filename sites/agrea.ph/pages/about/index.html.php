@@ -93,7 +93,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<a class="text-grey-400" href="/images/agrea.ph/pages/about-us/agrea2020-company-profile.pdf" title="Download our company profile">
 			<figure>
 				<img src="images://about-us/agrea2020-company-profile.jpg?auto=compress&q=50&w=1500" alt="Marinduque Island Economies Map">
-				<figcaption class="text-center text-sm items-center mt-2 italic">Download our company profile</figcaption>
+				<figcaption class="text-center text-sm italic mt-2">Download our company profile</figcaption>
 			</figure>
 		</a>
 		</ktml:images>

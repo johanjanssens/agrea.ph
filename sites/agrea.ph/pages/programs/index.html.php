@@ -21,18 +21,18 @@ slug: programs
 		<div itemprop="articleBody">
 			<p class="text-lg mb-4">With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. </p>
 
-			<figure class="my-10 text-center">
+			<figure class="mb-6 text-center">
 				<img itemprop="image" class="rounded mx-auto object-contain" src="images://programs/one-island-economy-model.jpg">
-				<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
+				<figcaption class="text-center text-sm italic mt-2">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
 			</figure>
 
 			<p>To achieve One-Island Economy in the Province of Marinduque, AGREA implements community-based and organization-based programs supported by training and workshops for individuals that address Zero Waste, Zero Hunger, and Zero Insufficiency.</p>
 
 			<p>In order to achieve the One-Island Economy Model, AGREA dissects its programs into three impact areas. The said impact areas aim to thread together economic development, social well-being, and environmental sensitivity. </p>
 
-			<figure class="my-10 text-center">
+			<figure class="mb-6 text-center">
 				<img class="rounded mx-auto object-contain" src="images://programs/zero-waste-one-island-economy.jpg">
-				<figcaption class="text-sm mt-5">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
+				<figcaption class="text-center text-sm italic mt-2">The framework. AGREA's One-Island Economy Model and Social Programs.</figcaption>
 			</figure>
 
 			<p>THREE ZEROS. One Island Economy is economic development with sensitivity to the environment and concern for social well-being. </p>
@@ -43,14 +43,14 @@ slug: programs
 
 			<p>Among the key components of AGREA Social Programs is Capacity Building. It is a series of training and workshops designed for community-based farmers. </p>
 
-			<figure class="my-10 text-center">
+			<figure class="mb-6 text-center">
 				<img class="rounded mx-auto object-contain" src="images://programs/trainees.jpg">
-				<figcaption class="text-sm mt-5">Visualized dreams and aspirations. Trainees during the Financial Literacy and Values Formation pose with AGREA President Cherrie Atilano and representatives from DAR Marinduque.</figcaption>
+				<figcaption class="text-center text-sm italic mt-2">Visualized dreams and aspirations. Trainees during the Financial Literacy and Values Formation pose with AGREA President Cherrie Atilano and representatives from DAR Marinduque.</figcaption>
 			</figure>
 
 			<p>The goal is to enable farmers by making them: (1) Grounded Farmers thru Values Formation, (2) Skilled Farmers thru Technical Training, and (3) Empowered Farmer thru Financial Literacy. Training and workshops under the Capacity Building Program is anchored to farming activities as the core activity of the beneficiaries. </p>
 
-			<figure class="my-10 text-center">
+			<figure class="mb-6 text-center">
 				<img class="rounded mx-auto object-contain" src="images://programs/capacity-building-framework.jpg">
 			</figure>
 
@@ -62,9 +62,9 @@ slug: programs
 
 			<p>Together with Keep Hope Alive, AGREA implemented myLEADER Agripreneurship Workshop in the provinces of Oriental Mindoro, Marinduque, and Palawan. It aimed to facilitate collaboration between student leaders, community-based youths, and indigenous peoples of MIMAROPA to develop enterprises based on existing agricultural potentials in their community. </p>
 
-			<figure class="my-10 text-center">
+			<figure class="mb-6 text-center">
 				<img class="rounded mx-auto object-contain" src="images://programs/agri-summer-immersion.jpg">
-				<figcaption class="text-sm mt-5">Other AGREA agri-entrepreneurship workshops:<br>
+				<figcaption class="text-center text-sm italic mt-2">Other AGREA agri-entrepreneurship workshops:<br>
 				Agri-Summer Immersion Marinduque</figcaption>
 			</figure>
 
