@@ -10,18 +10,23 @@ footer {
 }
 h1:not([class]) {
   @apply text-4xl uppercase text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
 }
 h2:not([class]) {
   @apply text-3xl uppercase text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
 }
 h3:not([class]) {
   @apply text-2xl uppercase text-gray-900 leading-tight mb-3;
+  font-family:'Raleway';
 }
 h4:not([class]) {
   @apply text-xl uppercase text-gray-900 mb-4;
+  font-family:'Raleway';
 }
 h5:not([class]) {
   @apply text-lg uppercase text-gray-900 mb-5;
+  font-family:'Raleway';
 }
 blockquote:not([class]),
 label:not([class]),
@@ -96,7 +101,7 @@ dl:not([class]) dt:not([class]):first-child {
 figure:not([class]) {
   @apply rounded-lg mb-6;
 }
-figcaption {
+figcaption:not([class]) {
   @apply text-center text-sm italic mt-2;
 }
 sub:not([class]),

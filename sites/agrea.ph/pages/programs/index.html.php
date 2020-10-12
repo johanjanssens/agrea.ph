@@ -39,7 +39,7 @@ slug: programs
 
 			<p>Our focus is on farmers and fishermen in Marinduque. AGREA believes that their role is as important as any other stakeholder in the goods value chain. AGREA believes that through technology, education and community empowerment, farmers can have a fairer business share, more autonomy, more dignity and a better quality of life.</p>
 
-			<h2 role="heading" aria-level="2" class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Capacity-Building Framework</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl uppercase text-gray-900 leading-none mb-2">Capacity-Building Framework</h2>
 
 			<p>Among the key components of AGREA Social Programs is Capacity Building. It is a series of training and workshops designed for community-based farmers. </p>
 
@@ -56,7 +56,7 @@ slug: programs
 
 			<p>READ: Empowering farmers through Values Formation and Financial Literacy</p>
 
-			<h2 role="heading" aria-level="2" class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Youth in Agriculture and Entrepreneurship Workshops</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl uppercase text-gray-900 leading-none mb-2">Youth in Agriculture and Entrepreneurship Workshops</h2>
 
 			<p>Partnered with different organizations, AGREA designs and implements workshops about agriculture and entrepreneurship for community-based youths, student leaders, indigenous peoples, and war-torn youths. </p>
 
@@ -64,18 +64,17 @@ slug: programs
 
 			<figure class="mb-6 text-center">
 				<img class="rounded mx-auto object-contain" src="images://programs/agri-summer-immersion.jpg">
-				<figcaption class="text-center text-sm italic mt-2">Other AGREA agri-entrepreneurship workshops:<br>
-				Agri-Summer Immersion Marinduque</figcaption>
+				<figcaption class="text-center text-sm italic mt-2">Other AGREA agri-entrepreneurship workshops: Agri-Summer Immersion Marinduque</figcaption>
 			</figure>
 
-			<h2 role="heading" aria-level="2" class="text-lg text-gray-900 font-medium font-title mb-4 leading-tight">Beneficiary Demographics</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl uppercase text-gray-900 leading-none mb-2">Beneficiary Demographics</h2>
 
 			<p>The individual training and workshops are designed to address the following stakeholders: (1) farmers, (2) small entrepreneurs, (3) students, and (4) community-based individuals.</p>
 
 			<p>Such approach is utilized in order to capacitate every member of the society as they engage in community-wide and organization-wide programs that are designed to piece together a One-Island Economy.</p>
 
 			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-				<h3 role="heading" aria-level="3" class=" font-medium font-title mb-4">Know more about AGREA's social programs</h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl uppercase text-gray-900 leading-tight mb-3">Know more about AGREA's social programs</h3>
 
 				<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, <a href="/about/contact">contact us</a> and send us a message.</p>
 			</div>
