@@ -253,15 +253,6 @@ body > footer {
   background-repeat: no-repeat;
   background-size: 100vw;
 }
-/* Titles use the Raleway google font */
-h1:not([class]),
-h2:not([class]),
-h3:not([class]),
-h4:not([class]),
-h5:not([class]),
-h6:not([class]) {
-  font-family: Raleway,sans-serif;
-}
 ul:not([class]) > li:not([class]) {
   display: list-item;
   text-align: -webkit-match-parent;

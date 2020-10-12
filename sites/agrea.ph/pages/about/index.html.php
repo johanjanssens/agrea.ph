@@ -14,7 +14,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<ktml:images max-width="80%" lazyload="progressive,inline">
 			<div class="flex flex-wrap w-full mb-10">
 				<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-					<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
+					<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 					<div class="h-1 w-20 bg-green-500 rounded"></div>
 				</div>
 			</div>
@@ -72,13 +72,13 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				</div>
 			</div>
 
-			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 leading-none mb-2">Our History</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Our History</h2>
 			
 			<p>Operating since November 2014 in a patch of land in the Island Province of Marinduque, AGREA is registered with the Securities and Exchange Commission in June 26, 2015. In the years that followed, AGREA went on to become successfully accredited by various Philippine government agencies.</p>
 			
 			<p>In 2016, the Department of Agriculture-Agricultural Training (DA-ATI) accredited AGREA Farm Estate in Marinduque as a Learning Site for Agriculture for its diversified integrated farming system. In 2017, the Technical Education and Skills Development Authority (TESDA) also certified AGREA Estate Farm as a farm school and an assessment center for agri- cultural technical vocation skills development. The following year, the Department of Tourism (DOT) recognized AGREA as an agri-tourism farm site.</p>
 			
-			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 leading-tight mb-3">Island Economies</h3>
+			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Island Economies</h3>
 			
 			<p>The following map represents AGREA’s current and incoming projects, as well as potential areas for development in the Island Province of Marinduque, MIMAROPA Region (IV-B) Southern Luzon, and Siargao Island, Surigao del Norte in the Caraga Region, Northeast Mindanao.</p>
 			
@@ -87,7 +87,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 	</article>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<a class="text-grey-400" href="/images/agrea.ph/pages/about-us/agrea2020-company-profile.pdf" title="Download our company profile">

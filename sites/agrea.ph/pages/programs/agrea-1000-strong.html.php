@@ -13,7 +13,7 @@ slug: agrea-1000-strong
 	<article role="main" itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
+				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
@@ -47,7 +47,7 @@ slug: agrea-1000-strong
 				</fieldset>
 				<div class="grid sm:grid-cols-2">
 					<fieldset class="mb-4">
-						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 font-medium font-title my-4 leading-tight">Choose as many volunteer sectors that apply to you<sup>*</sup></h4>
+						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 dark:text-gray-100 font-medium font-title my-4 leading-tight">Choose as many volunteer sectors that apply to you<sup>*</sup></h4>
 						<div class="question">
 							<div>
 								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="male" name="male" value="Male Youth (13 to 35 years old)">
@@ -92,7 +92,7 @@ slug: agrea-1000-strong
 						</div>
 					</fieldset>
 					<fieldset class="mb-4">
-						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 font-medium font-title my-4 leading-tight">Interests<sup>*</sup></h4>
+						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 dark:text-gray-100 font-medium font-title my-4 leading-tight">Interests<sup>*</sup></h4>
 						<div class="question">
 							<div>
 								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="environmental" name="environmental" value="Environmental protection">
@@ -126,7 +126,7 @@ slug: agrea-1000-strong
 					</fieldset>
 				</div>
 				<fieldset class="">
-					<h4 role="heading" aria-level="4" class="text-sm text-gray-900 font-medium font-title my-4 leading-tight">Describe your volunteering and leadership experience (if any)</h4>
+					<h4 role="heading" aria-level="4" class="text-sm text-gray-900 dark:text-gray-100 font-medium font-title my-4 leading-tight">Describe your volunteering and leadership experience (if any)</h4>
 					<div class="question">
 						<textarea name="experience" rows="5" cols="15" class="sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4"></textarea>
 					</div>
@@ -140,7 +140,7 @@ slug: agrea-1000-strong
 	</article>
 	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/arborday', 'max_width' => '25%']); ?>

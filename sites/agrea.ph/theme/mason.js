@@ -80,6 +80,10 @@ async function postcss() {
             'title': ['Raleway', 'sans-serif'],
             'agrea': ['typo3', 'serif'],
           },
+          screens: {
+            'dark': {'raw': '(prefers-color-scheme: dark)'},
+            // => @media (prefers-color-scheme: dark) { ... }
+          },
         }
       },
       variants: {
