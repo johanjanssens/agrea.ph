@@ -27,7 +27,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 
 			<p>Healthy human capital is the backbone of our economy. Taking good care of our only planet is integrated in our business. Environmental impact is a key consideration in all our business operations.	Our approach is transformational, we make sure every transaction made with AGREA from producing to bringing food to the consumers is contributing to impactful changes in every point of the supply chain.</p>
 
-			<div class="min-h-screen mb-6">
+			<div class="min-h-screen mb-24">
 				<div class="circles relative z-10 py-40 flex justify-center items-center">
 					<div class="circle-text text-white text-3xl uppercase text-center font-title bg-dark-green-500">Vision</div>
 					<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:bottom-auto lg:left-0 w-48">
