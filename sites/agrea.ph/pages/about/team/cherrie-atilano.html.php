@@ -31,7 +31,7 @@ collection:
 	</div>
 	</ktml:images>
 
-	<h2 role="heading" aria-level="2" class="font-title text-3xl uppercase text-gray-900 leading-none mb-2">More about Cherrie</h2>
+	<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 leading-none mb-2">More about Cherrie</h2>
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-4 mb-6">
 		<? foreach(collection() as $article): ?>

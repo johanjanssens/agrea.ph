@@ -72,13 +72,13 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				</div>
 			</div>
 
-			<h2 role="heading" aria-level="2" class="font-title text-3xl uppercase text-gray-900 leading-none mb-2">Our History</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 leading-none mb-2">Our History</h2>
 			
 			<p>Operating since November 2014 in a patch of land in the Island Province of Marinduque, AGREA is registered with the Securities and Exchange Commission in June 26, 2015. In the years that followed, AGREA went on to become successfully accredited by various Philippine government agencies.</p>
 			
 			<p>In 2016, the Department of Agriculture-Agricultural Training (DA-ATI) accredited AGREA Farm Estate in Marinduque as a Learning Site for Agriculture for its diversified integrated farming system. In 2017, the Technical Education and Skills Development Authority (TESDA) also certified AGREA Estate Farm as a farm school and an assessment center for agri- cultural technical vocation skills development. The following year, the Department of Tourism (DOT) recognized AGREA as an agri-tourism farm site.</p>
 			
-			<h3 role="heading" aria-level="3" class="font-title text-2xl uppercase text-gray-900 leading-tight mb-3">Island Economies</h3>
+			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 leading-tight mb-3">Island Economies</h3>
 			
 			<p>The following map represents AGREA’s current and incoming projects, as well as potential areas for development in the Island Province of Marinduque, MIMAROPA Region (IV-B) Southern Luzon, and Siargao Island, Surigao del Norte in the Caraga Region, Northeast Mindanao.</p>
 			

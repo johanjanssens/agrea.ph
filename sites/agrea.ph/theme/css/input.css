@@ -9,23 +9,23 @@ footer {
   @apply text-base;
 }
 h1:not([class]) {
-  @apply text-4xl uppercase text-gray-900 leading-none mb-2;
+  @apply text-4xl text-gray-900 leading-none mb-2;
   font-family:'Raleway';
 }
 h2:not([class]) {
-  @apply text-3xl uppercase text-gray-900 leading-none mb-2;
+  @apply text-3xl text-gray-900 leading-none mb-2;
   font-family:'Raleway';
 }
 h3:not([class]) {
-  @apply text-2xl uppercase text-gray-900 leading-tight mb-3;
+  @apply text-2xl text-gray-900 leading-tight mb-3;
   font-family:'Raleway';
 }
 h4:not([class]) {
-  @apply text-xl uppercase text-gray-900 mb-4;
+  @apply text-xl text-gray-900 mb-4;
   font-family:'Raleway';
 }
 h5:not([class]) {
-  @apply text-lg uppercase text-gray-900 mb-5;
+  @apply text-lg text-gray-900 mb-5;
   font-family:'Raleway';
 }
 blockquote:not([class]),
