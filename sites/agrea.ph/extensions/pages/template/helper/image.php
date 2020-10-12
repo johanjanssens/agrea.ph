@@ -9,7 +9,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'min_width' => 320,
             'max_dpr'   => 3,
             'base_url'  => $this->getObject('request')->getBaseUrl(),
-            'base_path' => $this->getObject('com://site/pages.config')->getSitePath(),
+            'base_path' => $this->getObject('com://site/pages.config')->getSitePath().'/images',
             'exclude'    => ['svg'],
             'suffix'     => '',
             'parameters'     => ['auto' => 'true'],
@@ -86,7 +86,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine low quality image as data-srclow value and a data-srcset attribute and
+                    //Combine low quality image as srcset value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
                     $html .=    '<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
@@ -153,7 +153,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine low quality image as data-srclow value and a data-srcset attribute and
+                    //Combine low quality image as srcset value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
                     $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
@@ -271,7 +271,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 $config->min_width = ceil($this->getConfig()->min_width / 100 * (int)$config->min_width);
             }
 
-            $file  = $this->getConfig()->base_path . '/' . trim($url->getPath(), '/');
+            $file  = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url->getPath());
             $sizes = $this->_calculateSizes($file, $config->max_width * $config->max_dpr, $config->min_width);
 
             //Build path for the high quality image

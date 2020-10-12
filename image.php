@@ -1,7 +1,6 @@
 <?php
 //See: https://www.smashingmagazine.com/2015/06/efficient-image-resizing-with-imagemagick/
 
-
 //Check if we have been redirected by Apache
 if(getenv('REDIRECT_IMAGE') === false)
 {
@@ -13,7 +12,7 @@ if(getenv('REDIRECT_IMAGE') === false)
  * Config options
  */
 
-$basepath      = rtrim($_SERVER['DOCUMENT_ROOT'], '/');
+$basepath      = rtrim($_SERVER['PAGES_IMAGES_ROOT'], '/');
 $enhance       = false;
 $quality       = 100;
 $compress      = false;
@@ -32,30 +31,35 @@ $max_dpr = 3;
  * Route request
  */
 
-$cache_dir    = getenv('KPATH_PAGES_CACHE') ? $_SERVER['DOCUMENT_ROOT'].getenv('KPATH_PAGES_CACHE') : false;
+$cache_dir    = isset($_SERVER['PAGES_CACHE_ROOT']) ? $_SERVER['PAGES_CACHE_ROOT'] : false;
 $cache_bypass = isset($_SERVER['HTTP_CACHE_CONTROL']) && strstr($_SERVER['HTTP_CACHE_CONTROL'], 'no-cache') !== false;
 
 //Request
-$host    = filter_var($_SERVER['HTTP_HOST'], FILTER_SANITIZE_URL);
-$request = filter_var($_SERVER['REQUEST_URI'], FILTER_SANITIZE_URL);
-$parts   = parse_url('https://'.$host.$request);
+$query = array();
+parse_str(filter_var($_SERVER['QUERY_STRING'], FILTER_SANITIZE_URL), $query);
 
 //Time
 $time = microtime(true);
 
-if($parts['query'] && $parts['path'])
+if($query['path'])
 {
-    $filepath  = str_replace('.php', '', trim($parts['path'], '/'));
+    $filepath  = str_replace('.php', '', trim($query['path'], '/'));
 
     $source      = $basepath.'/'.$filepath;
     $destination = false;
     $background   = null;
+    
+    if(!file_exists($source))
+    {
+        http_response_code(404);
+        exit();
+    }
 
-    $format   = strtolower(pathinfo($filepath, PATHINFO_EXTENSION));
+    $format = strtolower(pathinfo($filepath, PATHINFO_EXTENSION));
 
     //Get the parameters
-    $parameters = array();
-    parse_str($parts['query'], $parameters);
+    unset($query['path']);
+    $parameters = $query;
 
     if(isset($parameters['auto']))
     {
