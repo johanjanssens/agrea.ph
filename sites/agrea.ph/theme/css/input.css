@@ -30,7 +30,8 @@ pre:not([class]),
 td:not([class]),
 th:not([class]),
 ul:not([class]),
-ol:not([class]) {
+ol:not([class]),
+figure:not([class]) {
   @apply mb-6;
 }
 small:not([class]) {
