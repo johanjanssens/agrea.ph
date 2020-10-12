@@ -5,6 +5,15 @@ position: Founding Farmer, President and CEO
 visible: false
 summary: Cherrie is the President and Founding Farmer of AGREA Philippines. She is also a co-founder of HATIENDA Holdings Inc., an agritourism and agri-processing space to produce Filipino agricultural products for local and exports market.
 slug: cherrie-atilano
+collection:
+    model: ext:joomla.model.articles
+    state:
+        published: 1
+        category: [11]
+        sort: date
+        order: desc
+        limit: 6
+        tags: ['Cherrie']
 ---
 <article itemscope itemtype="https://schema.org/Person" class="max-w-4xl m-auto mt-8">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
@@ -22,25 +31,21 @@ slug: cherrie-atilano
 	</div>
 	</ktml:images>
 
-	<h3 role="heading" aria-level="3" class="font-medium font-title my-4 text-gray-900 text-lg">More about Cherrie</h3>
+	<h2 role="heading" aria-level="2" class="font-medium font-title my-4 text-gray-900 text-lg">More about Cherrie</h2>
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
-		<?
-		$articles = collection('ext:joomla.model.articles', [
-		'published' => 1,
-		'category' => ['11'], // new sprouts
-		'sort' => 'date',
-		'order' => 'desc'
-		]); ?>
-		<? foreach($articles as $article) :?>
-			<? if(strpos($article->tags, "Cherrie Atilano") !== false): ?>
-				<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg">
-					<img class="md:h-36 rounded w-full object-cover object-center" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
-					<p class=" text-gray-600 mt-2">
-						<?= $article->title; ?>
+		<? foreach(collection() as $article): ?>
+			<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg">
+				<aside role="gridcell">
+					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
+						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+						</svg> <?= date($article->published_date, 'd M, Y'); ?>
 					</p>
-				</a>
-			<? endif; ?>
+					<h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h3>
+				</aside>
+			</a>
 		<? endforeach ?>
 		</div>
 	</ktml:images>
