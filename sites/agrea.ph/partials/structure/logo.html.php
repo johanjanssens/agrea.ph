@@ -1,6 +1,6 @@
 <?  
-$device_class = isset($device_class) ? implode(' ', (array) $device_class) : ''; 
-$text_class = isset($text_class) ? implode(' ', (array) $text_class) : ''; 
+$device_class = $device_class ?? ''; 
+$text_class = $text_class ?? ''; 
 ?>
 
 <a role="banner" class="<?= $device_class; ?>flex items-center mb-4 lg:mb-0 text-gray-900 dark:text-gray-100 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
