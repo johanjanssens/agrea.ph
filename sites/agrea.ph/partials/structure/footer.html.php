@@ -12,12 +12,12 @@
       </div>
     </div>
   </div>
-  <div class="bg-gray-800 h-20">
+  <div class="bg-gray-800 dark:bg-grey-100 h-20">
     <div class="container mx-auto flex flex-row items-center justify-between px-5 md:pt-6 pt-3 border-box">
-      <?= import('/partials/structure/logo',['device_class'=>'hidden md:','text_class'=>'text-gray-500 ']); ?>
-      <p class="text-gray-500 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
+      <?= import('/partials/structure/logo',['display_class'=>'hidden md:','text_class'=>'text-gray-500 dark:text-gray-900']); ?>
+      <p class="text-gray-500 dark:text-gray-900 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <span class="text-gray-500 text-xs sm:ml-4 sm:mt-0 hidden md:inline">Follow our social feeds</span>
+        <span class="text-gray-500 dark:text-gray-900 text-xs sm:ml-4 sm:mt-0 hidden md:inline">Follow our social feeds</span>
         <span itemscope itemtype="http://schema.org/Organization" class="inline-flex mx-2 -mt-2">
           <link itemprop="url" href="https://www.agrea.ph">
           <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="bg-green-500 rounded border-green-900 border p-1 text-blue-800 hover:bg-green-200 transition duration-500 ease-in-out">
@@ -37,7 +37,7 @@
             </svg>
           </a>
         </span>
-        <span class="text-gray-500 text-xs sm:ml-2 sm:mt-0">Built by</span>
+        <span class="text-gray-500 dark:text-gray-900 text-xs sm:ml-2 sm:mt-0">Built by</span>
         <a href="https://www.joomlatools.com" title="By Joomlatools" class="ml-1 mr-4">
             <svg class="w-5 h-5" viewBox="0 0 32 30.3303"><defs><style>.cls-1{fill:none;}.cls-2{fill:var(--lime-500);}.cls-3{fill:var(--green-500);}.cls-4{fill:url(#jtp-5);}.cls-5{fill:url(#jtp-2);}</style><pattern id="jtp-5" width="204.843" height="204.842" patternTransform="translate(-2.5053 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-3" width="204.843" height="204.842"/></pattern><pattern id="jtp-2" width="204.843" height="204.842" patternTransform="translate(-2.5058 -2.4604) scale(0.1067)" patternUnits="userSpaceOnUse" viewBox="0 0 204.843 204.842"><rect class="cls-1" width="204.843" height="204.842"/><rect class="cls-2" width="204.843" height="204.842"/></pattern></defs><g><path class="cls-4" d="M30.3747,14.26A12.1484,12.1484,0,0,0,13.7805,9.8135,2.3155,2.3155,0,1,0,16.096,13.824a7.5168,7.5168,0,0,1,7.5165,13.02,2.3158,2.3158,0,0,0,2.3158,4.0111A12.154,12.154,0,0,0,30.3747,14.26Z" transform="translate(0 -0.8348)"/><path class="cls-4" d="M24.2974,18.7688a2.3157,2.3157,0,0,0-4.631.0366v.0374a7.5181,7.5181,0,1,1-15.0347.047l0-.03A2.3155,2.3155,0,0,0,.0012,18.832a12.1491,12.1491,0,1,0,24.2974.1332C24.2983,18.8994,24.298,18.8343,24.2974,18.7688Z" transform="translate(0 -0.8348)"/></g><path id="accent" class="cls-5" d="M24.5575,4.5516a2.3153,2.3153,0,0,0-1.1263-1.9888A12.1492,12.1492,0,1,0,11.2275,23.5715a2.3153,2.3153,0,0,0,2.2658-4.0385A7.518,7.518,0,1,1,21.0512,6.5362a2.3165,2.3165,0,0,0,3.5063-1.9846Z" transform="translate(0 -0.8348)"/></svg>
         </a>
