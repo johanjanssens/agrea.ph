@@ -22,7 +22,7 @@ visible: false
         </div>
 
         <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
-            <p class="text-center text-3xl">Welcome.</p>
+            <h1 role="heading" aria-level="1" class="text-center text-3xl font-title">Welcome</h1>
             <form method="post" action="" class="flex flex-col pt-3 md:pt-8">
                 <div class="flex flex-col pt-4">
                     <label for="email" class="text-lg">Email</label>
