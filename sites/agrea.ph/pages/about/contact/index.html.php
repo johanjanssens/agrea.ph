@@ -8,7 +8,7 @@ slug: contact
 title: Send us a message
 summary: Contact page for AGREA, the Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.
 form:
-    name: contact-form
+    name: contact
     processors:
         - 'email':
             recipients:

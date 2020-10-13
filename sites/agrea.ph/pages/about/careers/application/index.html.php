@@ -1,6 +1,6 @@
 ---
 form:
-    name: job-application-form
+    name: job-application
     processors:
         - 'email':
             recipients:

@@ -1,6 +1,6 @@
 ---
 form:
-    name: form
+    name: newsletter
     processors: 'ext:pages.processor.newsletter'
     schema:
         firstName: [string, required]

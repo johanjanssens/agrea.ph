@@ -1,7 +1,14 @@
 ---
 layout: index
-name: Login
 title: Login - Agrea - Ecology of Dignity
+form:
+    name: login
+    processors: 'ext:pages.processor.login'
+    schema:
+        email: [email, required]
+        password: [string, required]
+    honeypot: email_NN9uTmmt
+    redirect: /
 visible: false
 ---
 
@@ -11,7 +18,7 @@ visible: false
     <div class="w-full md:w-1/2 flex flex-col">
 
         <div class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-            <a role="banner" class="flex items-center mb-4 lg:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
+            <a role="banner" class="flex items-center mb-4 lg:mb-0 text-gray-900 dark:text-gray-100 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
               <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
                 <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
                 c8.35,1.48,24.26,2.32,36.45-8.02L110.73,85.44z M92.62,92.15c0.88-0.09,1.47-0.21,2.81-0.46c0.85-0.2,2.18-0.46,2.82-0.68
@@ -41,15 +48,17 @@ visible: false
 
         <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
             <p class="text-center text-3xl">Welcome.</p>
-            <form class="flex flex-col pt-3 md:pt-8" onsubmit="event.preventDefault();">
+            <form method="post" action="" class="flex flex-col pt-3 md:pt-8">
                 <div class="flex flex-col pt-4">
                     <label for="email" class="text-lg">Email</label>
-                    <input type="email" id="email" placeholder="your@email.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    <input type="email" name="email" placeholder="your@email.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
+
+                <?= helper('form.honeypot', page()->form->honeypot); ?>
 
                 <div class="flex flex-col pt-4">
                     <label for="password" class="text-lg">Password</label>
-                    <input type="password" id="password" placeholder="Password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
+                    <input type="password" name="password" placeholder="Password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
 
                 <input type="submit" value="Log In" class="text-white bg-green-500 border-0 py-2 px-6 cursor-pointer focus:outline-none hover:bg-green-600 rounded text-lg mt-8">

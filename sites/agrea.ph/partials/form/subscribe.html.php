@@ -14,7 +14,7 @@
 		</div>
 	</div>
 
-	<?= helper('form.honeypot', 'firstName_a6c1bd21'); ?>
+	<?= helper('form.honeypot', page('newsletter')->form->honeypot); ?>
 
 	<div class="mb-6">
 		<label class="block text-gray-700 text-sm font-bold mb-2" for="email">
