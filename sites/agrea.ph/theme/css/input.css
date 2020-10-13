@@ -9,19 +9,24 @@ footer {
   @apply text-base;
 }
 h1:not([class]) {
-  @apply text-4xl uppercase text-gray-900 leading-none mb-2;
+  @apply text-4xl text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
 }
 h2:not([class]) {
-  @apply text-3xl uppercase text-gray-900 leading-none mb-2;
+  @apply text-3xl text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
 }
 h3:not([class]) {
-  @apply text-2xl uppercase text-gray-900 leading-tight mb-3;
+  @apply text-2xl text-gray-900 leading-tight mb-3;
+  font-family:'Raleway';
 }
 h4:not([class]) {
-  @apply text-xl uppercase text-gray-900 mb-4;
+  @apply text-xl text-gray-900 mb-4;
+  font-family:'Raleway';
 }
 h5:not([class]) {
-  @apply text-lg uppercase text-gray-900 mb-5;
+  @apply text-lg text-gray-900 mb-5;
+  font-family:'Raleway';
 }
 blockquote:not([class]),
 label:not([class]),
@@ -31,7 +36,7 @@ td:not([class]),
 th:not([class]),
 ul:not([class]),
 ol:not([class]) {
-  @apply text-base mb-6;
+  @apply mb-6;
 }
 small:not([class]) {
   @apply text-sm mb-8;
@@ -92,6 +97,12 @@ dt:not([class]) {
 }
 dl:not([class]) dt:not([class]):first-child {
   @apply mt-2;
+}
+figure:not([class]) {
+  @apply rounded-lg mb-6;
+}
+figcaption:not([class]) {
+  @apply text-center text-sm italic mt-2;
 }
 sub:not([class]),
 sup:not([class]) {
@@ -241,15 +252,6 @@ body > footer {
   background-position: 0 calc(100% - 5rem);
   background-repeat: no-repeat;
   background-size: 100vw;
-}
-/* Titles use the Raleway google font */
-h1:not([class]),
-h2:not([class]),
-h3:not([class]),
-h4:not([class]),
-h5:not([class]),
-h6:not([class]) {
-  font-family: Raleway,sans-serif;
 }
 ul:not([class]) > li:not([class]) {
   display: list-item;

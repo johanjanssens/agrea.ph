@@ -9,7 +9,7 @@ slug: yseali-generationgr3en
 	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
+				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
@@ -22,7 +22,7 @@ slug: yseali-generationgr3en
 
 
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Background</strong></h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Background</strong></h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<p>The ASEAN region is home to four of the world’s 34 biodiversity hot spots that are characterized both by exceptional levels of plant and animal endemism. In the recent years, the ASEAN region has been undergoing dynamic transformation and modernization by a strong economic growth but driven by unsustainable practices which results to serious levels of biodiversity loss. </p>
 
@@ -30,12 +30,12 @@ slug: yseali-generationgr3en
 
 		<p>Eco-tourism is just one opportunity that can be explored in the diverse field of eco-business. It can also serve as a platform for other opportunities in a broad range of business segments that can help drive community development by providing the alternate source of greater resilience livelihood to local communities.</p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Core Topics</h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Core Topics</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<p>Environment | Economy | Empowerment | Networks</p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Workshop Overview</strong></h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Workshop Overview</strong></h3>
 
 		<ol>
 			<li><strong>Online Discussion.</strong>Took place prior to the 4-day workshop, the GenGR3EN Online Discussion is a platform for delegates to ask questions, open up discussions and share key eco-entrepreneurship practices in their home countries. This is also a platform for delegates to acquaint themselves with each other.</li>
@@ -55,7 +55,7 @@ slug: yseali-generationgr3en
 			</video>
 		</div>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">YSEALI TV for YSEALI GenGR3EN</h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">YSEALI TV for YSEALI GenGR3EN</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -115,7 +115,7 @@ slug: yseali-generationgr3en
 
 			</div>
 		</div>
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">YSEALI TV for GenGR3EN Final Episode</h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">YSEALI TV for GenGR3EN Final Episode</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 	  <p>YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
 		<div>
@@ -129,14 +129,14 @@ slug: yseali-generationgr3en
 		</div>
 		<p class="mt-8"><img alt="YSEALI GenerationGR3EN Logos" class="w-full" src="images://events/generationgr3en/gengreen-logos.jpg" /></p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Moving Forward</h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Moving Forward</h3>
 		<p>The GenerationGR3EN Workshop has finally come to a close, but the challenge to create sustainable green businesses in the ASEAN Region has just begun. We hope that GenerationGR3EN has given our delegates the resources they need to make their green ideas a reality.</p>
 
 		<p><img class="rounded" src="images://events/generationgr3en/generationgr3en-sidebar-3.jpg" /></p>
 	</article>
 	<aside role="complimentary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 
 		<div  x-data="{ isOpen: false }">

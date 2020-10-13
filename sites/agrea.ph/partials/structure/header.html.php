@@ -10,7 +10,7 @@
   <div class="w-full text-gray-700">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="p-4 flex flex-row items-center justify-between">
-        <a role="banner" class="flex items-center mb-4 lg:mb-0 text-gray-900 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
+        <a role="banner" class="flex items-center mb-4 lg:mb-0 text-gray-900 dark:text-gray-100 dark-mode:text-white focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
           <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
             <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
             c8.35,1.48,24.26,2.32,36.45-8.02L110.73,85.44z M92.62,92.15c0.88-0.09,1.47-0.21,2.81-0.46c0.85-0.2,2.18-0.46,2.82-0.68

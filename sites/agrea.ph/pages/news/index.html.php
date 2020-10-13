@@ -18,7 +18,7 @@ collection:
 	<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
+				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
@@ -27,7 +27,7 @@ collection:
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('news/article', ['slug' => $article->slug]) ?>">
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('news/article', ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
@@ -49,12 +49,12 @@ collection:
 	</div>
 	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 
 		<div class="flex flex-col justify-start">
-			<h2 role="heading" aria-level="2" class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
+			<h2 role="heading" aria-level="2" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
 			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
 		</div>
 		<?
@@ -71,7 +71,7 @@ collection:
     			<img class="md:h-36 rounded w-full object-cover object-center" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
     		</a>
     		<p class=" text-gray-600 mt-2">
-    			<a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>"><?= $freshPick->title; ?></a>
+    			<a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>"><?= $freshPick->title; ?></a>
     		</p>
     		<p class="leading-relaxed text-gray-500 text-xs flex items-center">
     			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">

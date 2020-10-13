@@ -21,14 +21,14 @@ collection:
 	<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<article class="w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title; ?></h1>
+				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 				<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
 				<p>AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team. <br />We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane. </p>
 			</article>
 		</div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('/about/careers/article'), ['slug' => $article->slug]) ?>">
+			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('/about/careers/article'), ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
 					<span class="hidden"><?= config()->site->name ?></span>
 					<img class="rounded w-full object-contain object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
@@ -50,7 +50,7 @@ collection:
 	</div>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
   	<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
 		<div  x-data="{ isOpen: false }">
 			<?= import('/partials/navigation/submenu');?>
