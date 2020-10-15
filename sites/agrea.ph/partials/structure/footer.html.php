@@ -14,7 +14,7 @@
   </div>
   <div class="bg-gray-800 dark:bg-grey-100 h-20">
     <div class="container mx-auto flex flex-row items-center justify-between px-5 md:pt-6 pt-3 border-box">
-      <?= import('/partials/structure/logo',['display_class'=>'hidden md:','text_class'=>'text-gray-500 dark:text-gray-900']); ?>
+      <?= import('/partials/logos/agrea',['display_class'=>'hidden md:','text_class'=>'text-gray-500 dark:text-gray-900']); ?>
       <p class="text-gray-500 dark:text-gray-900 text-xs ml-3 sm:mt-0 mt-4">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <span class="text-gray-500 dark:text-gray-900 text-xs sm:ml-4 sm:mt-0 hidden md:inline">Follow our social feeds</span>
@@ -38,9 +38,7 @@
           </a>
         </span>
         <span class="text-gray-500 dark:text-gray-900 text-xs sm:ml-2 sm:mt-0">Built by</span>
-        <a href="https://www.joomlatools.com" title="By Joomlatools" class="ml-1 mr-4">
-            <svg class="w-5 h-5" viewBox="0 0 32 30.3303"><style>.jt-blue{fill:var(--jt-blue);}.jt-black{fill:var(--jt-black);}</style><g><path class="jt-black" d="M30.3747,14.26A12.1484,12.1484,0,0,0,13.7805,9.8135,2.3155,2.3155,0,1,0,16.096,13.824a7.5168,7.5168,0,0,1,7.5165,13.02,2.3158,2.3158,0,0,0,2.3158,4.0111A12.154,12.154,0,0,0,30.3747,14.26Z" transform="translate(0 -0.8348)"/><path class="jt-black" d="M24.2974,18.7688a2.3157,2.3157,0,0,0-4.631.0366v.0374a7.5181,7.5181,0,1,1-15.0347.047l0-.03A2.3155,2.3155,0,0,0,.0012,18.832a12.1491,12.1491,0,1,0,24.2974.1332C24.2983,18.8994,24.298,18.8343,24.2974,18.7688Z" transform="translate(0 -0.8348)"/></g><path id="accent" class="jt-blue" d="M24.5575,4.5516a2.3153,2.3153,0,0,0-1.1263-1.9888A12.1492,12.1492,0,1,0,11.2275,23.5715a2.3153,2.3153,0,0,0,2.2658-4.0385A7.518,7.518,0,1,1,21.0512,6.5362a2.3165,2.3165,0,0,0,3.5063-1.9846Z" transform="translate(0 -0.8348)"/></svg>
-        </a>
+        <?= import('/partials/logos/joomlatools'); ?>
         <a href="#top" title="Back to the top of the page" class="text-gray-500 hover:text-gray-300 text-center transition duration-300 ease-in-out w-5 h-5">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
