@@ -4,6 +4,6 @@ header:  []
 content: []
 ---
 <!-- Main content -->
-<div class="w-full text-base bg-white body-font">
+<div class="w-full">
 	<ktml:content>
 </div>

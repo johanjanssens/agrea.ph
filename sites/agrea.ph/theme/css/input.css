@@ -173,6 +173,9 @@ sup:not([class]) {
   --link-colour:var(--green-500);
   /* plyr.js colour override */
   --plyr-color-main: var(--green-500);
+  /* Joomlatools logo colour override */
+  --jt-black:var(--green-500);
+  --jt-blue:var(--lime-500);
 }
 /*
  * Smooth scrolling IF user doesn't have a preference due to motion sensitivities

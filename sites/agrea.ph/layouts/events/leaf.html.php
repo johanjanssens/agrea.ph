@@ -4,7 +4,7 @@ header:  []
 content: []
 ---
 <!-- Main content -->
-<section id="top" class="container px-5 py-8 mx-auto leading-relaxed text-gray-700 flex-1 bg-white">
+<section id="top" class="container mx-auto px-5 py-8 flex-1">
 	<div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 		<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 			<div class="flex flex-wrap w-full mb-10">
