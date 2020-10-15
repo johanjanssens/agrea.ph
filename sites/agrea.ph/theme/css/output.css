@@ -1172,11 +1172,11 @@ sup:not([class]) {
 }
 
 .font-title {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Impact, Arial Black, sans-serif;
 }
 
 .font-agrea {
-  font-family: typo3, serif;
+  font-family: typo3, Palatino, Book Antiqua, serif;
 }
 
 .font-medium {

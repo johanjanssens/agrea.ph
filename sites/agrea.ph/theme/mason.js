@@ -77,8 +77,8 @@ async function postcss() {
             outline: '0 0 0 3px rgba(120, 128, 35, 0.5)',
           },
           fontFamily: {
-            'title': ['Raleway', 'sans-serif'],
-            'agrea': ['typo3', 'serif'],
+            'title': ['Raleway', 'Impact', 'Arial Black', 'sans-serif'],
+            'agrea': ['typo3', 'Palatino', 'Book Antiqua', 'serif'],
           },
           screens: {
             'dark': {'raw': '(prefers-color-scheme: dark)'},
