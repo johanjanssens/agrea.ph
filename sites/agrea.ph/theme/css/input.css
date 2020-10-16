@@ -120,6 +120,11 @@ sup:not([class]) {
 .featured-image {
   height:33vh;
 }
+@screen lg {
+  .featured-image {
+    height:42.86vh;
+  }
+}
 .plyr {
   @apply rounded-lg;
 }
