@@ -13,8 +13,8 @@
     </div>
   </div>
   <div class="bg-gray-800 dark:bg-grey-100 h-20">
-    <div class="container mx-auto flex flex-row items-center justify-between px-5 md:pt-6 pt-3 border-box">
-      <div class="flex-1 flex flex-row items-center sm:mt-0 mt-4">
+    <div class="container mx-auto grid grid-cols-3 justify-items-center px-5 md:pt-6 pt-3">
+      <div class="flex flex-row items-center sm:mt-0 mt-4">
         <?= import('/partials/logos/agrea',[
           'display_class'=>'hidden md:',
           'device_size'=>'5',
@@ -22,10 +22,10 @@
         ]); ?>
         <p class="text-gray-500 dark:text-gray-900 text-xs ml-3">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
       </div>
-      <p class="flex-1 text-gray-500 dark:text-gray-900 text-xs sm:mt-0 mt-4 inline-flex justify-center ">
+      <p class="flex justify-center items-center text-gray-500 dark:text-gray-900 text-xs sm:mt-0 mt-4">
         <?= import('/partials/logos/joomlatools'); ?>
       </p>
-      <p class="flex-1 inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <p class="flex inline-flex sm:mt-0 mt-4 justify-end">
         <span itemscope itemtype="http://schema.org/Organization" class="inline-flex mx-2 -mt-2">
           <link itemprop="url" href="https://www.agrea.ph">
           <a itemprop="sameAs" href="https://www.facebook.com/agreaph" title="Follow us on facebook" class="bg-brand rounded border-green-900 border p-1 text-blue-800 hover:bg-green-200 transition duration-500 ease-in-out">
