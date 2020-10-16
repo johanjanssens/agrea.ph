@@ -18,6 +18,7 @@
         <?= import('/partials/logos/agrea',[
           'display_class'=>'hidden md:',
           'device_size'=>'5',
+          'device_padding'=>'p-px',
           'text_class'=>'text-gray-500 dark:text-gray-900 ml-1 text-base'
         ]); ?>
         <p class="text-gray-500 dark:text-gray-900 text-xs ml-3">&copy; <?= date('now', 'Y'); ?> <?= config()->site->name ?><span class="hidden md:inline"> | All rights reserved</span></p>
@@ -53,5 +54,5 @@
       </p>
     </div>
   </div>
-  <span class="w-5 w-10 h-5 h-10"></span>
+  <span class="hidden w-5 h-5 p-px"></span>
 </footer>
