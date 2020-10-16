@@ -118,7 +118,7 @@ sup:not([class]) {
 }
 /* Single article featured image */
 .featured-image {
-  height:28rem;
+  height:33vh;
 }
 .plyr {
   @apply rounded-lg;

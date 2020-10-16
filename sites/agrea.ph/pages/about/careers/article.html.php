@@ -26,7 +26,7 @@ visible: false
 						</svg> <?= date(collection()->published_date, 'd M, Y'); ?>
 					</span>
 				</p>
-				<div class="mt-2" itemprop="articleBody" content="<?= collection()->text ?>"><?= collection()->text ?></div>
+				<div class="mt-2" itemprop="articleBody" content="<?= escape(strip_tags(collection()->excerpt.collection()->text)) ?>"><?= collection()->excerpt.collection()->text ?></div>
 			</div>
 		</div>
 	</ktml:images>
