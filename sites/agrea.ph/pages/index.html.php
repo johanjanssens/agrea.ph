@@ -45,7 +45,7 @@ title: Agrea - Ecology of Dignity
   <div role="complimentary" class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
-        <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none uppercase">Latest News Sprouts</h2>
+        <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Latest News Sprouts</h2>
         <div class="h-1 w-20 bg-green-500 rounded"></div>
       </div>
     </div>
@@ -139,7 +139,7 @@ title: Agrea - Ecology of Dignity
         <div class="w-24 h-full bg-lime-500"></div>
       </div>
       <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h2 role="heading" aria-level="2" class="sm:text-5xl sm:mb-0 text-4xl font-medium font-title mb-2 text-gray-200 leading-tight uppercase">In focus</h2>
+        <h2 role="heading" aria-level="2" class="sm:text-5xl sm:mb-0 text-4xl font-medium font-title mb-2 text-gray-200 leading-tight">In focus</h2>
       </div>
     </div>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">

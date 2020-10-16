@@ -29,7 +29,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 
 			<div class="min-h-screen mb-24">
 				<div class="circles relative z-10 py-40 flex justify-center items-center">
-					<div class="circle-text text-white text-3xl uppercase text-center font-title bg-dark-green-500">Vision</div>
+					<div class="circle-text text-white text-3xl text-center font-title bg-dark-green-500">Vision</div>
 					<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:bottom-auto lg:left-0 w-48">
 						<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Vision</h3>
 						<p>To create the first <span class="text-gray-700 font-bold">One Island Economy</span> model in the Philippines by 2035</p>
@@ -37,14 +37,14 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				</div>
 				<div class="lg:grid lg:grid-cols-2 lg:-mt-12">
 					<div class="circles relative z-10 py-40 flex justify-center items-center">
-						<div class="circle-text text-white text-3xl uppercase text-center font-title bg-green-500">Mission</div>
+						<div class="circle-text text-white text-3xl text-center font-title bg-green-500">Mission</div>
 						<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:left-0 w-48">
 							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Mission</h3>
 							<p>To alleviate poverty and hunger of farming and fishing communities</p>
 						</aside>
 					</div>
 					<div class="circles relative z-10 py-40 flex justify-center items-center">
-						<div class="circle-text text-white text-3xl uppercase text-center font-title bg-orange-500">Goals</div>
+						<div class="circle-text text-white text-3xl text-center font-title bg-orange-500">Goals</div>
 						<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:right-0 w-48">
 							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Goals</h3>
 							<ul class="text-gray-700 font-bold lg:-ml-3">
