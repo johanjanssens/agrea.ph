@@ -105,7 +105,7 @@ collection:
 					<h4 role="heading" aria-level="4" class="text-md font-semibold text-gray-900 dark:text-gray-100 -mt-1"><?= $testimonial->name; ?></h4>
 					<p class="text-gray-500 text-xs font-semibold"><?= $testimonial->course; ?></p>
 					<p class="text-gray-500 text-xs"><?= $testimonial->college; ?></p>
-					<p class="mt-3 text-sm font-agrea normal-case">
+					<p class="mt-3 text-xs font-agrea normal-case">
 					<?= $testimonial->quote; ?>
 					</p>
 				</div>
