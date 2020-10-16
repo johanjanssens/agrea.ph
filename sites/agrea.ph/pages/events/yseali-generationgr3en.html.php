@@ -10,7 +10,7 @@ slug: yseali-generationgr3en
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-lazyload="progressive,inline">
@@ -23,7 +23,7 @@ slug: yseali-generationgr3en
 
 
 		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Background</strong></h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p>The ASEAN region is home to four of the world’s 34 biodiversity hot spots that are characterized both by exceptional levels of plant and animal endemism. In the recent years, the ASEAN region has been undergoing dynamic transformation and modernization by a strong economic growth but driven by unsustainable practices which results to serious levels of biodiversity loss. </p>
 
 		<blockquote>Therefore, with the economic growth must come the development of greener businesses in order to better sustain it.</blockquote>
@@ -31,7 +31,7 @@ slug: yseali-generationgr3en
 		<p>Eco-tourism is just one opportunity that can be explored in the diverse field of eco-business. It can also serve as a platform for other opportunities in a broad range of business segments that can help drive community development by providing the alternate source of greater resilience livelihood to local communities.</p>
 
 		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Core Topics</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Environment | Economy | Empowerment | Networks</p>
 
@@ -56,7 +56,7 @@ slug: yseali-generationgr3en
 		</div>
 
 		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">YSEALI TV for YSEALI GenGR3EN</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<div class="lg:grid lg:grid-cols-2 lg:gap-8">
 			<div class="generationgr3en-video-episode">
@@ -116,7 +116,7 @@ slug: yseali-generationgr3en
 			</div>
 		</div>
 		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">YSEALI TV for GenGR3EN Final Episode</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 	  <p>YSEALI GenerationGR3EN has come full circle. Our Top 3 teams from the Workshop traveled all the way to the Philippines and experienced the YSEALI GenerationGR3EN Continued Learning Immersion Program (CLIP). This fifth and last episode of the&nbsp;YSEALITV for YSEALI GenGR3EN lets you hear from the speakers, and the delegates themselves, as they experience immersive learning opportunities all for the objective of creating real-life eco-business.</p>
 		<div>
 			<video class="w-full" poster="/videos/460711372?key=0fc08bafb5" controlsList="nodownload" playsinline controls data-expand="10">
@@ -137,7 +137,7 @@ slug: yseali-generationgr3en
 	<aside role="complimentary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<div  x-data="{ isOpen: false }">
 			<?= import('/partials/navigation/submenu');?>

@@ -14,7 +14,7 @@ slug: agrea-1000-strong
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/1000strong/elizabeth-andrew-quote.jpg" data-max-width="50%" data-lazyload="progressive,inline">
@@ -29,7 +29,7 @@ slug: agrea-1000-strong
 
 			<img alt="Be a 1000Strong Volunteer" class="rounded w-full my-6" src="images://programs/1000strong/1000strong-5.jpg" />
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4 leading-tight">Be an AGREA 1000 Strong Volunteer</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<p class="text-gray-900 my-4">Fill-out and submit the form below to receive updates and other opportunities available for AGREA 1000 Strong volunteers.</p>
 			<form class="text-gray-900 mb-8">
 				<fieldset class="mb-4">
@@ -132,7 +132,7 @@ slug: agrea-1000-strong
 					</div>
 				</fieldset>
 				<div class="submit">
-					<button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded" type="submit">Submit</button>
+					<button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded" type="submit">Submit</button>
 				</div>
 			</form>
 		</ktml:images>
@@ -141,11 +141,11 @@ slug: agrea-1000-strong
 	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<?= import('/partials/slider', ['class' => ['mb-8'], 'folder' => 'images://slider/arborday', 'max_width' => '25%']); ?>
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4 leading-tight">Appreciating our volunteers</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>
 		<blockquote class="text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
 		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>

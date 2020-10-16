@@ -22,7 +22,7 @@ title: Agrea - Ecology of Dignity
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">We are <span class="sm:text-4xl text-3xl font-agrea">Agrea</span></h1>
-        <div class="h-1 w-20 bg-green-500 rounded"></div>
+        <div class="h-1 w-20 bg-brand rounded"></div>
       </div>
     </div>
     <div class="grid lg:grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ title: Agrea - Ecology of Dignity
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Latest News Sprouts</h2>
-        <div class="h-1 w-20 bg-green-500 rounded"></div>
+        <div class="h-1 w-20 bg-brand rounded"></div>
       </div>
     </div>
     <div class="grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -74,7 +74,7 @@ title: Agrea - Ecology of Dignity
       <? endforeach ?>
     </div>
     <div class="flex justify-center mt-12">
-        <a role="button" href="/news" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
+        <a role="button" href="/news" class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Discover More News Sprouts</a>
     </div>
   </div>
   </ktml:images>
@@ -86,7 +86,7 @@ title: Agrea - Ecology of Dignity
   <div class="flex flex-wrap w-full mb-10">
     <div class="w-full mb-6 lg:mb-0">
       <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Farm schools, fora and reports</h2>
-      <div class="h-1 w-20 bg-green-500 rounded"></div>
+      <div class="h-1 w-20 bg-brand rounded"></div>
     </div>
   </div>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
@@ -151,7 +151,7 @@ title: Agrea - Ecology of Dignity
           <div class="mt-10">
             <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 mb-3">Be a #AGREA1000Strong Volunteer</h3>
             <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
-            <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
+            <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-brand border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
           </div>
         </div>
       </aside>
@@ -187,7 +187,7 @@ title: Agrea - Ecology of Dignity
       <div class="sm:w-1/3 sm:pr-8 sm:py-8">
         <div class="flex flex-col justify-center">
           <h2 role="heading" aria-level="2" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Fresh picks from the AGREA Farm</h2>
-          <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-10"></div>
+          <div class="w-12 h-1 bg-brand rounded mt-2 mb-10"></div>
         </div>
         <?
             $freshPicks = collection('ext:joomla.model.articles', [
@@ -218,7 +218,7 @@ title: Agrea - Ecology of Dignity
         <div class="flex flex-wrap w-full mb-10">
           <div class="w-full mb-6 lg:mb-0">
             <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Agrea in the news</h2>
-            <div class="h-1 w-20 bg-green-500 rounded"></div>
+            <div class="h-1 w-20 bg-brand rounded"></div>
           </div>
         </div>
         <div class="grid lg:grid-cols-2 gap-8 mb-8">

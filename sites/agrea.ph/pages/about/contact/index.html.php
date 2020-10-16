@@ -29,7 +29,7 @@ form:
         <div class="flex flex-wrap w-full mb-10">
             <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
                 <h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-                <div class="h-1 w-20 bg-green-500 rounded"></div>
+                <div class="h-1 w-20 bg-brand rounded"></div>
                 <p class="mt-4">To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
             </div>
             <div class="lg:w-1/2 md:block hidden w-full">
@@ -70,12 +70,12 @@ form:
     <aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
     <ktml:images max-width="25%">
         <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <div  x-data="{ isOpen: false }">
             <?= import('/partials/navigation/submenu');?>
         </div>
         <h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Email Addresses:</h3>
-        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <dl>
             <dt>General Inquiries:</dt>
             <dd itemprop="email"><a href="mailto:hello@agrea.ph">hello@agrea.ph</a></dd>
@@ -87,7 +87,7 @@ form:
             <dd itemprop="email"><a href="mailto:1000strong@agrea.ph">1000strong@agrea.ph</a></dd>
         </dl>
         <h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Social Media Accounts:</h3>
-        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <ul class="mb-2">
             <link itemprop="url" href="https://www.agrea.ph">
             <li>
@@ -117,7 +117,7 @@ form:
             </li>
         </ul>
         <h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Syndicated News:</h3>
-        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <ul class="mb-2">
             <li>
               <a href="/news.rss" title="Follow us on twitter" class="inline-flex hover:text-orange-600 transition duration-500 ease-in-out">

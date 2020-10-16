@@ -1,5 +1,5 @@
 <a role="banner" class="<?= $display_class = $display_class ?? ''; ?>flex items-center mb-4 lg:mb-0 focus:outline-none focus:shadow-outline" href="/" title="AGREA homepage">
-  <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 171.92 172.39">
+  <svg fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round" class="w-<?= $device_size = $device_size ?? '10'; ?> h-<?= $device_size = $device_size ?? '10'; ?> text-white p-px bg-brand rounded-full" viewBox="0 0 171.92 172.39">
     <path d="M110.73,85.44c-12.1,10.44-30.23,7.84-32.87,7.39c-0.75,2.16-1.17,4.07-1.44,5.38
     c8.35,1.48,24.26,2.32,36.45-8.02L110.73,85.44z M92.62,92.15c0.88-0.09,1.47-0.21,2.81-0.46c0.85-0.2,2.18-0.46,2.82-0.68
     c-4.46-11.16-12.52-19.33-12.52-19.33c0,0-0.01,0.01-0.01,0.01c-0.02,0.02,0,0,0,0c-4.17-4.27-9.66-6.73-14.35-8.04l-2.23,4.98
@@ -22,5 +22,5 @@
     S40.45,3.58,85.95,3.58S168.34,40.61,168.34,86.28 M170.99,86.28c0-47.14-38.07-85.35-85.04-85.35S0.91,39.14,0.91,86.28
     s38.07,85.35,85.04,85.35S170.99,133.42,170.99,86.28"/>
   </svg>
-  <span class="<?= $text_class = $text_class ?? ''; ?> ml-3 text-xl font-agrea font-medium uppercase"><?= config()->site->name ?></span>
+  <span class="<?= $text_class = $text_class ?? ''; ?> font-agrea uppercase"><?= config()->site->name ?></span>
 </a>

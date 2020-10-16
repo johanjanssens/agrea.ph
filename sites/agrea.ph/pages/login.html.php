@@ -36,7 +36,7 @@ visible: false
                     <input type="password" name="password" placeholder="Password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
 
-                <input type="submit" value="Log In" class="text-white bg-green-500 border-0 py-2 px-6 cursor-pointer focus:outline-none hover:bg-green-600 rounded text-lg mt-8">
+                <input type="submit" value="Log In" class="text-white bg-brand border-0 py-2 px-6 cursor-pointer focus:outline-none hover:bg-green-600 rounded text-lg mt-8">
             </form>
         </div>
 

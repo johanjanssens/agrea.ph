@@ -20,7 +20,7 @@ collection:
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
         		<?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
@@ -58,7 +58,7 @@ collection:
 	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<div class="flex content-between my-4">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mx-2">
@@ -66,7 +66,7 @@ collection:
 			</svg>
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title">Subscribe to AGREA</h3>
 		</div>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p>Get the latest news and updates from the AGREA Team.</p>
 		<?= import('/partials/form/subscribe'); ?>
 		</ktml:images>

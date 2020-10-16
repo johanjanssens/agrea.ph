@@ -14,7 +14,7 @@ slug: agrea-farm-estate
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/farm-estate/farm-estate-1.jpg" data-max-width="50%" data-lazyload="progressive,inline">
@@ -56,19 +56,19 @@ slug: agrea-farm-estate
 	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<aside>
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Enroll Now: Organic Backyard Gardening Skills Training</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<p><img class="rounded" src="images://programs/farm-estate/backyard-gardening.jpg"></p>
 
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Learn organic farming the AGREA way!</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<p class="text-gray-900 my-4">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers Organic Backyard Gardening Skills Training.</p>
 
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Hands-On Organic Farming Training</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 			<table class="text-sm text-gray-900 dark:text-gray-100 my-4 w-full">
 				<tbody>
@@ -104,7 +104,7 @@ slug: agrea-farm-estate
 			</table>
 
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Learn from the experts!</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 			<h4 role="heading" aria-level="4" class="text-gray-900 font-medium my-4">Cherrie D. Atilano</h4>
 			<p class="text-sm text-gray-900 dark:text-gray-100 my-4">AGREA President and Founding Farmer. Graduated Magna Cum Laude with a Bachelor’s Degree in Agriculture, Major in Horticulture Specializing on Tissue Culture from the Visayas State University in Leyte.</p>
@@ -116,7 +116,7 @@ slug: agrea-farm-estate
 			<p class="text-sm text-gray-900 dark:text-gray-100 my-4">AGREA Associate Director of Agricultural Abundance. Holds a Bachelor of Science Degree in Agriculture Major in Agronomy Specializing in Crop Production and Management at the University of the Philippines - Los Baños.</p>
 
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Affordable Tuition Fee!</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<p class="text-gray-900 my-4">Pay only P750* per session per person or a one-time payment of P2,700* for all 4-sessions (10% discount).<br />
 				<em>*inclusive of healthy lunch and certificate</em>
 			</p>
@@ -127,7 +127,7 @@ slug: agrea-farm-estate
 			</div>
 
 			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Also available: AGREA Fertilizer Packs!</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 			<p><img class="rounded" src="images://programs/farm-estate/organic-fertilizers-pack.jpg" /></p>
 

@@ -14,7 +14,7 @@
           <h1 class="font-title sm:text-5xl text-3xl mb-0 font-medium text-dark-green-800 text-opacity-50 leading-none"><?= $articles->title ?></h1>
           <div class="my-4 text-lg text-dark-green-800 text-opacity-50"><?= $articles->excerpt ?></div>
           <div class="flex justify-center">
-              <a href="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</a>
+              <a href="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>" class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</a>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ collection:
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
           <?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
@@ -51,7 +51,7 @@ collection:
 		<div class="flex flex-col sm:flex-row mt-8">
 			<aside class="sm:w-1/4 sm:pr-8 sm:pb-8 sm:pt-0 sm:border-r border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 				<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Scholarship Programs Offered at the AGREA Farm School</h3>
-				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+				<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 				<ul>
 					<li class="mb-2"><a href="/farm-school/agrea-now-offers-short-term-scholarships-in-organic-farming" target="_blank">Short-term Scholarships</a></li>
 					<li class="mb-2"><a href="/farm-school/take-the-organic-agriculture-ncii-course-at-the-agrea-farm-school" target="_blank">Training for Work Scholarship Program (TWSP)</a></li>
@@ -61,7 +61,7 @@ collection:
 			</aside>
 			<aside class="sm:w-3/4 sm:pl-8 sm:pt-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
 				<h3 role="heading" aria-level="3" class="font-medium font-title text-gray-900 dark:text-gray-100 text-lg">Why tesda scholarship?</h3>
-				<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+				<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 				<p><img src="images://farm-school/tesda-scholarships-at-the-agrea-farm-school.jpg" class="rounded w-full" data-max-width="70%"></p>
 				<p>In the interest of service and in line with the TESDA Reform and Development Agenda, the AGREA Farm School is registered and certified to provide scholarships to target beneficiaries. For the complete guidelines and list of catered beneficiaries, please click <a href="http://www.tesda.gov.ph/About/TESDA/1277" target="_blank">here</a>.</p>
 				<p><span style="font-size: medium;"><strong class="">Scholarship Benefits</strong></span>
@@ -77,7 +77,7 @@ collection:
 	<aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<div class="flex flex-col">
 			<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Be an agri scholar now</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-certified-organic-agri-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
 			<ktml:images max-width="33%" lazyload="progressive,inline">
 			<?= import('/partials/articles/image-title-excerpt',[
@@ -94,7 +94,7 @@ collection:
 			]); ?>
 			</ktml:images>
 			<h3 role="heading" aria-level="3" class="font-medium font-title text-gray-900 dark:text-gray-100 text-lg">Testimonials</h3>
-			<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<? foreach (data('testimonials') as $testimonial) : ?>
 			<!-- testimonial card -->
 			<div class="flex flex-row py-6">

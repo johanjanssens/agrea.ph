@@ -16,7 +16,7 @@
       </h1>
       <p class="mb-4 text-dark-green-800 text-opacity-50"><?= $articles->excerpt ?></p>
       <div class="flex justify-center">
-        <a href="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</a>
+        <a href="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>" class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</a>
       </div>
     </div>
   </div>

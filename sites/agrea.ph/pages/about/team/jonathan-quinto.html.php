@@ -10,7 +10,7 @@ slug: jonathan-quinto
 <ktml:images max-width="80%" lazyload="progressive,inline">
 	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 	<p itemprop="jobTitle" class="mb-2 text-sm font-medium"><?= $position ?></p>
-	<div class="h-1 w-20 bg-green-500 rounded mb-6"></div>
+	<div class="h-1 w-20 bg-brand rounded mb-6"></div>
 	<img itemprop="image" class="rounded md:w-1/4 md:float-right md:ml-4 mb-6" src="images://team/<?= $slug ?>.jpg" alt="<?= $title ?>">
 	<div class="md:inline" itemprop="articleBody">
 		<p>Born and raised in Torrijos, Marinduque, Jonathan is a fifth generation farmer and fisherman. After juggling his college studies and farming for eight years, he received his Diploma in Agricultural Technology and a Bachelor’s Degree in Agricultural Technology (DAT-BAT) at the Marinduque State College. He took an 11-month Occupational Internship in Agro Studies from the Mehadrin Tnuport Export, Moshav Hodaya, in Southern Israel.</p>

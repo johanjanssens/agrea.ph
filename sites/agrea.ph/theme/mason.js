@@ -12,6 +12,7 @@ async function postcss() {
       theme: {
         extend: {
           colors: {
+            'brand': '#788023',
             'green': {
               50: '#F8F9F4',
               100: '#F2F2E9',

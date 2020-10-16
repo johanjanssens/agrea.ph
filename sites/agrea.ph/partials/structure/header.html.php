@@ -10,7 +10,7 @@
   <div class="w-full text-gray-700">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-2 mx-auto lg:items-center lg:justify-between lg:flex-row">
       <div class="p-4 flex flex-row items-center justify-between">
-        <?= import('/partials/logos/agrea',['text_class'=>'dark:text-gray-100',]); ?>
+        <?= import('/partials/logos/agrea',['text_class'=>'dark:text-gray-100 ml-3 text-xl',]); ?>
         <!-- Button Mobile Nav -->
         <button class="lg:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">

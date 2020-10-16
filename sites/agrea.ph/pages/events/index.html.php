@@ -18,7 +18,7 @@ collection:
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
         		<?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
@@ -50,14 +50,14 @@ collection:
 	<aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<div  x-data="{ isOpen: false }">
 			<?= import('/partials/navigation/submenu');?>
 		</div>
 
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">Partner Events</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949/2390153167916456/?type=3&amp;theater&amp;_rdc=1&amp;_rdr"><img class="rounded w-full" src="images://events/partner-events/magna-carta-of-rural-women.jpg" alt="Magna Carta of Rural Women: Round Table on Gender Equity &amp; Empowerment" /></a></p>
 		<p class="leading-relaxed text-dark-green-500 text-xs font-medium mb-2">Tue, September 17, 2019</p>
 		<h2 role="heading" aria-level="2" class="text-lg text-gray-900 dark:text-gray-100 font-medium font-title mb-4 leading-tight"><a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="https://www.facebook.com/agreaph/photos/a.1580538318877949/2390153167916456/?type=3&amp;theater&amp;_rdc=1&amp;_rdr">Magna Carta of Rural Women: Round Table on Gender Equity &amp; Empowerment</a></h2>

@@ -12,7 +12,7 @@ slug: leaf
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<?= import('/partials/slider', ['folder' => 'images://slider/events/leaf', 'max_width' => '50%']); ?>
@@ -27,7 +27,7 @@ slug: leaf
 		<p>Access insights and best practices from the inaugural LEAF Forum: Redefining &amp; Revitalizing Agriculture. This report summarizes the discussions and action plans for agriculture formed by the 500 delegates that attended LEAF. </p>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">2018 Forum: Redefine &amp; Revitalize Agriculture</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><strong>DATE: </strong>September 29 &amp; 30, 2018<br />
 		<strong>VENUE: </strong>Taal Vista Hotel, Tagaytay, Philippines</p>
@@ -46,22 +46,22 @@ slug: leaf
 		</ul>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Speakers</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-speakers">here</a> to view LEAF 2018 Speakers.</p>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Moderators and Facilitators</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-moderators-and-facilitators">here</a> to view LEAF 2018 Moderators and Facilitators.</p>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><a href="images://events/leaf/leaf-2018-global-advisory-board"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Join the LEAF Young Agripreneurs Pitch</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>YOUNG AGRIPRENEURS PITCH IS EXTENDED! Send in your proposal by 11:59PM on or before Sunday, 23 September 2018.<br />
 		Are you a young entrepreneur with an innovative project for agriculture? <a href="http://www.agreaph.com/leaf-registration" target="_blank">Register for LEAF</a> and apply to pitch your idea at the Young Agripreneurs session! Click on the image below for details.</p>
@@ -69,7 +69,7 @@ slug: leaf
 		<p><img class="rounded w-full" src="images://events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<?= import('/partials/slider', ['images' => [
 				'images://slider/events/leaf/core-sessions/core-sessions-1.jpg',
@@ -79,7 +79,7 @@ slug: leaf
 			], 'max_width' => '80%']); ?>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Agritech core sessions</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<?= import('/partials/slider', ['images' => [
 			'images://slider/events/leaf/core-sessions/core-sessions-5.jpg',
@@ -89,7 +89,7 @@ slug: leaf
 		], 'max_width' => '80%']); ?>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><img class="rounded w-full" src="images://events/leaf/leaf-2018-programme-full.jpg" /></p>
 
@@ -98,7 +98,7 @@ slug: leaf
 	</article>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<div  x-data="{ isOpen: true }">
 			<?= import('/partials/navigation/submenu');?>
 		</div>

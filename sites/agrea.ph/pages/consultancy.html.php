@@ -15,7 +15,7 @@ slug: consultancy
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
 				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
 				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive,inline">
@@ -184,7 +184,7 @@ slug: consultancy
         <p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
         <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
         <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Consult with AGREA</h3>
-        <div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <p>To find more about our consultancy services please <a href="/about/contact">contact us</a> and send us a message.</p>
 	</aside>
 </div>
