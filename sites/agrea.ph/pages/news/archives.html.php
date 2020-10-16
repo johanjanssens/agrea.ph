@@ -44,8 +44,8 @@ collection:
 					</p>
 					<p><?= $article->category->name; ?></p>
 					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h2>
-					<div class="mb-2"><?= $article->excerpt; ?></div>
-					<p class="text-xs mt-2">
+					<p class="text-sm mb-2"><?= strip_tags($article->excerpt); ?></p>
+					<p class="text-xs">
 						Written by: <?= $article->getAuthor()->getName(); ?>
 					</p>
 				</aside>
