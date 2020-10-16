@@ -116,6 +116,10 @@ sup:not([class]) {
 .hero-image > div {
   @apply bg-right;
 }
+/* Single article featured image */
+.featured-image {
+  height:24rem;
+}
 .plyr {
   @apply rounded-lg;
 }

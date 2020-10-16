@@ -2,7 +2,9 @@
 <div class="max-w-4xl m-auto mt-8">
 	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $article->title ?></h1>
 	<div class="h-1 w-20 bg-brand rounded mb-6"></div>
-	<img itemprop="image" class="rounded w-full mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+	<div class="mb-6">
+		<img itemprop="image" class="featured-image rounded object-cover w-full" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+	</div>
 	<p class="mt-2 text-xs font-medium flex flex-row justify-between">
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<span itemprop="name"><?//= $article->getAuthor()->getName() ?></span>

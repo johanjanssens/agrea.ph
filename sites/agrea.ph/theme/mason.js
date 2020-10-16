@@ -81,10 +81,12 @@ async function postcss() {
             'title': ['Raleway', 'Arial Black', 'sans-serif'],
             'agrea': ['typo3', 'Palatino', 'Book Antiqua', 'serif'],
           },
+          /*
           screens: {
             'dark': {'raw': '(prefers-color-scheme: dark)'},
             // => @media (prefers-color-scheme: dark) { ... }
           },
+          */
         }
       },
       variants: {
