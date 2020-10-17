@@ -13,8 +13,8 @@
     </div>
   </div>
   <div class="bg-gray-800 dark:bg-grey-100 h-20">
-    <div class="container mx-auto grid grid-cols-3 justify-items-center px-5 md:pt-6 pt-3">
-      <div class="flex flex-row items-center sm:mt-0 mt-4">
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-3 justify-items-center px-5 md:pt-6 pt-3">
+      <div class="hidden md:flex flex-row items-center sm:mt-0 mt-4">
         <?= import('/partials/logos/agrea',[
           'display_class'=>'hidden md:',
           'device_size'=>'5',
