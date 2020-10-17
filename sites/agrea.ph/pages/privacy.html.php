@@ -47,8 +47,6 @@ visible: false
 
 		<ul class="mb-6">
 			<li>(a) create an online account,</li>
-			<li>(b) apply for membership to the Agrea Global Network (“Agrea”),</li>
-			<li>(c) vouch for someone’s application to the Agrea,</li>
 			<li>(d) make a donation or purchase,</li>
 			<li>(e) select a Agrea license or tool,</li>
 			<li>(f) register for an event,</li>
