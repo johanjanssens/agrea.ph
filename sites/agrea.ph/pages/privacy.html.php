@@ -1,8 +1,8 @@
 ---
 layout:
-path: default
-footer:
-image: images://background/farmer-couple.jpg
+    path: default
+    footer:
+        image: images://background/farmer-couple.jpg
 name: Privacy
 title: Agrea Privacy Policy
 summary: This Privacy Policy explains the information collection, use, and sharing practices of Agrea International
@@ -45,17 +45,19 @@ visible: false
 
 		<p>We will collect any information you provide to us. We may collect information from you in a variety of ways, such as when you:</p>
 
-		<ul class="mb-6">
-			<li>(a) create an online account,</li>
-			<li>(d) make a donation or purchase,</li>
-			<li>(e) select a Agrea license or tool,</li>
-			<li>(f) register for an event,</li>
-			<li>(g) apply for a scholarship, grant, or fellowship,</li>
-			<li>(h) contact us or provide feedback,</li>
-			<li>(i) sign a petition distributed by Agrea,</li>
-			<li>(j) upload your creative work or images,</li>
-			<li>(k) subscribe to our newsletter, or</li>
-			<li>(l) apply for a job at Agrea.</li>
+		<ul class="mb-6 list-alpha list-inside">
+			<li>Create an online account,</li>
+			<li>Apply for membership to the Agrea Global Network (“Agrea”),</li>
+			<li>Vouch for someone’s application to the Agrea Global Network,</li>
+			<li>Make a donation or purchase,</li>
+			<li>Select a Agrea license or tool,</li>
+			<li>Register for an event,</li>
+			<li>Apply for a scholarship, grant, or fellowship,</li>
+			<li>Contact us or provide feedback,</li>
+			<li>Sign a petition distributed by Agrea,</li>
+			<li>Upload your creative work or images,</li>
+			<li>Subscribe to our newsletter, or</li>
+			<li>Apply for a job at Agrea.</li>
 		</ul>
 
 		<p>This information may include but is not limited to your name, email address, phone number, mailing address, payment information, photo, geographic location, and your social media handles. We may also collect additional demographic and other information about you in connection with our conferences and events (e.g., dietary and other preferences), and the provision of this information to us by you is optional.</p>

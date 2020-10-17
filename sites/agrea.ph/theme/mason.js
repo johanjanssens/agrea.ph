@@ -81,6 +81,9 @@ async function postcss() {
             'title': ['Raleway', 'Arial Black', 'sans-serif'],
             'agrea': ['typo3', 'Palatino', 'Book Antiqua', 'serif'],
           },
+          listStyleType: {
+            'alpha': 'lower-alpha',
+          }
           /*
           screens: {
             'dark': {'raw': '(prefers-color-scheme: dark)'},
