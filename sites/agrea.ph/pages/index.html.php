@@ -182,7 +182,7 @@ title: Agrea - Ecology of Dignity
 
 <section class="text-gray-700">
   <ktml:images max-width="33%" lazyload="progressive">
-  <div class="container px-5 py-24 mx-auto flex flex-col">
+  <div class="container px-5 py-12 mx-auto flex flex-col">
     <div class="flex flex-col sm:flex-row mt-10">
       <div class="sm:w-1/3 sm:pr-8 sm:py-8">
         <div class="flex flex-col justify-center">
@@ -214,7 +214,7 @@ title: Agrea - Ecology of Dignity
         <? endforeach ?>
       </div>
 
-      <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+      <div class="sm:w-2/3 sm:pl-8 sm:pt-4 sm:pb-2 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 sm:mt-0 text-center sm:text-left">
         <div class="flex flex-wrap w-full mb-10">
           <div class="w-full mb-6 lg:mb-0">
             <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Agrea in the news</h2>
