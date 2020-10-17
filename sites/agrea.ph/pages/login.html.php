@@ -18,7 +18,7 @@ visible: false
     <div class="w-full md:w-1/2 flex flex-col">
 
         <div class="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-            <?= import('/partials/structure/logo',['text_class'=>'dark:text-gray-100',]); ?>
+            <?= import('/partials/logos/agrea',['text_class'=>'dark:text-gray-100',]); ?>
         </div>
 
         <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
