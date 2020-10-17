@@ -68,7 +68,7 @@ collection:
         <? foreach($freshPicks as $freshPick) :?>
     	<aside class="flex flex-col justify-start mb-10">
     		<a class="h-48" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>">
-    			<img class="object-cover object-center h-full w-full" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
+    			<img class="rounded-lg object-cover object-center h-full w-full" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
     		</a>
     		<p class=" text-gray-600 mt-2">
     			<a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>"><?= $freshPick->title; ?></a>
