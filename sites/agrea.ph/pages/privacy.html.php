@@ -1,8 +1,8 @@
 ---
 layout:
-    path: default
-    footer:
-        image: images://background/farmer-couple.jpg
+path: default
+footer:
+image: images://background/farmer-couple.jpg
 name: Privacy
 title: Agrea Privacy Policy
 summary: This Privacy Policy explains the information collection, use, and sharing practices of Agrea International
@@ -16,7 +16,7 @@ visible: false
 	<div class="max-w-4xl m-auto mt-8">
 		<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 		<div class="h-1 w-20 bg-brand rounded mb-6"></div>
-		
+
 		<p class="font-bold mb-6">Last Updated: December 9, 2019</p>
 
 		<p>This Privacy Policy (“Policy”) explains the information collection, use, and sharing practices of Agrea International (“Agrea”, “AGREA”, “we”, “us”, and “our”).</p>
@@ -43,7 +43,24 @@ visible: false
 
 		<h4>Information You Provide Directly to Us</h4>
 
-		<p>We will collect any information you provide to us. We may collect information from you in a variety of ways, such as when you: (a) create an online account, (b) apply for membership to the Agrea Global Network (“Agrea”), (c) vouch for someone’s application to the Agrea, (d) make a donation or purchase, (e) select a Agrea license or tool, (f) register for an event, (g) apply for a scholarship, grant, or fellowship, (h) contact us or provide feedback, (i) sign a petition distributed by Agrea, (j) upload your creative work or images, (k) subscribe to our newsletter, or (l) apply for a job at Agrea. This information may include but is not limited to your name, email address, phone number, mailing address, payment information, photo, geographic location, and your social media handles. We may also collect additional demographic and other information about you in connection with our conferences and events (e.g., dietary and other preferences), and the provision of this information to us by you is optional.</p>
+		<p>We will collect any information you provide to us. We may collect information from you in a variety of ways, such as when you:</p>
+
+		<ul class="mb-6">
+			<li>(a) create an online account,</li>
+			<li>(b) apply for membership to the Agrea Global Network (“Agrea”),</li>
+			<li>(c) vouch for someone’s application to the Agrea,</li>
+			<li>(d) make a donation or purchase,</li>
+			<li>(e) select a Agrea license or tool,</li>
+			<li>(f) register for an event,</li>
+			<li>(g) apply for a scholarship, grant, or fellowship,</li>
+			<li>(h) contact us or provide feedback,</li>
+			<li>(i) sign a petition distributed by Agrea,</li>
+			<li>(j) upload your creative work or images,</li>
+			<li>(k) subscribe to our newsletter, or</li>
+			<li>(l) apply for a job at Agrea.</li>
+		</ul>
+
+		<p>This information may include but is not limited to your name, email address, phone number, mailing address, payment information, photo, geographic location, and your social media handles. We may also collect additional demographic and other information about you in connection with our conferences and events (e.g., dietary and other preferences), and the provision of this information to us by you is optional.</p>
 
 		<h4>Information that Is Automatically Collected</h4>
 
