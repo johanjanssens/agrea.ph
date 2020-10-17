@@ -1,4 +1,4 @@
-<form method="post" action="<?= route('contact') ?>" class="text-gray-900">
+<form method="post" action="<?= route('about/contact') ?>" class="text-gray-900">
 	<fieldset class="mb-4">
 		<div class="question">
 			<label class="block">Name<sup>*</sup></label>
