@@ -38,8 +38,7 @@ collection:
 						</svg> <?= date($article->published_date, 'd M, Y'); ?>
 					</p>
 					<h2 role="heading" aria-level="2" class="text-lg font-medium font-title mb-4 leading-tight" ><?= $article->title; ?></h2>
-					<div class="text-sm" ><?= $article->excerpt; ?></div>
-					<p class="text-xs mt-2">
+					<p class="text-xs">
 						Posted by: <?= $article->getAuthor()->getName(); ?>
 					</p>
 				</aside>
