@@ -138,7 +138,7 @@ visible: false
 		<h5>Agrea Membership.</h5>
 
 		<ul>
-			<li>In connection with you Agrea membership application, we may provide your information to the individuals you’ve selected to vouch for you, and with those reviewing your application, including the Membership Council whose members include people not employed by Agrea and who are located in various countries around the world.</li>
+			<li>In connection with your Agrea membership application, we may provide your information to the individuals you’ve selected to vouch for you, and with those reviewing your application, including the Membership Council whose members include people not employed by Agrea and who are located in various countries around the world.</li>
 			<li>If you vouch for someone’s application to the Agrea, your information will be shared with those reviewing the application, including the Membership Council, and if you provide a positive vouching statement, that statement will be shared with the applicant if and when they are admitted for membership.</li>
 			<li>Once you are a Agrea member, we may provide you with a public profile page, editable by you, and pre-populated with certain information you provided in your application such as your name, areas of interest, images or other content you upload, which will be publicly displayed to anyone who visits the site while logged in with their CCID. Other information contained in your profile such as your biographical information, email address, languages spoken, country of residence, social media account information, or URL details will be displayed only to Agrea and Agrea members.</li>
 		</ul>
