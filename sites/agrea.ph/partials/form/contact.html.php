@@ -7,7 +7,7 @@
 				<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Last Name" type="text" name="lastName">
 			</div>
 		</div>
-		<?= helper('form.honeypot', page('contact')->form->honeypot); ?>
+		<?= helper('form.honeypot', page('about/contact')->form->honeypot); ?>
 		<div class="question">
 			<label for="email" class="block">Email Address<sup>*</sup></label>
 			<input class="w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Email Address" type="text" name="email">
