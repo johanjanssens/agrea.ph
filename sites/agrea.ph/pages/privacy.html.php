@@ -18,7 +18,7 @@ visible: false
 				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive,inline">
+				<img class="md:h-32 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive,inline">
 			</div>
 		</div>
 		<p>[TODO]: Add a privacy statement</p>

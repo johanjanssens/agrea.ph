@@ -200,7 +200,7 @@ title: Agrea - Ecology of Dignity
         <? foreach($freshPicks as $freshPick) :?>
         <aside class="flex flex-col justify-start mb-10">
           <a href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>">
-            <img class="md:h-36 rounded w-full object-cover object-center" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
+            <img class="md:h-32 rounded w-full object-cover object-center" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
           </a>
           <p class=" text-gray-600 mt-2">
             <a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>"><?= $freshPick->title; ?></a>

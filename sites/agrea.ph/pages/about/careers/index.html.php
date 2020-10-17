@@ -56,7 +56,7 @@ collection:
 		</div>
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Be Part of the AGREA Team</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
-		<img class="md:h-36 rounded w-full object-cover object-center" src="images://careers/careers-sidebar.jpg" alt="" />
+		<img class="md:h-32 rounded w-full object-cover object-center" src="images://careers/careers-sidebar.jpg" alt="" />
 		<p>AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team.</p>
 		<p>We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane.</p>
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Apply now!</h3>
