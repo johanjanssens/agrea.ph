@@ -9,13 +9,13 @@
 <? /* TODO: Use static asset routing when available */ ?>
 <? if(isset($folder)):
 
-  $folder = str_replace('images://', JPATH_PAGES.'/images/', $folder);
+  $folder = str_replace('images://', KPATH_PAGES.'/images/', $folder);
 
   if(is_dir($folder)):
 
     $images = glob($folder.'/*.{jpg,jpeg,png,gif,svg}', GLOB_BRACE);
     array_walk($images, function(&$value, $key) {
-      $value = str_replace(JPATH_PAGES.'/images/', 'images://', $value);
+      $value = str_replace(KPATH_PAGES.'/images/', 'images://', $value);
     });
 
   endif;
