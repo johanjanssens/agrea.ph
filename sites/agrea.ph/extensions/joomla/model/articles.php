@@ -107,7 +107,7 @@ class ExtJoomlaModelArticles extends ComPagesModelDatabase
             ->join(['m' => 'contentitem_tag_map'], 'tbl.id = m.content_item_id')
             ->join(['t' => 'tags']				 , 't.id = m.tag_id');
 
-        if(!is_null($state->id))
+        if(!empty($state->id))
         {
             if(is_string($state->id)) {
                 $articles = array_unique(explode(',',  $state->id));
