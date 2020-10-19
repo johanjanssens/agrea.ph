@@ -35,6 +35,7 @@ return array(
     ],
 
     'aliases' => [
+        'theme://' => '/theme/',      
         'images://'                 => getenv('SITE') ? '/images/pages/'    : '/sites/agrea.ph/images/',
         'images/agrea.ph/articles/' => getenv('SITE') ? '/images/articles/' : '/images/agrea.ph/articles/',
     ],

@@ -1,10 +1,10 @@
 
 ## Define environment variable
-SetEnvIf Host ^staging\.agrea\.ph$ SITE=staging.agrea.ph
-SetEnvIf Host ^www\.agrea\.ph$ SITE=www.agrea.ph
+SetEnvIf Host ^(www|staging)\.agrea\.ph$ SITE=agrea.ph
 
 # Define the filesystem locations (related to document root)
 SetEnvIf Request_URI ^.*  PAGES_CACHE_PATH=sites/agrea.ph/cache/images
+SetEnvIf Request_URI ^.*  PAGES_THEME_PATH=sites/agrea.ph/theme
 SetEnvIf Request_URI ^.*  PAGES_IMAGES_PATH=images/agrea.ph
 
 ## No directory listings
@@ -35,6 +35,15 @@ RewriteEngine On
 #
 ## End - Redirects
 
+## Begin - Theme Cache
+#
+
+RewriteCond %{DOCUMENT_ROOT}/%{ENV:PAGES_THEME_PATH}/$1 -f
+RewriteRule theme\/(.+)$ %{ENV:PAGES_THEME_PATH}/$1 [NC,E=THEME:1,L]
+
+#
+## End - Theme Cache
+
 ## Begin - Image Cache
 #
 
@@ -64,6 +73,7 @@ RewriteEngine On
 
  # Set cache to 1 year
  Header set Cache-Control public,max-age=315360000 env=REDIRECT_IMAGE
+ Header set Cache-Control public,max-age=315360000 env=REDIRECT_THEME
 
  # Add Accept to the Vary header
  Header append Vary Accept env=REDIRECT_IMAGE
