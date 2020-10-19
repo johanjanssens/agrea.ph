@@ -1,4 +1,5 @@
 ---
+route: farm-school/[digit:page]?
 layout:
     path: default
     footer:

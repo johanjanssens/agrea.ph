@@ -1,4 +1,5 @@
 ---
+route: news/[digit:page]?
 layout: default
 name: News
 title: New Sprouts
