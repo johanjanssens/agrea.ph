@@ -17,7 +17,7 @@ return array(
         'Feature-Policy'            => "camera 'none'; microphone 'none'",
         'Referrer-Policy'           => 'strict-origin-when-cross-origin',
         'X-Permitted-Cross-Domain-Policies' => 'none',
-        'Content-Security-Policy'   => 'upgrade-insecure-requests',
+        'Content-Security-Policy'   => getenv('SITE') ? 'upgrade-insecure-requests' : '',
         'X-Content-Type-Options'    => 'nosniff',
     ],
 
