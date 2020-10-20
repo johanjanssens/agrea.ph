@@ -3,7 +3,7 @@ return array(
 
     'http_cache'              => getenv('SITE') ? true : false,
     'http_cache_time'         => '1day',
-    'http_cache_time_browser' => '1hour',
+    'http_cache_time_browser' => '4hour',
 
     'sites' => [
         '[*]' => JPATH_ROOT.'/sites/agrea.ph',
