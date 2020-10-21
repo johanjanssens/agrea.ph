@@ -40,7 +40,7 @@ slug: leaflet-local-event-themes
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu',[
-			'menuOpen'=>1,
+			'menuOpen'=>'true',
 		]);?>
 
 	</aside>

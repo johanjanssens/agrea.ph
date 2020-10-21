@@ -59,9 +59,7 @@ slug: yseali-grow
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
-		<div  x-data="{ isOpen: false }">
-			<?= import('/partials/navigation/submenu');?>
-		</div>
+		<?= import('/partials/navigation/submenu');?>
 
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">"Dream Awake, Cultivate"</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>

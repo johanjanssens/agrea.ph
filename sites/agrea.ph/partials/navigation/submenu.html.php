@@ -1,5 +1,5 @@
 <? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']]) ?>
-<ul role="navigation" aria-label="Secondary menu" class="submenu border border-gray-300 mb-8 rounded">
+<ul x-data="{ isOpen: <?= $menuOpen = $menuOpen ?? 'false'; ?> }" role="navigation" aria-label="Secondary menu" class="submenu border border-gray-300 mb-8 rounded">
 	<? foreach ($pages as $page) : ?>
 		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>
@@ -17,13 +17,13 @@
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
 							>
-								<path
+								<path style="display:none"
 									x-show="isOpen"
 									fill-rule="evenodd"
 									clip-rule="evenodd"
 									d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
 								/>
-								<path
+								<path style="display:none"
 									x-show="!isOpen"
 									fill-rule="evenodd"
 									d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
