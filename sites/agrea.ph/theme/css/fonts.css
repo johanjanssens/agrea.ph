@@ -20,3 +20,10 @@
   url('../fonts/raleway-v17-latin-ext_latin-800.woff2') format('woff2'),
   url('../fonts/raleway-v17-latin-ext_latin-800.woff') format('woff');
 }
+/* inter - Admin Titles */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: local(''),
+  url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+}
