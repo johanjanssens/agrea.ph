@@ -8,12 +8,8 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 <div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<ktml:images max-width="33%" lazyload="progressive,inline">
-		<div class="flex flex-wrap w-full mb-10">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-brand rounded"></div>
-			</div>
-		</div>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
 				<? if ($member->slug !== ""): ?>

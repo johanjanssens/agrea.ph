@@ -7,15 +7,8 @@ slug: yseali-generationgr3en
 ---
 <div class="flex flex-col sm:flex-row">
 	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-		<div class="flex flex-wrap w-full mb-10">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-brand rounded"></div>
-			</div>
-			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://events/grow/grow.jpg" data-max-width="50%" data-lazyload="progressive,inline">
-			</div>
-		</div>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<p><span class="font-bold ">YSEALI GenerationGR3EN Workshop</span> is a 4-day eco-entrepreneurship workshop held in Brunei Darussalam with a focus on eco-tourism. The workshop was held from 25-28 February 2017.</p>
 
 		<p>The Workshop was sponsored by the U.S. Department of State, and funded through a Cooperative Agreement from the U.S. Embassy in Brunei Darussalam to AGREA for the administration of the workshop and follow-on activities which have been planned through 2017.</p>

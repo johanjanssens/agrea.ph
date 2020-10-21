@@ -26,16 +26,9 @@ form:
 <div itemscope itemtype="http://schema.org/Organization" class="flex flex-col sm:flex-row">
     <article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
     <ktml:images max-width="80%">
-        <div class="flex flex-wrap w-full mb-10">
-            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                <h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-                <div class="h-1 w-20 bg-brand rounded"></div>
-                <p class="mt-4">To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
-            </div>
-            <div class="lg:w-1/2 md:block hidden w-full">
-                <img class="h-32 rounded w-full object-cover object-center" src="images://contact/contact-agrea.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive,inline">
-            </div>
-        </div>
+        <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+        <div class="h-1 w-20 bg-brand rounded mb-10"></div>
+        <p>To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
         <div role="grid" class="grid md:grid-cols-2 mb-10">
             <div role="gridcell">
                 <dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">

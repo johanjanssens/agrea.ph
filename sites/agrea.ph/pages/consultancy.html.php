@@ -12,15 +12,8 @@ slug: consultancy
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
 	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="80%" lazyload="progressive,inline">
-		<div class="flex flex-wrap w-full mb-10">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-brand rounded"></div>
-			</div>
-			<div class="lg:w-1/2 w-full">
-				<img class="h-32 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" data-max-width="50%" data-lazyload="progressive,inline">
-			</div>
-		</div>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Your Guide to Agricultural Abundance</h3>
 		<p>AGREA recognizes the crucial need to capacitate the current and future generations of farmers. Safeguarding the well-being of farmers and the knowledge they possess is essential to a prosperous agricultural sector, and to the country’s capacity to feed its people.</p>
 		<p>Through agriculture, farmers can be a starting point for change.</p>
