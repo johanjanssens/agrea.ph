@@ -20,17 +20,10 @@ class ExtPagesTemplateHelperLazysizes extends ComPagesTemplateHelperBehavior
 <script>
 window.lazySizesConfig = window.lazySizesConfig || {};
 
-if(sessionStorage.lazySizesCache) {
+if(sessionStorage.lazySizesCache && performance.navigation.type != PerformanceNavigation.TYPE_RELOAD) {
     window.lazySizesCache = JSON.parse(sessionStorage.lazySizesCache)
 } else {
     window.lazySizesCache = []
-}
-
-if('navigation' in performance)
-{
-    if(performance.navigation.type == PerformanceNavigation.TYPE_RELOAD) {
-        window.lazySizesCache = []
-    }
 }
 
 window.addEventListener('beforeunload', (event) => {
