@@ -9,7 +9,7 @@ form:
         email: [email, required]
         password: [string, required]
     honeypot: email_NN9uTmmt
-    redirect: /
+    redirect: /admin
 visible: false
 ---  
 <div class="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
