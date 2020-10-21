@@ -20,14 +20,15 @@ class ExtPagesTemplateHelperLazysizes extends ComPagesTemplateHelperBehavior
 <script>
 window.lazySizesConfig = window.lazySizesConfig || {};
 
-if(sessionStorage.lazySizesCache && performance.navigation.type != PerformanceNavigation.TYPE_RELOAD) {
-    window.lazySizesCache = JSON.parse(sessionStorage.lazySizesCache)
+const lazySizesCache = 'lazySizesCache:'+location.pathname
+if(sessionStorage.getItem(lazySizesCache) && performance.navigation.type != PerformanceNavigation.TYPE_RELOAD){
+  window.lazySizesCache = JSON.parse(sessionStorage.getItem(lazySizesCache))
 } else {
-    window.lazySizesCache = []
+  window.lazySizesCache  = []
 }
 
 window.addEventListener('beforeunload', (event) => {
-    sessionStorage.lazySizesCache = JSON.stringify(window.lazySizesCache)
+    sessionStorage.setItem(lazySizesCache, JSON.stringify(window.lazySizesCache))
 })
 
 if ('connection' in navigator)
