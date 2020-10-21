@@ -67,7 +67,7 @@
         gtag('js', new Date());
         gtag('config', '<?= config()->ga_code ?>');
     </script>
-    <? endif ?
+  <? endif ?>
 
     <?= helper('behavior.prefetcher', [
         'selector' => 'header, .submenu',
