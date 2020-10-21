@@ -94,6 +94,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     $html .='<img width="'.$width.'" data-srclow="'. $lqi_url.'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
+                        data-hash="'.hash('crc32b', $config->url).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
                 else
@@ -160,6 +161,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     $html .= '</noscript>';
                     $html .='<img '.$size.' data-srclow="'. $lqi_url.'"
                       data-srcset="'. implode(',', $srcset).'"
+                      data-hash="'.hash('crc32b', $config->url).'"
                       alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
 
                 }
