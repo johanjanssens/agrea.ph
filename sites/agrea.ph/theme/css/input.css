@@ -149,15 +149,6 @@ img:after {
 .plyr {
   @apply rounded-lg;
 }
-/* Sidebar
- * Submenu border override 
-*/
-.submenu > li:first-child[class$="children"] {
-  @apply border-t-0 rounded-tr rounded-tl;
-}
-.submenu > li:last-child[class$="children"] {
-  @apply rounded-br rounded-bl;
-}
 /* pagination */
 .k-pagination__pages li {
   @apply inline-flex mr-1;
@@ -484,7 +475,7 @@ sub:not([class]) {
   height:100%;
   pointer-events:none;
   background-color:white;
-  animation-duration: 500ms;
+  animation-duration: 100ms;
   animation-timing-function: ease-in-out;
   z-index: 999999;
 }

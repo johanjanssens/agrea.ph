@@ -37,13 +37,13 @@
 					:class="{ 'block' : isOpen , 'hidden' : !isOpen}"
 					>
 						<? foreach($child->getChildren() as $sub): ?>
-							<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2 pl-6 pr-4<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
+							<li class="hover:bg-gray-100 border-t first:border-t-0 transition-colors duration-500 ease-in-out p-2 pl-6 pr-4<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
 								<a class="block" href="<?= route($sub) ?>"><?= $sub->name ?></a>
 							</li>
 						<? endforeach ?>
 					</ul>
 				<? else: ?>
-					<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
+					<li class="hover:bg-gray-100 border-t first:border-t-0 transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
 						<a class="block" href="<?= route($child) ?>"><?= $child->name ?></a>
 					</li>
 				<? endif; ?>
