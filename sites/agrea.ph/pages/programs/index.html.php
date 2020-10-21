@@ -10,14 +10,8 @@ slug: programs
 	<article role="main" itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="80%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-12">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">The Cultivation of Human Beings</h1>
-				<div class="h-1 w-20 bg-brand rounded"></div>
-			</div>
-			<div class="lg:w-1/2 w-full">
-				<img alt="<?= $title ?>" class="rounded object-cover object-center" src="images://programs/anatomy-of-social-programs.jpg">
-			</div>
-		</div>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">The Cultivation of Human Beings</h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<div itemprop="articleBody">
 			<p class="text-lg mb-6">With a strong belief in Ecology of Dignity, AGREA Social Programs is set to cultivate human beings to be agents of change. AGREA Social Programs is designed to provide a human-centered approach to technical and life skills programs. </p>
 

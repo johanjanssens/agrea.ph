@@ -15,15 +15,8 @@ collection:
 
 <div class="flex flex-col sm:flex-row">
 	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-		<div class="flex flex-wrap w-full mb-10">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-brand rounded"></div>
-			</div>
-			<div class="lg:w-1/2 w-full">
-        		<?= import('/partials/slider', ['folder' => 'images://slider/farm-school', 'max_width' => '50%']); ?>
-			</div>
-		</div>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
 			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('events/article', ['slug' => $article->slug]) ?>">
@@ -52,9 +45,7 @@ collection:
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
-		<div  x-data="{ isOpen: false }">
-			<?= import('/partials/navigation/submenu');?>
-		</div>
+		<?= import('/partials/navigation/submenu');?>
 
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">Partner Events</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
