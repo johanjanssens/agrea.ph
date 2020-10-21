@@ -4,7 +4,7 @@ route: events/[:slug]
 collection:
     extend: events
 metadata:
-    'og:type': article
+    'og:type': event
 visible: false
 ---
 <article  itemscope itemtype="http://schema.org/Event">
