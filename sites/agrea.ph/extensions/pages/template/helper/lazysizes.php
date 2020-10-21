@@ -19,6 +19,24 @@ class ExtPagesTemplateHelperLazysizes extends ComPagesTemplateHelperBehavior
                 $html .= <<<LAZYSIZES
 <script>
 window.lazySizesConfig = window.lazySizesConfig || {};
+
+if(sessionStorage.lazySizesCache) {
+    window.lazySizesCache = JSON.parse(sessionStorage.lazySizesCache)
+} else {
+    window.lazySizesCache = []
+}
+
+if('navigation' in performance)
+{
+    if(performance.navigation.type == PerformanceNavigation.TYPE_RELOAD) {
+        window.lazySizesCache = []
+    }
+}
+
+window.addEventListener('beforeunload', (event) => {
+    sessionStorage.lazySizesCache = JSON.stringify(window.lazySizesCache)
+})
+
 if ('connection' in navigator)
 {
     //Only load nearby elements
@@ -34,10 +52,24 @@ if ('connection' in navigator)
 
 document.addEventListener("DOMContentLoaded", () =>
 {
-     document.querySelectorAll('img[data-srclow]').forEach((img) => {
-         img.src = img.getAttribute('data-srclow');
-     });
-});
+    document.querySelectorAll('img[data-srclow]').forEach((img) =>
+    {
+        img.src = img.getAttribute('data-srclow')
+         if(window.lazySizesCache.includes(img.dataset.hash)) {
+            img.classList.remove('progressive')
+         }
+    })
+})
+
+document.addEventListener("lazybeforeunveil", (e) =>
+{
+    if(hash = e.target.dataset.hash)
+    {
+        if(!window.lazySizesCache.includes(hash)) {
+            window.lazySizesCache.push(hash)
+        }
+    }
+})
 </script>
 
 <style>
