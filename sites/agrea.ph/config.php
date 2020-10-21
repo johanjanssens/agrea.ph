@@ -41,7 +41,7 @@ return array(
     ],
 
     // Google Analytics
-    'ga_code' => '',
+    'ga_code' => getenv('SITE') ? 'G-8ENG0F1RY8' : '',
 
     //Redirects
     'redirects' => include __DIR__.'/redirects.php'
