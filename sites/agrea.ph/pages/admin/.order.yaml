@@ -5,4 +5,6 @@
 - buttons.html.php
 - modals.html.php
 - tables.html.php
-- pages
+- login.html.php
+- forgot-password.html.php
+- create-account.html.php
