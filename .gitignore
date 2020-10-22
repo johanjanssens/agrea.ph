@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 =======
 /.DS_Store
->>>>>>> 555558747852be87d4c78912b0340a7319550a63
 /.htaccess.txt
 /administrator
 /bin
@@ -9,10 +8,7 @@
 /cli
 /components
 /configuration.php
-<<<<<<< HEAD
 /images
-=======
->>>>>>> 555558747852be87d4c78912b0340a7319550a63
 /includes
 /index.php
 /joomlatools-files
@@ -22,16 +18,10 @@
 /media
 /modules
 /plugins
-<<<<<<< HEAD
 /sites/agrea.ph/cache
-/sites/agrea.ph/images
 /templates
 /tmp
 /sites/.DS_Store
 /sites/agrea.ph/pages/.DS_Store
-=======
-/templates
 /tmp
-/sites/agrea.ph/cache
 .DS_Store
->>>>>>> 555558747852be87d4c78912b0340a7319550a63
