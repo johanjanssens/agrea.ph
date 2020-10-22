@@ -16,7 +16,7 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
         {
             $script = 'https://unpkg.com/plyr@3.6.2/dist/plyr.'.(!$config->debug ? 'min.js' : 'js');
             $style  = 'https://unpkg.com/plyr@3.6.2/dist/plyr.css';
-
+            
             //Import lazysizes
             $html .= $this->import('unveilhooks');
             $html .= <<<PLYR
@@ -39,7 +39,7 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
 
           script.addEventListener('load', () =>
           {
-              if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g'))) {
+             if ('connection' in navigator && (navigator.connection.saveData === true || navigator.connection.effectiveType.includes('2g'))) {
                   var quality = {$config->quality_lowest}
               } else {
                   var quality = {$config->quality_default}
@@ -51,11 +51,11 @@ class ExtPagesTemplateHelperVideo extends ExtPagesTemplateHelperLazysizes
                 var settings = []
               }
 
-              document.querySelectorAll('{$config->selector}').forEach((p) => new Plyr(p, {
-                 fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
-                 settings: settings,
-                 quality: { default: quality, options: [720, 540, 360, 240] }
-              }));
+               document.querySelectorAll('{$config->selector}').forEach((p) => new Plyr(p, {
+                  fullscreen: { enabled: true, fallback: true, iosNative: true, container: null },
+                  settings: settings,
+                  quality: { default: quality, options: [720, 540, 360, 240] }
+               }));
           });
       }
    })

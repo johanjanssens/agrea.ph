@@ -5,7 +5,7 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => self::PRIORITY_LOW,
+            'priority' => self::PRIORITY_LOWEST,
             'enable'   => JDEBUG ? false : true,
         ));
 
