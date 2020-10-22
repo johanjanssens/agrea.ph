@@ -37,7 +37,8 @@ return array(
     'aliases' => [
         'theme://'                  => getenv('SITE')  ? '/theme/' : '/sites/agrea.ph/theme/',
         'images://'                 => getenv('SITE') ? '/images/pages/'    : '/sites/agrea.ph/images/',
-        'images/agrea.ph/articles/' => getenv('SITE') ? '/images/articles/' : 'images/agrea.ph/articles/',
+        'src="images/agrea.ph/articles/' => getenv('SITE') ? 'src="/images/articles/' : 'src="/images/agrea.ph/articles/',
+        '/images/agrea.ph/articles/'     => getenv('SITE') ? '/images/articles/' : '/images/agrea.ph/articles/',
     ],
 
     // Google Analytics
