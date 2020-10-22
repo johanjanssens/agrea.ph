@@ -2,17 +2,17 @@
 
 ### Production
 
-- URL: https://www.agrea.ph 
+- URL: https://www.agrea.ph
 - Branch: master (auto deployment on push)
 
 ### Staging
 
-- URL: https://Agrea123:Agrea123@staging.agrea.ph 
+- URL: https://staging.agrea.ph
 - Branch: staging (manual deployment)
 
-# Infrastructure 
+# Infrastructure
 
-## Server - Cloudways 
+## Server - Cloudways
 
 1GB 32 GB Disk 45.76.190.108 Vultr (Singapore)
 
@@ -20,7 +20,7 @@
 
 - Public IP: 45.76.190.108
 - Username: staging.agrea.ph
-- Password: [Use SSH key] or 2sXrNRwRdzFr!YNz
+- Password: [Use SSH key]
 
 ### production.agrea.ph
 
@@ -28,7 +28,7 @@
 - Username: production.agrea.ph
 - Password: [Use SSH key]
 
-## Deployment - Buddy 
+## Deployment - Buddy
 
 URL: https://app.buddy.works/johanjanssens
 
