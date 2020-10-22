@@ -1,0 +1,22 @@
+/* AGREA Logo font */
+@font-face {
+  font-family: 'typo3'; 
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local(''),
+  url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
+  url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
+  url('../fonts/Typo3-Medium.ttf.eot'),
+  url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype');
+}
+/* raleway-800 - latin-ext_latin - Titles */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local(''),
+  url('../fonts/raleway-v17-latin-ext_latin-800.woff2') format('woff2'),
+  url('../fonts/raleway-v17-latin-ext_latin-800.woff') format('woff');
+}

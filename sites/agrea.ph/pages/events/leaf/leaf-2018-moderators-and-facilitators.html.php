@@ -2,15 +2,16 @@
 layout: default
 name: LEAF 2018 Moderators and Facilitators
 title: LEAF 2018 Moderators and Facilitators
-summary: The easy to use page generator for Joomla
+summary: The Leaders and Entrepreneurs in Agriculture Forum Moderators and Facilitators
 slug: leaf-2018-moderators-and-facilitators
 ---
 <div class="flex flex-col sm:flex-row">
-	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
-		<div class="flex flex-wrap w-full mb-20">
+	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<ktml:images max-width="33%" lazyload="progressive,inline">
+		<div class="flex flex-wrap w-full mb-10">
 			<div class="lg:w-2/3 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none leading-tight"><?= $title; ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
+				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none leading-tight"><?= $title; ?></h1>
+				<div class="h-1 w-20 bg-brand rounded"></div>
 			</div>
 		</div>
 		<ul>
@@ -30,7 +31,7 @@ slug: leaf-2018-moderators-and-facilitators
 			<li>Indradi Soemardjan, Anapana</li>
 		</ul>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4 leading-tight">LEAF 2018 Moderators In Focus</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4 leading-tight">LEAF 2018 Moderators In Focus</h3>
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Cherrie Atilano_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/atilano.jpg" /></div>
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Carlo Sumaoang_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/sumaoang.jpg" /></div>
@@ -46,31 +47,16 @@ slug: leaf-2018-moderators-and-facilitators
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Joshua Gilbert_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/gilbert.jpg" /></div>
 			<div class="bg-gray-100 p-6 rounded-lg"><img alt="Indradi Soemardjan_WEB SMALL Moderator" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/moderators/soemardjan.jpg" /></div>
 		</div>
+	</ktml:images>
 	</article>
-	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		
-		<?= import('/partials/navigation/submenu');?>
-		
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Register now</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-		<p><img class="rounded w-full" src="images://events/leaf/moderators/coming-soon.jpg" /></p>
-
-		<p>Registration is now open for the Leaders and Entrepreneurs in Agriculture Forum (LEAF) 2018! Join and experience this two-day collaborative event and enter a global community of agricultural leaders and entrepreneurs.</p>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Related links:</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
+	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
+		<?= import('/partials/navigation/submenu',[
+			'menuOpen'=>'true',
+		]);?>
+		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Related links:</h3>
+		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p><a href="https://www.facebook.com/LEAF.agreaph" target="_blank">LEAF2018 Official Facebook Page</a></p>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Reserve your spot today!</h3>
-
-		<p>Looking for accommodations during LEAF? Look no further than the event venue itself—Taal Vista Hotel! Situated in the Philippine countryside, the hotel offers a comfortable and affordable stay with a serene view of Taal Volcano. Better yet,</p>
-
-		<p>LEAF delegates can receive special discounts by booking with event code: <strong>LEAF18</strong></p>
-
-		<p><a href="https://www.taalvistahotel.com/" target="_blank"><img class="rounded w-full" src="images://events/leaf/moderators/accommodation-taal-vista.jpg" /></a></p>
-
-		<p>BOOK YOUR STAY TODAY: <a href="https://www.taalvistahotel.com/">https://www.taalvistahotel.com/</a></p>
-
-		<p><img class="frounded w-full" src="images://events/leaf/moderators/leaf-2018-conference-rates-updated.jpg" /></p>
-	</div>
+	</aside>
 </div>

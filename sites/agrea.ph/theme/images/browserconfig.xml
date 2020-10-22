@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-    <msapplication>
-        <tile>
-            <square150x150logo src="/sites/agrea.php/theme/images/logo/joomlatools-xtouch-icon.png"/>
-            <TileColor>#0089D6</TileColor>
-        </tile>
-    </msapplication>
-</browserconfig>

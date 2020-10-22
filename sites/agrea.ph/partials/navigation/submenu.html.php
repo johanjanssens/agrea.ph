@@ -1,28 +1,50 @@
 <? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']]) ?>
-<ul x-data="{ isOpen: false }" :aria-expanded="isOpen" class="border border-gray-300 mb-8 rounded">
+<ul x-data="{ isOpen: <?= $menuOpen = $menuOpen ?? 'false'; ?> }" role="navigation" aria-label="Secondary menu" class="submenu border border-gray-300 mb-8 rounded">
 	<? foreach ($pages as $page) : ?>
 		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>
 				<? if ($child->getChildren()): ?>
-					<li class="hover:bg-gray-100 items-center transition-colors duration-500 ease-in-out rounded-t p-2 flex justify-between relative<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
-						<a class="" href="<?= route($child) ?>"><?= $child->name ?></a>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-dark-green-500" :aria-expanded="isOpen" aria-controls="nav-list" :hidden="!isOpen" @click="isOpen = !isOpen">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" />
-						</svg>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-dark-green-500" :aria-expanded="isOpen" aria-controls="nav-list" :hidden="isOpen" @click="isOpen = !isOpen">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z" />
-						</svg>
+					<li class="hover:bg-gray-100 items-center transition-colors duration-500 ease-in-out p-2 flex flex-row sm:flex-col sm:items-center lg:flex-row justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
+						<a class="flex-1 focus:outline-none focus:shadow-outline block" href="<?= route($child) ?>"><?= $child->name ?></a>
+						<button
+							@click="isOpen = !isOpen"
+							type="button"
+							class="block px-2 focus:outline-none focus:shadow-outline"
+							:class="{ 'transition transform-180': isOpen }"
+						>
+							<svg
+								class="h-6 w-6 fill-current"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<path style="display:none"
+									x-show="isOpen"
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+								/>
+								<path style="display:none"
+									x-show="!isOpen"
+									fill-rule="evenodd"
+									d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+								/>
+							</svg>
+						</button>
 					</li>
-					<ul :hidden="!isOpen" x-cloak id="nav-list" class="mb- pb-0">
+					<ul 
+					class="mb- pb-0 bg-lime-100 bg-opacity-25" 
+        			x-show.transition="true"
+					:class="{ 'block' : isOpen , 'hidden' : !isOpen}"
+					>
 						<? foreach($child->getChildren() as $sub): ?>
-							<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2 pl-6 pr-4 border-t<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
-								<a class="w-full" href="<?= route($sub) ?>"><?= $sub->name ?></a>
+							<li class="hover:bg-gray-100 border-t first:border-t-0 transition-colors duration-500 ease-in-out p-2 pl-6 pr-4<?= strpos(page()->path, $sub->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
+								<a class="block" href="<?= route($sub) ?>"><?= $sub->name ?></a>
 							</li>
 						<? endforeach ?>
 					</ul>
 				<? else: ?>
-					<li class="hover:bg-gray-100 border-t transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
-						<a class="w-full" href="<?= route($child) ?>"><?= $child->name ?></a>
+					<li class="hover:bg-gray-100 border-t first:border-t-0 transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
+						<a class="block" href="<?= route($child) ?>"><?= $child->name ?></a>
 					</li>
 				<? endif; ?>
 			<? endif; ?>

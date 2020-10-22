@@ -1,5 +1,5 @@
-<section class="<?= $class ?>">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+<section class="mb-12 <?= $class ?>">
+  <div class="container mx-auto flex px-5 md:pt-12 md:pb-24 md:flex-row flex-col items-center">
     <? 
     $articles = collection('ext:joomla.model.articles', [
       'published' => 1,
@@ -16,9 +16,7 @@
       </h1>
       <p class="mb-4 text-dark-green-800 text-opacity-50"><?= $articles->excerpt ?></p>
       <div class="flex justify-center">
-        <form action="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>">
-          <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</button>
-        </form>
+        <a href="<?= route(page('news/article'), ['slug' => $articles->slug]) ?>" class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Read More</a>
       </div>
     </div>
   </div>

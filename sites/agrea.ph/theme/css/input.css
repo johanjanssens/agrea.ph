@@ -1,231 +1,331 @@
-/* Import Tailwind */
-@import url("vendor/tailwind.css");
-
-/* Import the baseline grid for anything that doesn't have a class */
-@import url("vendor/fluid-baseline-grid.css");
-
-/* AGREA Logo font */
-@font-face {
-    font-family: 'typo3';
-    src:url('../fonts/Typo3-Medium.ttf.woff') format('woff'),
-        url('../fonts/Typo3-Medium.ttf.svg#Typo3-Medium') format('svg'),
-        url('../fonts/Typo3-Medium.ttf.eot'),
-        url('../fonts/Typo3-Medium.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
+/* tailwind */
+@tailwind base;
+/*  declare our base styles for preflight - move these to a @layer once we get it working */
+main {
+  @apply min-h-screen;
+}
+main,
+footer {
+  @apply text-base;
+}
+h1:not([class]) {
+  @apply text-4xl text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
+}
+h2:not([class]) {
+  @apply text-3xl text-gray-900 leading-none mb-2;
+  font-family:'Raleway';
+}
+h3:not([class]) {
+  @apply text-2xl text-gray-900 leading-tight mb-3;
+  font-family:'Raleway';
+}
+h4:not([class]) {
+  @apply text-xl text-gray-900 mb-4;
+  font-family:'Raleway';
+}
+h5:not([class]) {
+  @apply text-lg text-gray-900 mb-5;
+  font-family:'Raleway';
+}
+blockquote:not([class]),
+label:not([class]),
+p:not([class]),
+pre:not([class]),
+td:not([class]),
+th:not([class]),
+ul:not([class]),
+ol:not([class]) {
+  @apply mb-6;
+}
+small:not([class]) {
+  @apply text-sm mb-8;
+}
+table:not([class]) {
+  @apply border-collapse mb-6;
+}
+td:not([class]),
+th:not([class]),
+tr:not([class]) {
+  @apply pr-6;
+}
+ul:not([class]) {
+  @apply list-disc list-outside ml-4;
+}
+ol:not([class]) {
+  @apply list-decimal list-outside ml-4;
+}
+li:not([class]) > ol:not([class]), 
+li:not([class]) > ul:not([class]) {
+  @apply mx-4 my-2;
+}
+li:focus-within a {
+  @apply outline-none;
+}
+a[href] {
+  @apply cursor-pointer;
+}
+a:not([class]) {
+  @apply text-green-500;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+a:not([class]):hover {
+  background-size: 100% 2px;
 }
 
-/* Custom stuff */
+a:not([class]):focus {
+  @apply outline-none shadow-outline;
+}
+article > img:not([class]) {
+  @apply rounded;
+}
+b:not([class]),
+dt:not([class]),
+strong:not([class]) {
+  @apply font-semibold;
+}
+dl:not([class]) + dl:not([class]) {
+  @apply mt-4;
+}
+dt:not([class]) {
+  @apply leading-tight mt-4 mb-1;
+}
+dl:not([class]) dt:not([class]):first-child {
+  @apply mt-2;
+}
+figure:not([class]) {
+  @apply rounded-lg mb-6;
+}
+figcaption:not([class]) {
+  @apply text-center text-sm italic mt-2;
+}
+sub:not([class]),
+sup:not([class]) {
+  @apply text-xs relative align-baseline;
+}
+/* titles */
+.font-title {
+  @apply uppercase;
+}
+/* hero image */
+.hero-image > div {
+  @apply bg-right;
+}
+/* Single article featured image */
+.featured-image {
+  height:33vh;
+}
+@screen lg {
+  .featured-image {
+    height:42.86vh;
+  }
+}
+/* Broken images */
+img {
+  @apply font-light leading-tight text-center w-full h-auto block relative;
+}
+img:before { 
+  @apply block absolute left-0 w-full bg-gray-100 rounded-lg border-dashed border-2 border-gray-300;
+  content: " ";
+  height: calc(100% + 10px);
+  top: -10px;
+}
+img:after { 
+  @apply block text-sm text-gray-700 absolute left-0 top-0 bottom-0 right-0 m-auto text-center;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23788023'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' /%3E%3C/svg%3E");
+  background-size:15%;
+  background-repeat: no-repeat;
+  background-position:50% 100%;
+  content: "\f127" " Broken Image URL: " attr(src);
+  width: 80%;
+  height: 60%;
+}
+/* Plyr.js */
+.plyr {
+  @apply rounded-lg;
+}
+/* pagination */
+.k-pagination__pages li {
+  @apply inline-flex mr-1;
+}
+.k-pagination__pages a {
+  @apply rounded py-2 px-4 no-underline;
+}
+.k-pagination__pages a:hover {
+  @apply no-underline;
+}
+.k-pagination__pages li.k-is-active a {
+  @apply bg-green-500 text-white;
+}
+.k-pagination__pages li:not(.k-is-active):hover a {
+  @apply bg-gray-200;
+}
+/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
+.aspect-ratio-none {
+  @apply pb-0;
+}
+/* responsive embeds */
+.embed-responsive {
+  @apply relative block h-0 p-0 overflow-hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  @apply absolute top-0 left-0 bottom-0 h-full w-full border-0;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* Anything we can't do easily with tailwind classes */
+/* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {
-  --agrea-green:#788023;
-  --agrea-dark-green:#3E462E;
-  --agrea-lime:#C9CA48;
-  --agrea-gray:#8E8E8C;
-  --agrea-light-gray:#E3E3E2;
-  --agrea-orange:#C67042;
-  --rounded-border-radius:0.25rem;
-  --link-colour:var(--agrea-green);
+  --green-500:#788023;
+  --dark-green-500:#3E462E;
+  --lime-500:#C9CA48;
+  --gray-500:#8E8E8C;
+  --gray-200:#E3E3E2;
+  --link-colour:var(--green-500);
+  /* plyr.js colour override */
+  --plyr-color-main: var(--green-500);
+  /* Joomlatools logo colour override */
+  --jt-black:var(--green-500);
+  --jt-blue:var(--lime-500);
 }
-
-/* Submenu border override */
-ul[x-data] > li:first-child[class$="children"] {
-  border-top:0!important;
+/*
+ * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
+*/
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
 }
-
-body > main {
-  /* make sure to cover the screen */
-  min-height: 100vh;
-
-  /* need a solid bg to hide the footer */
-  background: white;
-
-  /* put on top */
-  position: relative;
-  z-index: 10;
-
-  /* compensate for the sticky header */
-  margin-top: 72px;
+main,
+header,
+aside[role^="comp"],
+footer {
+  content-visibility: auto;
 }
-
-body > footer {
-  /* place on the bottom */
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: url(../images/rice-farmer.svg) 0 calc(100% - 2vh) no-repeat;
-  background-size: 100vw;
+header {
+  contain-intrinsic-size: 100px;
 }
-
+footer {
+  contain-intrinsic-size: 400px;
+}
+/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+body > * {
+  font-size: clamp(0.75rem, 4vw, 1rem);
+}
+/* Main header story and IN FOUCS area on the homepage */
+@screen lg {
+  section.hero-alt .hero-image {
+    clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+    transition: 1s;
+  }
+  section.hero-alt:hover .hero-image {
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+  }
+}
 section[class*="bg-"]:not(.bg-white) {
   position:relative;
-}
-
-section[class*="bg-"]:not(.bg-white):after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height:100%;
-  z-index:10;
-  background-image: url(../images/hero-bg.svg); /* The image used */
-  background-position: center; /* Center the image */
+  background-attachment: fixed; /* CSS only parallax */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: left top;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
-
-section[class*="bg-"]:not(.bg-white) > div {
+section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
   position:relative;
   z-index:20;
 }
-
 section[class*="bg-"]:not(.bg-white) h1 {
   text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
 }
-
 section[class*="bg-"]:not(.bg-white) p {
   text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
 }
-
-.hero-image {
-  clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-  transition: 1s;
+/* sticky footer
+ * tailwind doesn't handle this well inline so let's add it here for large screens
+*/
+@screen lg {
+  main {
+    position: relative;
+    z-index: 10;
+  }
+  body > footer {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index:0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  _::-webkit-full-page-media, _:future, :root footer {
+    position: static;
+  }
 }
-
-section[class*="bg-"]:hover .hero-image {
-  clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+/* Footer illustration */
+body > footer {
+  background-position: 0 calc(100% - 5rem);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
-
-/* the actual hero image */
-.hero-image > div {
+ul:not([class]) > li:not([class]) {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+/* Position 'sub' and 'sup' without affecting line-height */
+sup:not([class]) {
+    top: -0.5em;
+}
+/* Move superscripted text up */
+sub:not([class]) {
+    bottom: -0.25em;
+}
+/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
+.aspect-ratio-square {
+  padding-bottom: 100%;
+}
+.aspect-ratio-16\/9 {
+  padding-bottom: 56.25%;
+}
+.aspect-ratio-4\/3 {
+  padding-bottom: 75%;
+}
+.aspect-ratio-21\/9 {
+  padding-bottom: 42.86%;
+}
+/* Circle text - Used on About Us page */
+.circles {
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-.font-title {
-  text-transform:uppercase;
+.circle-text {
+  width: 12rem;
+  height: 12rem;
+  line-height: 12rem;
+  border-radius: 50%;
 }
-
-h1:not([class]),
-h2:not([class]),
-h3:not([class]),
-h4:not([class]),
-h5:not([class]),
-h6:not([class]) {
-    font-family: Raleway,sans-serif;
-}
-
-li:focus-within a {
-  outline: none;
-}
-
-/* pagination */
-.k-pagination__pages li {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-.k-pagination__pages a {
-  border-radius: var(--rounded-border-radius);
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.k-pagination__pages a:hover {
-  text-decoration: none;
-}
-
-.k-pagination__pages li.k-is-active a {
-  background-color: var(--agrea-green);
-  color: white;
-}
-
-.k-pagination__pages li:not(.k-is-active):hover a {
-  background-color: var(--agrea-light-gray);
-}
-
-p > a:not([class]) {
-  color: var(--agrea-green);
-}
-
-article > img:not([class]) {
-  border-radius: var(--rounded-border-radius);
-}
-
-/* Slider*/
-.tns-outer {
-  border-radius: var(--rounded-border-radius);
-  position:relative;
-}
-
-.tns-outer div[aria-label$="Pagination"],
-.tns-outer button[data-action="start"],
-.tns-outer button[data-action="stop"] {
-  display:none;
-}
-
-.tns-outer div[aria-label$="Navigation"] {
-  color:white;
-  position:absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width:100%;
-  outline: 0;
-}
-
-.tns-outer button[data-controls="prev"],
-.tns-outer button[data-controls="next"] {
-  display: none;
-  transition: 0.5s;
-  width: 48px;
-  padding: 48px 0 0 0;
-  height: 0;
-  background-size: cover;
-  overflow: hidden;
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-.tns-outer:hover button[data-controls="prev"],
-.tns-outer:hover button[data-controls="next"] {
-  display: block;
-}
-
-.tns-outer:hover button[data-controls="prev"]:hover,
-.tns-outer:hover button[data-controls="next"]:hover {
-  opacity: 1;
-}
-
-.tns-outer button[data-controls="prev"] {
-  background: url("../images/prev.svg") no-repeat;
-  margin-left: 0.75vw;
-}
-
-.tns-outer button[data-controls="next"] {
-  background: url("../images/next.svg") no-repeat;
-  position: absolute;
-  right: 0.75vw;
-  top: 0;
-}
-
-.tns-outer button[data-controls="prev"]:hover,
-.tns-outer button[data-controls="next"]:hover {
-  transform: scale(1.2);
-}
-
 /* CSS3 Checkboxes */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   input[type='checkbox'],
   input[type='radio'] {
-    --active: var(--agrea-dark-green);
+    --active: var(--dark-green-500);
     --active-inner: #fff;
     --focus: 2px rgba(39, 94, 254, .3);
-    --border: var(--agrea-green);
-    --border-hover: var(--agrea-dark-green);
+    --border: var(--green-500);
+    --border-hover: var(--dark-green-500);
     --background: #fff;
-    --disabled: var(--agrea-gray);
-    --disabled-inner: var(--agrea-light-gray);
+    --disabled: var(--gray-500);
+    --disabled-inner: var(--gray-200);
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 21px;
@@ -304,7 +404,6 @@ article > img:not([class]) {
     cursor: pointer;
     margin-left: 4px;
   }
-
   input[type='checkbox']:not(.switch) {
     border-radius: 7px;
   }
@@ -317,7 +416,7 @@ article > img:not([class]) {
     left: 7px;
     top: 4px;
     -webkit-transform: rotate(var(--r, 20deg));
-            transform: rotate(var(--r, 20deg));
+    transform: rotate(var(--r, 20deg));
   }
   input[type='checkbox']:not(.switch):checked {
     --r: 43deg;
@@ -334,7 +433,7 @@ article > img:not([class]) {
     height: 15px;
     background: var(--ab, var(--border));
     -webkit-transform: translateX(var(--x, 0));
-            transform: translateX(var(--x, 0));
+    transform: translateX(var(--x, 0));
   }
   input[type='checkbox'].switch:checked {
     --ab: var(--active-inner);
@@ -343,7 +442,6 @@ article > img:not([class]) {
   input[type='checkbox'].switch:disabled:not(:checked):after {
     opacity: .6;
   }
-
   input[type='radio'] {
     border-radius: 50%;
   }
@@ -354,9 +452,41 @@ article > img:not([class]) {
     background: var(--active-inner);
     opacity: 0;
     -webkit-transform: scale(var(--s, 0.7));
-            transform: scale(var(--s, 0.7));
+    transform: scale(var(--s, 0.7));
   }
   input[type='radio']:checked {
     --s: .5;
   }
+}
+/* page fade on load */
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#fader {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  background-color:white;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  z-index: 999999;
+}
+#fader:before {
+  content: '';
+}
+#fader {
+  opacity: 0;
+  animation-name: fade-out;
+}
+#fader[x-cloak] {
+  opacity: 1;
+  animation-name: fade-in;
 }

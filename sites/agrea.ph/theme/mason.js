@@ -2,10 +2,17 @@ const mason = require('@joomlatools/mason-tools-v1');
 
 async function postcss() {
   await mason.css.process(`css/input.css`, `css/output.css`, {
-    tailwind: {
+    tailwind: {    
+      purge: {
+        enabled: true,
+        content: [
+          '../**/*.html.php',
+        ],
+      },
       theme: {
         extend: {
           colors: {
+            'brand': '#788023',
             'green': {
               50: '#F8F9F4',
               100: '#F2F2E9',
@@ -67,10 +74,22 @@ async function postcss() {
               900: '#3B2214',
             },
           },
-          fontFamily: {
-            'title': ['Raleway', 'sans-serif'],
-            'agrea': ['typo3', 'serif'],
+          boxShadow: {
+            outline: '0 0 0 3px rgba(120, 128, 35, 0.5)',
           },
+          fontFamily: {
+            'title': ['Raleway', 'Arial Black', 'sans-serif'],
+            'agrea': ['typo3', 'Palatino', 'Book Antiqua', 'serif'],
+          },
+          listStyleType: {
+            'alpha': 'lower-alpha',
+          }
+          /*
+          screens: {
+            'dark': {'raw': '(prefers-color-scheme: dark)'},
+            // => @media (prefers-color-scheme: dark) { ... }
+          },
+          */
         }
       },
       variants: {

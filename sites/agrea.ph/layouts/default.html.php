@@ -1,9 +1,8 @@
 ---
-layout: index
-header:  []
-content: []
+layout: structure
+footer: images://background/rice-farmer.jpg
 ---
 <!-- Main content -->
-<section class="container px-5 py-24 mx-auto leading-relaxed text-base text-gray-700 body-font flex-1 bg-white">
+<section class="container mx-auto flex-1 px-5 pb-8 lg:pt-8">
 	<ktml:content>
 </section>

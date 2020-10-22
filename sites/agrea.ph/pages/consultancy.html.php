@@ -1,23 +1,20 @@
 ---
-layout: default
+layout:
+    path: default
+    footer:
+        image: images://background/farmer-couple.jpg
 name: Consultancy
 title: Consultancy
-summary: The easy to use page generator for Joomla
+summary: Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.
 slug: consultancy
 ---
 
-<div class="flex flex-col sm:flex-row">
-	<article class="sm:w-3/4 sm:pr-8 sm:py-8 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0">
-		<div class="flex flex-wrap w-full mb-20">
-			<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-				<h1 class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 leading-none"><?= $title ?></h1>
-				<div class="h-1 w-20 bg-green-500 rounded"></div>
-			</div>
-			<div class="lg:w-1/2 w-full">
-				<img class="md:h-36 rounded w-full object-cover object-center" src="images://consultancy/consultancy-1.jpg" alt="<?= $title ?>" />
-			</div>
-		</div>
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Your Guide to Agricultural Abundance</h3>
+<div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
+	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<ktml:images max-width="80%" lazyload="progressive,inline">
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Your Guide to Agricultural Abundance</h3>
 		<p>AGREA recognizes the crucial need to capacitate the current and future generations of farmers. Safeguarding the well-being of farmers and the knowledge they possess is essential to a prosperous agricultural sector, and to the country’s capacity to feed its people.</p>
 		<p>Through agriculture, farmers can be a starting point for change.</p>
 		<ul>
@@ -28,9 +25,9 @@ slug: consultancy
 			<li>Sustainability Services</li>
 		</ul>
 
-		<p><img alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
+		<p><img itemprop="image" alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
 
-		<h3 class="text-base text-gray-900 font-medium font-title my-4">Capacity-building &amp; sustainable agriculture training for farmers</h3>
+		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Capacity-building &amp; sustainable agriculture training for farmers</h3>
 
 		<p>Are you looking to build sustainable partnerships with farmers? AGREA’s team of agriculturists, social workers, strategic community organizers, and multi-stakeholders partnerships will help you optimize your agricultural production while equipping your farmer-partners with the right skills to build sustainable livelihoods:</p>
 
@@ -39,10 +36,10 @@ slug: consultancy
 			<li>Financial Literacy Training</li>
 			<li>Leadership &amp; Values Formation Training</li>
 			<li>Technical Training on Sustainable Agriculture:
-			<ul class="mt-2">
-				<li>Integrated farming</li>
-				<li>System of Rice Intensification</li>
-				<li>Organic agriculture production: vegetables; chicken; hog raising; organic fertilizer and concoctions production</li>
+			<ul>
+				<li class="pl-2">Integrated farming</li>
+				<li class="pl-2">System of Rice Intensification</li>
+				<li class="pl-2">Organic agriculture production: vegetables; chicken; hog raising; organic fertilizer and concoctions production</li>
 				</li>
 			</ul>
 			</li>
@@ -51,7 +48,7 @@ slug: consultancy
 		<div class="my-8">
 			<a href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>"><img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>"></a>
 			<div class="mb-8">
-				<h3 class="text-base text-gray-900 font-medium font-title my-4"><a class="text-gray-900 hover:text-gray-600" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3"><a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
 				<ul>
 					<li>Community Evaluation. Evaluate communities in need and set actionable targets for food security and nutrition.</li>
@@ -71,24 +68,28 @@ slug: consultancy
 				</ul>
 			</div>
 			<div class="grid md:grid-cols-2 gap-8 mb-8">
-				<div class="bg-gray-100 p-6 rounded-lg">
-					<?= import('/partials/articles/image-title-excerpt',[
-						'id' => 45, 
-						'category' => 'news',
-					]); ?>
+				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+					<a href="<?= route(page('news/article'), ['slug' => article(45)->slug]) ?>">
+						<?= import('/partials/articles/image-title-excerpt',[
+							'id' => 45,
+							'category' => 'news',
+						]); ?>
+					</a>
 				</div>
-				<div class="bg-gray-100 p-6 rounded-lg">
+				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
+					<a href="<?= route(page('news/article'), ['slug' => article(64)->slug]) ?>">
 					<?= import('/partials/articles/image-title-excerpt',[
 						'id' => 64,
 						'category' => 'news',
 					]); ?>
+					</a>
 				</div>
 			</div>
 			<div class="mb-8">
-				<h3 class="text-base text-gray-900 font-medium font-title my-4">Farm Tourism Development</h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Farm Tourism Development</h3>
 				<p>Do you own an unproductive or barren land? Are you looking to develop a farm or to beautify an existing area? Consult our experts with over 20 years of experience in land development, sustainable landscaping, construction, project budgeting, feasibility studies and business plan development.</p>
-				<img class="rounded w-full" src="images://consultancy/model-farm.jpg" />
-				<h3 class="text-base text-gray-900 font-medium font-title my-4">Sustainability Services</h3>
+				<img class="rounded w-full mb-6" src="images://consultancy/model-farm.jpg" />
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Sustainability Services</h3>
 				<p>Are you looking to build systems for renewable energy and waste? AGREA can help you reach sustainable solutions for your next project?</p>
 				<ul>
 					<li>Hydropower</li>
@@ -102,7 +103,7 @@ slug: consultancy
 				</div>
 			</div>
 
-			<h3 class="text-base text-gray-900 font-medium font-title my-4">Completed / Ongoing Projects</h3>
+			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Completed / Ongoing Projects</h3>
 
 			<p><strong>Farmer Capacity-Building &amp; Sustainable Agriculture Training</strong></p>
 
@@ -152,7 +153,7 @@ slug: consultancy
 				<li>Hongkong Shanghai Group of Hotels for Sustainable Agriculture and Food Systems</li>
 			</ul>
 
-			<h2 class="title">Frequency Asked Questions</h2>
+			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Frequently Asked Questions</h2>
 
 			<p><strong>Do you have established pricing for your services?</strong><br />
 			Yes, please send an e-mail to consultancy@agrea.ph with a description of your desired project. You may also call our Metro Manila office at +63 2 240 5210 to schedule an initial online or in-person appointment.</p>
@@ -169,22 +170,15 @@ slug: consultancy
 			<p><strong>Can I contract AGREA to construct my agricultural site?</strong><br />
 			No, AGREA does not offer construction services.</p>
 		</div>
+	</ktml:images>
 	</article>
-	<div class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">AGREA Consultancy</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-
-		<p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
-
-		<p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
-
-		<h3 class="font-medium font-title mt-4 text-gray-900 text-lg leading-tight">Consult with AGREA</h3>
-		<div class="w-12 h-1 bg-green-500 rounded mt-2 mb-4"></div>
-
-		<p><a href="mailto:consultancy@agrea.ph?subject=AGREA%20Consultancy"><img class="rounded w-full" src="images://consultancy/email.jpg" /></a></p>
-
-		<p><img class="rounded w-full" src="images://consultancy/phone.jpg" /></p>
-
-		<p><img class="rounded w-full" src="images://consultancy/address.jpg" /></p>
-	</div>
+	<aside role="complimentary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
+	<ktml:images max-width="25%" lazyload="progressive,inline">
+        <p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
+        <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
+        <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Consult with AGREA</h3>
+        <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
+        <p>To find more about our consultancy services please <a href="/about/contact">contact us</a> and send us a message.</p>
+    </ktml:images>
+	</aside>
 </div>
