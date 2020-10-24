@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: pages/home
 name: Home
 title: Agrea - Ecology of Dignity
 ---

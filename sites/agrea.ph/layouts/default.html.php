@@ -1,5 +1,5 @@
 ---
-layout: structure
+layout: page
 footer: images://background/rice-farmer.jpg
 ---
 <!-- Main content -->
