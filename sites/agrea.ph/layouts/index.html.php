@@ -43,10 +43,10 @@
     <link rel="icon" type="image/png" href="theme://images/icons/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="theme://images/android-chrome-192x192.png" sizes="192x192">
 
-    <link rel="stylesheet" href="theme://css/fonts.css" media="print" onload="this.media='all'; this.onload=null;" />
     <link rel="alternate" href="<?= route('news.rss') ?>" type="application/rss+xml" title="Agrea News Sprouts"  />
     <link rel="preconnect" href="https://unpkg.com/"  />
 
+    <ktml:style src="theme://css/fonts.css" media="print" onload="this.media='all'; this.onload=null;" />
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
     <ktml:script src="theme://js/alpinejs-v2.7.0.min.js" defer="defer" />
 
