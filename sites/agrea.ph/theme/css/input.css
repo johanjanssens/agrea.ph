@@ -126,7 +126,7 @@ sup:not([class]) {
   }
 }
 /* Broken images */
-/*mg {
+/*img {
   @apply font-light leading-tight text-center w-full h-auto block relative;
 }
 img:before {
