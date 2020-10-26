@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:og="http://opengraphprotocol.org/schema/" class="no-js h-full" lang="<?= language() ?>" dir="<?= direction() ?>" vocab="http://schema.org/">
+<html xmlns:og="http://opengraphprotocol.org/schema/" class="h-full" lang="<?= language() ?>" dir="<?= direction() ?>" vocab="http://schema.org/">
 <head>
     <meta charset="utf-8"/>
     <base href="<?= url(); ?>" />
@@ -74,6 +74,21 @@
         'selector' => 'header, .submenu',
         'debug'    =>  debug()
     ]) ?>
+
+    <style>
+      img.lazyprogressive.object-center {
+        background-position: center;
+      }
+
+      img.lazyprogressive.lg\:object-right {
+        background-position: right;
+      }
+
+      img.lazyprogressive.object-cover,
+      img.lazyprogressive.lg\:object-cover {
+        background-size: cover;
+      }
+    </style>
 
 </head>
 

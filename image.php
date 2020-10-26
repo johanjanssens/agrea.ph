@@ -48,7 +48,7 @@ if($query['path'])
     $source      = $basepath.'/'.$filepath;
     $destination = false;
     $background   = null;
-    
+
     if(!file_exists($source))
     {
         http_response_code(404);
@@ -820,7 +820,7 @@ Class Image
    }
 
    /*
-    * Dynamically calculate the response image breakpoints based on fixed filesize reduction
+    * Calculate the image breakpoints based on fixed filesize reduction
     *
     * Inspired by https://stitcher.io/blog/tackling_responsive_images-part_2
     */

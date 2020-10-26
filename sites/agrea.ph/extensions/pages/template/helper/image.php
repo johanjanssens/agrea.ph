@@ -71,35 +71,36 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                 }
 
+                //Calculate the image size
+                list($width, $height) = $this->_calculateSize($config->url, $width);
+
                 if($config->lazyload !== false)
                 {
                     $lazyload = array_map('trim', explode(',', $config->lazyload));
 
                     if(in_array('progressive', $lazyload))
                     {
-                        $config->attributes->class->append(['progressive']);
+                        $config->attributes->class->append(['lazyprogressive']);
 
                         $parameters = array();
                         $parameters['w'] = (int) ($width / 8);
 
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
-                    else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
-                    //Combine low quality image as srcset value and a data-srcset attribute and
-                    //provide a fallback if javascript is disabled
+                    //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
                     $html .= '<noscript>';
-                    $html .=    '<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                     $html .= '</noscript>';
-                    $html .='<img width="'.$width.'" data-srclow="'. $lqi_url.'"
+                    $html .='<img width="'.$width.'" height="'.$height.'" style="--lqi: '.sprintf("url('%s')", $lqi_url).'"
+                        src="'.$this->_generatePlaceholder($width, $height).'"
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
-                        data-hash="'.hash('crc32b', $config->url).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
                 else
                 {
-                    $html .='<img width="'.$width.'" src="'.$hqi_url.'&w='.$width.'"
+                    $html .='<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'&w='.$width.'"
                         srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
@@ -107,14 +108,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             //Fixed image with display density description
             else
             {
-                $width  = $config->width;
-                $height = $config->height;
-
-                if(!$width && !$height)
-                {
-                    $size = @getimagesize($this->getConfig()->base_path.$config->url);
-                    $width = $size[0];
-                }
+                //Calculate the image size
+                list($width, $height) = $this->_calculateSize($config->url, $config->width, $config->height);
 
                 $srcset = [];
                 if($height)
@@ -123,7 +118,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         $srcset[] = sprintf($hqi_url.'&h=%1$s&dpr=%2$d %2$dx', $height, $i);
                     }
 
-                    $size    = 'height="'.$height.'"';
                     $hqi_url = $hqi_url.'&h='.$height;
                 }
                 else
@@ -132,7 +126,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         $srcset[] = sprintf($hqi_url.'&w=%1$s&dpr=%2$d %2$dx', $width, $i);
                     }
 
-                    $size    = 'width="'.$width.'"';
                     $hqi_url = $hqi_url.'&w='.$width;
                 }
 
@@ -142,6 +135,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                     if(in_array('progressive', $lazyload))
                     {
+                        $config->attributes->class->append(['lazyprogressive']);
+
                         $parameters = array();
 
                         if($height) {
@@ -152,22 +147,22 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
-                    else $lqi_url = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
 
                     //Combine low quality image as srcset value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
-                    $html .=    '<img '.$size.' src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                     $html .= '</noscript>';
-                    $html .='<img '.$size.' data-srclow="'. $lqi_url.'"
+                    $html .='<img width="'.$width.'" height="'.$height.'" style="--lqi: '.sprintf("url('%s')", $lqi_url).'"
+                      src="'.$this->_generatePlaceholder($width, $height).'"
                       data-srcset="'. implode(',', $srcset).'"
-                      data-hash="'.hash('crc32b', $config->url).'"
                       alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
 
                 }
                 else
                 {
-                    $html .='<img '.$size.' src="'.$hqi_url.'"
+                    $html .='<img width="'.$width.'" height="'.$height.'"
+                        src="'.$hqi_url.'"
                         srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
                 }
@@ -175,22 +170,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         }
         else
         {
-            $width  = $config->width;
-            $height = $config->height;
-
-            if(!$width && !$height)
-            {
-                $size = @getimagesize($this->getConfig()->base_path.$config->url);
-                $width = $size[0];
-            }
-
-            if($height) {
-                $size = 'height="'.$height.'"';
-            } else {
-                $size = 'width="'.$width.'"';
-            }
-
-            $html ='<img '.$size.'src="'.$config->url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+            list($width, $height) = $this->_calculateSize($config->url, $config->width, $config->height);
+            $html ='<img width="'.$width.'" height="'.$height.'" src="'.$config->url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
         }
 
         return $html;
@@ -239,7 +220,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     ],
                 ]);
 
-                if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($result, '/'), false, $context)) {
+                if($data = @@file_get_contents($this->getConfig()->base_url.'/'.trim($result, '/'), false, $context)) {
                     $result = 'data:image/jpg;base64,'.base64_encode($data);
                 }
             }
@@ -273,8 +254,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 $config->min_width = ceil($this->getConfig()->min_width / 100 * (int)$config->min_width);
             }
 
-            $file  = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url->getPath());
-            $sizes = $this->_calculateSizes($file, $config->max_width * $config->max_dpr, $config->min_width);
+            $sizes = $this->_calculateSizes($url->getPath(), $config->max_width * $config->max_dpr, $config->min_width);
 
             //Build path for the high quality image
             $hqi_url = $this->url($url);
@@ -335,16 +315,17 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
     }
 
     /*
-     * Dynamically calculate the response image breakpoints based on fixed filesize reduction
+     * Calculate the image breakpoints based on fixed filesize reduction
      *
      * Inspired by https://stitcher.io/blog/tackling_responsive_images-part_2
      */
-    protected function _calculateSizes($file, $max_width, $min_width = 320)
+    protected function _calculateSizes($url, $max_width, $min_width = 320)
     {
         $min_filesize = 1024 * 10; //10kb
         $modifier     = 0.7;       //70% (each image should be +/- 30% smaller in expected size)
 
         //Get dimensions
+        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
         list($width, $height) = @getimagesize($file);
 
         //Get filesize
@@ -390,5 +371,44 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         }
 
         return $sizes;
+    }
+
+    /*
+     * Calculate the image size
+     */
+    protected function _calculateSize($url, $max_width = null, $max_height = null)
+    {
+        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
+        list($width, $height) = @getimagesize($file);
+
+        if($max_width && !$max_height)
+        {
+            $height = ceil(($max_width / $width) * $height);
+            $width  = $max_width;
+        }
+
+        if($max_height && !$max_width)
+        {
+            $width = ceil(($max_height / $height) * $width);
+            $height = $max_height;
+        }
+
+        if($max_height && $max_width)
+        {
+            $width  = $max_width;
+            $height = $max_height;
+        }
+
+        return [$width, $height];
+    }
+
+    /**
+     *  Generation svg placeholder maintaining aspect ratio
+     */
+    protected function _generatePlaceholder($width, $height)
+    {
+        $svg = '<svg viewBox="0 0 '.$width.' '.$height.'" xmlns="http://www.w3.org/2000/svg"><rect fill-opacity="0" /></svg>';
+        $uri =  'data:image/svg+xml;base64,'.base64_encode($svg);
+        return $uri;
     }
 }
