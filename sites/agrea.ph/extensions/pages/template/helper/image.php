@@ -90,6 +90,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
+                    else $lqi_url = '';
 
                     //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
                     $html .= '<noscript>';
@@ -150,6 +151,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
+                    else $lqi_url = '';
 
                     //Combine low quality image as srcset value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
