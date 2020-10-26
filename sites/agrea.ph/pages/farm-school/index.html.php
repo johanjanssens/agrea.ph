@@ -72,7 +72,7 @@ collection:
 		<div class="flex flex-col">
 			<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Be an agri scholar now</h3>
 			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
-			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-certified-organic-agri-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
+			<p class="mt-4 mb-8">AGREA, the <a href="/news/agrea-first-tesda-accredited-farm-school-in-marinduque" target="_blank">first TESDA-accredited farm school in Marinduque</a> and certified by the Department of Agriculture - Agricultural Training Institute as an <a href="/news/agrea-is-now-a-da-ati-certified-organic-agriculture-learning-site" target="_blank">Organic Agriculture Learning Site</a>, offers scholarships in agriculture-related technical and vocational courses and are packaged from the competency map of the Philippine agri-fishery sector.</p>
 			<ktml:images max-width="33%" lazyload="progressive,inline">
 			<?= import('/partials/articles/image-title-excerpt',[
 				'id' => 142,

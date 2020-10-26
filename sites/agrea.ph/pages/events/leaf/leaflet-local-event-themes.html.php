@@ -29,7 +29,7 @@ slug: leaflet-local-event-themes
 			<aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
 				<?= import('/partials/articles/image-title-date',[
 					'id' => 73,
-					'category' => 'events',
+					'category' => 'news',
 				]); ?>
 			</aside>
 		</div>

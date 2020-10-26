@@ -51,13 +51,12 @@ slug: leaf
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
-		<p><a href="images://events/leaf/leaf-2018-global-advisory-board"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
+		<p><a href="images://events/leaf/advisory-board.jpg" target="_blank"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Join the LEAF Young Agripreneurs Pitch</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">The LEAF Young Agripreneurs Pitch</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
-		<p>YOUNG AGRIPRENEURS PITCH IS EXTENDED! Send in your proposal by 11:59PM on or before Sunday, 23 September 2018.<br />
-		Are you a young entrepreneur with an innovative project for agriculture? <a href="http://www.agreaph.com/leaf-registration" target="_blank">Register for LEAF</a> and apply to pitch your idea at the Young Agripreneurs session! Click on the image below for details.</p>
+		<p>Young entrepreneurs with an innovative project for agriculture were invited to apply to pitch their idea at the Young Agripreneurs session.</p>
 
 		<p><img class="rounded w-full" src="images://events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
 
