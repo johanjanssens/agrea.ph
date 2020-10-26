@@ -67,7 +67,7 @@ slug: programs
 			<p>Such approach is utilized in order to capacitate every member of the society as they engage in community-wide and organization-wide programs that are designed to piece together a One-Island Economy.</p>
 
 			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Know more about AGREA's social programs</h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-green-600 dark:text-gray-100 leading-tight mb-3">Know more about AGREA's social programs</h3>
 
 				<p class="">If you want to know more about the AGREA's Social Programs, you have inquiries about how to be of support, or if you wish to become an AGREA volunteer, <a href="/about/contact">contact us</a> and send us a message.</p>
 			</div>
