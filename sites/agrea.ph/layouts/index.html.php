@@ -91,10 +91,10 @@
     </style>
 
     <noscript>
-      <style>
+      <style data-inline>
         img.lazyprogressive {
-          background-image: none;
-          display: none;
+            background-image: none;
+            display: none;
         }
       </style>
     </noscript>
