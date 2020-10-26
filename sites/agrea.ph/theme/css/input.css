@@ -125,26 +125,6 @@ sup:not([class]) {
     height:42.86vh;
   }
 }
-/* Broken images */
-/*img {
-  @apply font-light leading-tight text-center w-full h-auto block relative;
-}
-img:before {
-  @apply block absolute left-0 w-full bg-gray-100 rounded-lg border-dashed border-2 border-gray-300;
-  content: " ";
-  height: calc(100% + 10px);
-  top: -10px;
-}
-img:after {
-  @apply block text-sm text-gray-700 absolute left-0 top-0 bottom-0 right-0 m-auto text-center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23788023'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' /%3E%3C/svg%3E");
-  background-size:15%;
-  background-repeat: no-repeat;
-  background-position:50% 100%;
-  content: "\f127" " Broken Image URL: " attr(src);
-  width: 80%;
-  height: 60%;
-}*/
 /* Plyr.js */
 .plyr {
   @apply rounded-lg;
@@ -457,36 +437,4 @@ sub:not([class]) {
   input[type='radio']:checked {
     --s: .5;
   }
-}
-/* page fade on load */
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-#fader {
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  pointer-events:none;
-  background-color:white;
-  animation-duration: 100ms;
-  animation-timing-function: ease-in-out;
-  z-index: 999999;
-}
-#fader:before {
-  content: '';
-}
-#fader {
-  opacity: 0;
-  animation-name: fade-out;
-}
-#fader[x-cloak] {
-  opacity: 1;
-  animation-name: fade-in;
 }
