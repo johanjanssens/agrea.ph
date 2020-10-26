@@ -1,5 +1,6 @@
 <?php
 
+
 class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 {
     protected function _initialize(KObjectConfig $config)
@@ -34,6 +35,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'lazyload'  => true, //progressive, inline
         ))->append(array(
             'attributes' => array('class' => $config->class),
+        ))->append(array(
+            'attributes_noscript' => clone $config->attributes,
         ));
 
         //Set lazyload class for lazysizes
@@ -67,7 +70,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 foreach(array_reverse(array_keys($srcset)) as $size)
                 {
                     if($size > $width) {
-                       $width = $size; break;
+                        $width = $size; break;
                     }
                 }
 
@@ -90,7 +93,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                     //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
                     $html .= '<noscript>';
-                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes_noscript).'>';
                     $html .= '</noscript>';
                     $html .='<img width="'.$width.'" height="'.$height.'" style="--lqi: '.sprintf("url('%s')", $lqi_url).'"
                         src="'.$this->_generatePlaceholder($width, $height).'"
@@ -151,7 +154,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     //Combine low quality image as srcset value and a data-srcset attribute and
                     //provide a fallback if javascript is disabled
                     $html .= '<noscript>';
-                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes_noscript).'>';
                     $html .= '</noscript>';
                     $html .='<img width="'.$width.'" height="'.$height.'" style="--lqi: '.sprintf("url('%s')", $lqi_url).'"
                       src="'.$this->_generatePlaceholder($width, $height).'"

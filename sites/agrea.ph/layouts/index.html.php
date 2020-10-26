@@ -90,6 +90,15 @@
       }
     </style>
 
+    <noscript>
+      <style>
+        img.lazyprogressive {
+          background-image: none;
+          display: none;
+        }
+      </style>
+    </noscript>
+
 </head>
 
 <body class="<?= config()->site->body_class ?>">
