@@ -42,7 +42,7 @@ title: Agrea - Ecology of Dignity
 
 <section class="text-gray-700 mb-24">
   <ktml:images max-width="25%" lazyload="progressive,inline">
-  <div role="complimentary" class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
+  <div role="complimentary" class="container px-5 py-12 mx-auto bg-gradient-to-b from-dark-green-100 to-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Latest News Sprouts</h2>
