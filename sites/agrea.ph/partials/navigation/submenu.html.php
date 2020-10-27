@@ -1,14 +1,10 @@
 <? $pages = collection('pages', ['folder' => $folder ?? '.', 'level' => 3,  'recurse' => 'true', 'filter' => ['visible' => 'true']]) ?>
 <ul x-data="{ isOpen: <?= $menuOpen = $menuOpen ?? 'false'; ?> }" role="navigation" aria-label="Secondary menu" class="submenu border border-gray-300 mb-8 rounded">
 	<? foreach ($pages as $page) : ?>
-		<? 
-			$x = 1;
-			$length = count($page);
-			foreach($page->getChildren() as $child):
-		?>
+		<? foreach($page->getChildren() as $child): ?>
 			<? if (strpos(page()->path, $page->path) === 0): ?>
 				<? if ($child->getChildren()): ?>
-					<li class="hover:bg-gray-100 <?= ($x === 1) ? '' : 'border-t ' ; ?>items-center transition-colors duration-500 ease-in-out p-2 flex flex-row sm:flex-col sm:items-center lg:flex-row justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
+					<li class="hover:bg-gray-100 border-t first:border-t-0 first:rounded-t last:rounded-b items-center transition-colors duration-500 ease-in-out p-2 flex flex-row sm:flex-col sm:items-center lg:flex-row justify-between<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?>">
 						<a class="flex-1 focus:outline-none focus:shadow-outline block" href="<?= route($child) ?>"><?= $child->name ?></a>
 						<button
 							@click="isOpen = !isOpen"
@@ -49,11 +45,11 @@
 						<? endforeach; ?>
 					</ul>
 				<? else: ?>
-					<li class="hover:bg-gray-100 <?= ($x === 1) ? '' : 'border-t ' ; ?>transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
+					<li class="hover:bg-gray-100 border-t first:border-t-0 first:rounded-t last:rounded-b transition-colors duration-500 ease-in-out p-2<?= strpos(page()->path, $child->path) === 0 ? ' bg-gray-100 is-active' : '' ?> no-children">
 						<a class="block" href="<?= route($child) ?>"><?= $child->name ?></a>
 					</li>
 				<? endif; ?>
 			<? endif; ?>
-		<? $x++;endforeach; ?>
+		<? endforeach; ?>
 	<? endforeach; ?>
 </ul>

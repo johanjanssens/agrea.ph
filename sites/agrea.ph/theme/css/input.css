@@ -145,21 +145,6 @@ sup:not([class]) {
 .k-pagination__pages li:not(.k-is-active):hover a {
   @apply bg-gray-200;
 }
-/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
-.aspect-ratio-none {
-  @apply pb-0;
-}
-/* responsive embeds */
-.embed-responsive {
-  @apply relative block h-0 p-0 overflow-hidden;
-}
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  @apply absolute top-0 left-0 bottom-0 h-full w-full border-0;
-}
 @tailwind components;
 @tailwind utilities;
 
@@ -268,19 +253,6 @@ sup:not([class]) {
 /* Move superscripted text up */
 sub:not([class]) {
     bottom: -0.25em;
-}
-/* tailwindcss-aspect-ratio - these can come out when @ercan updates tailwind in mason */
-.aspect-ratio-square {
-  padding-bottom: 100%;
-}
-.aspect-ratio-16\/9 {
-  padding-bottom: 56.25%;
-}
-.aspect-ratio-4\/3 {
-  padding-bottom: 75%;
-}
-.aspect-ratio-21\/9 {
-  padding-bottom: 42.86%;
 }
 /* Circle text - Used on About Us page */
 .circles {
