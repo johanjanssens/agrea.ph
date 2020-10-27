@@ -24,7 +24,7 @@ $category_slug = ($article->category->slug == 'careers') ? '/about'.$category_sl
 	<div id="moreLikeThis" class="hidden my-4">
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">More <?= $article->category->name ?> stories</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
-		<div class="grid sm:grid-cols-3 gap-4 mb-4">
+		<ul>
 			<?
 			$relatedArticles = collection('ext:joomla.model.articles', [
 			'published' => 1,
@@ -35,20 +35,14 @@ $category_slug = ($article->category->slug == 'careers') ? '/about'.$category_sl
 			]); ?>
 
 			<? foreach($relatedArticles as $relatedArticle) :?>
-			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $relatedArticle->slug]) ?>">
-				<aside>
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $relatedArticle->image->url ?>" alt="<?= $relatedArticle->title; ?>">
-					<p class="text-xs flex items-center mb-2">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-						</svg> <?= date($relatedArticle->published_date, 'd M, Y'); ?>
-					</p>
-					<h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $relatedArticle->title; ?></h3>
-				</aside>
-			</a>
+			<li>
+				<a href="<?= route(page('news/article'), ['slug' => $relatedArticle->slug]) ?>">
+					<?= $relatedArticle->title; ?>
+				</a>
+			</li>
 			<? endforeach ?>
-      	</div>
-		<a class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= $category_slug ?>">Discover even more <?= $article->category->name ?> stories</a>
+      	</ul>
+		<a class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= $category_slug ?>">Discover even more</a>
 	</div>
 </div>
 </ktml:images>
