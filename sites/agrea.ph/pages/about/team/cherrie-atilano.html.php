@@ -35,7 +35,7 @@ collection:
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-4 mb-6">
 		<? foreach(collection() as $article): ?>
-			<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg">
+			<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-500 hover:to-lime-600 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg">
 				<aside role="gridcell">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">

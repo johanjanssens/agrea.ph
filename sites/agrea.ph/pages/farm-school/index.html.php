@@ -24,7 +24,7 @@ collection:
 		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach(collection() as $article): ?>
-			<a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
+			<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-500 hover:to-lime-600 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('farm-school/article', ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
 					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
