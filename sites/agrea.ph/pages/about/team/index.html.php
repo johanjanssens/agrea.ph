@@ -13,7 +13,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
 			<? foreach (data('team') as $member) : ?>
 				<? if ($member->slug !== ""): ?>
-				<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-500 hover:to-lime-600 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
+				<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="/about/team/<?= $member->slug; ?>">
 					<aside role="gridcell">
 				<? else: ?>
 					<aside role="gridcell" class="h-full bg-gray-100 text-gray-900 dark:text-gray-100 p-6 rounded-lg">
