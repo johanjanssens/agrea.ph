@@ -1,3 +1,7 @@
+<?
+$category_slug = (strpos($article->category->slug,'prouts') || strpos($article->category->slug,'icks')) ? '/news' : '/'.$article->category->slug;
+$category_slug = ($article->category->slug == 'careers') ? '/about'.$category_slug : $category_slug;
+?>
 <ktml:images max-width="80%" lazyload="progressive,inline">
 <div class="max-w-4xl m-auto mt-8">
 	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $article->title ?></h1>
@@ -16,5 +20,17 @@
 		</span>
 	</p>
 	<div class="mt-2" itemprop="articleBody" content="<?= escape(strip_tags($article->excerpt.$article->text)) ?>"><?= $article->excerpt.$article->text ?></div>
+	<a id="backButton" class="hidden inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="javascript:history.back()">Back</a>
+	<a id="moreLikeThis" class="hidden inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= $category_slug ?>">More like this</a>
 </div>
 </ktml:images>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	if (document.referrer.indexOf(window.location.host) !== -1) { 
+		document.getElementById("backButton").classList.toggle('hidden');
+	}
+	if (document.referrer.indexOf(window.location.host) === -1) {
+		document.getElementById("moreLikeThis").classList.toggle('hidden');
+	}
+});
+</script>
