@@ -71,7 +71,7 @@
     <? endif ?>
 
     <?= helper('behavior.prefetcher', [
-        'selector' => 'header, .submenu',
+        'selector' => 'header, .submenu, .k-pagination',
         'debug'    =>  debug()
     ]) ?>
 
