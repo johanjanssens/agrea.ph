@@ -117,6 +117,25 @@
   /* titles */
   .font-title {
     @apply uppercase;
+  } 
+  /* MIX: Lazyprogressive images */
+  img.lazyprogressive[x-cloak="lazyprogressive"] {
+    @apply bg-none;
+  }
+  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+  img.lazyprogressive.object-center {
+    @apply bg-center;
+  }
+  img.lazyprogressive {
+    @apply bg-cover;
+  }
+  @screen lg {
+    img.lazyprogressive {
+      @apply bg-cover;
+    }
+    img.lazyprogressive.object-right {
+      @apply bg-right;
+    }
   }
   /* hero image */
   .hero-image > div {
@@ -150,27 +169,6 @@
   }
   .k-pagination__pages li:not(.k-is-active):hover a {
     @apply bg-gray-200;
-  }
-}
-@layer utilities {
-  /* MIX: Lazyprogressive images */
-  img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none;
-  }
-  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-  img.lazyprogressive.object-center {
-    @apply bg-center;
-  }
-  img.lazyprogressive {
-    @apply bg-cover;
-  }
-  @screen lg {
-    img.lazyprogressive {
-      @apply bg-cover;
-    }
-    img.lazyprogressive.object-right {
-      @apply bg-right;
-    }
   }
 }
 /* Anything we can't do easily with tailwind classes */
