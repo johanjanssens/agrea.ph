@@ -4,6 +4,10 @@
 @tailwind utilities;
 /*  declare our base styles for preflight */
 @layer base {
+  /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
+  [x-cloak] {
+    @apply hidden;
+  }
   main {
     @apply min-h-screen;
   }
@@ -117,7 +121,7 @@
   }
   /* MIX: Lazyprogressive images */
   img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none hidden;
+    @apply bg-none;
   }
   /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
   img.lazyprogressive.object-center {
