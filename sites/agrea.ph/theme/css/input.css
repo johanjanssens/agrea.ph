@@ -112,7 +112,7 @@ sup:not([class]) {
 .font-title {
   @apply uppercase;
 }
-/* Lazysizes Images */
+/* MIX: Lazyprogressive images */
 img.lazyprogressive[x-cloak="lazyprogressive"] {
   @apply bg-none hidden;
 }
