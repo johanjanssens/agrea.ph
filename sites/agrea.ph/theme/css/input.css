@@ -1,153 +1,174 @@
 /* tailwind */
 @tailwind base;
-/*  declare our base styles for preflight - move these to a @layer once we get it working */
-main {
-  @apply min-h-screen;
-}
-main,
-footer {
-  @apply text-base;
-}
-h1:not([class]) {
-  @apply text-4xl text-gray-900 leading-none mb-2;
-  font-family:'Raleway';
-}
-h2:not([class]) {
-  @apply text-3xl text-gray-900 leading-none mb-2;
-  font-family:'Raleway';
-}
-h3:not([class]) {
-  @apply text-2xl text-gray-900 leading-tight mb-3;
-  font-family:'Raleway';
-}
-h4:not([class]) {
-  @apply text-xl text-gray-900 mb-4;
-  font-family:'Raleway';
-}
-h5:not([class]) {
-  @apply text-lg text-gray-900 mb-5;
-  font-family:'Raleway';
-}
-blockquote:not([class]),
-label:not([class]),
-p:not([class]),
-pre:not([class]),
-td:not([class]),
-th:not([class]),
-ul:not([class]),
-ol:not([class]) {
-  @apply mb-6;
-}
-small:not([class]) {
-  @apply text-sm mb-8;
-}
-table:not([class]) {
-  @apply border-collapse mb-6;
-}
-td:not([class]),
-th:not([class]),
-tr:not([class]) {
-  @apply pr-6;
-}
-ul:not([class]) {
-  @apply list-disc list-outside ml-4;
-}
-ol:not([class]) {
-  @apply list-decimal list-outside ml-4;
-}
-li:not([class]) > ol:not([class]),
-li:not([class]) > ul:not([class]) {
-  @apply mx-4 my-2;
-}
-li:focus-within a {
-  @apply outline-none;
-}
-a[href] {
-  @apply cursor-pointer;
-}
-a:not([class]) {
-  @apply text-green-500;
-  text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
-}
-a:not([class]):hover {
-  background-size: 100% 2px;
-}
-
-a:not([class]):focus {
-  @apply outline-none shadow-outline;
-}
-article > img:not([class]) {
-  @apply rounded;
-}
-b:not([class]),
-dt:not([class]),
-strong:not([class]) {
-  @apply font-semibold;
-}
-dl:not([class]) + dl:not([class]) {
-  @apply mt-4;
-}
-dt:not([class]) {
-  @apply leading-tight mt-4 mb-1;
-}
-dl:not([class]) dt:not([class]):first-child {
-  @apply mt-2;
-}
-figure:not([class]) {
-  @apply rounded-lg mb-6;
-}
-figcaption:not([class]) {
-  @apply text-center text-sm italic mt-2;
-}
-sub:not([class]),
-sup:not([class]) {
-  @apply text-xs relative align-baseline;
-}
-/* titles */
-.font-title {
-  @apply uppercase;
-}
-/* hero image */
-.hero-image > div {
-  @apply bg-right;
-}
-/* Single article featured image */
-.featured-image {
-  height:33vh;
-}
-@screen lg {
-  .featured-image {
-    height:42.86vh;
-  }
-}
-/* Plyr.js */
-.plyr {
-  @apply rounded-lg;
-}
-/* pagination */
-.k-pagination__pages li {
-  @apply inline-flex mr-1;
-}
-.k-pagination__pages a {
-  @apply rounded py-2 px-4 no-underline;
-}
-.k-pagination__pages a:hover {
-  @apply no-underline;
-}
-.k-pagination__pages li.k-is-active a {
-  @apply bg-green-500 text-white;
-}
-.k-pagination__pages li:not(.k-is-active):hover a {
-  @apply bg-gray-200;
-}
 @tailwind components;
 @tailwind utilities;
+/*  declare our base styles for preflight */
+@layer base {
+  /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
+  [x-cloak] {
+    @apply hidden;
+  }
+  main {
+    @apply min-h-screen;
+  }
+  main,
+  footer {
+    @apply text-base;
+  }
+  h1:not([class]) {
+    @apply text-4xl text-gray-900 leading-none mb-2;
+    font-family:'Raleway';
+  }
+  h2:not([class]) {
+    @apply text-3xl text-gray-900 leading-none mb-2;
+    font-family:'Raleway';
+  }
+  h3:not([class]) {
+    @apply text-2xl text-gray-900 leading-tight mb-3;
+    font-family:'Raleway';
+  }
+  h4:not([class]) {
+    @apply text-xl text-gray-900 mb-4;
+    font-family:'Raleway';
+  }
+  h5:not([class]) {
+    @apply text-lg text-gray-900 mb-5;
+    font-family:'Raleway';
+  }
+  blockquote:not([class]),
+  label:not([class]),
+  p:not([class]),
+  pre:not([class]),
+  td:not([class]),
+  th:not([class]),
+  ul:not([class]),
+  ol:not([class]) {
+    @apply mb-6;
+  }
+  small:not([class]) {
+    @apply text-sm mb-8;
+  }
+  table:not([class]) {
+    @apply border-collapse mb-6;
+  }
+  td:not([class]),
+  th:not([class]),
+  tr:not([class]) {
+    @apply pr-6;
+  }
+  ul:not([class]) {
+    @apply list-disc list-outside ml-4;
+  }
+  ol:not([class]) {
+    @apply list-decimal list-outside ml-4;
+  }
+  li:not([class]) > ol:not([class]),
+  li:not([class]) > ul:not([class]) {
+    @apply mx-4 my-2;
+  }
+  li:focus-within a {
+    @apply outline-none;
+  }
+  a[href] {
+    @apply cursor-pointer;
+  }
+  a:not([class]) {
+    @apply text-green-500;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+  }
+  a:not([class]):hover {
+    background-size: 100% 2px;
+  }
 
+  a:not([class]):focus {
+    @apply outline-none shadow-outline;
+  }
+  article > img:not([class]) {
+    @apply rounded;
+  }
+  b:not([class]),
+  dt:not([class]),
+  strong:not([class]) {
+    @apply font-semibold;
+  }
+  dl:not([class]) + dl:not([class]) {
+    @apply mt-4;
+  }
+  dt:not([class]) {
+    @apply leading-tight mt-4 mb-1;
+  }
+  dl:not([class]) dt:not([class]):first-child {
+    @apply mt-2;
+  }
+  figure:not([class]) {
+    @apply rounded-lg mb-6;
+  }
+  figcaption:not([class]) {
+    @apply text-center text-sm italic mt-2;
+  }
+  sub:not([class]),
+  sup:not([class]) {
+    @apply text-xs relative align-baseline;
+  }
+  /* titles */
+  .font-title {
+    @apply uppercase;
+  }
+  /* MIX: Lazyprogressive images */
+  img.lazyprogressive[x-cloak="lazyprogressive"] {
+    @apply bg-none;
+  }
+  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+  img.lazyprogressive.object-center {
+    @apply bg-center;
+  }
+  img.lazyprogressive.object-cover {
+    @apply bg-cover;
+  }
+  @screen lg {
+    img.lazyprogressive.object-right {
+      @apply bg-right;
+    }
+  }
+  /* hero image */
+  .hero-image > div {
+    @apply bg-right;
+  }
+  /* Single article featured image */
+  .featured-image {
+    height:33vh;
+  }
+  @screen lg {
+    .featured-image {
+      height:42.86vh;
+    }
+  }
+  /* Plyr.js */
+  .plyr {
+    @apply rounded-lg;
+  }
+  /* pagination */
+  .k-pagination__pages li {
+    @apply inline-flex mr-1;
+  }
+  .k-pagination__pages a {
+    @apply rounded py-2 px-4 no-underline;
+  }
+  .k-pagination__pages a:hover {
+    @apply no-underline;
+  }
+  .k-pagination__pages li.k-is-active a {
+    @apply bg-green-500 text-white;
+  }
+  .k-pagination__pages li:not(.k-is-active):hover a {
+    @apply bg-gray-200;
+  }
+}
 /* Anything we can't do easily with tailwind classes */
 /* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {

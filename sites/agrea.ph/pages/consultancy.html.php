@@ -46,9 +46,9 @@ slug: consultancy
 		</ul>
 
 		<div class="my-8">
-			<a href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>"><img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>"></a>
+			<img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>">
 			<div class="mb-8">
-				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3"><a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => article(43)->slug]) ?>">Food Security & Sufficiency Masterplan</a></h3>
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Food Security & Sufficiency Masterplan</h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
 				<ul>
 					<li>Community Evaluation. Evaluate communities in need and set actionable targets for food security and nutrition.</li>
@@ -66,6 +66,7 @@ slug: consultancy
 						</ul>
 					</li>
 				</ul>
+				<p class="mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>">Read more</a></p>
 			</div>
 			<div class="grid md:grid-cols-2 gap-8 mb-8">
 				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
@@ -98,9 +99,8 @@ slug: consultancy
 					<li>Wastewater management</li>
 					<li>Sustainable luxury travels</li>
 				</ul>
-				<div class="my-4">
-					<a href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>"><img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>"></a>
-				</div>
+				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>">
+				<p class="mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>">Read more</a></p>
 			</div>
 
 			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Completed / Ongoing Projects</h3>
