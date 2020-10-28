@@ -7,10 +7,10 @@
   [x-cloak] {
     @apply hidden;
   }
-  main {
+  .main-wrapper {
     @apply min-h-screen;
   }
-  main,
+  .main-wrapper,
   footer {
     @apply text-base;
   }
@@ -197,7 +197,7 @@
     scroll-behavior: smooth;
   }
 }
-main,
+.main-wrapper,
 header,
 aside[role^="comp"],
 footer {
@@ -245,7 +245,7 @@ section[class*="bg-"]:not(.bg-white) p {
  * tailwind doesn't handle this well inline so let's add it here for large screens
 */
 @screen lg {
-  main {
+  .main-wrapper {
     position: relative;
     z-index: 10;
   }

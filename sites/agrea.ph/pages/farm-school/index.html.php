@@ -18,7 +18,7 @@ collection:
 ---
 
 <div class="flex flex-col sm:flex-row sm:pb-4">
-	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4">
+	<main role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4">
 		<ktml:images max-width="33%" lazyload="progressive,inline">
 		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
@@ -67,7 +67,7 @@ collection:
 			</aside>
 		</div>
 		</ktml:images>
-	</div>
+	</main>
 	<aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pt-0 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<div class="flex flex-col">
 			<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Be an agri scholar now</h3>

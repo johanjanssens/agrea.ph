@@ -17,7 +17,7 @@ collection:
         order: desc
 ---
 <div class="flex flex-col sm:flex-row">
-	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<main role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="33%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<article class="w-full mb-6 lg:mb-0">
@@ -46,7 +46,7 @@ collection:
 			<? endforeach; ?>
 		</div>
     </ktml:images>
-	</div>
+	</main>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
   	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>

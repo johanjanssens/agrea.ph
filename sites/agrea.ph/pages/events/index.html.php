@@ -14,7 +14,7 @@ collection:
 ---
 
 <div class="flex flex-col sm:flex-row">
-	<div role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+	<main role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<div role="grid" class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-8">
@@ -39,7 +39,7 @@ collection:
 			<? endforeach; ?>
 		</div>
     <?= helper('paginator.pagination') ?>
-	</div>
+	</main>
 	<aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
