@@ -48,7 +48,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         $format  = strtolower(pathinfo($config->url, PATHINFO_EXTENSION));
         $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
 
-        if($this->supported($config->url))
+        if($this->exists($config->url))
         {
             $html = $this->import(); //import lazysizes script
 
@@ -180,11 +180,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 }
             }
         }
-        else
-        {
-            list($width, $height) = $this->_calculateSize($config->url, $config->width, $config->height);
-            $html ='<img width="'.$width.'" height="'.$height.'" src="'.$config->url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
-        }
+        else $html = '<img class="missing" src="'.$config->url.'" alt="Image Not Found: '.$config->url.'">';
 
         return $html;
     }
@@ -232,7 +228,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     ],
                 ]);
 
-                if($data = @@file_get_contents($this->getConfig()->base_url.'/'.trim($result, '/'), false, $context)) {
+                if($data = @file_get_contents($this->getConfig()->base_url.'/'.trim($result, '/'), false, $context)) {
                     $result = 'data:image/jpg;base64,'.base64_encode($data);
                 }
             }
@@ -299,6 +295,17 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         return $result;
     }
 
+    public function exists($url)
+    {
+        $result = false;
+
+        if($this->supported($url)) {
+            $result = (bool) $this->_findFile($url);
+        }
+
+        return $result;
+    }
+
     public function parseAttributes($string)
     {
         $result = array();
@@ -326,6 +333,17 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         return $result;
     }
 
+    protected function _findFile($url)
+    {
+        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
+
+        if(!file_exists($file)) {
+          $file = false;
+        }
+
+        return $file;
+    }
+
     /*
      * Calculate the image breakpoints based on fixed filesize reduction
      *
@@ -337,48 +355,50 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         $modifier     = 0.7;       //70% (each image should be +/- 30% smaller in expected size)
 
         //Get dimensions
-        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
-        list($width, $height) = @getimagesize($file);
-
-        //Get filesize
-        $filesize = @filesize($file);
-
         $sizes = array();
-        if ($width < $max_width) {
-            $breakpoints[] = $width;
-        }
-
-        $ratio   = $height / $width;
-        $area    = $height * $width;
-
-        $density = $filesize / $area;
-
-        while(true)
+        if($file = $this->_findFile($url))
         {
-            $filesize *= $modifier;
+            list($width, $height) = @getimagesize($file);
 
-            if ((int) $filesize < $min_filesize) {
-                break;
-            }
+            //Get filesize
+            $filesize = @filesize($file);
 
-            $width = (int) floor(sqrt(( $filesize / $density) / $ratio));
-
-            if ($width < $min_width) {
-                break;
-            }
-
-            //Add the width
             if ($width < $max_width) {
-                $sizes[] = $width;
+                $breakpoints[] = $width;
             }
-        }
 
-        if(empty($sizes))
-        {
-            if(is_int($max_width) && $max_width < $width) {
-                $sizes[] = $max_width;
-            } else {
-                $sizes[] = $width;
+            $ratio   = $height / $width;
+            $area    = $height * $width;
+
+            $density = $filesize / $area;
+
+            while(true)
+            {
+                $filesize *= $modifier;
+
+                if ((int) $filesize < $min_filesize) {
+                    break;
+                }
+
+                $width = (int) floor(sqrt(( $filesize / $density) / $ratio));
+
+                if ($width < $min_width) {
+                    break;
+                }
+
+                //Add the width
+                if ($width < $max_width) {
+                    $sizes[] = $width;
+                }
+            }
+
+            if(empty($sizes))
+            {
+                if(is_int($max_width) && $max_width < $width) {
+                    $sizes[] = $max_width;
+                } else {
+                    $sizes[] = $width;
+                }
             }
         }
 
@@ -390,25 +410,30 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
      */
     protected function _calculateSize($url, $max_width = null, $max_height = null)
     {
-        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
-        list($width, $height) = @getimagesize($file);
+        $width  = false;
+        $height = false;
 
-        if($max_width && !$max_height)
+        if($file = $this->_findFile($url))
         {
-            $height = ceil(($max_width / $width) * $height);
-            $width  = $max_width;
-        }
+            list($width, $height) = @getimagesize($file);
 
-        if($max_height && !$max_width)
-        {
-            $width = ceil(($max_height / $height) * $width);
-            $height = $max_height;
-        }
+            if($max_width && !$max_height)
+            {
+                $height = ceil(($max_width / $width) * $height);
+                $width  = $max_width;
+            }
 
-        if($max_height && $max_width)
-        {
-            $width  = $max_width;
-            $height = $max_height;
+            if($max_height && !$max_width)
+            {
+                $width = ceil(($max_height / $height) * $width);
+                $height = $max_height;
+            }
+
+            if($max_height && $max_width)
+            {
+                $width  = $max_width;
+                $height = $max_height;
+            }
         }
 
         return [$width, $height];

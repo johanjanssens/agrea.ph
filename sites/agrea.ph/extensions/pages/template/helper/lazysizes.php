@@ -33,9 +33,27 @@ if ('connection' in navigator)
     }
 }
 
+window.addEventListener('lazybeforeunveil', function (e)
+{
+  var detail = e.detail;
+  if(detail.instance == lazySizes)
+  {
+      var img = e.target;
+
+      setTimeout(function ()
+      {
+          if (img.complete && img.naturalHeight) {
+            img.classList.add('ls-is-cached');
+          }
+      }, 33);
+  }
+
+});
+
 </script>
 
 <style>
+/* Lazyloaded images */
 span.img-container {
   display: inline-block;
   overflow: hidden;
@@ -61,6 +79,16 @@ img.ls-is-cached {
   filter: none;
   transition: none;
 }
+
+img.missing {
+  text-align: center;
+  color: #4a5568;
+  background-color: #f7fafc;
+  border: 2px dotted #e2e8f0;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
 </style>
 LAZYSIZES;
             }
