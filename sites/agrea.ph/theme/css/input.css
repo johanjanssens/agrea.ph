@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*  declare our base styles for preflight */
 @layer base {
   /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
   [x-cloak] {
@@ -153,6 +152,27 @@
     @apply bg-gray-200;
   }
 }
+@layer utilities {
+  /* MIX: Lazyprogressive images */
+  img.lazyprogressive[x-cloak="lazyprogressive"] {
+    @apply bg-none;
+  }
+  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+  img.lazyprogressive.object-center {
+    @apply bg-center;
+  }
+  img.lazyprogressive {
+    @apply bg-cover;
+  }
+  @screen lg {
+    img.lazyprogressive {
+      @apply bg-cover;
+    }
+    img.lazyprogressive.object-right {
+      @apply bg-right;
+    }
+  }
+}
 /* Anything we can't do easily with tailwind classes */
 /* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {
@@ -258,25 +278,6 @@ sup:not([class]) {
 /* Move superscripted text up */
 sub:not([class]) {
     bottom: -0.25em;
-}
-/* MIX: Lazyprogressive images */
-img.lazyprogressive[x-cloak="lazyprogressive"] {
-  @apply bg-none;
-}
-/* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-img.lazyprogressive.object-center {
-  @apply bg-center;
-}
-img.lazyprogressive {
-  @apply bg-cover;
-}
-@screen lg {
-  img.lazyprogressive {
-    @apply bg-cover;
-  }
-  img.lazyprogressive.object-right {
-    @apply bg-right;
-  }
 }
 /* Circle text - Used on About Us page */
 .circles {
