@@ -36,6 +36,15 @@ if ('connection' in navigator)
 </script>
 
 <style>
+span.img-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+span.img-container > img {
+  margin: 0;
+}
+
 img.lazyprogressive {
   background-image: var(--lqi);
   background-repeat: no-repeat;

@@ -1,6 +1,5 @@
 <?php
 
-
 class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 {
     protected function _initialize(KObjectConfig $config)
@@ -36,7 +35,8 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         ))->append(array(
             'attributes' => array('class' => $config->class),
         ))->append(array(
-            'attributes_noscript' => clone $config->attributes,
+            'attributes_container' => array('class' => clone $config->class),
+            'attributes_noscript'  => clone $config->attributes,
         ));
 
         //Set lazyload class for lazysizes
@@ -92,7 +92,10 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = '';
 
+                    $config->attributes_container->class->append(['img-container']);
+
                     //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
+                    $html .= '<span '.$this->buildAttributes($config->attributes_container).'>';
                     $html .= '<noscript>';
                     $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'&w='.$width.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes_noscript).'>';
                     $html .= '</noscript>';
@@ -101,6 +104,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         data-sizes="auto"
                         data-srcset="'. implode(', ', $srcset).'"
                         alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .= '</span>';
                 }
                 else
                 {
@@ -153,8 +157,10 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = '';
 
-                    //Combine low quality image as srcset value and a data-srcset attribute and
-                    //provide a fallback if javascript is disabled
+                    $config->attributes_container->class->append(['img-container']);
+
+                    //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
+                    $html .= '<span '.$this->buildAttributes($config->attributes_container).'>';
                     $html .= '<noscript>';
                     $html .=    '<img width="'.$width.'" height="'.$height.'" src="'.$hqi_url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes_noscript).'>';
                     $html .= '</noscript>';
@@ -162,6 +168,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                       src="'.$this->_generatePlaceholder($width, $height).'"
                       data-srcset="'. implode(',', $srcset).'"
                       alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+                    $html .= '</span>';
 
                 }
                 else
