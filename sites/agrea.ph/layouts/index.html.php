@@ -47,6 +47,18 @@
 
     <ktml:style src="theme://css/fonts.css" media="print" onload="this.media='all'; this.onload=null;" />
     <ktml:style src="theme://css/output.min.css" rel="preload" as="style"/>
+    <style>
+      img.lazyprogressive.object-center {
+        background-position: center;
+      }
+      img.lazyprogressive.lg\:object-right {
+        background-position: right;
+      }
+      img.lazyprogressive.object-cover,
+      img.lazyprogressive.lg\:object-cover {
+        background-size: cover;
+      }
+    </style>
     <ktml:script src="theme://js/alpinejs-v2.7.0.min.js" defer="defer" />
 
     <script>

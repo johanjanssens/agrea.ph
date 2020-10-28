@@ -119,22 +119,6 @@
   .font-title {
     @apply uppercase;
   }
-  /* MIX: Lazyprogressive images */
-  img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none;
-  }
-  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-  img.lazyprogressive.object-center {
-    @apply bg-center;
-  }
-  img.lazyprogressive.object-cover {
-    @apply bg-cover;
-  }
-  @screen lg {
-    img.lazyprogressive.object-right {
-      @apply bg-right;
-    }
-  }
   /* hero image */
   .hero-image > div {
     @apply bg-right;
@@ -274,6 +258,25 @@ sup:not([class]) {
 /* Move superscripted text up */
 sub:not([class]) {
     bottom: -0.25em;
+}
+/* MIX: Lazyprogressive images */
+img.lazyprogressive[x-cloak="lazyprogressive"] {
+  @apply bg-none;
+}
+/* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+img.lazyprogressive.object-center {
+  @apply bg-center;
+}
+img.lazyprogressive {
+  @apply bg-cover;
+}
+@screen lg {
+  img.lazyprogressive {
+    @apply bg-cover;
+  }
+  img.lazyprogressive.object-right {
+    @apply bg-right;
+  }
 }
 /* Circle text - Used on About Us page */
 .circles {
