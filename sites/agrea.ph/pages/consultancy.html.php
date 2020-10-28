@@ -66,7 +66,7 @@ slug: consultancy
 						</ul>
 					</li>
 				</ul>
-				<p class="text-center mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>">Read more about our Food Security & Sufficiency Masterplan</a></p>
+				<p class="text-center mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(109)->slug]) ?>">Read more</a></p>
 			</div>
 			<div class="grid md:grid-cols-2 gap-8 mb-8">
 				<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
@@ -99,9 +99,8 @@ slug: consultancy
 					<li>Wastewater management</li>
 					<li>Sustainable luxury travels</li>
 				</ul>
-				<div class="my-4">
-					<a href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>"><img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>"></a>
-				</div>
+				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>">
+				<p class="text-center mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>">Read more</a></p>
 			</div>
 
 			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Completed / Ongoing Projects</h3>
