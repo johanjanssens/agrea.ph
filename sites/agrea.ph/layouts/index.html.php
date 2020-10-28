@@ -75,30 +75,6 @@
         'debug'    =>  debug()
     ]) ?>
 
-    <style>
-      img.lazyprogressive.object-center {
-        background-position: center;
-      }
-
-      img.lazyprogressive.lg\:object-right {
-        background-position: right;
-      }
-
-      img.lazyprogressive.object-cover,
-      img.lazyprogressive.lg\:object-cover {
-        background-size: cover;
-      }
-    </style>
-
-    <noscript>
-      <style data-inline>
-        img.lazyprogressive {
-            background-image: none;
-            display: none;
-        }
-      </style>
-    </noscript>
-
 </head>
 
 <body class="<?= config()->site->body_class ?>">

@@ -112,6 +112,22 @@ sup:not([class]) {
 .font-title {
   @apply uppercase;
 }
+/* Lazysizes Images */
+img.lazyprogressive[x-cloak="lazyprogressive"] {
+  @apply bg-none hidden;
+}
+/* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+img.lazyprogressive.object-center {
+  @apply bg-center;
+}
+img.lazyprogressive.object-cover {
+  @apply bg-cover;
+}
+@screen lg {
+  img.lazyprogressive.object-right {
+    @apply bg-right;
+  }
+}
 /* hero image */
 .hero-image > div {
   @apply bg-right;
