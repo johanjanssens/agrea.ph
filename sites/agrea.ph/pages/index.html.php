@@ -1,5 +1,5 @@
 ---
-layout: pages/home
+layout: page/home
 name: Home
 title: Agrea - Ecology of Dignity
 ---
@@ -42,7 +42,7 @@ title: Agrea - Ecology of Dignity
 
 <section class="text-gray-700 mb-24">
   <ktml:images max-width="25%" lazyload="progressive,inline">
-  <div role="complimentary" class="container px-5 py-12 mx-auto bg-dark-green-200 rounded">
+  <div role="complimentary" class="container px-5 py-12 mx-auto bg-gradient-to-b from-dark-green-100 to-dark-green-200 rounded">
     <div class="flex flex-wrap w-full mb-10">
       <div class="w-full mb-6 lg:mb-0">
         <h2 role="heading" aria-level="2" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none">Latest News Sprouts</h2>
@@ -60,7 +60,7 @@ title: Agrea - Ecology of Dignity
       ]); ?>
 
       <? foreach($newSprouts as $newSprout) :?>
-      <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
+      <a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
         <aside>
           <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
           <p class="text-xs flex items-center mb-2">
@@ -223,7 +223,7 @@ title: Agrea - Ecology of Dignity
         </div>
         <div class="grid lg:grid-cols-2 gap-8 mb-8">
         <? foreach (data('weblinks')->shuffle()->slice(0, 4) as $weblink) : ?>
-          <a class="bg-gray-100 hover:bg-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= $weblink->url; ?>">
+          <a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= $weblink->url; ?>">
             <aside>
               <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />

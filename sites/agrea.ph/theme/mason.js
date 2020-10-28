@@ -93,8 +93,9 @@ async function postcss() {
         }
       },
       variants: {
-        opacity: ['responsive', 'hover']
-      }
+        opacity: ['responsive', 'hover'],
+        borderWidth: ['responsive', 'first', 'last', 'hover', 'focus'],
+      },
     }
   });
 }
