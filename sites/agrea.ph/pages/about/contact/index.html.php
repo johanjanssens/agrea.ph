@@ -24,43 +24,41 @@ form:
     honeypot: firstName_407d3z05
 ---
 <div itemscope itemtype="http://schema.org/Organization" class="flex flex-col sm:flex-row">
-    <article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-        <main role="main">
-        <ktml:images max-width="80%">
-            <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-            <div class="h-1 w-20 bg-brand rounded mb-10"></div>
-            <p>To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
-            <div role="grid" class="grid md:grid-cols-2 mb-10">
-                <div role="gridcell">
-                    <dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <dt>Marinduque Office:</dt>
-                        <dd itemprop="streetAddress">AGREA Farm Estate, Barangay Cawit, Boac,</dd>
-                        <dd itemprop="postalCode">4900,</dd>
-                        <dd itemprop="addressLocality">Marinduque, Philippines</dd>
-                    </dl>
-                    <dl>
-                        <dt>Tel:</dt>
-                        <dd itemprop="telephone"><a href="tel:+630423320025">+63 (042) 332-0025</a></dd>
-                        <dd itemprop="telephone"><a href="tel:+639178886505">+63 917 888 6505</a></dd>
-                        <dd itemprop="telephone"><a href="tel:+639338246020">+63 933 824 6020</a></dd>
-                    </dl>
-                </div>
-                <div>
-                    <dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <dt>Makati Office:</dt>
-                        <dd itemprop="streetAddress">3/F LRI Design Plaza, 210 Nicanor Garcia, Makati City,</dd>
-                        <dd itemprop="postalCode">1209,</dd>
-                        <dd itemprop="addressLocality">Metro Manila, Philippines</dd>
-                    </dl>
-                    <dl>
-                        <dt>Tel:</dt>
-                        <dd itemprop="telephone"><a href="tel:+63028869800">+63 (02) 886-9800</a></dd>
-                    </dl>
-                </div>
+    <article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+    <ktml:images max-width="80%">
+        <h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+        <div class="h-1 w-20 bg-brand rounded mb-10"></div>
+        <p>To know more about AGREA, if you have questions, or you would like to lend a helping hand, send us a message by filling out the form below.</p>
+        <div role="grid" class="grid md:grid-cols-2 mb-10">
+            <div role="gridcell">
+                <dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <dt>Marinduque Office:</dt>
+                    <dd itemprop="streetAddress">AGREA Farm Estate, Barangay Cawit, Boac,</dd>
+                    <dd itemprop="postalCode">4900,</dd>
+                    <dd itemprop="addressLocality">Marinduque, Philippines</dd>
+                </dl>
+                <dl>
+                    <dt>Tel:</dt>
+                    <dd itemprop="telephone"><a href="tel:+630423320025">+63 (042) 332-0025</a></dd>
+                    <dd itemprop="telephone"><a href="tel:+639178886505">+63 917 888 6505</a></dd>
+                    <dd itemprop="telephone"><a href="tel:+639338246020">+63 933 824 6020</a></dd>
+                </dl>
             </div>
-            <?= import('/partials/form/contact'); ?>
-        </ktml:images>
-        </main>
+            <div>
+                <dl itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <dt>Makati Office:</dt>
+                    <dd itemprop="streetAddress">3/F LRI Design Plaza, 210 Nicanor Garcia, Makati City,</dd>
+                    <dd itemprop="postalCode">1209,</dd>
+                    <dd itemprop="addressLocality">Metro Manila, Philippines</dd>
+                </dl>
+                <dl>
+                    <dt>Tel:</dt>
+                    <dd itemprop="telephone"><a href="tel:+63028869800">+63 (02) 886-9800</a></dd>
+                </dl>
+            </div>
+        </div>
+        <?= import('/partials/form/contact'); ?>
+    </ktml:images>
     </article>
     <aside role="complementary" class="sm:w-1/4 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4 ">
     <ktml:images max-width="25%">

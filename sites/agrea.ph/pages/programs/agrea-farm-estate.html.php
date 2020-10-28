@@ -10,21 +10,19 @@ slug: agrea-farm-estate
 	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
-	<article itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
-		<main role="main">
-			<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
-			<div class="h-1 w-20 bg-brand rounded mb-10"></div>
-			<div itemprop="articleBody">
-			<ktml:images max-width="80%" lazyload="progressive,inline">
-				<?= article(147)->excerpt ?>
-				<?= article(147)->text ?>
-				<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
-					<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Know More About The Agrea Model Farm</h3>
-					<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, please <a href="/about/contact">contact us</a> and send us a message.</p>
-				</div>
-			</ktml:images>
+	<article role="main" itemscope itemtype="http://schema.org/Article" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
+		<div itemprop="articleBody">
+		<ktml:images max-width="80%" lazyload="progressive,inline">
+			<?= article(147)->excerpt ?>
+			<?= article(147)->text ?>
+			<div class="bg-lime-100 border border-green-200 text-green-600 p-6 rounded-lg">
+				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Know More About The Agrea Model Farm</h3>
+				<p class="text-base">If you want to know more about the AGREA Model Farm, or you have inquiries about AGREA's Organic Gardening Skills Training, save a date or ask details about the training, or if you have inquiries on how to order AGREA Fertilizer Packs, please <a href="/about/contact">contact us</a> and send us a message.</p>
 			</div>
-		</main>
+		</ktml:images>
+		</div>
 		<ktml:images max-width="50%" lazyload="progressive,inline">
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">

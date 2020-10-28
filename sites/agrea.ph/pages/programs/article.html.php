@@ -14,13 +14,11 @@ metadata:
 visible: false
 ---
 
-<article itemscope itemtype="http://schema.org/Article">
+<article role="main" itemscope itemtype="http://schema.org/Article">
 	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
-    <main role="main">
-    	<?= import('/partials/articles/single.html', [
-    		'article' => collection(),
-    	]); ?>
-    </main>
+	<?= import('/partials/articles/single.html', [
+		'article' => collection(),
+	]); ?>
 </article>
