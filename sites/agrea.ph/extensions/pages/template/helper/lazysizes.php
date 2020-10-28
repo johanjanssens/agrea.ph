@@ -63,24 +63,24 @@ span.img-container > img {
   margin: 0;
 }
 
-img.lazyprogressive {
+.lazyprogressive {
   background-image: var(--lqi);
   background-repeat: no-repeat;
   background-size: contain;
   filter: blur(8px);
 }
 
-img.lazyloaded {
+.lazyloaded {
   filter: blur(0);
   transition: filter 300ms linear;
 }
 
-img.ls-is-cached {
+.ls-is-cached {
   filter: none;
   transition: none;
 }
 
-img.missing {
+.lazymissing {
   text-align: center;
   color: #4a5568;
   background-color: #f7fafc;

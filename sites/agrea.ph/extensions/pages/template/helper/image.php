@@ -180,7 +180,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 }
             }
         }
-        else $html = '<img class="missing" src="'.$config->url.'" alt="Image Not Found: '.$config->url.'">';
+        else $html = '<img class="lazymissing" src="'.$config->url.'" alt="Image Not Found: '.$config->url.'">';
 
         return $html;
     }
