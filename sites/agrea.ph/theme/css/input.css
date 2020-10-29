@@ -3,6 +3,75 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+  /*
+   * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
+  */
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+  }
+  .main-wrapper,
+  header,
+  aside[role^="comp"],
+  footer {
+    content-visibility: auto;
+  }
+  header {
+    contain-intrinsic-size: 100px;
+  }
+  footer {
+    contain-intrinsic-size: 400px;
+  }
+  /* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+  body > * {
+    font-size: clamp(0.75rem, 4vw, 1rem);
+  }
+  /* Main header story and IN FOUCS area on the homepage */
+  @screen lg {
+    section.hero-alt .hero-image {
+      clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+      transition: 1s;
+    }
+    section.hero-alt:hover .hero-image {
+      clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+    }
+  }
+  section[class*="bg-"]:not(.bg-white) {
+    @apply relative bg-fixed bg-no-repeat bg-left-top .bg-cover;
+    background-blend-mode: multiply;
+  }
+  section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
+    @apply relative z-20;
+  }
+  section[class*="bg-"]:not(.bg-white) h1 {
+    text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
+  }
+  section[class*="bg-"]:not(.bg-white) p {
+    text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
+  }
+  /* sticky footer
+   * tailwind doesn't handle this well inline so let's add it here for large screens
+  */
+  @screen lg {
+    .main-wrapper {
+      @apply relative z-10;
+    }
+    body > footer {
+      @apply sticky z-0 bottom-0 left-0 w-full;
+      position: -webkit-sticky;
+    }
+    _::-webkit-full-page-media, _:future, :root footer {
+      @apply static;
+    }
+  }
+  /* Footer illustration */
+  body > footer {
+    @apply bg-no-repeat;
+    background-position: 0 calc(100% - 5rem);
+    background-size: 100vw;
+  }
   /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
   [x-cloak] {
     @apply hidden;
@@ -76,11 +145,8 @@
     @apply cursor-pointer;
   }
   a:not([class]) {
-    @apply text-green-500;
-    text-decoration: none;
+    @apply text-green-500 no-underline bg-left-bottom bg-no-repeat;
     background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
   }
@@ -166,6 +232,13 @@
   .toggle-checkbox:checked + .toggle-label {
     @apply bg-green-500;
   }
+  .circles {
+    @apply bg-center bg-contain bg-no-repeat;
+  }
+  .circle-text {
+    @apply w-48 h-48 rounded-full;
+    line-height: 12rem;
+  }
 }
 @layer utilities {
   img.lazyprogressive {
@@ -186,95 +259,4 @@
   /* Joomlatools logo colour override */
   --jt-black:var(--green-500);
   --jt-blue:var(--lime-500);
-}
-/*
- * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
-*/
-@media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-}
-.main-wrapper,
-header,
-aside[role^="comp"],
-footer {
-  content-visibility: auto;
-}
-header {
-  contain-intrinsic-size: 100px;
-}
-footer {
-  contain-intrinsic-size: 400px;
-}
-/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
-body > * {
-  font-size: clamp(0.75rem, 4vw, 1rem);
-}
-/* Main header story and IN FOUCS area on the homepage */
-@screen lg {
-  section.hero-alt .hero-image {
-    clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-    transition: 1s;
-  }
-  section.hero-alt:hover .hero-image {
-    clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
-  }
-}
-section[class*="bg-"]:not(.bg-white) {
-  position:relative;
-  background-attachment: fixed; /* CSS only parallax */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-position: left top;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
-  position:relative;
-  z-index:20;
-}
-section[class*="bg-"]:not(.bg-white) h1 {
-  text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
-}
-section[class*="bg-"]:not(.bg-white) p {
-  text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
-}
-/* sticky footer
- * tailwind doesn't handle this well inline so let's add it here for large screens
-*/
-@screen lg {
-  .main-wrapper {
-    position: relative;
-    z-index: 10;
-  }
-  body > footer {
-    position: sticky;
-    position: -webkit-sticky;
-    z-index:0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  _::-webkit-full-page-media, _:future, :root footer {
-    position: static;
-  }
-}
-/* Footer illustration */
-body > footer {
-  background-position: 0 calc(100% - 5rem);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-/* Circle text - Used on About Us page */
-.circles {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.circle-text {
-  width: 12rem;
-  height: 12rem;
-  line-height: 12rem;
-  border-radius: 50%;
 }
