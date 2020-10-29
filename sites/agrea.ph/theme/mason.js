@@ -8,6 +8,10 @@ async function postcss() {
         content: [
           '../**/*.html.php',
         ],
+        // These classes are used by MIX, let's whitelist them
+        options: {
+          whitelist: ['lazyprogressive', 'bg-center', 'bg-cover', 'bg-right', 'object-center', 'object-right'],
+        },
       },
       theme: {
         extend: {

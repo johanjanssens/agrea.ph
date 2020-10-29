@@ -2,16 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*  declare our base styles for preflight */
 @layer base {
   /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
   [x-cloak] {
     @apply hidden;
   }
-  main {
+  /* MIX: Lazyprogressive images */
+  img.lazyprogressive[x-cloak="lazyprogressive"] {
+    @apply bg-none;
+  }
+  .main-wrapper {
     @apply min-h-screen;
   }
-  main,
+  .main-wrapper,
   footer {
     @apply text-base;
   }
@@ -118,23 +121,7 @@
   /* titles */
   .font-title {
     @apply uppercase;
-  }
-  /* MIX: Lazyprogressive images */
-  img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none;
-  }
-  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-  img.lazyprogressive.object-center {
-    @apply bg-center;
-  }
-  img.lazyprogressive.object-cover {
-    @apply bg-cover;
-  }
-  @screen lg {
-    img.lazyprogressive.object-right {
-      @apply bg-right;
-    }
-  }
+  } 
   /* hero image */
   .hero-image > div {
     @apply bg-right;
@@ -169,6 +156,23 @@
     @apply bg-gray-200;
   }
 }
+@layer utilities {
+  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
+  img.lazyprogressive.object-center {
+    @apply bg-center;
+  }
+  img.lazyprogressive {
+    @apply bg-cover;
+  }
+  @screen lg {
+    img.lazyprogressive {
+      @apply bg-cover;
+    }
+    img.lazyprogressive.object-right {
+      @apply bg-right;
+    }
+  }
+}
 /* Anything we can't do easily with tailwind classes */
 /* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {
@@ -193,7 +197,7 @@
     scroll-behavior: smooth;
   }
 }
-main,
+.main-wrapper,
 header,
 aside[role^="comp"],
 footer {
@@ -241,7 +245,7 @@ section[class*="bg-"]:not(.bg-white) p {
  * tailwind doesn't handle this well inline so let's add it here for large screens
 */
 @screen lg {
-  main {
+  .main-wrapper {
     position: relative;
     z-index: 10;
   }
