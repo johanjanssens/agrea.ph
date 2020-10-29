@@ -52,10 +52,11 @@
   */
   @screen lg {
     body > footer {
-      @apply sticky z-0 bottom-0 left-0 w-full;
       position: -webkit-sticky;
     }
-    _::-webkit-full-page-media, _:future, :root footer {
+    _::-webkit-full-page-media, 
+    _:future, 
+    :root footer {
       @apply static;
     }
   }

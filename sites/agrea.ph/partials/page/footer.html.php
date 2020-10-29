@@ -1,4 +1,4 @@
-<footer style="background-image: url(<?= isset($footer['image']) ? $footer['image'].'?q=25' : 'images://background/rice-farmer.jpg?q=25' ?>);" class="text-gray-700 text-base body-font bg-no-repeat">
+<footer style="background-image: url(<?= isset($footer['image']) ? $footer['image'].'?q=25' : 'images://background/rice-farmer.jpg?q=25' ?>);" class="lg:sticky lg:z-0 lg:bottom-0 lg:left-0 lg:w-full text-gray-700 text-base body-font bg-no-repeat">
   <div class="container px-5 pt-10 pb-40 md:pt-20 md:pb-10 mx-auto">
     <div class="flex md:justify-end justify-around">
       <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
