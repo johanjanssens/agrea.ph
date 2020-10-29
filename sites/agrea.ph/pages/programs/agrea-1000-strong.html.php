@@ -41,46 +41,77 @@ slug: agrea-1000-strong
 				<div class="grid sm:grid-cols-2">
 					<fieldset class="mb-4">
 						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 dark:text-gray-100 font-medium font-title my-4 leading-tight">Choose as many volunteer sectors that apply to you<sup>*</sup></h4>
+
 						<div class="question">
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="male" name="male" value="Male Youth (13 to 35 years old)">
-								<label class="text-sm" for="male"> Male Youth (13 to 35 years old)</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="male" name="male" value="Male Youth (13 to 35 years old)" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="male" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="male" class="text-sm">Male Youth (13 to 35 years old)</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="female" name="female" value="Female Youth (13 to 35 years old)">
-								<label class="text-sm" for="female"> Female Youth (13 to 35 years old)</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="female" name="female" value="Female Youth (13 to 35 years old)" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="female" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="female" class="text-sm">Female Youth (13 to 35 years old)</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="mother" name="mother" value="Mother">
-								<label class="text-sm" for="mother"> Mother</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="mother" name="mother" value="Mother" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="mother" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="mother" class="text-sm">Mother</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="farmer-leader" name="farmer-leader" value="Farmer Leader">
-								<label class="text-sm" for="farmer-leader"> Farmer Leader</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="farmer-leader" name="farmer-leader" value="Farmer Leader" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="farmer-leader" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="farmer-leader" class="text-sm">Farmer Leader</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="fisherfolk-leader" name="fisherfolk-leader" value="Fisherfolk Leader">
-								<label class="text-sm" for="fisherfolk-leader"> Fisherfolk Leader</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="fisherfolk-leader" name="fisherfolk-leader" value="Fisherfolk Leader" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="fisherfolk-leader" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="fisherfolk-leader" class="text-sm">Fisherfolk Leader</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="lgbt" name="lgbt" value="LGBT+">
-								<label class="text-sm" for="lgbt"> LGBT+</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="lgbt" name="lgbt" value="LGBT+" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="lgbt" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="lgbt" class="text-sm">LGBT+</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="teacher" name="teacher" value="Teacher/Educator">
-								<label class="text-sm" for="teacher"> Teacher/Educator</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="teacher" name="teacher" value="Teacher/Educator" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="teacher" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="teacher" class="text-sm">Teacher/Educator</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="disability" name="disability" value="Person with Disability">
-								<label class="text-sm" for="disability"> Person with Disability</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="disability" name="disability" value="Person with Disability" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="disability" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="disability" class="text-sm">Person with Disability</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="senior" name="senior" value="Senior Citizen">
-								<label class="text-sm" for="senior"> Senior Citizen</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="senior" name="senior" value="Senior Citizen" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="senior" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="senior" class="text-sm">Senior Citizen</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="overseas" name="overseas" value="Overseas Filipino Worker">
-								<label class="text-sm" for="overseas"> Overseas Filipino Worker</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="overseas" name="overseas" value="Overseas Filipino Worker" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="overseas" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="overseas" class="text-sm">Overseas Filipino Worker</label>
 							</div>
 						</div>
 					</fieldset>
@@ -88,32 +119,53 @@ slug: agrea-1000-strong
 						<h4 role="heading" aria-level="4" class="text-sm text-gray-900 dark:text-gray-100 font-medium font-title my-4 leading-tight">Interests<sup>*</sup></h4>
 						<div class="question">
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="environmental" name="environmental" value="Environmental protection">
-								<label class="text-sm" for="environmental"> Environmental protection</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="environmental" name="environmental" value="Environmental protection" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="environmental" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="environmental" class="text-sm">Environmental protection</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="farm-development" name="farm-development" value="Organic farm development">
-								<label class="text-sm" for="farm-development"> Organic farm development</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="farm-development" name="farm-development" value="Organic farm development" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="farm-development" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="farm-development" class="text-sm">Organic farm development</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="volunteer" name="volunteer" value="AGREA Farm School volunteer">
-								<label class="text-sm" for="volunteer"> AGREA Farm School volunteer</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="volunteer" name="volunteer" value="AGREA Farm School volunteer" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="volunteer" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="volunteer" class="text-sm">AGREA Farm School volunteer</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="garden-development" name="garden-development" value="Elementary school garden development">
-								<label class="text-sm" for="garden-development"> School garden development</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="garden-development" name="garden-development" value="School garden development" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="garden-development" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="garden-development" class="text-sm">School garden development</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="extension" name="extension" value="Agricultural extension program">
-								<label class="text-sm" for="extension"> Agricultural extension program</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="extension" name="extension" value="Agricultural extension program" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="extension" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="extension" class="text-sm">Agricultural extension program</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="leadership" name="leadership" value="Youth leadership events">
-								<label class="text-sm" for="leadership"> Youth leadership events</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="youth" name="youth" value="Youth leadership events" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="youth" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="youth" class="text-sm">Youth leadership events</label>
 							</div>
 							<div>
-								<input  role="switch" aria-checked="false" class="switch" type="checkbox" id="program-development" name="program-development" value="Program development">
-								<label class="text-sm" for="program-development"> Program development</label><br>
+								<div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+									<input type="checkbox" id="program-development" name="program-development" value="Program development" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+									<label for="program-development" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+								</div>
+								<label for="program-development" class="text-sm">Program development</label>
 							</div>
 						</div>
 					</fieldset>
