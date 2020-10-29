@@ -56,6 +56,7 @@
       clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
     }
   }
+  /* Produce background pattern on Main header story and IN FOUCS area on the homepage */
   section.bg-produce {
     background-blend-mode: multiply;
   }
@@ -191,7 +192,7 @@
   }
 }
 @layer utilities {
-  /* Plyr.js */
+  /* Plyr.js video player */
   .plyr {
     @apply rounded-lg;
   }
@@ -211,23 +212,26 @@
   .k-pagination__pages li:not(.k-is-active):hover a {
     @apply bg-gray-200;
   }
+  /* toggle checkboxes used on programs/agrea-1000-strong */
   .toggle-checkbox:checked {
     @apply right-0 border-green-500;
   }
   .toggle-checkbox:checked + .toggle-label {
     @apply bg-green-500;
   }
+  /* lazyprogressive images */
   img.lazyprogressive {
     @apply bg-cover;
   }
 }
-/* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
+/* CSS Vars */
 :root {
+  /* Agrea's main green colours */
   --green-500:#788023;
   --lime-500:#C9CA48;
   /* plyr.js colour override, see: https://css-tricks.com/plyr-css-styleable-video-player */
   --plyr-color-main: var(--green-500);
-  /* Joomlatools logo colour override */
+  /* Joomlatools logo colour override used /partials/logo/joomaltools.html.php */
   --jt-black:var(--green-500);
   --jt-blue:var(--lime-500);
 }
