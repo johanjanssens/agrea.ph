@@ -1,4 +1,4 @@
-<footer class="text-gray-700 text-base body-font" style="background-image: url(<?= isset($footer['image']) ? $footer['image'].'?q=25' : 'images://background/rice-farmer.jpg?q=25' ?>);">
+<footer style="background-image: url(<?= isset($footer['image']) ? $footer['image'].'?q=25' : 'images://background/rice-farmer.jpg?q=25' ?>);" class="text-gray-700 text-base body-font bg-no-repeat">
   <div class="container px-5 pt-10 pb-40 md:pt-20 md:pb-10 mx-auto">
     <div class="flex md:justify-end justify-around">
       <div class="lg:w-1/3 md:w-1/2 max-w-xs text-gray-900">
@@ -6,7 +6,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mx-2">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
-          <h2 role="heading" aria-level="2" class="font-title font-medium tracking-widest text-sm mb-3 text-center">Get the <span class="font-agrea">AGREA</span> newsletter</h2>
+          <h2 role="heading" aria-level="2" class="font-title uppercase font-medium tracking-widest text-sm mb-3 text-center">Get the <span class="font-agrea">AGREA</span> newsletter</h2>
         </div>
         <?= import('/partials/form/subscribe'); ?>
       </div>

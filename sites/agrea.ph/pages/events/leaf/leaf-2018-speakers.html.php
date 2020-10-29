@@ -14,7 +14,7 @@ slug: leaf-2018-speakers
 		<li>Dr. Mina Gabor, ISST</li>
 	</ul>
 </div>
-<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agripreneurship</h3>
+<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agripreneurship</h3>
 <div class="mb-6">
 	<ul>
 		<li>Steve Benitez, Bo’s Coffee</li>
@@ -36,7 +36,7 @@ slug: leaf-2018-speakers
 		<li>Simon Bakker, Kennemer Foods</li>
 	</ul>
 </div>
-<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agritech</h3>
+<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agritech</h3>
 <div class="mb-6">
 	<ul>
 		<li>Amor Maclang, GeiserMaclang Marketing Communications, Inc.</li>
@@ -56,7 +56,7 @@ slug: leaf-2018-speakers
 		<li>Johan Boden, TAEL Partners</li>
 	</ul>
 </div>
-<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agritourism</h3>
+<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Agritourism</h3>
 <div class="mb-6">
 	<ul>
 		<li>Gina Lopez, iLOVE Foundation</li>
@@ -68,7 +68,7 @@ slug: leaf-2018-speakers
 		<li><em>Prof. Willy Arcilla, Business Mentors, Inc.</em></li>
 	</ul>
 </div>
-<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Other speakers</h3>
+<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Other speakers</h3>
 <div class="mb-6">
 	<ul>
 		<li>Kal Joffres, Tandemic</li>
@@ -79,7 +79,7 @@ slug: leaf-2018-speakers
 		<li>Joshua Gilbert, PriceWaterhouseCoopers Indigenous Consulting</li>
 	</ul>
 </div>
-<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">LEAF 2018 Speakers In Focus</h3>
+<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">LEAF 2018 Speakers In Focus</h3>
 <ktml:images max-width="25%" lazyload="progressive,inline">
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-6">
 	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>

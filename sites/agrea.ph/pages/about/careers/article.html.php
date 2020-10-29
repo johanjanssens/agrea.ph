@@ -13,7 +13,7 @@ visible: false
 	<ktml:images max-width="80%" lazyload="progressive,inline">
 		<div class="flex flex-wrap w-full mb-10">
 			<div class="w-full mb-6 lg:mb-0">
-				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= collection()->title ?></h1>
+				<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= collection()->title ?></h1>
 				<div class="h-1 w-20 bg-brand rounded mb-6"></div>
 				<img itemprop="image" class="rounded w-full mb-6" src="<?= collection()->image->url ?>" alt="<?= collection()->title; ?>">
 				<p class="mt-2 text-xs font-medium flex flex-row justify-between">
@@ -31,7 +31,7 @@ visible: false
 		</div>
 		<a id="backButton" class="hidden inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="javascript:history.back()">Back</a>
 		<div id="moreLikeThis" class="hidden my-4">
-			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">More open vacancies</h3>
+			<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">More open vacancies</h3>
 			<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 			<ul>
 				<?
@@ -66,7 +66,7 @@ visible: false
 	</ktml:images>
 	</article>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-        <h2 role="heading" aria-level="2" class="font-title font-medium text-gray-900 dark:text-gray-100 tracking-widest mb-3">Apply Now!</h2>
+        <h2 role="heading" aria-level="2" class="font-title uppercase font-medium text-gray-900 dark:text-gray-100 tracking-widest mb-3">Apply Now!</h2>
         <div class="h-1 w-10 bg-brand rounded mb-3"></div>
 		<?= import('/partials/form/apply'); ?>
 	</aside>

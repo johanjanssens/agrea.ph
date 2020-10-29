@@ -39,11 +39,7 @@
     }
   }
   section[class*="bg-"]:not(.bg-white) {
-    @apply relative bg-fixed bg-no-repeat bg-left-top bg-cover;
     background-blend-mode: multiply;
-  }
-  section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
-    @apply relative z-20;
   }
   section[class*="bg-"]:not(.bg-white) h1 {
     text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
@@ -55,9 +51,6 @@
    * tailwind doesn't handle this well inline so let's add it here for large screens
   */
   @screen lg {
-    .main-wrapper {
-      @apply relative z-10;
-    }
     body > footer {
       @apply sticky z-0 bottom-0 left-0 w-full;
       position: -webkit-sticky;
@@ -68,40 +61,32 @@
   }
   /* Footer illustration */
   body > footer {
-    @apply bg-no-repeat;
     background-position: 0 calc(100% - 5rem);
     background-size: 100vw;
   }
-  /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
-  [x-cloak] {
-    @apply hidden;
-  }
-  .main-wrapper {
-    @apply min-h-screen;
-  }
-  .main-wrapper,
-  footer {
-    @apply text-base;
+  h1:not([class]),
+  h2:not([class]),
+  h3:not([class]),
+  h4:not([class]),
+  h5:not([class]),
+  h6:not([class]) {
+    @apply text-gray-900;
+    font-family:'Raleway';
   }
   h1:not([class]) {
-    @apply text-4xl text-gray-900 leading-none mb-2;
-    font-family:'Raleway';
+    @apply text-4xl leading-none mb-2;
   }
   h2:not([class]) {
-    @apply text-3xl text-gray-900 leading-none mb-2;
-    font-family:'Raleway';
+    @apply text-3xl leading-none mb-2;
   }
   h3:not([class]) {
-    @apply text-2xl text-gray-900 leading-tight mb-3;
-    font-family:'Raleway';
+    @apply text-2xl leading-tight mb-3;
   }
   h4:not([class]) {
-    @apply text-xl text-gray-900 mb-4;
-    font-family:'Raleway';
+    @apply text-xl mb-4;
   }
   h5:not([class]) {
-    @apply text-lg text-gray-900 mb-5;
-    font-family:'Raleway';
+    @apply text-lg mb-5;
   }
   blockquote:not([class]),
   label:not([class]),
@@ -189,14 +174,6 @@
   sub:not([class]) {
       bottom: -0.25em;
   }
-  /* titles */
-  .font-title {
-    @apply uppercase;
-  } 
-  /* hero image */
-  .hero-image > div {
-    @apply bg-right;
-  }
   /* Single article featured image */
   .featured-image {
     height:33vh;
@@ -232,11 +209,7 @@
   .toggle-checkbox:checked + .toggle-label {
     @apply bg-green-500;
   }
-  .circles {
-    @apply bg-center bg-contain bg-no-repeat;
-  }
   .circle-text {
-    @apply w-48 h-48 rounded-full;
     line-height: 12rem;
   }
 }

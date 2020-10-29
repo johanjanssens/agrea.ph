@@ -12,7 +12,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 <div class="flex flex-col sm:flex-row" itemscope itemtype="http://schema.org/Organization">
 	<article class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 		<ktml:images max-width="80%" lazyload="progressive,inline">
-			<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+			<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 			<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 
 			<blockquote class="mb-6 text-sm font-agrea normal-case">AGREA is an innovative, inclusive, for purpose, agri-business that is founded on sustainable agriculture, fair-trade, and replicable model of an agri-based economy.</blockquote>
@@ -24,25 +24,25 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 			<p>Healthy human capital is the backbone of our economy. Taking good care of our only planet is integrated in our business. Environmental impact is a key consideration in all our business operations.	Our approach is transformational, we make sure every transaction made with AGREA from producing to bringing food to the consumers is contributing to impactful changes in every point of the supply chain.</p>
 
 			<div class="min-h-screen mb-24">
-				<div class="circles relative z-10 py-40 flex justify-center items-center">
-					<div class="circle-text text-white text-3xl text-center font-title bg-dark-green-500">Vision</div>
+				<div class="circles relative z-10 py-40 flex justify-center items-center bg-center bg-contain bg-no-repeat">
+					<div class="circle-text w-48 h-48 rounded-full text-white text-3xl text-center font-title uppercase bg-dark-green-500">Vision</div>
 					<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:bottom-auto lg:left-0 w-48">
-						<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Vision</h3>
+						<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase text-lg my-2 leading-tight">Our Vision</h3>
 						<p>To create the first <span class="text-gray-700 font-bold">One Island Economy</span> model in the Philippines by 2035</p>
 					</aside>
 				</div>
 				<div class="lg:grid lg:grid-cols-2 lg:-mt-12">
-					<div class="circles relative z-10 py-40 flex justify-center items-center">
-						<div class="circle-text text-white text-3xl text-center font-title bg-brand">Mission</div>
+					<div class="circles relative z-10 py-40 flex justify-center items-center bg-center bg-contain bg-no-repeat">
+						<div class="circle-text w-48 h-48 rounded-full text-white text-3xl text-center font-title uppercase bg-brand">Mission</div>
 						<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:left-0 w-48">
-							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Mission</h3>
+							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase text-lg my-2 leading-tight">Our Mission</h3>
 							<p>To alleviate poverty and hunger of farming and fishing communities</p>
 						</aside>
 					</div>
-					<div class="circles relative z-10 py-40 flex justify-center items-center">
-						<div class="circle-text text-white text-3xl text-center font-title bg-orange-500">Goals</div>
+					<div class="circles relative z-10 py-40 flex justify-center items-center bg-center bg-contain bg-no-repeat">
+						<div class="circle-text w-48 h-48 rounded-full text-white text-3xl text-center font-title uppercase bg-orange-500">Goals</div>
 						<aside class="absolute z-10 text-center lg:text-left bottom-0 lg:right-0 w-48">
-							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title text-lg my-2 leading-tight">Our Goals</h3>
+							<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase text-lg my-2 leading-tight">Our Goals</h3>
 							<ul class="text-gray-700 font-bold lg:-ml-3">
 								<li class="flex flex-row items-center">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-5 text-orange-500 font-medium">
@@ -68,13 +68,13 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				</div>
 			</div>
 
-			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Our History</h2>
+			<h2 role="heading" aria-level="2" class="font-title uppercase text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Our History</h2>
 
 			<p>Operating since November 2014 in a patch of land in the Island Province of Marinduque, AGREA is registered with the Securities and Exchange Commission in June 26, 2015. In the years that followed, AGREA went on to become successfully accredited by various Philippine government agencies.</p>
 
 			<p>In 2016, the Department of Agriculture-Agricultural Training (DA-ATI) accredited AGREA Farm Estate in Marinduque as a Learning Site for Agriculture for its diversified integrated farming system. In 2017, the Technical Education and Skills Development Authority (TESDA) also certified AGREA Estate Farm as a farm school and an assessment center for agri- cultural technical vocation skills development. The following year, the Department of Tourism (DOT) recognized AGREA as an agri-tourism farm site.</p>
 
-			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Island Economies</h3>
+			<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Island Economies</h3>
 
 			<p>The following map represents AGREA’s current and incoming projects, as well as potential areas for development in the Island Province of Marinduque, MIMAROPA Region (IV-B) Southern Luzon, and Siargao Island, Surigao del Norte in the Caraga Region, Northeast Mindanao.</p>
 
@@ -83,7 +83,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 	</article>
 	<div class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
 		<ktml:images max-width="25%" lazyload="progressive,inline">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title uppercase mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu');?>
 		<a class="text-grey-400" href="/images/agrea.ph/pages/about-us/agrea2020-company-profile.pdf" title="Download our company profile">
