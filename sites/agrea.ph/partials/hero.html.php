@@ -9,7 +9,7 @@
       'limit' => 1,
     ]); ?>
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" src="<?= $articles->image->url ?>" alt="<?= $articles->title; ?>">
+      <img class="object-cover object-center bg-center rounded" src="<?= $articles->image->url ?>" alt="<?= $articles->title; ?>">
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
       <h1 class="font-title sm:text-6xl text-4xl mb-0 font-medium text-dark-green-800 text-opacity-50 leading-none"><?= $articles->title ?>

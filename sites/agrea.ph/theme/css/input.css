@@ -153,20 +153,8 @@
   }
 }
 @layer utilities {
-  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-  img.lazyprogressive.object-center {
-    @apply bg-center;
-  }
   img.lazyprogressive {
     @apply bg-cover;
-  }
-  @screen lg {
-    img.lazyprogressive {
-      @apply bg-cover;
-    }
-    img.lazyprogressive.object-right {
-      @apply bg-right;
-    }
   }
 }
 /* Anything we can't do easily with tailwind classes */

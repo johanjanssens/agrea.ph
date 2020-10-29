@@ -27,7 +27,7 @@ slug: agrea-farm-estate
 		<div class="flex flex-wrap mt-10">
 			<div class="sm:w-1/2 mb-10 px-4 border-box">
 				<div class="rounded-lg h-64 overflow-hidden">
-					<a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><img alt="<?= article(38)->title ?>" class="object-cover object-center h-full w-full" src="images://programs/farm-estate/organic-agriculture-learning-site.jpg"></a>
+					<a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><img alt="<?= article(38)->title ?>" class="object-cover object-center bg-center h-full w-full" src="images://programs/farm-estate/organic-agriculture-learning-site.jpg"></a>
 				</div>
 				<h3 role="heading" aria-level="3" class="font-medium text-gray-900 dark:text-gray-100 mt-6 mb-3"><a href="<?= route(page('news/article'), ['slug' => article(38)->slug]) ?>"><?= article(38)->title ?></a></h3>
 				<p class="leading-relaxed text-xs mb3 flex items-center">

@@ -103,7 +103,7 @@ slug: programs
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg mb-8">
 			<a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('programs/article'), ['slug' => article(150)->slug]) ?>">
-				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article(150)->image->url ?>" alt="<?= article(150)->title; ?>">
+				<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= article(150)->image->url ?>" alt="<?= article(150)->title; ?>">
 				<h2 role="heading" aria-level="2" class="text-lg text-gray-900 dark:text-gray-100 font-medium font-title mb-4 leading-tight"><?= article(150)->title; ?></h2>
 				<p class="text-xs text-gray-600 flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
@@ -114,7 +114,7 @@ slug: programs
 		</div>
 		<div class="bg-gray-100 hover:bg-green-100 p-6 rounded-lg">
 			<a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('programs/article'), ['slug' => article(151)->slug]) ?>">
-				<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= article(151)->image->url ?>" alt="<?= article(151)->title; ?>">
+				<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= article(151)->image->url ?>" alt="<?= article(151)->title; ?>">
 				<h2 role="heading" aria-level="2" class="text-lg text-gray-900 dark:text-gray-100 font-medium font-title mb-4 leading-tight"><?= article(151)->title; ?></h2>
 				<p class="text-xs text-gray-600 flex items-center">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">

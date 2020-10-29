@@ -46,7 +46,7 @@ slug: consultancy
 		</ul>
 
 		<div class="my-8">
-			<img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>">
+			<img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center bg-center mb-6" src="<?= article(109)->image->url ?>">
 			<div class="mb-8">
 				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Food Security & Sufficiency Masterplan</h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
@@ -99,7 +99,7 @@ slug: consultancy
 					<li>Wastewater management</li>
 					<li>Sustainable luxury travels</li>
 				</ul>
-				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>">
+				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center bg-center mb-6" src="<?= article(51)->image->url ?>">
 				<p class="mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>">Read more</a></p>
 			</div>
 

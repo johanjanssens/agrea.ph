@@ -82,21 +82,21 @@ slug: leaf-2018-speakers
 <h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">LEAF 2018 Speakers In Focus</h3>
 <ktml:images max-width="25%" lazyload="progressive,inline">
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mb-6">
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Boden_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/boden.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Helianti Hilman_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/hilman.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Rei Yoon_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/yoon.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Mon Peñalosa_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/penalosa.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Hindy Weber_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/weber.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Gigi Pontejos-Morris_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/morris.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Rhodora Fresnedi_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/fresnedi.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Angus Yip_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/yip.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Antonio Causing_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/causing.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Wilfrido Arcilla_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/arcilla.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Dr. Jaime Aristotle Alip_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/alip.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Elizabeth Hernandez_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/hernandez.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Janssens_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/janssens.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Simon Bakker_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/bakker.jpg" /></div>
-	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Roger Barroga_WEB SMALL" class="h-64 rounded w-full object-cover object-center mb-6" src="images://events/leaf/speakers/barroga.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Amb David Strachan_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/strachan.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Boden_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/boden.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Helianti Hilman_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/hilman.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Rei Yoon_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/yoon.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Mon Peñalosa_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/penalosa.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Hindy Weber_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/weber.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Gigi Pontejos-Morris_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/morris.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Rhodora Fresnedi_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/fresnedi.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Angus Yip_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/yip.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Antonio Causing_WEB SMALL 2" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/causing.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Wilfrido Arcilla_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/arcilla.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Dr. Jaime Aristotle Alip_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/alip.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Elizabeth Hernandez_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/hernandez.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Johan Janssens_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/janssens.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Simon Bakker_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/bakker.jpg" /></div>
+	<div class="bg-gray-100 p-6 rounded-lg"><img alt="Roger Barroga_WEB SMALL" class="h-64 rounded w-full object-cover object-center bg-center mb-6" src="images://events/leaf/speakers/barroga.jpg" /></div>
 </div>
 </ktml:images>

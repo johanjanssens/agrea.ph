@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="hero-image mb-16 lg:absolute lg:top-0 lg:right-0 lg:h-full lg:w-2/5">
-        <img class="rounded lg:h-full lg:object-cover lg:object-right" src="<?= $articles->image->url ?>" alt="<?= $articles->title; ?>" data-max-width="800" data-lazyload="progressive,inline">
+        <img class="rounded lg:h-full lg:object-cover lg:object-right lg:bg-right" src="<?= $articles->image->url ?>" alt="<?= $articles->title; ?>" data-max-width="800" data-lazyload="progressive,inline">
       </div>
     </div>
   </div>

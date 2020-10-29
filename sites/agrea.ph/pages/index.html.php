@@ -62,7 +62,7 @@ title: Agrea - Ecology of Dignity
       <? foreach($newSprouts as $newSprout) :?>
       <a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('news/article'), ['slug' => $newSprout->slug]) ?>">
         <aside>
-          <img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
+          <img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= $newSprout->image->url ?>" alt="<?= $newSprout->title; ?>">
           <p class="text-xs flex items-center mb-2">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -92,7 +92,7 @@ title: Agrea - Ecology of Dignity
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
       <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
-          <a href="/farm-school"><img alt="content" class="object-cover object-center h-full w-full" src="images://farm-school/agrea-farm-school-scholarship-program-50pax.jpg" alt="AGREA Farm School Scholarship Program header"></a>
+          <a href="/farm-school"><img alt="content" class="object-cover object-center bg-center h-full w-full" src="images://farm-school/agrea-farm-school-scholarship-program-50pax.jpg" alt="AGREA Farm School Scholarship Program header"></a>
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title text-gray-900 dark:text-gray-100 mt-5">Learn organic farming the AGREA way</h3>
         <p class=" mt-2">AGREA Farm School is <a href="/farm-school/enroll-now-organic-agriculture-production-ncii">now accepting applications</a> for admission in Organic Agriculture Production (OAP NC II). This 232-hour program includes hands-on training on producing organic concoctions, extracts and fertilizers, as well as producing organic vegetables, and raising organic chickens and hogs.</p>
@@ -104,7 +104,7 @@ title: Agrea - Ecology of Dignity
       </aside>
       <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
-          <a href="/events/leaf"><img class="object-cover object-center h-full w-full" src="images://events/leaf/leaf-2018-get-your-free-copy-now.jpg" alt="Leaders and Entrepreneurs in Agriculture Forum"></a>
+          <a href="/events/leaf"><img class="object-cover object-center bg-center h-full w-full" src="images://events/leaf/leaf-2018-get-your-free-copy-now.jpg" alt="Leaders and Entrepreneurs in Agriculture Forum"></a>
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title text-gray-900 dark:text-gray-100 mt-5">Leaders and Entrepreneurs in Agriculture Forum</h3>
         <p class=" mt-2">LEAF is a global community of champions uniting as advocates across different sectors for better agriculture. Through mentorship and inclusive dialogue, delegates help to develop new generations of agricultural practitioners and allies.</p>
@@ -116,7 +116,7 @@ title: Agrea - Ecology of Dignity
       </aside>
       <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full"  src="images://events/leaf/leaf-report.png" alt="LEAF 2018 Terminal Report">
+          <img alt="content" class="object-cover object-center bg-center h-full w-full"  src="images://events/leaf/leaf-report.png" alt="LEAF 2018 Terminal Report">
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title text-gray-900 dark:text-gray-100 mt-5">LEAF 2018 Terminal Report</h3>
         <p class=" mt-2">Agriculture is changing, in step with a changing world. AGREA organized its inaugural LEAF Forum in 2018 as a venue to discuss the various challenges and opportunities for agricultural practitioners, with a focus on three specific areas: <span class="text-gray-700 font-bold">agripreneurship</span>, <span class="text-gray-700 font-bold">agritechnology</span>, <span class="text-gray-700 font-bold">and agritourism</span>.</p>
@@ -146,7 +146,7 @@ title: Agrea - Ecology of Dignity
       <aside class="md:w-1/2 mb-10 px-4">
         <div class="flex flex-col justify-between">
           <div class="rounded-lg md:mb-10">
-            <img alt="content" class="rounded-lg object-cover object-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
+            <img alt="content" class="rounded-lg object-cover object-center bg-center h-auto w-full" src="images://programs/1000strong/volunteer_programs.jpg" alt="Volunteer programs">
           </div>
           <div class="mt-10">
             <h3 role="heading" aria-level="3" class="font-title text-2xl font-medium text-lime-500 mb-3">Be a #AGREA1000Strong Volunteer</h3>
@@ -200,7 +200,7 @@ title: Agrea - Ecology of Dignity
         <? foreach($freshPicks as $freshPick) :?>
         <aside class="flex flex-col justify-start mb-10">
           <a class="h-48" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>">
-            <img class="rounded-lg object-cover object-center h-full w-full" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
+            <img class="rounded-lg object-cover object-center bg-center h-full w-full" src="<?= $freshPick->image->url ?>" alt="<?= $freshPick->title; ?>">
           </a>
           <p class=" text-gray-600 mt-2">
             <a class="text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300" href="<?= route(page('news/article'), ['slug' => $freshPick->slug]) ?>"><?= $freshPick->title; ?></a>
@@ -226,7 +226,7 @@ title: Agrea - Ecology of Dignity
           <a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= $weblink->url; ?>">
             <aside>
               <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="<?= $weblink->title ?>" class="object-cover object-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
+                <img alt="<?= $weblink->title ?>" class="object-cover object-center bg-center h-full w-full" src="images://agrea-in-the-news/<?= $weblink->image_name ?>" />
               </div>
               <p class="leading-relaxed text-xs font-bold mt-2 mb-1"><?= $weblink->publication ?></p>
               <p class="leading-relaxed text-xs font-medium mb-4 flex items-center">

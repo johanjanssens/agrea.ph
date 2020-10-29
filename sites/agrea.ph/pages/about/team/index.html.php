@@ -18,7 +18,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
 				<? else: ?>
 					<aside role="gridcell" class="h-full bg-gray-100 text-gray-900 dark:text-gray-100 p-6 rounded-lg">
 					<? endif; ?>
-						<img class="h-40 rounded w-full object-cover object-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
+						<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="images://team/<?= $member->avatar ?>" alt="<?= $member->name; ?>">
 						<h2 role="heading" aria-level="2" class="text-lg font-medium font-title leading-tight">
 							<span itemprop="alumni" itemscope itemtype="http://schema.org/Person">
 								<span itemprop="name"><?= $member->name; ?></span>

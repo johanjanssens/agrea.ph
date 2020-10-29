@@ -141,7 +141,7 @@ slug: agrea-1000-strong
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p class="text-gray-900 my-4">We always take the time to recognize our volunteers for their hard work and dedication whenever we can. The bigger, and humbling, picture is:</p>
 		<blockquote class="text-gray-900 my-4">"Our volunteers do not necessarily have the time, they just have the heart"</blockquote>
-		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
+		<p><a href="https://www.facebook.com/agreaph/photos/a.1580538318877949.1073741827.1573291842935930/2070931923171917/?type=3&theater" target="_blank"><img class="md:min-h-36 rounded w-full object-cover object-center bg-center" src="images://programs/1000strong/arborday-3.jpg"></a></p>
 	</ktml:images>
 	</aside>
 </div>

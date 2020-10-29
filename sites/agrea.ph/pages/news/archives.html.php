@@ -26,7 +26,7 @@ collection:
 			?>
 			<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route($category_slug.'/article', ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
 						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

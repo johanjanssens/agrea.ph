@@ -22,7 +22,7 @@ collection:
 			<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route('events/article', ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
 					<ktml:images max-width="33%" lazyload="progressive,inline">
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					</ktml:images>
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">

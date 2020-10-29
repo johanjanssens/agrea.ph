@@ -31,7 +31,7 @@ collection:
 			<a class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg" href="<?= route(page('/about/careers/article'), ['slug' => $article->slug]) ?>">
 				<aside role="gridcell">
 					<span class="hidden"><?= config()->site->name ?></span>
-					<img class="rounded w-full object-contain object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<img class="rounded w-full object-contain object-center bg-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
 						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -56,7 +56,7 @@ collection:
 		</div>
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Be Part of the AGREA Team</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
-		<img class="h-32 rounded w-full object-cover object-center" src="images://careers/careers-sidebar.jpg" alt="" />
+		<img class="h-32 rounded w-full object-cover object-center bg-center" src="images://careers/careers-sidebar.jpg" alt="" />
 		<p>AGREA is an innovative inclusive social enterprise with a fun, committed, and dynamic team.</p>
 		<p>We are growing, and we are looking for new people to join us in making farming cool, smart, sexy and humane.</p>
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Apply now!</h3>
