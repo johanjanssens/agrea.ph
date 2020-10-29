@@ -215,7 +215,7 @@
     @apply inline-flex mr-1;
   }
   .k-pagination__pages a {
-    @apply rounded py-2 px-4 no-underline;
+    @apply rounded py-2 px-4 no-underline bg-none;
   }
   .k-pagination__pages a:hover {
     @apply no-underline;
