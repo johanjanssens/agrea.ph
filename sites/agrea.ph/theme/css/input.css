@@ -39,7 +39,7 @@
     }
   }
   section[class*="bg-"]:not(.bg-white) {
-    @apply relative bg-fixed bg-no-repeat bg-left-top .bg-cover;
+    @apply relative bg-fixed bg-no-repeat bg-left-top bg-cover;
     background-blend-mode: multiply;
   }
   section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
