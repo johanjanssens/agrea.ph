@@ -7,10 +7,6 @@
   [x-cloak] {
     @apply hidden;
   }
-  /* MIX: Lazyprogressive images */
-  img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none;
-  }
   .main-wrapper {
     @apply min-h-screen;
   }
