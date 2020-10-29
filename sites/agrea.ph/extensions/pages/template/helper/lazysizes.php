@@ -18,7 +18,8 @@ class ExtPagesTemplateHelperLazysizes extends ComPagesTemplateHelperBehavior
                 $html .= '<ktml:script src="https://unpkg.com/lazysizes@5.2.2/lazysizes.'.(!$config->debug ? 'min.js' : 'js').'" defer="defer" />';
                 $html .= <<<LAZYSIZES
 <script>
-window.lazySizesConfig = window.lazySizesConfig || {};
+window.lazySizesConfig = window.lazySizesConfig || {}
+window.lazySizesConfig.fastLoadedClass = 'lazycached'
 
 if ('connection' in navigator)
 {
@@ -43,7 +44,7 @@ window.addEventListener('lazybeforeunveil', function (e)
       setTimeout(function ()
       {
           if (img.complete && img.naturalHeight) {
-            img.classList.add('ls-is-cached');
+            img.classList.add('lazycached');
           }
       }, 33);
   }
@@ -75,7 +76,7 @@ span.img-container > img {
   transition: filter 300ms linear;
 }
 
-.ls-is-cached {
+.lazycached {
   filter: none;
   transition: none;
 }
