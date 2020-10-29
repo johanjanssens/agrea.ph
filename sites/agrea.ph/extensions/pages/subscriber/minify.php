@@ -24,6 +24,7 @@ class ExtPagesSubscriberMinify extends ComPagesEventSubscriberAbstract
             $htmlMin->doRemoveComments();
             $htmlMin->doSumUpWhitespace();
             $htmlMin->doRemoveWhitespaceAroundTags();
+            $htmlMin->doSortHtmlAttributes(false);
             $content = $htmlMin->minify($content);
 
             $event->getTarget()->getResponse()->setContent($content);
