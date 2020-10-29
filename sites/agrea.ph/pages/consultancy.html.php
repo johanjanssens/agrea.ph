@@ -12,9 +12,9 @@ slug: consultancy
 <div itemscope itemtype="http://schema.org/Article" class="flex flex-col sm:flex-row">
 	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="80%" lazyload="progressive,inline">
-		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
-		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Your Guide to Agricultural Abundance</h3>
+		<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Your Guide to Agricultural Abundance</h3>
 		<p>AGREA recognizes the crucial need to capacitate the current and future generations of farmers. Safeguarding the well-being of farmers and the knowledge they possess is essential to a prosperous agricultural sector, and to the country’s capacity to feed its people.</p>
 		<p>Through agriculture, farmers can be a starting point for change.</p>
 		<ul>
@@ -27,7 +27,7 @@ slug: consultancy
 
 		<p><img itemprop="image" alt="AGREA Consultancy Our Services 4" class="rounded w-full" src="images://consultancy/our-services.png" /></p>
 
-		<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Capacity-building &amp; sustainable agriculture training for farmers</h3>
+		<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Capacity-building &amp; sustainable agriculture training for farmers</h3>
 
 		<p>Are you looking to build sustainable partnerships with farmers? AGREA’s team of agriculturists, social workers, strategic community organizers, and multi-stakeholders partnerships will help you optimize your agricultural production while equipping your farmer-partners with the right skills to build sustainable livelihoods:</p>
 
@@ -46,9 +46,9 @@ slug: consultancy
 		</ul>
 
 		<div class="my-8">
-			<img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center mb-6" src="<?= article(109)->image->url ?>">
+			<img alt="<?= article(109)->title ?>" class="h-100 rounded w-full object-cover object-center bg-center mb-6" src="<?= article(109)->image->url ?>">
 			<div class="mb-8">
-				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Food Security & Sufficiency Masterplan</h3>
+				<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Food Security & Sufficiency Masterplan</h3>
 				<p>AGREA offers full-scale planning for local governments, public institutions, schools, and private enterprises to take effective action for food security and nutrition:</p>
 				<ul>
 					<li>Community Evaluation. Evaluate communities in need and set actionable targets for food security and nutrition.</li>
@@ -87,10 +87,10 @@ slug: consultancy
 				</div>
 			</div>
 			<div class="mb-8">
-				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Farm Tourism Development</h3>
+				<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Farm Tourism Development</h3>
 				<p>Do you own an unproductive or barren land? Are you looking to develop a farm or to beautify an existing area? Consult our experts with over 20 years of experience in land development, sustainable landscaping, construction, project budgeting, feasibility studies and business plan development.</p>
 				<img class="rounded w-full mb-6" src="images://consultancy/model-farm.jpg" />
-				<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Sustainability Services</h3>
+				<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Sustainability Services</h3>
 				<p>Are you looking to build systems for renewable energy and waste? AGREA can help you reach sustainable solutions for your next project?</p>
 				<ul>
 					<li>Hydropower</li>
@@ -99,11 +99,11 @@ slug: consultancy
 					<li>Wastewater management</li>
 					<li>Sustainable luxury travels</li>
 				</ul>
-				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center mb-6" src="<?= article(51)->image->url ?>">
+				<img alt="<?= article(51)->title ?>" class="rounded w-full object-cover object-center bg-center mb-6" src="<?= article(51)->image->url ?>">
 				<p class="mb-6"><a class="text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= route(page('news/article'), ['slug' => article(51)->slug]) ?>">Read more</a></p>
 			</div>
 
-			<h3 role="heading" aria-level="3" class="font-title text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Completed / Ongoing Projects</h3>
+			<h3 role="heading" aria-level="3" class="font-title uppercase text-2xl text-gray-900 dark:text-gray-100 leading-tight mb-3">Completed / Ongoing Projects</h3>
 
 			<p><strong>Farmer Capacity-Building &amp; Sustainable Agriculture Training</strong></p>
 
@@ -153,7 +153,7 @@ slug: consultancy
 				<li>Hongkong Shanghai Group of Hotels for Sustainable Agriculture and Food Systems</li>
 			</ul>
 
-			<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Frequently Asked Questions</h2>
+			<h2 role="heading" aria-level="2" class="font-title uppercase text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">Frequently Asked Questions</h2>
 
 			<p><strong>Do you have established pricing for your services?</strong><br />
 			Yes, please send an e-mail to consultancy@agrea.ph with a description of your desired project. You may also call our Metro Manila office at +63 2 240 5210 to schedule an initial online or in-person appointment.</p>
@@ -176,7 +176,7 @@ slug: consultancy
 	<ktml:images max-width="25%" lazyload="progressive,inline">
         <p><img class="rounded w-full" src="images://consultancy/atilano.jpg" /></p>
         <p>Founded by multi-awarded Filipina entrepreneur Cherrie Atilano, AGREA is a Filipino agriculture-focused, for-purpose, inclusive business that empowers farmers and their communities as impactful agents of change.</p>
-        <h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Consult with AGREA</h3>
+        <h3 role="heading" aria-level="3" class="font-medium font-title uppercase mt-4 text-gray-900 dark:text-gray-100 text-lg leading-tight">Consult with AGREA</h3>
         <div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
         <p>To find more about our consultancy services please <a href="/about/contact">contact us</a> and send us a message.</p>
     </ktml:images>

@@ -9,7 +9,7 @@ slug: leaf
 <div class="flex flex-col sm:flex-row">
 	<article role="main" class="sm:w-3/4 sm:pr-8 sm:pt-4 sm:pb-4">
 	<ktml:images max-width="80%" lazyload="progressive,inline">
-		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
+		<h1 role="heading" aria-level="1" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title; ?></h1>
 		<div class="h-1 w-20 bg-brand rounded mb-10"></div>
 		<p>LEAF is a global <strong>community</strong> of champions uniting as advocates across different sectors for <strong>better agriculture</strong>. Through mentorship and inclusive dialogue, delegates help to develop <strong>new generations</strong> of agricultural practitioners and allies.</p>
 
@@ -19,7 +19,7 @@ slug: leaf
 
 		<p>Access insights and best practices from the inaugural LEAF Forum: Redefining &amp; Revitalizing Agriculture. This report summarizes the discussions and action plans for agriculture formed by the 500 delegates that attended LEAF. </p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">2018 Forum: Redefine &amp; Revitalize Agriculture</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">2018 Forum: Redefine &amp; Revitalize Agriculture</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><strong>DATE: </strong>September 29 &amp; 30, 2018<br />
@@ -38,29 +38,29 @@ slug: leaf
 			<li><strong>Agritourism</strong>, integrating farms into our leisure and lifestyle, bringing us back to a greater understanding of our food sources and connecting us to the producers.</li>
 		</ul>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Speakers</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Speakers</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-speakers">here</a> to view LEAF 2018 Speakers.</p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Moderators and Facilitators</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Moderators and Facilitators</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Click <a href="http://www.agreaph.com/leaf-2018-moderators-and-facilitators">here</a> to view LEAF 2018 Moderators and Facilitators.</p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Global Advisory Board</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Global Advisory Board</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><a href="images://events/leaf/advisory-board.jpg" target="_blank"><img class="rounded w-full" src="images://events/leaf/advisory-board.jpg" /></a></p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">The LEAF Young Agripreneurs Pitch</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">The LEAF Young Agripreneurs Pitch</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p>Young entrepreneurs with an innovative project for agriculture were invited to apply to pitch their idea at the Young Agripreneurs session.</p>
 
 		<p><img class="rounded w-full" src="images://events/leaf/young-agripreneurs-pitch-2018.jpg" /></p>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Agripreneurship core sessions</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Agripreneurship core sessions</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<?= import('/partials/slider', ['images' => [
@@ -70,7 +70,7 @@ slug: leaf
 				'images://slider/events/leaf/core-sessions/core-sessions-4.jpg',
 			], 'max_width' => '80%']); ?>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Agritech core sessions</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Agritech core sessions</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<?= import('/partials/slider', ['images' => [
@@ -80,7 +80,7 @@ slug: leaf
 			'images://slider/events/leaf/core-sessions/core-sessions-8.jpg',
 		], 'max_width' => '80%']); ?>
 
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title my-4">Schedule of Events</h3>
+		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Schedule of Events</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 
 		<p><img class="rounded w-full" src="images://events/leaf/leaf-2018-programme-full.jpg" /></p>
@@ -89,7 +89,7 @@ slug: leaf
 	</ktml:images>
 	</article>
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
-		<h3 role="heading" aria-level="3" class="font-medium font-title mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
+		<h3 role="heading" aria-level="3" class="font-medium font-title uppercase mt-4 text-gray-900 dark:text-gray-100 text-lg">In this section</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<?= import('/partials/navigation/submenu',[
 			'menuOpen'=>'true',

@@ -3,40 +3,108 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  /* hide anything we don't want to show until apline has loaded or if javascript is disabled */
-  [x-cloak] {
-    @apply hidden;
+  /*
+   * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
+  */
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
   }
-  /* MIX: Lazyprogressive images */
-  img.lazyprogressive[x-cloak="lazyprogressive"] {
-    @apply bg-none;
-  }
-  .main-wrapper {
-    @apply min-h-screen;
-  }
+  /* Boost rendering performance, see: https://web.dev/content-visibility */
   .main-wrapper,
+  header,
+  aside[role^="comp"],
   footer {
-    @apply text-base;
+    content-visibility: auto;
+  }
+  /* Set the header and footer's intrinsic size so we don't get screen flicker */
+  header {
+    contain-intrinsic-size: 100px;
+  }
+  footer {
+    contain-intrinsic-size: 400px;
+  }
+  /* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
+  body > * {
+    font-size: clamp(0.75rem, 4vw, 1rem);
+  }
+  /* sticky footer
+   * anything we can't add with tailwind
+  */
+  @screen lg {
+    body > footer {
+      position: -webkit-sticky;
+    }
+    _::-webkit-full-page-media, 
+    _:future, 
+    :root footer {
+      @apply static;
+    }
+  }
+  /* Footer illustration */
+  body > footer {
+    background-position: 0 calc(100% - 5rem);
+    background-size: 100vw;
+  }
+  /* Main header story and IN FOUCS area on the homepage */
+  @screen lg {
+    section.hero-alt .hero-image {
+      clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
+      transition: 1s;
+    }
+    section.hero-alt:hover .hero-image {
+      clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
+    }
+  }
+  /* Produce background pattern on Main header story and IN FOUCS area on the homepage */
+  section.bg-produce {
+    background-blend-mode: multiply;
+  }
+  section.bg-produce h1 {
+    text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
+  }
+  section.bg-produce p {
+    text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
+  }
+  /* Single article featured image */
+  .featured-image {
+    height:33vh;
+  }
+  @screen lg {
+    .featured-image {
+      height:42.86vh;
+    }
+  }
+  /* About us page circles */
+  .circle-text {
+    line-height: 12rem;
+  }
+  /* Elements that don't have a class attribute */
+  h1:not([class]),
+  h2:not([class]),
+  h3:not([class]),
+  h4:not([class]),
+  h5:not([class]),
+  h6:not([class]) {
+    @apply text-gray-900;
+    font-family:'Raleway';
   }
   h1:not([class]) {
-    @apply text-4xl text-gray-900 leading-none mb-2;
-    font-family:'Raleway';
+    @apply text-4xl leading-none mb-2;
   }
   h2:not([class]) {
-    @apply text-3xl text-gray-900 leading-none mb-2;
-    font-family:'Raleway';
+    @apply text-3xl leading-none mb-2;
   }
   h3:not([class]) {
-    @apply text-2xl text-gray-900 leading-tight mb-3;
-    font-family:'Raleway';
+    @apply text-2xl leading-tight mb-3;
   }
   h4:not([class]) {
-    @apply text-xl text-gray-900 mb-4;
-    font-family:'Raleway';
+    @apply text-xl mb-4;
   }
   h5:not([class]) {
-    @apply text-lg text-gray-900 mb-5;
-    font-family:'Raleway';
+    @apply text-lg mb-5;
   }
   blockquote:not([class]),
   label:not([class]),
@@ -65,29 +133,29 @@
   ol:not([class]) {
     @apply list-decimal list-outside ml-4;
   }
+  li:focus-within a {
+    @apply outline-none;
+  }
+  ul:not([class]) > li:not([class]) {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
   li:not([class]) > ol:not([class]),
   li:not([class]) > ul:not([class]) {
     @apply mx-4 my-2;
-  }
-  li:focus-within a {
-    @apply outline-none;
   }
   a[href] {
     @apply cursor-pointer;
   }
   a:not([class]) {
-    @apply text-green-500;
-    text-decoration: none;
+    @apply text-green-500 no-underline bg-left-bottom bg-no-repeat;
     background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
   }
   a:not([class]):hover {
     background-size: 100% 2px;
   }
-
   a:not([class]):focus {
     @apply outline-none shadow-outline;
   }
@@ -118,24 +186,15 @@
   sup:not([class]) {
     @apply text-xs relative align-baseline;
   }
-  /* titles */
-  .font-title {
-    @apply uppercase;
-  } 
-  /* hero image */
-  .hero-image > div {
-    @apply bg-right;
+  sup:not([class]) {
+      top: -0.5em;
   }
-  /* Single article featured image */
-  .featured-image {
-    height:33vh;
+  sub:not([class]) {
+      bottom: -0.25em;
   }
-  @screen lg {
-    .featured-image {
-      height:42.86vh;
-    }
-  }
-  /* Plyr.js */
+}
+@layer utilities {
+  /* Plyr.js video player */
   .plyr {
     @apply rounded-lg;
   }
@@ -144,7 +203,7 @@
     @apply inline-flex mr-1;
   }
   .k-pagination__pages a {
-    @apply rounded py-2 px-4 no-underline;
+    @apply rounded py-2 px-4 no-underline bg-none;
   }
   .k-pagination__pages a:hover {
     @apply no-underline;
@@ -155,283 +214,26 @@
   .k-pagination__pages li:not(.k-is-active):hover a {
     @apply bg-gray-200;
   }
-}
-@layer utilities {
-  /* javascript is enabled - else alipne can't remove [x-cloak] attribute */
-  img.lazyprogressive.object-center {
-    @apply bg-center;
+  /* toggle checkboxes used on programs/agrea-1000-strong */
+  .toggle-checkbox:checked {
+    @apply right-0 border-green-500;
   }
+  .toggle-checkbox:checked + .toggle-label {
+    @apply bg-green-500;
+  }
+  /* lazyprogressive images */
   img.lazyprogressive {
     @apply bg-cover;
   }
-  @screen lg {
-    img.lazyprogressive {
-      @apply bg-cover;
-    }
-    img.lazyprogressive.object-right {
-      @apply bg-right;
-    }
-  }
 }
-/* Anything we can't do easily with tailwind classes */
-/* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
+/* CSS Vars */
 :root {
+  /* Agrea's main green colours */
   --green-500:#788023;
-  --dark-green-500:#3E462E;
   --lime-500:#C9CA48;
-  --gray-500:#8E8E8C;
-  --gray-200:#E3E3E2;
-  --link-colour:var(--green-500);
-  /* plyr.js colour override */
+  /* plyr.js colour override, see: https://css-tricks.com/plyr-css-styleable-video-player */
   --plyr-color-main: var(--green-500);
-  /* Joomlatools logo colour override */
+  /* Joomlatools logo colour override used /partials/logo/joomaltools.html.php */
   --jt-black:var(--green-500);
   --jt-blue:var(--lime-500);
-}
-/*
- * Smooth scrolling IF user doesn't have a preference due to motion sensitivities
-*/
-@media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-}
-.main-wrapper,
-header,
-aside[role^="comp"],
-footer {
-  content-visibility: auto;
-}
-header {
-  contain-intrinsic-size: 100px;
-}
-footer {
-  contain-intrinsic-size: 400px;
-}
-/* responsive font size for browsers that understand: https://caniuse.com/mdn-css_types_clamp; */
-body > * {
-  font-size: clamp(0.75rem, 4vw, 1rem);
-}
-/* Main header story and IN FOUCS area on the homepage */
-@screen lg {
-  section.hero-alt .hero-image {
-    clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%);
-    transition: 1s;
-  }
-  section.hero-alt:hover .hero-image {
-    clip-path:polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
-  }
-}
-section[class*="bg-"]:not(.bg-white) {
-  position:relative;
-  background-attachment: fixed; /* CSS only parallax */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-position: left top;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
-section[class*="bg-"]:not(.hero-alt):not(.bg-white) > div {
-  position:relative;
-  z-index:20;
-}
-section[class*="bg-"]:not(.bg-white) h1 {
-  text-shadow:  1px 1px 1px rgba(255, 255, 255, 0.2);
-}
-section[class*="bg-"]:not(.bg-white) p {
-  text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
-}
-/* sticky footer
- * tailwind doesn't handle this well inline so let's add it here for large screens
-*/
-@screen lg {
-  .main-wrapper {
-    position: relative;
-    z-index: 10;
-  }
-  body > footer {
-    position: sticky;
-    position: -webkit-sticky;
-    z-index:0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  _::-webkit-full-page-media, _:future, :root footer {
-    position: static;
-  }
-}
-/* Footer illustration */
-body > footer {
-  background-position: 0 calc(100% - 5rem);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-ul:not([class]) > li:not([class]) {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-/* Position 'sub' and 'sup' without affecting line-height */
-sup:not([class]) {
-    top: -0.5em;
-}
-/* Move superscripted text up */
-sub:not([class]) {
-    bottom: -0.25em;
-}
-/* Circle text - Used on About Us page */
-.circles {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.circle-text {
-  width: 12rem;
-  height: 12rem;
-  line-height: 12rem;
-  border-radius: 50%;
-}
-/* CSS3 Checkboxes */
-@supports (-webkit-appearance: none) or (-moz-appearance: none) {
-  input[type='checkbox'],
-  input[type='radio'] {
-    --active: var(--dark-green-500);
-    --active-inner: #fff;
-    --focus: 2px rgba(39, 94, 254, .3);
-    --border: var(--green-500);
-    --border-hover: var(--dark-green-500);
-    --background: #fff;
-    --disabled: var(--gray-500);
-    --disabled-inner: var(--gray-200);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 21px;
-    outline: none;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin: 0;
-    cursor: pointer;
-    border: 1px solid var(--bc, var(--border));
-    background: var(--b, var(--background));
-    -webkit-transition: background .3s, border-color .3s, box-shadow .2s;
-    transition: background .3s, border-color .3s, box-shadow .2s;
-  }
-  input[type='checkbox']:after,
-  input[type='radio']:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    position: absolute;
-    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
-    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
-  }
-  input[type='checkbox']:checked,
-  input[type='radio']:checked {
-    --b: var(--active);
-    --bc: var(--active);
-    --d-o: .3s;
-    --d-t: .6s;
-    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
-  }
-  input[type='checkbox']:disabled,
-  input[type='radio']:disabled {
-    --b: var(--disabled);
-    cursor: not-allowed;
-    opacity: .9;
-  }
-  input[type='checkbox']:disabled:checked,
-  input[type='radio']:disabled:checked {
-    --b: var(--disabled-inner);
-    --bc: var(--border);
-  }
-  input[type='checkbox']:disabled + label,
-  input[type='radio']:disabled + label {
-    cursor: not-allowed;
-  }
-  input[type='checkbox']:hover:not(:checked):not(:disabled),
-  input[type='radio']:hover:not(:checked):not(:disabled) {
-    --bc: var(--border-hover);
-  }
-  input[type='checkbox']:focus,
-  input[type='radio']:focus {
-    box-shadow: 0 0 0 var(--focus);
-  }
-  input[type='checkbox']:not(.switch),
-  input[type='radio']:not(.switch) {
-    width: 21px;
-  }
-  input[type='checkbox']:not(.switch):after,
-  input[type='radio']:not(.switch):after {
-    opacity: var(--o, 0);
-  }
-  input[type='checkbox']:not(.switch):checked,
-  input[type='radio']:not(.switch):checked {
-    --o: 1;
-  }
-  input[type='checkbox'] + label,
-  input[type='radio'] + label {
-    font-size: 14px;
-    line-height: 21px;
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-    margin-left: 4px;
-  }
-  input[type='checkbox']:not(.switch) {
-    border-radius: 7px;
-  }
-  input[type='checkbox']:not(.switch):after {
-    width: 5px;
-    height: 9px;
-    border: 2px solid var(--active-inner);
-    border-top: 0;
-    border-left: 0;
-    left: 7px;
-    top: 4px;
-    -webkit-transform: rotate(var(--r, 20deg));
-    transform: rotate(var(--r, 20deg));
-  }
-  input[type='checkbox']:not(.switch):checked {
-    --r: 43deg;
-  }
-  input[type='checkbox'].switch {
-    width: 38px;
-    border-radius: 11px;
-  }
-  input[type='checkbox'].switch:after {
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: var(--ab, var(--border));
-    -webkit-transform: translateX(var(--x, 0));
-    transform: translateX(var(--x, 0));
-  }
-  input[type='checkbox'].switch:checked {
-    --ab: var(--active-inner);
-    --x: 17px;
-  }
-  input[type='checkbox'].switch:disabled:not(:checked):after {
-    opacity: .6;
-  }
-  input[type='radio'] {
-    border-radius: 50%;
-  }
-  input[type='radio']:after {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background: var(--active-inner);
-    opacity: 0;
-    -webkit-transform: scale(var(--s, 0.7));
-    transform: scale(var(--s, 0.7));
-  }
-  input[type='radio']:checked {
-    --s: .5;
-  }
 }

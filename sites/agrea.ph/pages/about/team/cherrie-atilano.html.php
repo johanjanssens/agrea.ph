@@ -17,7 +17,7 @@ collection:
 ---
 <article itemscope itemtype="https://schema.org/Person" class="max-w-4xl m-auto mt-8">
 	<ktml:images max-width="25%" lazyload="progressive,inline">
-	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
+	<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 	<p itemprop="jobTitle" class="mb-2 text-sm font-medium"><?= $position ?></p>
 	<div class="h-1 w-20 bg-brand rounded mb-6"></div>
 	<img itemprop="image" class="rounded md:w-1/4 md:float-right md:ml-4 mb-6" src="images://team/<?= $slug ?>.jpg" alt="<?= $title ?>">
@@ -31,19 +31,19 @@ collection:
 	</div>
 	</ktml:images>
 
-	<h2 role="heading" aria-level="2" class="font-title text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">More about Cherrie</h2>
+	<h2 role="heading" aria-level="2" class="font-title uppercase text-3xl text-gray-900 dark:text-gray-100 leading-none mb-2">More about Cherrie</h2>
 	<ktml:images max-width="25%" lazyload="progressive,inline">
 		<div class="grid xl:grid-cols-3 md:grid-cols-2 gap-8 mt-4 mb-6">
 		<? foreach(collection() as $article): ?>
 			<a href="<?= route('news/article', ['slug' => $article->slug]) ?>" class="bg-gradient-to-b from-gray-50 to-gray-100 hover:from-lime-400 hover:to-lime-500 transition duration-300 ease-in-out text-gray-900 dark:text-gray-100 hover:text-dark-green-500 p-6 rounded-lg">
 				<aside role="gridcell">
-					<img class="h-40 rounded w-full object-cover object-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
+					<img class="h-40 rounded w-full object-cover object-center bg-center mb-6" src="<?= $article->image->url ?>" alt="<?= $article->title; ?>">
 					<p class="leading-relaxed text-xs font-medium mb-2 flex items-center">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-5 h-5 mr-1" stroke="currentColor">
 						  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
 						</svg> <?= date($article->published_date, 'd M, Y'); ?>
 					</p>
-					<h3 role="heading" aria-level="3" class="text-lg font-medium font-title mb-4 leading-tight"><?= $article->title; ?></h3>
+					<h3 role="heading" aria-level="3" class="text-lg font-medium font-title uppercase mb-4 leading-tight"><?= $article->title; ?></h3>
 				</aside>
 			</a>
 		<? endforeach ?>

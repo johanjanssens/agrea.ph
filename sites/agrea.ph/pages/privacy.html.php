@@ -14,7 +14,7 @@ visible: false
 		<span itemprop="name"><?= config()->site->name ?></span>
 	</span>
 	<div class="max-w-4xl m-auto mt-8">
-		<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
+		<h1 role="heading" aria-level="1" itemprop="name" class="sm:text-5xl text-4xl font-medium font-title uppercase mb-2 text-gray-900 dark:text-gray-100 leading-none"><?= $title ?></h1>
 		<p class="mb-2 text-sm font-medium">Last Updated: December 9, 2019</p>
 		<div class="h-1 w-20 bg-brand rounded mb-6"></div>
 
