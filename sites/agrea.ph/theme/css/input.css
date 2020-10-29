@@ -28,6 +28,24 @@
   body > * {
     font-size: clamp(0.75rem, 4vw, 1rem);
   }
+  /* sticky footer
+   * tailwind doesn't handle this well inline so let's add it here for large screens
+  */
+  @screen lg {
+    body > footer {
+      position: -webkit-sticky;
+    }
+    _::-webkit-full-page-media, 
+    _:future, 
+    :root footer {
+      @apply static;
+    }
+  }
+  /* Footer illustration */
+  body > footer {
+    background-position: 0 calc(100% - 5rem);
+    background-size: 100vw;
+  }
   /* Main header story and IN FOUCS area on the homepage */
   @screen lg {
     section.hero-alt .hero-image {
@@ -47,24 +65,20 @@
   section.bg-produce p {
     text-shadow:  1px 1px 0 rgba(255, 255, 255,  0.2);
   }
-  /* sticky footer
-   * tailwind doesn't handle this well inline so let's add it here for large screens
-  */
+  /* Single article featured image */
+  .featured-image {
+    height:33vh;
+  }
   @screen lg {
-    body > footer {
-      position: -webkit-sticky;
-    }
-    _::-webkit-full-page-media, 
-    _:future, 
-    :root footer {
-      @apply static;
+    .featured-image {
+      height:42.86vh;
     }
   }
-  /* Footer illustration */
-  body > footer {
-    background-position: 0 calc(100% - 5rem);
-    background-size: 100vw;
+  /* About us page circles */
+  .circle-text {
+    line-height: 12rem;
   }
+  /* Elements that don't have a class attribute */
   h1:not([class]),
   h2:not([class]),
   h3:not([class]),
@@ -175,15 +189,8 @@
   sub:not([class]) {
       bottom: -0.25em;
   }
-  /* Single article featured image */
-  .featured-image {
-    height:33vh;
-  }
-  @screen lg {
-    .featured-image {
-      height:42.86vh;
-    }
-  }
+}
+@layer utilities {
   /* Plyr.js */
   .plyr {
     @apply rounded-lg;
@@ -210,25 +217,15 @@
   .toggle-checkbox:checked + .toggle-label {
     @apply bg-green-500;
   }
-  .circle-text {
-    line-height: 12rem;
-  }
-}
-@layer utilities {
   img.lazyprogressive {
     @apply bg-cover;
   }
 }
-/* Anything we can't do easily with tailwind classes */
 /* CSS Vars that are used in this file and in /partials/structure/footer.html.php */
 :root {
   --green-500:#788023;
-  --dark-green-500:#3E462E;
   --lime-500:#C9CA48;
-  --gray-500:#8E8E8C;
-  --gray-200:#E3E3E2;
-  --link-colour:var(--green-500);
-  /* plyr.js colour override */
+  /* plyr.js colour override, see: https://css-tricks.com/plyr-css-styleable-video-player */
   --plyr-color-main: var(--green-500);
   /* Joomlatools logo colour override */
   --jt-black:var(--green-500);

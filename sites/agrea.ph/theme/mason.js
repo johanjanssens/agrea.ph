@@ -10,7 +10,19 @@ async function postcss() {
         ],
         // These classes are used by MIX, let's whitelist them
         options: {
-          whitelist: ['lazyprogressive', 'bg-center', 'bg-cover', 'bg-right', 'object-center', 'object-right'],
+          whitelist: [
+          'plyr',
+          'k-pagination__pages',
+          'k-is-active',
+          'toggle-checkbox',
+          'toggle-label',
+          'lazyprogressive', 
+          'bg-center', 
+          'bg-cover', 
+          'bg-right', 
+          'object-center', 
+          'object-right',
+          ],
         },
       },
       theme: {
