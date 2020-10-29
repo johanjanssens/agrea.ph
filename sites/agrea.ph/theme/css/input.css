@@ -12,12 +12,14 @@
       scroll-behavior: smooth;
     }
   }
+  /* Boost rendering performance, see: https://web.dev/content-visibility */
   .main-wrapper,
   header,
   aside[role^="comp"],
   footer {
     content-visibility: auto;
   }
+  /* Set the header and footer's intrinsic size so we don't get screen flicker */
   header {
     contain-intrinsic-size: 100px;
   }
@@ -29,7 +31,7 @@
     font-size: clamp(0.75rem, 4vw, 1rem);
   }
   /* sticky footer
-   * tailwind doesn't handle this well inline so let's add it here for large screens
+   * anything we can't add with tailwind
   */
   @screen lg {
     body > footer {
