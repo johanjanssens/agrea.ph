@@ -2,7 +2,7 @@
 layout: default
 name: Agrea 1000 Strong
 title: Agrea 1000 Strong
-summary: AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders.
+summary: 'AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders.'
 slug: agrea-1000-strong
 ---
 
