@@ -1,5 +1,5 @@
 {
     "require": {
-        "joomlatools/pages": "^0.18.1"
+        "joomlatools/pages": "0.18.*"
     }
 }
