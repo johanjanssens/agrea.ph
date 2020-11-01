@@ -1,18 +1,20 @@
 ---
 form:
-    name: job-application
+    name: volunteer-application
     processors:
         - 'email':
             recipients:
-                - hr@agrea.ph
-            title: Job Application Form
-            subject: New job application
+                - hello@agrea.ph
+            title: Volunteer Form
+            subject: New volunteer application
     schema:
         firstName: [string, required]
         lastName: [string, required]
         email: [email, required]
-        message: [string, required]
-    redirect: about/careers/application/thank-you
-    honeypot: firstName_27QnzTQX
+        sectors: [string]
+        interests: [string]
+        experience: [string]
+    redirect: programs/volunteer/thank-you
+    honeypot: firstName_FJdL92fe
 visible: false
 ---
