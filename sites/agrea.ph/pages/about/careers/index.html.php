@@ -62,7 +62,7 @@ collection:
 		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">Apply now!</h3>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p>For interested applicants, please fill in the form below:</p>
-		<?= import('/partials/form/apply'); ?>
+		<?= import('/partials/form/application'); ?>
   	</ktml:images>
 	</aside>
 </div>
