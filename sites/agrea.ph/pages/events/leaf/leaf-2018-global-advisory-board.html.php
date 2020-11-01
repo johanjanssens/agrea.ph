@@ -1,5 +1,5 @@
 ---
-layout: pages/event
+layout: page/event
 name: LEAF 2018 Global Advisory Board
 title: LEAF 2018 Global Advisory Board
 summary: The Leaders and Entrepreneurs in Agriculture Forum Global Advisory Board is comprised of experts and professionals from the fields of agriculture, entrepreneurship, agro-social enterprise, non-profit organizations, innovation, and technology-based firms.

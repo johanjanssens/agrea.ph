@@ -1,5 +1,5 @@
 ---
-layout: pages/event
+layout: page/event
 name: LEAF 2018 Speakers
 title: LEAF 2018 Speakers
 summary: His Excellency David Strachan, New Zealand Ambassador to the Philippines is amongst the many speakers at LEAF events.
