@@ -58,7 +58,7 @@ collection:
 		</div>
 		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
 		<p>Get the latest news and updates from the AGREA Team.</p>
-		<?= import('/partials/form/subscribe'); ?>
+		<?= import('/partials/form/newsletter'); ?>
 		</ktml:images>
 	</aside>
 </div>
