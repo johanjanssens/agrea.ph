@@ -71,12 +71,12 @@ span.img-container > img {
   filter: blur(8px);
 }
 
-.ls-is-cached,
 .lazyloaded {
   filter: blur(0);
   transition: filter 300ms linear;
 }
 
+.ls-is-cached,
 .lazycached {
   filter: none;
   transition: none;
