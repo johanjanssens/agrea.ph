@@ -20,6 +20,7 @@ return array(
     'page' => [
 
         'metadata' => [
+            'summary'       => 'AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.',
             'og:site_name'  => 'Agrea - Ecology of Dignity',
             'og:url'        => 'https://www.agrea.ph/',
             'og:title'      => 'Agrea',
@@ -27,7 +28,6 @@ return array(
             'og:image'      => 'theme://images/icons/open-graph-2400x1200.png',
             'twitter:site'  => '@AgreaPHL',
             'twitter:card'  => 'summary_large_image',
-            //'fb:pages'     => '111111111111111'
         ],
 
         'visible'   => true,
