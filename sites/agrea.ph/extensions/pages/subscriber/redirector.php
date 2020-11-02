@@ -5,7 +5,8 @@ class ExtPagesSubscriberRedirector extends ComPagesEventSubscriberAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => KEvent::PRIORITY_HIGH,
+            'priority'  => KEvent::PRIORITY_HIGHEST,
+            'redirects' => array(),
         ));
 
         parent::_initialize($config);
@@ -14,27 +15,18 @@ class ExtPagesSubscriberRedirector extends ComPagesEventSubscriberAbstract
     public function onAfterApplicationRoute(KEventInterface $event)
     {
         $request = $this->getObject('request');
-        $router  = $this->getObject('com://site/pages.dispatcher.router.redirect', ['request' => $request]);
+        $base    = $request->getBasePath();
+        $url     = urldecode( $request->getUrl()->getPath());
 
-        if(false !== $route = $router->resolve())
+        $route  = rtrim(str_replace(array($base, '/index.php'), '', $url), '/');
+
+        if($url = $this->getConfig()->redirects->get($route))
         {
             $dispatcher = $this->getObject('com://site/pages.dispatcher.http');
             $response   = $dispatcher->getResponse();
 
-            //Set the location header
-            if($route->toString(KHttpUrl::AUTHORITY)) {
-                //External redierct: 301 permanent
-                $status = KHttpResponse::MOVED_PERMANENTLY;
-            } else {
-                //Internal redirect: 307 temporary
-                $status = KHttpResponse::TEMPORARY_REDIRECT;
-            }
-
             //Set the redirect status
-            $response->setStatus($status);
-
-            //Qualify the route
-            $url = $router->qualify($route);
+            $response->setStatus(KHttpResponse::MOVED_PERMANENTLY);
 
             $dispatcher->redirect($url);
         }

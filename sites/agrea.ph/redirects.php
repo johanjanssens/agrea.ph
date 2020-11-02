@@ -18,7 +18,7 @@ return array(
     '/rss.aspx' => 'https://www.agrea.ph/news.rss',
     '/agrea-farm-school' => 'https://www.agrea.ph/farm-school',
     '/privacy-statement1' => 'https://www.agrea.ph/privacy',
-    '/agrea-team/' => 'https://www.agrea.ph/about/team',
+    '/agrea-team' => 'https://www.agrea.ph/about/team',
     '/cherrie-atilano-is-the-philippine-ambassadress-on-food-security' => 'https://www.agrea.ph/news/cherrie-atilano-is-the-philippine-ambassadress-on-food-security',
     '/bringing-healthy-food-packs-for-more-than-a-thousand' => 'https://www.agrea.ph/news/bringing-healthy-food-packs-for-more-than-a-thousand',
     '/we-are-crate-ful-jeepney-drivers-and-garbage-collectors-receive-food-packs' => 'https://www.agrea.ph/news/we-are-crate-ful-jeepney-drivers-and-garbage-collectors-receive-food-packs',

@@ -11,5 +11,8 @@ return [
    ],
    'ext:pages.template.filter.video'   => [
         'enable'    => true
-  ],
+    ],
+    'ext:pages.subscriber.redirector' => [
+      'redirects' => include KPATH_PAGES.'/redirects.php'
+    ]
 ];
