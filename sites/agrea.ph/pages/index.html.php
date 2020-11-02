@@ -2,6 +2,7 @@
 layout: page/home
 name: Home
 title: Agrea - Ecology of Dignity
+summary: AGREA aims to help eradicate poverty for farming and fishing families, to alleviate the effects of climate change and to help establish food security in the Philippines.
 ---
 
 <style type="text/css">
