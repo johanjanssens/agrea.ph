@@ -7,6 +7,8 @@ name: Privacy
 title: Agrea Privacy Policy
 summary: This Privacy Policy explains the information collection, use, and sharing practices of Agrea International
 visible: false
+metadata:
+    robots: [noindex, nofollow]
 ---
 
 <article role="main" itemscope itemtype="http://schema.org/Article">
