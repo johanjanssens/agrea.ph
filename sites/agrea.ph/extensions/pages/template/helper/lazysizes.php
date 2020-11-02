@@ -46,7 +46,7 @@ window.addEventListener('lazybeforeunveil', function (e)
           if (img.complete && img.naturalHeight) {
             img.classList.add('lazycached');
           }
-      }, 33);
+      }, 75);
   }
 
 });
