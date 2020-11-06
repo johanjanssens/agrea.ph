@@ -192,6 +192,12 @@
   sub:not([class]) {
       bottom: -0.25em;
   }
+  .unsupported-browsers {
+    display:table;
+  }
+  .unsupported-browsers > div {
+    display:table-cell;
+  }
   .update-browser > svg { 
     transition: all .2s ease-in-out; 
   }

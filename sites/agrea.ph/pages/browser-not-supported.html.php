@@ -14,7 +14,7 @@ metadata:
 			<p class="lg:w-2/3 mx-auto leading-relaxed text-base mb-6">You have been shown this page because we detected that you are using an unsupported browser. Unfortunately, your browser lacks some of the security features that we require.</p>
 			<p class="lg:w-2/3 mx-auto leading-relaxed text-base">We recommend these more up-to-date browsers and would urge you update:</p>
 		</div>
-		<div class="flex flex-wrap -m-4 text-center">
+		<div class="unsupported-browsers -m-4 text-center w-full">
 			<div class="p-4 md:w-1/4 sm:w-1/2 w-full">
 				<div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
 					<a class="update-browser" href="https://www.google.com/chrome/" target="_blank">
