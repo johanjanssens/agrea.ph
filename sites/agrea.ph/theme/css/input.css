@@ -192,6 +192,12 @@
   sub:not([class]) {
       bottom: -0.25em;
   }
+  .update-browser > svg { 
+    transition: all .2s ease-in-out; 
+  }
+  .update-browser:hover > svg { 
+    transform: scale(1.1); 
+  }
 }
 @layer utilities {
   /* Plyr.js video player */
