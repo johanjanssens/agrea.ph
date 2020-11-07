@@ -11,7 +11,7 @@ return array(
     '/yseali-generationgr3en' => 'https://www.agrea.ph/events/yseali-generationgr3en',
     '/yseali-grow' => 'https://www.agrea.ph/events/yseali-grow',
     '/blog' => 'https://www.agrea.ph/news',
-    '/archives' => 'https://www.agrea.ph/news/archives',
+    '/archives' => 'https://www.agrea.ph/news',
     '/careers' => 'https://www.agrea.ph/about/careers',
     '/team' => 'https://www.agrea.ph/about/team',
     '/contact-agreaph' => 'https://www.agrea.ph/about/contact',
