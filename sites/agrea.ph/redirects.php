@@ -112,6 +112,7 @@ return array(
     '/swedish-ambassador-visits-agrea-marinduque' => 'https://www.agrea.ph/news/swedish-ambassador-visits-agrea-marinduque',
     '/arbor-day-marinduque-2018' => 'https://www.agrea.ph/news/ph-law-every-filipino-is-required-to-plant-one-tree-each-year',
     '/be-an-agrea-1000-strong-volunteer' => 'https://www.agrea.ph/news/be-a-agrea1000strong-volunteer',
+    '/programs/volunteer' => 'https://www.agrea.ph/programs/agrea-1000-strong',
     '/agrea-da-ati-rbo' => 'https://www.agrea.ph/news/agrea-da-ati-capacitates-and-strengthens-rural-based-organizations',
     '/dot-accredits-3-marinduque-farms-as-agri-tourism-destinations' => 'https://www.agrea.ph/news/dot-accredits-3-marinduque-farms-as-agri-tourism-destinations',
     '/ched-endorses-leaf' => 'https://www.agrea.ph/news/ched-endorses-leaders-and-entrepreneurs-in-agriculture-forum-leaf',
