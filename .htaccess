@@ -28,6 +28,10 @@ RewriteEngine On
 ## Begin - Redirects
 #
 
+  RewriteRule ^browser-not-supported$ [NC,L]
+  RewriteCond %{HTTP_USER_AGENT} "MSIE [1-11]" [NC]
+  RewriteRule ^(.*)$ /browser-not-supported [R=301,L]
+
   RewriteCond %{HTTP_HOST} !^staging\. [NC]
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
