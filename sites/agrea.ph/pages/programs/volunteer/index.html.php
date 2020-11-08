@@ -16,7 +16,5 @@ form:
         experience: [string]
     redirect: programs/volunteer/thank-you
     honeypot: firstName_FJdL92fe
-metadata:
-    robots: [noindex, nofollow]
 visible: false
 ---

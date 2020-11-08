@@ -8,7 +8,5 @@ form:
         email: [email, required]
     redirect: newsletter/thank-you
     honeypot: firstName_a6c1bd21
-metadata:
-    robots: [noindex, nofollow]
 visible: false
 ---
