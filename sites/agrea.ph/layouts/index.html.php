@@ -85,7 +85,7 @@
 
 </head>
 
-<body class="<?= config()->site->body_class ?>">
+<body class="<?= isset(page()->class) ? config()->site->body_class . ' ' . page()->class : config()->site->body_class ?>">
 
 <ktml:content>
 
