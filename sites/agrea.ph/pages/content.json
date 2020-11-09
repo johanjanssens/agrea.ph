@@ -2,6 +2,4 @@
 collection:
     model: ext:joomla.model.articles
 visible: false
-metadata:
-    robots: [noindex, nofollow]
 ---

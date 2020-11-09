@@ -5,7 +5,7 @@ summary: Sorry! We don't support your browser
 visible: false
 metadata:
     og:type: false
-    robots: [noindex, nofollow]
+    robots: [none]
 ---
 <section class="text-gray-700">
 	<div class="container px-5 py-24 mx-auto">

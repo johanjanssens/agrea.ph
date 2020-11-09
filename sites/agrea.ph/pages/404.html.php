@@ -6,5 +6,5 @@ summary: Oops! This page can't be found!
 visible: false
 metadata:
     og:type: false
-    robots: [noindex, nofollow]
+    robots: [none]
 ---

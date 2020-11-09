@@ -8,6 +8,4 @@ collection:
 visible: false
 process:
     cache: false
-metadata:
-    robots: [noindex]
 ---

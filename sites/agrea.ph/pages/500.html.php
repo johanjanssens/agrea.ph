@@ -6,5 +6,5 @@ summary: Sorry the server doesn't know what you want
 visible: false
 metadata:
     og:type: false
-    robots: [noindex, nofollow]
+    robots: [none]
 ---

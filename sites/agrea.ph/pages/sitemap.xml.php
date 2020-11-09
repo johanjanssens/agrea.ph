@@ -2,7 +2,7 @@
 title: Sitemap
 visible: false
 metadata:
-    robots: [noindex]
+    robots: [none]
 ---
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -14,7 +14,7 @@ metadata:
     'order'  => 'desc',
     'filter' => [
         'metadata' => [
-            'robots' => 'nin:noindex',
+            'robots' => ['nin:noindex', 'nin:none'],
         ],
         'redirect' => 'null',
     ]
@@ -37,7 +37,7 @@ metadata:
 
 <? $cache = collection('cache.json', [
     'filter' => [
-        'robots' => 'nin:noindex',
+        'robots' => ['nin:noindex', 'nin:none'],
         'format' => 'html',
         'status' => 200,
     ]
