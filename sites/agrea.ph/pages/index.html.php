@@ -97,10 +97,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title uppercase text-gray-900 dark:text-gray-100 mt-5">Learn organic farming the AGREA way</h3>
         <p class=" mt-2">AGREA Farm School is <a href="/farm-school/enroll-now-organic-agriculture-production-ncii">now accepting applications</a> for admission in Organic Agriculture Production (OAP NC II). This 232-hour program includes hands-on training on producing organic concoctions, extracts and fertilizers, as well as producing organic vegetables, and raising organic chickens and hogs.</p>
-        <a href="/farm-school" class="text-green-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+        <a href="/farm-school" class="text-green-500 inline-flex items-center mt-3" title="Learn more about organic farming the AGREA way">Learn more about organic farming the AGREA way
         </a>
       </aside>
       <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -109,10 +106,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title uppercase text-gray-900 dark:text-gray-100 mt-5">Leaders and Entrepreneurs in Agriculture Forum</h3>
         <p class=" mt-2">LEAF is a global community of champions uniting as advocates across different sectors for better agriculture. Through mentorship and inclusive dialogue, delegates help to develop new generations of agricultural practitioners and allies.</p>
-        <a href="/events/leaf" class="text-green-500 inline-flex items-center mt-3">Learn More
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+        <a href="/events/leaf" class="text-green-500 inline-flex items-center mt-3" title="Learn more about the Leaders and Entrepreneurs in Agriculture Forum">Learn more about Leaf
         </a>
       </aside>
       <aside class="p-4 md:w-1/3 sm:mb-0 mb-6">
@@ -121,10 +115,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
         </div>
         <h3 role="heading" aria-level="3" class="text-xl font-medium font-title uppercase text-gray-900 dark:text-gray-100 mt-5">LEAF 2018 Terminal Report</h3>
         <p class=" mt-2">Agriculture is changing, in step with a changing world. AGREA organized its inaugural LEAF Forum in 2018 as a venue to discuss the various challenges and opportunities for agricultural practitioners, with a focus on three specific areas: <span class="text-gray-700 font-bold">agripreneurship</span>, <span class="text-gray-700 font-bold">agritechnology</span>, <span class="text-gray-700 font-bold">and agritourism</span>.</p>
-        Download the report <a href="https://drive.google.com/file/d/1NDrii6VzmPu-8e5GvHQHOjtpQp6dN7rF/view?usp=sharing" class="text-green-500 inline-flex items-center mt-3">here
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+        <a href="https://drive.google.com/file/d/1NDrii6VzmPu-8e5GvHQHOjtpQp6dN7rF/view?usp=sharing" class="text-green-500 inline-flex items-center mt-3" title="Download the LEAF 2018 Terminal Report">Download the LEAF 2018 Terminal Report
         </a>
       </aside>
     </div>
@@ -152,7 +143,7 @@ summary: AGREA aims to help eradicate poverty for farming and fishing families, 
           <div class="mt-10">
             <h3 role="heading" aria-level="3" class="font-title uppercase text-2xl font-medium text-lime-500 mb-3">Be a #AGREA1000Strong Volunteer</h3>
             <p class="mx-auto">AGREA 1000 Strong is an innovative and inclusive community of volunteers with a big heart: male and female youth leaders, teachers and educators, mothers, senior citizens, Overseas Filipino Workers, members of the LGBT+ community, and farming and fisherfolk leaders</p>
-            <a href="/programs/agrea-1000-strong" class="inline-block mt-6 text-white bg-brand border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Learn more</a>
+            <a href="/programs/agrea-1000-strong" class="mt-6 text-lime-500 focus:outline-none focus:shadow-outline" title="Learn more about becoming an #AGREA1000Strong Volunteer">Learn more about becoming an #AGREA1000Strong Volunteer</a>
           </div>
         </div>
       </aside>
