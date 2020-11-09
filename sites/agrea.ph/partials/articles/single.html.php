@@ -20,39 +20,5 @@ $category_slug = ($article->category->slug == 'careers') ? '/about'.$category_sl
 		</span>
 	</p>
 	<div class="mt-2" itemprop="articleBody" content="<?= escape(strip_tags($article->excerpt.$article->text)) ?>"><?= $article->excerpt.$article->text ?></div>
-	<a id="backButton" class="hidden inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="javascript:history.back()">Back</a>
-	<div id="moreLikeThis" class="hidden my-4">
-		<h3 role="heading" aria-level="3" class="text-gray-900 font-medium font-title uppercase my-4">More <?= $article->category->name ?> stories</h3>
-		<div class="w-12 h-1 bg-brand rounded mt-2 mb-4"></div>
-		<ul>
-			<?
-			$relatedArticles = collection('ext:joomla.model.articles', [
-			'published' => 1,
-			'category' => [$article->category->id], // new sprouts
-			//'sort' => 'date',
-			'order' => 'shuffle',
-			'limit' => 3,
-			]); ?>
-
-			<? foreach($relatedArticles as $relatedArticle) :?>
-			<li>
-				<a href="<?= route(page('news/article'), ['slug' => $relatedArticle->slug]) ?>">
-					<?= $relatedArticle->title; ?>
-				</a>
-			</li>
-			<? endforeach ?>
-      	</ul>
-		<a class="inline-flex text-white bg-brand border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" href="<?= $category_slug ?>">Discover even more</a>
-	</div>
 </div>
 </ktml:images>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-	if (document.referrer.indexOf(window.location.host) !== -1) { 
-		document.getElementById("backButton").classList.toggle('hidden');
-	}
-	if (document.referrer.indexOf(window.location.host) === -1) {
-		document.getElementById("moreLikeThis").classList.toggle('hidden');
-	}
-});
-</script>
