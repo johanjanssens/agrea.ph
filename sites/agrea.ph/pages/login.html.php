@@ -10,8 +10,6 @@ form:
     honeypot: email_NN9uTmmt
     redirect: /
 visible: false
-metadata:
-    robots: [none]
 ---
 
 <div class="w-full flex flex-wrap">
