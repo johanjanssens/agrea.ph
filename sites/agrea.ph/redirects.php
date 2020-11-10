@@ -26,6 +26,7 @@ return array(
     '/top-marinduque-hotel-embrace-the-farm-to-table-movement' => 'https://www.agrea.ph/news/top-marinduque-hotel-embrace-farm-to-table-movement',
     '/agrea-farm-school-ready-for-new-normal-resumes-classes' => 'https://www.agrea.ph/farm-school/agrea-farm-school-ready-for-new-normal-resumes-classes',
     '/agreas-zero-waste-initiative-wins-sgm-fsf' => 'https://www.agrea.ph/news/agrea-s-zero-waste-initiative-wins-sgm-food-solidarity-fund',
+    '/news/agreas-zero-waste-initiative-wins-sgm-fsf' => 'https://www.agrea.ph/news/agrea-s-zero-waste-initiative-wins-sgm-food-solidarity-fund',
     '/boac-community-garden-contest-mini-competition-winners-announced' => 'https://www.agrea.ph/news/boac-community-garden-contest-mini-competition-winners-announced',
     '/cherrie-atilano-newest-global-alliance-for-improved-nutrition-director' => 'https://www.agrea.ph/news/cherrie-atilano-newest-global-alliance-for-improved-nutrition-director',
     '/essay-pamana-the-winning-boac-community-garden-story' => 'https://www.agrea.ph/news/essay-pamana-the-winning-boac-community-garden-story',
@@ -154,6 +155,7 @@ return array(
     '/indigenous-peoples-are-guardians-of-heirloom-food-diversity' => 'https://www.agrea.ph/news/indigenous-peoples-are-guardians-of-heirloom-food-diversity',
     '/how-agriculture-can-help-achieve-the-sdgs' => 'https://www.agrea.ph/news/how-agriculture-can-help-achieve-the-sdgs',
     '/the-garden-classroom-now-officially-thrives-in-siargao' => 'https://www.agrea.ph/news/the-garden-classroom-now-officially-thrives-in-siargao',
+    '/news/cherrie-atilano-named-un-nutrition-ambassador' => 'https://www.agrea.ph/news/cherrie-atilano-named-u-n-nutrition-ambassador',
     '/cherrie-atilano-named-un-nutrition-ambassador' => 'https://www.agrea.ph/news/cherrie-atilano-named-u-n-nutrition-ambassador',
     '/grow-asia-learning-alliance-gala-navigating-business-partnerships' => 'https://www.agrea.ph/news/grow-asia-learning-alliance-gala-navigating-business-partnerships',
     '/go-indie-and-grow-how-to-mainstream-indigenous-farm-products' => 'https://www.agrea.ph/news/go-indie-and-grow-how-to-mainstream-indigenous-farm-products',
@@ -164,4 +166,5 @@ return array(
     '/build-more-farm-schools-da-ati-exec' => 'https://www.agrea.ph/news/build-more-farm-schools-da-ati-exec',
     '/imo-efficient-biofertilizers' => 'https://www.agrea.ph/news/efficient-biofertilizers-indigenous-microorganisms-imo',
     '/superfood-kale' => 'https://www.agrea.ph/news/superfood-kale',
+    '/news/about/contact' => 'https://www.agrea.ph/about/contact',
 );
