@@ -55,7 +55,7 @@ visible: false
 		</div>
 		<script>
 		document.addEventListener("DOMContentLoaded", () => {
-			if (document.referrer.indexOf(window.location.host) !== -1) { 
+			if (document.referrer.indexOf(window.location.host) !== -1) {
 				document.getElementById("backButton").classList.toggle('hidden');
 			}
 			if (document.referrer.indexOf(window.location.host) === -1) {
@@ -68,6 +68,6 @@ visible: false
 	<aside role="complementary" class="sm:w-1/4 sm:mt-0 ms:pt-0 sm:pl-8 sm:pb-8 sm:border-l sm:mt-0 border-gray-300 sm:border-t-0 border-t mt-4 pt-4">
         <h2 role="heading" aria-level="2" class="font-title uppercase font-medium text-gray-900 dark:text-gray-100 tracking-widest mb-3">Apply Now!</h2>
         <div class="h-1 w-10 bg-brand rounded mb-3"></div>
-		<?= import('/partials/form/apply'); ?>
+		<?= import('/partials/form/application'); ?>
 	</aside>
 </div>
