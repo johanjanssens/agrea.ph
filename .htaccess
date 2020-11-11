@@ -39,6 +39,7 @@ RewriteEngine On
   RewriteRule ^(.*)$ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
   # Redirect /index.php/* to /*
+  RewriteCond %{THE_REQUEST} !^.*administrator [NC]
   RewriteCond %{THE_REQUEST} ^.*index\.php [NC]
   RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
 
