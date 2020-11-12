@@ -3,20 +3,20 @@
 		<div class="question">
 			<label class="block">Name<sup>*</sup></label>
 			<div class="grid sm:grid-cols-2">
-				<input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="First Name" type="text" name="firstName">
-				<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Last Name" type="text" name="lastName">
+				<input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="First Name" type="text" name="firstName" required>
+				<input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Last Name" type="text" name="lastName" required>
 			</div>
 		</div>
 		<?= helper('form.honeypot', page('about/careers/application')->form->honeypot); ?>
 		<div class="question">
 			<label for="email" class="block">Email Address<sup>*</sup></label>
-			<input class="w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Email Address" type="text" name="email">
+			<input class="w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" placeholder="Email Address" type="email" name="email" required>
 		</div>
 	</fieldset>
 	<fieldset class="">
 		<div class="question">
 			<label for="message">Message</label>
-			<textarea name="message" rows="5" cols="15" class="w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4"></textarea>
+			<textarea name="message" rows="5" cols="15" class="w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:bg-white focus:shadow-outline py-2 px-4" required></textarea>
 		</div>
 	</fieldset>
 	<div class="submit">

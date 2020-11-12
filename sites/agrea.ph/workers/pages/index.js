@@ -8,7 +8,7 @@ async function handleRequest(request) {
     const url = new URL(request.url)
 
     //Redirect to /browser-not-supported for all version of IE (not Edge)
-    if(request.headers.has('user-agent'))  {
+    if(request.headers.has('user-agent') && request.method == 'GET')  {
         agent = request.headers.get('user-agent')
 
         const redirect = '/browser-not-supported';
@@ -19,7 +19,7 @@ async function handleRequest(request) {
     }
 
     //Passthrough requests to origin for documents (html, json, xml, rss and csv)
-    if(request.headers.has('cache-control')) {
+    if(request.headers.has('cache-control') && request.method == 'GET') {
 
         //Create a GET over POST request to bypass cloudflare cache
         const newRequest = new Request(request, { method: 'POST'})

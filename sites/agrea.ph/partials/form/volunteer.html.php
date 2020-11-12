@@ -3,14 +3,14 @@
     <div class="question">
       <label class="block">Name<sup>*</sup></label>
       <div class="grid grid-cols-2">
-        <input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="First Name" type="text" name="firstName">
-        <input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Last Name" type="text" name="lastName">
+        <input class="sm:mr-2 bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="First Name" type="text" name="firstName" required>
+        <input class="bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Last Name" type="text" name="lastName" required>
       </div>
     </div>
     <?= helper('form.honeypot', page('programs/volunteer')->form->honeypot); ?>
     <div class="question">
       <label for="email" class="block">Email Address<sup>*</sup></label>
-      <input class="w-auto sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Email Address" type="text" name="email">
+      <input class="w-auto sm:w-full bg-gray-100 rounded mb-2 border border-gray-400 focus:outline-none focus:border-green-500 py-2 px-4" placeholder="Email Address" type="email" name="email" required>
     </div>
   </fieldset>
   <div class="grid sm:grid-cols-2">

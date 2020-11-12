@@ -1,6 +1,6 @@
 
 ## Define environment variable
-SetEnvIf Host ^(www|staging)\.agrea\.ph$ SITE=agrea.ph
+SetEnvIf Host ^(www|staging)\.agrea\.ph$ SITE=$1.agrea.ph
 
 # Define the filesystem locations (related to document root)
 SetEnvIf Request_URI ^.*  PAGES_CACHE_PATH=sites/agrea.ph/cache
