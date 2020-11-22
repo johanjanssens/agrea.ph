@@ -11,7 +11,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'base_url'  => $this->getObject('request')->getBaseUrl(),
             'base_path' => $this->getObject('com://site/pages.config')->getSitePath().'/images',
             'exclude'    => ['svg'],
-            'suffix'     => '',
+            'lazyload'   => true,
             'parameters'     => ['auto' => 'true'],
             'parameters_lqi' => ['auto' => 'compress', 'fm' => 'jpg', 'q' => 50]
         ));
@@ -31,7 +31,7 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'max_width' => $this->getConfig()->max_width,
             'min_width' => $this->getConfig()->min_width,
             'max_dpr'   => $this->getConfig()->max_dpr,
-            'lazyload'  => true, //progressive, inline
+            'lazyload'  => $this->getConfig()->lazyload,
         ))->append(array(
             'attributes' => array('class' => $config->class),
         ))->append(array(
@@ -40,8 +40,15 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
         ));
 
         //Set lazyload class for lazysizes
-        if($config->lazyload) {
+        if($config->lazyload)
+        {
             $config->attributes->class->append(['lazyload']);
+
+            $lazyload = KObjectConfig::unbox($config->lazyload);
+
+            if(!is_array($lazyload)) {
+                $lazyload = array_map('trim', explode(',', $config->lazyload));
+            }
         }
 
         //Get the image format
@@ -79,8 +86,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                 if($config->lazyload !== false)
                 {
-                    $lazyload = array_map('trim', explode(',', $config->lazyload));
-
                     if(in_array('progressive', $lazyload))
                     {
                         $config->attributes->class->append(['lazyprogressive']);
@@ -139,8 +144,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
                 if($config->lazyload !== false)
                 {
-                    $lazyload =  array_map('trim', explode(',', $config->lazyload));
-
                     if(in_array('progressive', $lazyload))
                     {
                         $config->attributes->class->append(['lazyprogressive']);
@@ -197,10 +200,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
             ksort($query); //sort alphabetically
             $url->query = $query;
-
-            if($this->getConfig()->suffix) {
-                $url->setPath($url->getPath().'.'.$this->getConfig()->suffix);
-            }
         }
 
         return $url;
@@ -335,10 +334,15 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
 
     protected function _findFile($url)
     {
-        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $url);
+        if(!$url instanceof KHttpUrlInterface) {
+            $url = KHttpUrl::fromString($url);
+        }
+
+        $path  = $url->getPath();
+        $file = $this->getConfig()->base_path . '/' . str_replace('/images/', '', $path);
 
         if(!file_exists($file)) {
-          $file = false;
+            $file = false;
         }
 
         return $file;
