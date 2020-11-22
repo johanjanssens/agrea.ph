@@ -13,6 +13,6 @@ return [
         'enable'    => true
     ],
     'ext:pages.subscriber.redirector' => [
-      'redirects' => include KPATH_PAGES.'/redirects.php'
+      'redirects' => include PAGES_SITE_ROOT.'/redirects.php'
     ]
 ];
