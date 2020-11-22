@@ -14,7 +14,7 @@ metadata:
     'order'  => 'desc',
     'filter' => [
         'metadata' => [
-            'robots' => ['nin:noindex', 'nin:none'],
+             'robots' => ['nin:noindex', 'nin:none'],
         ],
         'redirect' => 'null',
     ]
