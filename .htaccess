@@ -77,7 +77,7 @@ Header set Cache-Control public,max-age=315360000 env=REDIRECT_THEME
    RewriteRule (.+)\.(jpe?g|png|gif|svg) %{ENV:PAGES_CACHE_PATH}/$1.webp_%{QUERY_STRING} [NC,T=image/webp,E=IMAGE:1,L]
 
    # Find generated image (in case browser doesn't support WebP)
-   RewriteCond %{DOCUMENT_ROOT}%{ENV:PAGES_CACHE_PATH}/$1\.$2_%{QUERY_STRING} -f
+   RewriteCond  %{DOCUMENT_ROOT}%{ENV:PAGES_CACHE_PATH}/$1\.$2_%{QUERY_STRING} -f
    RewriteRule (.+)\.(jpe?g|png|gif|svg) %{ENV:PAGES_CACHE_PATH}/$1.$2_%{QUERY_STRING} [NC,E=IMAGE:1,L]
 
    # Find original image (in case image couldn't be generated)
@@ -96,7 +96,6 @@ Header set Cache-Control public,max-age=315360000 env=REDIRECT_THEME
 
    # Remove Etag header (use Last-Modified to validate)
    Header unset ETag env=REDIRECT_IMAGE
-
 #
 ## End - Image cache
 
