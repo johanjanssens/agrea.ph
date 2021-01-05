@@ -1,34 +1,43 @@
 <?php
 
-class ExtPagesSubscriberRedirector extends ComPagesEventSubscriberAbstract
+class ExtPagesSubscriberRedirector extends ComPagesEventSubscriberErrorhandler
 {
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority'  => KEvent::PRIORITY_HIGHEST,
-            'redirects' => array(),
+            'priority'  => KEvent::PRIORITY_HIGH,
         ));
 
         parent::_initialize($config);
     }
 
-    public function onAfterApplicationRoute(KEventInterface $event)
+    public function onException(KEventException $event)
     {
-        $request = $this->getObject('request');
-        $base    = $request->getBasePath();
-        $url     = urldecode( $request->getUrl()->getPath());
+        $exception = $event->getException();
 
-        $route  = rtrim(str_replace(array($base, '/index.php'), '', $url), '/');
-
-        if($url = $this->getConfig()->redirects->get($route))
+        if($exception->getCode() == 404)
         {
             $dispatcher = $this->getObject('com://site/pages.dispatcher.http');
-            $response   = $dispatcher->getResponse();
+            $router     = $this->getObject('com://site/pages.dispatcher.router.redirect', ['request' => $dispatcher->getRequest()]);
 
-            //Set the redirect status
-            $response->setStatus(KHttpResponse::MOVED_PERMANENTLY);
+            if(false !== $route = $router->resolve())
+            {
+                //External redirect: 301 permanent
+                $status = KHttpResponse::MOVED_PERMANENTLY;
 
-            $dispatcher->redirect($url);
+                //Qualify the route
+                $url = $router->qualify($route);
+
+                //Set the location header
+                $dispatcher->getResponse()->setStatus($status);
+
+                //Purge the cache
+                if($dispatcher->isCacheable()) {
+                    $dispatcher->purge();
+                }
+
+                $dispatcher->redirect($url);
+            }
         }
     }
 }
