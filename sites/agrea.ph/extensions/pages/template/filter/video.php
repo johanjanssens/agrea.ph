@@ -5,7 +5,7 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => self::PRIORITY_LOWEST,
+            'priority' => self::PRIORITY_LOW,
             'enable'   => JDEBUG ? false : true,
         ));
 
