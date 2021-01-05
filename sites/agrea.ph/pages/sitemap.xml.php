@@ -47,7 +47,7 @@ metadata:
 
 <? if(!isset($urls[$item->url])) : ?>
     <url>
-        <loc><?= $item->url ?></loc>
+        <loc><?= rawurlencode($item->url) ?></loc>
         <lastmod><?= $item->date->format(DateTime::ATOM); ?></lastmod>
     </url>
 <? endif ?>
