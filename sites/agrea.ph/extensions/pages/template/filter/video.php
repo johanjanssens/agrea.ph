@@ -5,8 +5,9 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'priority' => self::PRIORITY_LOW,
-            'enable'   => JDEBUG ? false : true,
+            'priority'   => self::PRIORITY_LOW,
+            'enable'     => JDEBUG ? false : true,
+            'parameters' => ['auto' => 'true'],
         ));
 
         parent::_initialize($config);
@@ -29,11 +30,10 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
                 foreach($matches[1] as $key => $match)
                 {
                     $attribs = $this->parseAttributes($match);
-                    $poster  = $attribs['poster'] ?? null;
                     $valid   = !isset($attribs['data-src']) && (!isset($attribs['data-lazyload']) || $attribs['data-lazyload'] == 'true');
 
                     //Only handle none filtered videos
-                    if($poster && $valid)
+                    if($valid)
                     {
                         //Convert class to array
                         if(isset($attribs['class'])) {
@@ -52,7 +52,7 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
                         //Poster
                         if(isset($attribs['poster']))
                         {
-                            $attribs['data-poster'] = $attribs['poster'];
+                            $attribs['data-poster'] = $this->poster($attribs['poster']);
                             unset($attribs['poster']);
 
                             //We have a poster image do not preload
@@ -61,7 +61,6 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
 
                         //Add lazyload
                         $attribs['class'][] = 'lazyload';
-
 
                         //Filter the images
                         $text = str_replace($matches[1][$key], $this->buildAttributes($attribs), $text);
@@ -72,5 +71,19 @@ class ExtPagesTemplateFilterVideo extends ComPagesTemplateFilterAbstract
                 }
             }
         }
+    }
+
+    public function poster($url, $parameters = array())
+    {
+        $config = new KObjectConfigJson($parameters);
+        $config->append($this->getConfig()->parameters);
+
+        $url   = KHttpUrl::fromString($url);
+        $query = array_merge(array_filter(KObjectConfig::unbox($config)), $url->query);
+
+        ksort($query); //sort alphabetically
+        $url->query = $query;
+
+        return $url;
     }
 }
