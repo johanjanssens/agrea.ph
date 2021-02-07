@@ -23,7 +23,9 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
         if($this->getTemplate()->getLayout() === false && $this->enabled())
         {
             $matches = array();
-            //First pass - Find images between <ktml:images></ktml:images>
+            $images  = array();
+
+            //Find images between <ktml:images></ktml:images>
             if(preg_match_all('#<ktml:images(.*)>(.*)<\/ktml:images>#siU', $text, $matches))
             {
                 foreach($matches[0] as $key => $match)
@@ -39,17 +41,22 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
                     $result = $this->filterImages($matches[2][$key], $attribs);
 
                     //Filter background images
-                    $result = $this->filterBackgroundImages($result, $attribs);
+                    $images[$key] = $this->filterBackgroundImages($result, $attribs);
 
-                    $text = str_replace($match, $result, $text);
+                    $text = str_replace($match, '<ktml:images:'.$key.'>', $text);
                 }
             }
 
-            //Second pass - Filter image elements
+            //Filter image elements
             $text =  $this->filterImages($text);
 
-            //Second pass- Filter the background images
+            //Filter the background images
             $text = $this->filterBackgroundImages($text);
+
+            //Find images between <ktml:images></ktml:images>
+            foreach($images as $key => $value) {
+                $text = str_replace('<ktml:images:'.$key.'>', $value, $text);
+            }
 
             //Add client hints
             $text .= '<meta http-equiv="Accept-CH" content="dpr, width, viewport-width, downlink" />';
@@ -58,69 +65,74 @@ class ExtPagesTemplateFilterImage extends ComPagesTemplateFilterAbstract
     }
 
     public function filterImages($html, $config = array())
-     {
-         $matches = array();
-         if(preg_match_all('#<img\s([^>]*?[\'\"][^>]*?)>(?!\s*<\/noscript>)#siU', $html, $matches))
-         {
-             foreach($matches[1] as $key => $match)
-             {
-                 $attribs = $this->parseAttributes($match);
-                 $src     = $attribs['src'] ?? null;
-                 $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
+    {
+        $matches = array();
+        if(preg_match_all('#<img\s([^>]*?[\'\"][^>]*?)>(?!\s*<\/noscript>)#siU', $html, $matches))
+        {
+            foreach($matches[1] as $key => $match)
+            {
+                $attribs = $this->parseAttributes($match);
+                $src     = $attribs['src'] ?? null;
+                $valid   = !isset($attribs['srcset']) && !isset($atrribs['data-srcset']) && !isset($attribs['data-src']);
 
-                 //Only handle none responsive supported images
-                 if($src && $valid && $this->getTemplate()->helper('image.supported', $src))
-                 {
-                     //Convert class to array
-                     if(isset($attribs['class'])) {
-                         $attribs['class'] = explode(' ', $attribs['class']);
-                     }
+                //Only handle none responsive supported images
+                if($src && $valid)
+                {
+                    //Convert class to array
+                    if(isset($attribs['class'])) {
+                        $attribs['class'] = explode(' ', $attribs['class']);
+                    }
 
-                     $attribs['url'] = '/'.ltrim($src, '/');
-                     unset($attribs['src']);
+                    if($this->getTemplate()->helper('image.supported', $src)) {
+                        $attribs['url'] = '/'.ltrim($src, '/');
+                    } else {
+                        $attribs['url'] = $src;
+                    }
 
-                     //Strip data- prefix
-                     foreach($attribs as $name => $value)
-                     {
-                         if(strpos($name, 'data-') !== false)
-                         {
-                             unset($attribs[$name]);
+                    unset($attribs['src']);
 
-                             $name = str_replace('data-', '', $name);
-                             $attribs[$name] = $value;
-                         }
-                     }
+                    //Strip data- prefix
+                    foreach($attribs as $name => $value)
+                    {
+                        if(strpos($name, 'data-') !== false)
+                        {
+                            unset($attribs[$name]);
 
-                     //Rename hyphen to underscore
-                     $options = array();
-                     foreach(array_replace_recursive($config, $attribs) as $name => $value)
-                     {
-                         $name = str_replace('-', '_', $name);
-                         $options[$name] = $value;
-                     }
+                            $name = str_replace('data-', '', $name);
+                            $attribs[$name] = $value;
+                        }
+                    }
 
-                     //Covert false/true
-                     foreach($options as $name => $value)
-                     {
-                         if($value === 'true') {
-                             $value = true;
-                         }
+                    //Rename hyphen to underscore
+                    $options = array();
+                    foreach(array_replace_recursive($config, $attribs) as $name => $value)
+                    {
+                        $name = str_replace('-', '_', $name);
+                        $options[$name] = $value;
+                    }
 
-                         if($value === 'false') {
-                             $value = false;
-                         }
+                    //Covert false/true
+                    foreach($options as $name => $value)
+                    {
+                        if($value === 'true') {
+                            $value = true;
+                        }
 
-                         $options[$name] = $value;
-                     }
+                        if($value === 'false') {
+                            $value = false;
+                        }
 
-                     //Filter the images
-                     $html = str_replace($matches[0][$key], $this->getTemplate()->helper('image', $options), $html);
-                 }
-             }
-         }
+                        $options[$name] = $value;
+                    }
 
-         return $html;
-     }
+                    //Filter the images
+                    $html = str_replace($matches[0][$key], $this->getTemplate()->helper('image', $options), $html);
+                }
+            }
+        }
+
+        return $html;
+    }
 
     public function filterBackgroundImages($html, $config = array())
     {
