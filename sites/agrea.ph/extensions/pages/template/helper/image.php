@@ -41,26 +41,29 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
             'attributes_noscript'  => clone $config->attributes,
         ));
 
-        //Set lazyload class for lazysizes
-        if($config->lazyload)
-        {
-            $config->attributes->class->append(['lazyload']);
-            $config->attributes_noscript->loading = 'lazy';
-
-            $lazyload = KObjectConfig::unbox($config->lazyload);
-
-            if(!is_array($lazyload)) {
-                $lazyload = array_map('trim', explode(',', $config->lazyload));
-            }
-        }
-
         //Get the image format
         $format  = strtolower(pathinfo($config->url, PATHINFO_EXTENSION));
         $exclude = KObjectConfig::unbox($this->getConfig()->exclude);
 
+        //Set the img container class
+        $config->attributes_container->class->append(['img-container']);
+
         if($this->exists($config->url))
         {
             $html = $this->import(); //import lazysizes script
+
+            //Set lazyload class for lazysizes
+            if($config->lazyload)
+            {
+                $config->attributes->class->append(['lazyload']);
+                $config->attributes_noscript->loading = 'lazy';
+
+                $lazyload = KObjectConfig::unbox($config->lazyload);
+
+                if(!is_array($lazyload)) {
+                    $lazyload = array_map('trim', explode(',', $config->lazyload));
+                }
+            }
 
             //Build path for the high quality image
             $hqi_url = $this->url($config->url);
@@ -99,8 +102,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                         $lqi_url = $this->url_lqi($config->url, $parameters, in_array('inline', $lazyload));
                     }
                     else $lqi_url = '';
-
-                    $config->attributes_container->class->append(['img-container']);
 
                     //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
                     $html .= '<span '.$this->buildAttributes($config->attributes_container).'>';
@@ -171,8 +172,6 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                     }
                     else $lqi_url = '';
 
-                    $config->attributes_container->class->append(['img-container']);
-
                     //Combine low quality image and a data-srcset attribute and provide a fallback if javascript is disabled
                     $html .= '<span '.$this->buildAttributes($config->attributes_container).'>';
                     $html .= '<noscript>';
@@ -201,7 +200,26 @@ class ExtPagesTemplateHelperImage extends ExtPagesTemplateHelperLazysizes
                 }
             }
         }
-        else $html = '<img class="lazymissing" src="'.$config->url.'" alt="Image Not Found: '.$config->url.'">';
+        else
+        {
+            $html = '<span '.$this->buildAttributes($config->attributes_container).'>';
+
+            if($config->width) {
+                $config->attributes['width'] = $config->width;
+            }
+
+            if($config->height) {
+                $config->attributes['height'] = $config->height;
+            }
+
+            if($this->supported($config->url) && !$this->exists($config->url)) {
+                $html .= '<img class="lazymissing" src="'.$config->url.'" alt="Image Not Found: '.$config->url.'">';
+            } else {
+                $html .=  '<img src="'.$config->url.'" alt="'.$config->alt.'" '.$this->buildAttributes($config->attributes).'>';
+            }
+
+            $html .= '</span>';
+        }
 
         return $html;
     }

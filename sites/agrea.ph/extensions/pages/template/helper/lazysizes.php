@@ -46,7 +46,7 @@ window.addEventListener('lazybeforeunveil', function (e)
           if (img.complete && img.naturalHeight) {
             img.classList.add('lazycached');
           }
-      }, 75);
+      }, 33);
   }
 
 });
@@ -54,6 +54,7 @@ window.addEventListener('lazybeforeunveil', function (e)
 </script>
 
 <style>
+
 /* Lazyloaded images */
 span.img-container {
   display: inline-block;
@@ -62,6 +63,7 @@ span.img-container {
 
 span.img-container > img {
   margin: 0;
+  background-clip: content-box;
 }
 
 .lazyprogressive {
@@ -76,7 +78,6 @@ span.img-container > img {
   transition: filter 300ms linear;
 }
 
-.ls-is-cached,
 .lazycached {
   filter: none;
   transition: none;
